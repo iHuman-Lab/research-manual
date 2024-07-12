@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: 'iHuman Lab Research Manual'
+  author: 'Hemanth Manjunatha'
+  date: today
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - introduction.qmd
+    - part: 'Coding practices'
+      chapters:
+        - coding_practices/general_practices.qmd
+        - coding_practices/project_structure.qmd
+    - python_development.qmd
+    - bci.qmd
+    - eeg_analysis.qmd
+
+    - lab_resources.qmd
+    - checklist_and_signature.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+  pdf:
+    documentclass: scrreprt

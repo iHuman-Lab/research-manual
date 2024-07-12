@@ -1,0 +1,630 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "iHuman Lab Research Manual",
+    "section": "",
+    "text": "Welcome\nWe are glad that you have decided to join Intelligent Human-Machine Nexus Lab (iHuman Lab)! We are really excited to have you as a part of our team and we will do what we can to make sure that you have a great time in our lab. We hope you will learn a lot about human and machines, and neuroscience, develop new and useful skills (coding, data analysis, writing papers, giving talks), make new friends, and have a great deal of fun throughout the whole process!!\nWe are in this together and we are here to support you! Starting to work in a research lab can be overwhelming sometimes (we are all humans!). This manual is to help you make the transition into iHuman lab more enjoyable.\nThis lab manual is crafted as your essential companion, designed to acquaint you with our lab’s operations, policies, and your rights and responsibilities as a valued member of the lab. Within these pages, you will find detailed explanations of the bill of rights and responsibilities, outlining both what you can expect from the lab environment and what is expected of you in terms of conduct, safety, and ethical standards. Clear and concise lab practices and policies are also delineated to ensure smooth integration into our research workflows.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgment",
+    "href": "index.html#acknowledgment",
+    "title": "iHuman Lab Research Manual",
+    "section": "Acknowledgment",
+    "text": "Acknowledgment\nThis lab manual draws inspiration from various sources, and in some sections, content has been adapted or reproduced from these sources. We acknowledge the following works for their influence:\nContext Dynamics Lab, The Memory Modulation Lab, Aly Lab, Peelle Lab, Ritchey Lab, Kemp Lab\nThis lab manual is licensed under the Creative Commons Attribution 4.0 International License. You are free to share, adapt, and redistribute the material in any medium or format, provided appropriate credit is given to the original authors and the source is properly cited.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Who is this lab manual for?\nEvery new lab member should read the latest version of this lab manual in detail and reference it later as needed. Periodically throughout the document, you will see callouts with listed Task items.\nCompleting your read-through entails:\nThis lab manual is meant to be a living document. All lab members are welcome (and encouraged!) to submit edits that improve the content, clarity, and overall helpfulness of this document at any point throughout their tenure in the lab. What should you do if you don’t understand something? If you don’t understand something you read in this manual, it is important that you ask another lab member for help. Every member of the lab brings their own unique knowledge base, training, life experiences, and perspectives. Respecting and celebrating those differences drives the science we do. If you’re new to the lab or new to a particular technique, you might feel like a newbie today—but chances are good that if you stick around for a bit, someone else will be seeking your expert opinion before you know it. In addition to learning, there’s another good reason for asking for help: if you don’t understand something, there’s a reasonable chance that you’ve discovered a mistake or a logical inconsistency!",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#who-is-this-lab-manual-for",
+    "href": "introduction.html#who-is-this-lab-manual-for",
+    "title": "Introduction",
+    "section": "",
+    "text": "Reading the contents of the manual\nAsking current lab members about any confusing aspects\nCompleting the relevant Task items. You will also see non-task NOTE items; these provide helpful tips and additional commentary on the nearby text.\n\n\n\n\n\n\n\n\nTask\n\n\n\nUpon reading through this lab manual for the first time, please update the document to include your name in the Lab members section. Importantly, be sure to fork the GitHub repository, make your edit on your personal fork, and submit a pull request with your update.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#why-is-it-worth-my-time-to-read-through-the-manual",
+    "href": "introduction.html#why-is-it-worth-my-time-to-read-through-the-manual",
+    "title": "Introduction",
+    "section": "Why is it worth my time to read through the manual?",
+    "text": "Why is it worth my time to read through the manual?\nAside from pursuing your own curiosity, a major reason that you’ve decided to join an academic research lab is probably because you want to gain training or career-advancing experiences. This manual briefly summarizes the collective wisdom of past and present lab members in a way that we think will best allow you to achieve your objectives. Learn from it, challenge it, and add to it.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#what-isnt-this-lab-manual",
+    "href": "introduction.html#what-isnt-this-lab-manual",
+    "title": "Introduction",
+    "section": "What isn’t this lab manual?",
+    "text": "What isn’t this lab manual?\nThis lab manual is not intended to provide a comprehensive overview of everything you need to know to do your research projects. As described next, you may not even know what you need to know to do your projects! Nevertheless, you need somewhere to start, and this is that place.\nWe also maintain a repository of lab tutorials that provide guidance on specific tasks. If you are looking for help on a particular task (or understanding a particular concept) that isn’t covered by the existing set of tutorials, please consider contributing a tutorial of your own once you’ve figured things out!",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#research-project-manual",
+    "href": "introduction.html#research-project-manual",
+    "title": "Introduction",
+    "section": "Research project manual",
+    "text": "Research project manual\nAlong with this general lab manual, we will also use the research project manual which provides comprehensive guidance on coding practices, the procedure for writing research papers, managing data effectively, structuring research projects, and accessing valuable learning resources. This supplementary resource is essential for ensuring that our research endeavors are conducted with precision, thoroughness, and adherence to best practices across all stages of our project development and documentation.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "lab_resources.html",
+    "href": "lab_resources.html",
+    "title": "Lab resources",
+    "section": "",
+    "text": "Computers\nAll lab members need a computer to get their work done. We generally prefer to use Linux machines, as this maximizes compatibility across lab members. Depending on your expected role in the lab and the specifics of your project, the lab may provide a computer to you, or you may be expected to use your personal computer to complete your work. Any equipment purchased by the lab, including personal computers, is the official property of the iHuman Lab and should be treated as such. All equipment must be returned to the lab when your association with the lab is complete. In addition to personal computers, we also maintain a lab account at Oklahoma State University’s Supercomputing Cluster.",
+    "crumbs": [
+      "Lab resources"
+    ]
+  },
+  {
+    "objectID": "lab_resources.html#other-research-equipment",
+    "href": "lab_resources.html#other-research-equipment",
+    "title": "Lab resources",
+    "section": "Other research equipment",
+    "text": "Other research equipment\nMany research projects require specialized research equipment (e.g. for neuroimaging using EEG, ECoG, etc.). Some of the necessary research equipment is owned by the iHuman Lab, and other equipment is shared with other labs affiliated with PBS or DHMC. All equipment should be treated with care and respect. Any malfunctions should be reported immediately.",
+    "crumbs": [
+      "Lab resources"
+    ]
+  },
+  {
+    "objectID": "lab_resources.html#repository-of-shared-lab-papers-and-books",
+    "href": "lab_resources.html#repository-of-shared-lab-papers-and-books",
+    "title": "Lab resources",
+    "section": "Repository of shared lab papers and books",
+    "text": "Repository of shared lab papers and books\nOur lab maintains a Dropbox repository of PDFs for internal use by lab members and affiliates. Contact Jeremy for a link (not to be shared publicly).",
+    "crumbs": [
+      "Lab resources"
+    ]
+  },
+  {
+    "objectID": "lab_members_and_alumni.html",
+    "href": "lab_members_and_alumni.html",
+    "title": "Lab members",
+    "section": "",
+    "text": "PI\nHemanth Manjunatha (2024-Present)",
+    "crumbs": [
+      "Lab members"
+    ]
+  },
+  {
+    "objectID": "lab_members_and_alumni.html#phd-students",
+    "href": "lab_members_and_alumni.html#phd-students",
+    "title": "Lab members",
+    "section": "PhD Students",
+    "text": "PhD Students",
+    "crumbs": [
+      "Lab members"
+    ]
+  },
+  {
+    "objectID": "lab_members_and_alumni.html#master-students",
+    "href": "lab_members_and_alumni.html#master-students",
+    "title": "Lab members",
+    "section": "Master Students",
+    "text": "Master Students",
+    "crumbs": [
+      "Lab members"
+    ]
+  },
+  {
+    "objectID": "lab_members_and_alumni.html#undergraduate-students",
+    "href": "lab_members_and_alumni.html#undergraduate-students",
+    "title": "Lab members",
+    "section": "Undergraduate Students",
+    "text": "Undergraduate Students",
+    "crumbs": [
+      "Lab members"
+    ]
+  },
+  {
+    "objectID": "checklist_and_signature.html",
+    "href": "checklist_and_signature.html",
+    "title": "Checklist and signature page",
+    "section": "",
+    "text": "Congrats on making towards the end of the document. Please sign the below document and send it to ihuman.research.lab@gmail.com\n\nLoading…",
+    "crumbs": [
+      "Checklist and signature page"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html",
+    "href": "coding_practices/virtual_environments.html",
+    "title": "Virtual environment",
+    "section": "",
+    "text": "Prerequisites\nBefore we begin, make sure you have the following:",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html#prerequisites",
+    "href": "coding_practices/virtual_environments.html#prerequisites",
+    "title": "Virtual environment",
+    "section": "",
+    "text": "Conda Installed: If you haven’t installed Conda yet, visit the Conda website and download the installer suitable for your operating system.\nBasic Knowledge of Terminal/Command Line: Familiarity with basic terminal or command line operations will be helpful.",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html#step-1-installing-conda",
+    "href": "coding_practices/virtual_environments.html#step-1-installing-conda",
+    "title": "Virtual environment",
+    "section": "Step 1: Installing Conda",
+    "text": "Step 1: Installing Conda\n\nDownload Anaconda or Miniconda:\n\nAnaconda: Includes Conda, Python, and a large number of packages commonly used in data science and scientific computing.\nMiniconda: A minimal installer that includes only Conda, Python, and essential packages.\n\nInstall Anaconda or Miniconda: Follow the installation instructions provided on the Conda website for your operating system. Once installed, Conda should be available in your terminal or command prompt.",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html#step-2-creating-a-conda-environment",
+    "href": "coding_practices/virtual_environments.html#step-2-creating-a-conda-environment",
+    "title": "Virtual environment",
+    "section": "Step 2: Creating a Conda Environment",
+    "text": "Step 2: Creating a Conda Environment\n\nOpen Terminal or Command Prompt: Open your terminal application (e.g., Terminal on macOS, Command Prompt on Windows).\nCreate a New Conda Environment: To create a new environment named myenv with Python 3.8 (adjust the version as needed), use the following command:\nconda create --name myenv python=3.10\nReplace myenv with your preferred environment name and python=3.10 with your desired Python version.\nActivate the Environment: After creating the environment, activate it using the following command:\nconda activate myenv\nYour terminal prompt should now show the active environment name (myenv).",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html#step-3-installing-python-packages",
+    "href": "coding_practices/virtual_environments.html#step-3-installing-python-packages",
+    "title": "Virtual environment",
+    "section": "Step 3: Installing Python Packages",
+    "text": "Step 3: Installing Python Packages\n\nUsing Conda: Install packages from the Conda repository. For example:\nconda install numpy pandas matplotlib\nReplace numpy, pandas, and matplotlib with any packages you need for your project.\nUsing pip: Install packages from PyPI (Python Package Index). For example:\npip install requests flask\nReplace requests and flask with any packages not available in the Conda repository.",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html#step-4-optional---installing-jupyter-notebook",
+    "href": "coding_practices/virtual_environments.html#step-4-optional---installing-jupyter-notebook",
+    "title": "Virtual environment",
+    "section": "Step 4: Optional - Installing Jupyter Notebook",
+    "text": "Step 4: Optional - Installing Jupyter Notebook\nIf you plan to use Jupyter Notebook for interactive development:\n\nInstall Jupyter Notebook: Use the following command to install Jupyter Notebook within your Conda environment:\nconda install jupyter",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html#step-5-deactivating-and-removing-environments",
+    "href": "coding_practices/virtual_environments.html#step-5-deactivating-and-removing-environments",
+    "title": "Virtual environment",
+    "section": "Step 5: Deactivating and Removing Environments",
+    "text": "Step 5: Deactivating and Removing Environments\n\nDeactivate the Environment: When you’re done working in your environment, deactivate it using:\nconda deactivate\nRemoving the Environment (Optional): If you want to remove a Conda environment entirely:\nconda remove --name myenv --all\nReplace myenv with the name of your environment.",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/virtual_environments.html#conclusion",
+    "href": "coding_practices/virtual_environments.html#conclusion",
+    "title": "Virtual environment",
+    "section": "Conclusion",
+    "text": "Conclusion\nSetting up a Python development environment using Conda provides a robust and flexible approach to managing dependencies and isolating project environments. It ensures that your projects are reproducible across different systems and simplifies package management.",
+    "crumbs": [
+      "Coding practices",
+      "Virtual environment"
+    ]
+  },
+  {
+    "objectID": "coding_practices/project_structure.html",
+    "href": "coding_practices/project_structure.html",
+    "title": "Project structure",
+    "section": "",
+    "text": "At iHuman lab, we follow the project structure (shown below) serves as a flexible guide rather than a strict mandate. It is designed to provide a clear framework for organizing our research endeavors effectively. The structure encompasses essential components such as documentation in the docs/ directory, configuration files in config/, and a dedicated ‘data/’ directory for managing datasets. The notebooks/ directory houses Jupyter notebooks for exploratory analysis, while the src/ directory contains modularized source code for data processing, feature engineering, model development, visualization, and utility functions. Unit tests are stored in tests/ to ensure the reliability of our implementations. While this structure offers a solid foundation, it remains adaptable to meet the specific needs and nuances of each research project we undertake, allowing for customization and refinement as required.\nresearch_project_name/\n│\n├── README.md                       # Project overview and instructions\n├── docs/                           # Documentation\n│\n├── config/                         # Configuration files\n│   ├── config.yaml                 # Configuration file for parameters\n│   └── logging.yaml                # Configuration file for logging\n│\n├── data/                           # Directory for datasets\n│   ├── raw/                        # Raw data files (immutable)\n│   ├── processed/                  # Processed data files (generated)\n│   └── interim/                    # Intermediate data files (temporary)\n│\n├── notebooks/                      # Jupyter notebooks for exploration\n│   └── exploratory_analysis.ipynb\n│\n├── src/                            # Source code for the project\n│   ├── __init__.py\n│   ├── main.py                     # Main script to run the project\n│   ├── data/                       # Module for data processing\n│   │   ├── __init__.py\n│   │   ├── preprocess.py           # Preprocessing functions\n│   │   └── load_data.py            # Data loading functions\n│   ├── dataset/                    # Module for creating datasets\n│   │   ├── __init__.py\n│   │   └── create_dataset.py       # Functions to create datasets\n│   ├── features/                   # Module for creating features\n│   │   ├── __init__.py\n│   │   └── feature_engineering.py  # Feature engineering functions\n│   ├── models/                     # Module for defining models\n│   │   ├── __init__.py\n│   │   └── model.py                # Model architecture and training functions\n│   ├── visualization/              # Visualization module\n│   │   ├── __init__.py\n│   │   └── visualize.py            # Visualization functions\n│   └── utils.py                    # Utility functions used across modules\n│\n├── tests/                          # Unit tests\n│\n└── environment.yml                 # Conda env file specifying dependencies\nTo facilitate the easy creation and adoption of this project structure across our research lab, we have opted to use iHuman Lab’s Cookiecutter template.\nTo use the template\n$ pip install cookiecutter\nor\n$ conda config --add channels conda-forge\n$ conda install cookiecutter\nTo start a new project, run:\n$ cookiecutter https://github.com/iHuman-Lab/ihuman-cookiecutter-data-science.git",
+    "crumbs": [
+      "Coding practices",
+      "Project structure"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html",
+    "href": "coding_practices/general_practices.html",
+    "title": "Good coding practices",
+    "section": "",
+    "text": "Maintain Code Cleanliness\nKeeping your code tidy ensures it is readable and maintainable. Clean code is easier to understand, debug, and enhance. Here are some tips for maintaining code cleanliness:\nFor more details, refer to the PEP 8 style guide and the Google Python Style Guide.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#prerequisites",
+    "href": "coding_practices/general_practices.html#prerequisites",
+    "title": "General practices",
+    "section": "",
+    "text": "Conda Installed: If you haven’t installed Conda yet, visit the Conda website and download the installer suitable for your operating system.\nBasic Knowledge of Terminal/Command Line: Familiarity with basic terminal or command line operations will be helpful.",
+    "crumbs": [
+      "Coding practices",
+      "General practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#step-1-installing-conda",
+    "href": "coding_practices/general_practices.html#step-1-installing-conda",
+    "title": "General practices",
+    "section": "Step 1: Installing Conda",
+    "text": "Step 1: Installing Conda\n\nDownload Anaconda or Miniconda:\n\nAnaconda: Includes Conda, Python, and a large number of packages commonly used in data science and scientific computing.\nMiniconda: A minimal installer that includes only Conda, Python, and essential packages.\n\nInstall Anaconda or Miniconda: Follow the installation instructions provided on the Conda website for your operating system. Once installed, Conda should be available in your terminal or command prompt.",
+    "crumbs": [
+      "Coding practices",
+      "General practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#step-2-creating-a-conda-environment",
+    "href": "coding_practices/general_practices.html#step-2-creating-a-conda-environment",
+    "title": "General practices",
+    "section": "Step 2: Creating a Conda Environment",
+    "text": "Step 2: Creating a Conda Environment\n\nOpen Terminal or Command Prompt: Open your terminal application (e.g., Terminal on macOS, Command Prompt on Windows).\nCreate a New Conda Environment: To create a new environment named myenv with Python 3.8 (adjust the version as needed), use the following command:\nconda create --name myenv python=3.10\nReplace myenv with your preferred environment name and python=3.10 with your desired Python version.\nActivate the Environment: After creating the environment, activate it using the following command:\nconda activate myenv\nYour terminal prompt should now show the active environment name (myenv).",
+    "crumbs": [
+      "Coding practices",
+      "General practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#step-3-installing-python-packages",
+    "href": "coding_practices/general_practices.html#step-3-installing-python-packages",
+    "title": "General practices",
+    "section": "Step 3: Installing Python Packages",
+    "text": "Step 3: Installing Python Packages\n\nUsing Conda: Install packages from the Conda repository. For example:\nconda install numpy pandas matplotlib\nReplace numpy, pandas, and matplotlib with any packages you need for your project.\nUsing pip: Install packages from PyPI (Python Package Index). For example:\npip install requests flask\nReplace requests and flask with any packages not available in the Conda repository.",
+    "crumbs": [
+      "Coding practices",
+      "General practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#step-4-optional---installing-jupyter-notebook",
+    "href": "coding_practices/general_practices.html#step-4-optional---installing-jupyter-notebook",
+    "title": "General practices",
+    "section": "Step 4: Optional - Installing Jupyter Notebook",
+    "text": "Step 4: Optional - Installing Jupyter Notebook\nIf you plan to use Jupyter Notebook for interactive development:\n\nInstall Jupyter Notebook: Use the following command to install Jupyter Notebook within your Conda environment:\nconda install jupyter",
+    "crumbs": [
+      "Coding practices",
+      "General practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#step-5-deactivating-and-removing-environments",
+    "href": "coding_practices/general_practices.html#step-5-deactivating-and-removing-environments",
+    "title": "General practices",
+    "section": "Step 5: Deactivating and Removing Environments",
+    "text": "Step 5: Deactivating and Removing Environments\n\nDeactivate the Environment: When you’re done working in your environment, deactivate it using:\nconda deactivate\nRemoving the Environment (Optional): If you want to remove a Conda environment entirely:\nconda remove --name myenv --all\nReplace myenv with the name of your environment.",
+    "crumbs": [
+      "Coding practices",
+      "General practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#conclusion",
+    "href": "coding_practices/general_practices.html#conclusion",
+    "title": "General practices",
+    "section": "Conclusion",
+    "text": "Conclusion\nSetting up a Python development environment using Conda provides a robust and flexible approach to managing dependencies and isolating project environments. It ensures that your projects are reproducible across different systems and simplifies package management.",
+    "crumbs": [
+      "Coding practices",
+      "General practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/python_development.html",
+    "href": "coding_practices/python_development.html",
+    "title": "Get started with Python",
+    "section": "",
+    "text": "Websites",
+    "crumbs": [
+      "Coding practices",
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "coding_practices/python_development.html#websites",
+    "href": "coding_practices/python_development.html#websites",
+    "title": "Get started with Python",
+    "section": "",
+    "text": "Edx If you are new to python programming, definitely take Introduction to Computer Science and Programming Using Python course. It is one of the best courses out there from which you can learn lot of fundamental python programming skills.\nHackerRank HackerRank has lot of resources to learn many programming languages. Regestration is free.\nLeetCode LeetCode is much intensive platform to learn coding. It can be used if you want to prepare for interviews.",
+    "crumbs": [
+      "Coding practices",
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "coding_practices/python_development.html#videos",
+    "href": "coding_practices/python_development.html#videos",
+    "title": "Get started with Python",
+    "section": "Videos",
+    "text": "Videos\nPyCon is one of the best way to get in touch with great Python community. Lot of great talks and tutorials (highly recommended!).\nPycon 2018 \nPycon 2019 \nAnaconda",
+    "crumbs": [
+      "Coding practices",
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "coding_practices/python_development.html#pytorch",
+    "href": "coding_practices/python_development.html#pytorch",
+    "title": "Get started with Python",
+    "section": "Pytorch",
+    "text": "Pytorch\nIn the lab we extensively use Pytroch for implementation of Deep learning algorithms. Below are some resources for Pytorch\nA github repository with lot of resources: The incredible Pytorch\n\nPytorch Related Links\n\nhttps://github.com/pytorch/ignite/\nhttps://github.com/williamFalcon/pytorch-lightning\nhttps://github.com/astooke/rlpyt\nhttps://github.com/szymonmaszke/torchfunc\nhttps://github.com/wkentaro/pytorch-for-numpy-users\nhttps://github.com/awwong1/torchprof\nhttps://github.com/suriyadeepan/torchtest",
+    "crumbs": [
+      "Coding practices",
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "coding_practices/python_development.html#links",
+    "href": "coding_practices/python_development.html#links",
+    "title": "Get started with Python",
+    "section": "Links",
+    "text": "Links\n\nGeneral Programming\n\nhttp://pythontutor.com\nhttps://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/\nhttps://opensource.guide\nhttps://pyvideo.org\nhttps://github.com/satwikkansal/wtfpython\nhttps://swcarpentry.github.io/good-enough-practices-in-scientific-computing/\nhttps://jalammar.github.io/visual-numpy/\n\n\n\nData Science Related\n\nhttps://github.com/rasbt/mlxtend\nhttps://github.com/slundberg/shap\nhttps://github.com/ericmjl/pyjanitor\nhttps://esa.github.io/pagmo2/index.html\nhttps://github.com/modin-project/modin\nhttps://docs.metaflow.org\nhttps://perceptilabs.readme.io/docs/welcome\n\n\n\nMisc\n\nhttps://github.com/ray-project/ray (A very good parallel processing library)",
+    "crumbs": [
+      "Coding practices",
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "python_development.html",
+    "href": "python_development.html",
+    "title": "Get started with Python",
+    "section": "",
+    "text": "Websites",
+    "crumbs": [
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "python_development.html#websites",
+    "href": "python_development.html#websites",
+    "title": "Get started with Python",
+    "section": "",
+    "text": "Edx If you are new to python programming, definitely take Introduction to Computer Science and Programming Using Python course. It is one of the best courses out there from which you can learn lot of fundamental python programming skills.\nHackerRank HackerRank has lot of resources to learn many programming languages. Regestration is free.\nLeetCode LeetCode is much intensive platform to learn coding. It can be used if you want to prepare for interviews.",
+    "crumbs": [
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "python_development.html#videos",
+    "href": "python_development.html#videos",
+    "title": "Get started with Python",
+    "section": "Videos",
+    "text": "Videos\nPyCon is one of the best way to get in touch with great Python community. Lot of great talks and tutorials (highly recommended!).",
+    "crumbs": [
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "python_development.html#pytorch",
+    "href": "python_development.html#pytorch",
+    "title": "Get started with Python",
+    "section": "Pytorch",
+    "text": "Pytorch\nIn the lab we extensively use Pytroch for implementation of Deep learning algorithms. Below are some resources for Pytorch\nA github repository with lot of resources: The incredible Pytorch\n\nPytorch Related Links\n\nhttps://github.com/pytorch/ignite/\nhttps://github.com/williamFalcon/pytorch-lightning\nhttps://github.com/astooke/rlpyt\nhttps://github.com/szymonmaszke/torchfunc\nhttps://github.com/wkentaro/pytorch-for-numpy-users\nhttps://github.com/awwong1/torchprof\nhttps://github.com/suriyadeepan/torchtest",
+    "crumbs": [
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "python_development.html#links",
+    "href": "python_development.html#links",
+    "title": "Get started with Python",
+    "section": "Links",
+    "text": "Links\n\nGeneral Programming\n\nhttp://pythontutor.com\nhttps://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/\nhttps://opensource.guide\nhttps://pyvideo.org\nhttps://github.com/satwikkansal/wtfpython\nhttps://swcarpentry.github.io/good-enough-practices-in-scientific-computing/\nhttps://jalammar.github.io/visual-numpy/\n\n\n\nData Science Related\n\nhttps://github.com/rasbt/mlxtend\nhttps://github.com/slundberg/shap\nhttps://github.com/ericmjl/pyjanitor\nhttps://esa.github.io/pagmo2/index.html\nhttps://github.com/modin-project/modin\nhttps://docs.metaflow.org\nhttps://perceptilabs.readme.io/docs/welcome\n\n\n\nMisc\n\nhttps://github.com/ray-project/ray (A very good parallel processing library)",
+    "crumbs": [
+      "Get started with Python"
+    ]
+  },
+  {
+    "objectID": "eeg_analysis.html",
+    "href": "eeg_analysis.html",
+    "title": "Get started with EEG",
+    "section": "",
+    "text": "EEG Glossary\nA revised glossary of terms most commonly used by clinicalelectroencephalographers and updated proposal for the reportformat of the EEG findings. Revision 2017",
+    "crumbs": [
+      "Get started with EEG"
+    ]
+  },
+  {
+    "objectID": "eeg_analysis.html#setting-up-eeg-recordings",
+    "href": "eeg_analysis.html#setting-up-eeg-recordings",
+    "title": "Get started with EEG",
+    "section": "Setting up EEG recordings",
+    "text": "Setting up EEG recordings\nHere is a small video on how to setup advanced brain monitoring electrodes for EEG recording.\n\n\n\n\n\n\nTip\n\n\n\nPlease feel free to drop by the lab to get more information",
+    "crumbs": [
+      "Get started with EEG"
+    ]
+  },
+  {
+    "objectID": "eeg_analysis.html#eeg-analysis-steps",
+    "href": "eeg_analysis.html#eeg-analysis-steps",
+    "title": "Get started with EEG",
+    "section": "EEG analysis steps",
+    "text": "EEG analysis steps\nFor those who are starting with EEG analysis, it can be overwhelming to go across a lot of steps. Here is almost a standard procedure for a lot of EEG analysis. Each block is a research area by itself. There are a lot of papers on each block. Do not get scared once you start the analysis of some EEG data, these steps will become second to your nature. Do read below given paper about how others are doing these steps. We use mne-python to implement different block functionalities. If you want more information, refer to Mike X Cohen’s lectures\n\n\n\neeg-analysis",
+    "crumbs": [
+      "Get started with EEG"
+    ]
+  },
+  {
+    "objectID": "eeg_analysis.html#mne",
+    "href": "eeg_analysis.html#mne",
+    "title": "Get started with EEG",
+    "section": "MNE",
+    "text": "MNE\nIn the lab, we extensively use mne-python for analysis of a lot of EEG (time series in general) data. It is an amazing package with a lot of development and an amazing community. If you get a chance, do join the mailing list.\nHere are some resources to get you started with mne-python\n\nBasic mne-python\nIntermediate mne-python tutorials",
+    "crumbs": [
+      "Get started with EEG"
+    ]
+  },
+  {
+    "objectID": "eeg_analysis.html#eeg-databases",
+    "href": "eeg_analysis.html#eeg-databases",
+    "title": "Get started with EEG",
+    "section": "EEG databases",
+    "text": "EEG databases\nHere are some databases on which you are apply your mne-python skills.\n\n\n\n\n\n\nTip\n\n\n\nThe best way to learn a (Python) package is to use it on your own data and see what are the capabilities\n\n\nPick up some data from this repository: meagmohit/EEG-Datasets. Use mne-python do some analysis and that is how you get introduced to analysis of EEG.\n\n\n\n\n\n\nTip\n\n\n\nIf you have doubts, do drop by to iHuman lab and ask any questions!",
+    "crumbs": [
+      "Get started with EEG"
+    ]
+  },
+  {
+    "objectID": "eeg_analysis.html#papers",
+    "href": "eeg_analysis.html#papers",
+    "title": "Get started with EEG",
+    "section": "Papers",
+    "text": "Papers\n\nBest Practices in Data Analysis and Sharing in Neuroimaging using MEEG.\nA Reproducible MEG/EEG Group Study With the MNE Software: Recommendations, Quality Assessments, and Good Practices\nEEG artifact removal—state-of-the-art and guidelines",
+    "crumbs": [
+      "Get started with EEG"
+    ]
+  },
+  {
+    "objectID": "eeg_analysis.html#github-links",
+    "href": "eeg_analysis.html#github-links",
+    "title": "Get started with EEG",
+    "section": "GitHub Links",
+    "text": "GitHub Links\n\nAnalysis Related Repositories\n\nhttps://github.com/sappelhoff/pyprep\nhttps://github.com/autoreject/autoreject\nhttps://github.com/mdelpozobanos/eegfaster\nhttps://github.com/neurodsp-tools/neurodsp\nhttps://github.com/PIA-Group/BioSPPy\nhttps://github.com/cancui/EMG-Signal-Processing-Library\nhttps://github.com/unpingco/Python-for-Signal-Processing\n\n\n\nUsefull Libraries and Links\n\nhttp://www.marsja.se/best-python-libraries-psychology/\nhttps://github.com/NeuroDataDesign\nhttps://github.com/NeuroTechX/eeg-notebooks\nhttps://github.com/openlists/OpenTools/blob/master/README.md\nhttps://github.com/mne-tools/mne-study-template\nhttps://swipe4ica.github.io/#/ This is an interesting way to learn how to identify artifacts in EEG\nhttps://labeling.ucsd.edu/label Similar to previous link\n\n\n\nDeepLearning with Physiological Signals\n\nhttps://github.com/vlawhern/arl-eegmodels\nhttps://github.com/EderSantana/DeepEEG\nhttps://robintibor.github.io/braindecode/index.html\nhttps://github.com/mne-tools/mne-torch",
+    "crumbs": [
+      "Get started with EEG"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#maintain-code-cleanliness",
+    "href": "coding_practices/general_practices.html#maintain-code-cleanliness",
+    "title": "Good coding practices",
+    "section": "",
+    "text": "Use meaningful variable names: Choose names that clearly describe the purpose of the variable.\nFollow PEP 8 guidelines: PEP 8 is the style guide for Python code, recommending best practices for formatting and structuring your code.\nKeep functions short and focused: A function should do one thing and do it well.\nRemove unnecessary comments and code: Comments should explain why something is done, not what is done.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#write-decoupled-code",
+    "href": "coding_practices/general_practices.html#write-decoupled-code",
+    "title": "Good coding practices",
+    "section": "Write Decoupled Code",
+    "text": "Write Decoupled Code\nDecoupled code is modular, reusable, and easier to test and maintain. Aim to minimize dependencies between different parts of your code.\n\nUse functions and classes to encapsulate functionality: This promotes reuse and separation of concerns.\nApply design patterns: Patterns like MVC (Model-View-Controller) can help keep code organized.\nLeverage dependency injection: This technique allows you to pass dependencies to a class or function, making it easier to swap out implementations.\n\nFor more information on writing decoupled code, explore here.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#test-your-code",
+    "href": "coding_practices/general_practices.html#test-your-code",
+    "title": "Good coding practices",
+    "section": "Test Your Code",
+    "text": "Test Your Code\nTesting ensures that your code works as expected and helps catch bugs early. Implement various types of tests, including unit tests, integration tests, and end-to-end tests.\n\nWrite unit tests for individual functions and classes: Use frameworks like unittest or pytest.\nCreate integration tests to verify the interaction between components: Ensure different parts of the system work together correctly.\nAutomate tests using continuous integration (CI) tools: Tools like Travis CI or GitHub Actions can run your tests automatically on every commit.\n\nLearn more about testing here.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#document-your-code",
+    "href": "coding_practices/general_practices.html#document-your-code",
+    "title": "Good coding practices",
+    "section": "Document Your Code",
+    "text": "Document Your Code\nGood documentation makes your codebase more accessible to others (and to yourself in the future). It helps new contributors understand your code and how to use it.\n\nWrite docstrings for all public modules, functions, classes, and methods: Follow the conventions of PEP 257.\nUse comments to explain the why, not the what: Comments should provide context and rationale.\n\nFor best practices in documentation, refer to the PEP 257 docstring conventions and the Google Python Style Guide on Documentation.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#document-your-project",
+    "href": "coding_practices/general_practices.html#document-your-project",
+    "title": "Good coding practices",
+    "section": "Document Your Project",
+    "text": "Document Your Project\nProject-level documentation helps users understand the purpose of the project, how to install it, and how to get started.\n\nCreate a README file: This should include an overview of the project, installation instructions, usage examples, and links to further documentation.\nUse a consistent structure: Organize documentation into sections like Introduction, Installation, Usage, Contributing, and License.\nLeverage tools like Sphinx for generating documentation: Sphinx can convert your docstrings and markdown files into beautiful, searchable HTML documentation.\n\nCheck out Sphinx for generating project documentation.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#foster-collaboration",
+    "href": "coding_practices/general_practices.html#foster-collaboration",
+    "title": "Good coding practices",
+    "section": "Foster Collaboration",
+    "text": "Foster Collaboration\nMaking your project social encourages collaboration and contributions from the community.\n\nHost your code on a platform like GitHub or GitLab: These platforms provide version control and facilitate collaboration.\nEncourage contributions: Include a CONTRIBUTING.md file with guidelines for contributing to the project.\nBe responsive to issues and pull requests: Engage with contributors by providing feedback and merging changes promptly.\n\nLearn how to foster collaboration on GitHub and GitLab.\nBy following these practices, you can write clean, maintainable, and well-documented Python code that is easy to test and collaborate on.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "bci.html",
+    "href": "bci.html",
+    "title": "Get started with BCI",
+    "section": "",
+    "text": "Videos",
+    "crumbs": [
+      "Get started with BCI"
+    ]
+  },
+  {
+    "objectID": "bci.html#videos",
+    "href": "bci.html#videos",
+    "title": "Get started with BCI",
+    "section": "",
+    "text": "Great set of videos which introduce the basics of BCI and EEG (highly recommended!) by Swartz Center for Computational Neuroscience.\n\n\n\n\n\n\n\n\nTip\n\n\n\nFirst few videos are enough to get started (video-1 to video-7). Once you get started with EEG analysis you can watch the rest.\n\n\n\nIf you want to get into general neural time-series analysis here is a great set of videos by Mike X Cohen.\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nEven though the emphasis is on use of Matlab, you can do all the analysis using a python package called mne.\nIt is also a great opportunity to port the Matlab codes used in the lectures to Python through which you can learn Python also!",
+    "crumbs": [
+      "Get started with BCI"
+    ]
+  },
+  {
+    "objectID": "bci.html#online",
+    "href": "bci.html#online",
+    "title": "Get started with BCI",
+    "section": "Online",
+    "text": "Online\nThis repository contains some awesome resources on BCI: NeuroTechX/awesome-bci",
+    "crumbs": [
+      "Get started with BCI"
+    ]
+  },
+  {
+    "objectID": "bci.html#books",
+    "href": "bci.html#books",
+    "title": "Get started with BCI",
+    "section": "Books",
+    "text": "Books\nAmazing introduction to BCI\n\nBrain-computer interfacing : an introduction / Rajesh P.N. Rao.\n\nTo analyse neural time series data (a great book!)\n\nAnalyzing neural time series data : theory and practice / Mike X. Cohen.",
+    "crumbs": [
+      "Get started with BCI"
+    ]
+  },
+  {
+    "objectID": "bci.html#github-links",
+    "href": "bci.html#github-links",
+    "title": "Get started with BCI",
+    "section": "GitHub Links",
+    "text": "GitHub Links\n\nhttps://github.com/sccn/labstreaminglayer",
+    "crumbs": [
+      "Get started with BCI"
+    ]
+  }
+]
