@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../coding_practices/project_structure.html" rel="next">
+<link href="../coding_practices/clean_code.html" rel="next">
 <link href="../introduction.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -135,6 +135,30 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../coding_practices/clean_code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code cleanliness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_decoupling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decoupled code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../coding_practices/project_structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project structure</span></a>
   </div>
@@ -143,20 +167,20 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python_development.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get started with Python</span></a>
+  <a href="../python_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bci.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get started with BCI</span></a>
+  <a href="../bci_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BCI resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../eeg_analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get started with EEG</span></a>
+  <a href="../eeg_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EEG resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -181,12 +205,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#maintain-code-cleanliness" id="toc-maintain-code-cleanliness" class="nav-link active" data-scroll-target="#maintain-code-cleanliness">Maintain Code Cleanliness</a></li>
-  <li><a href="#write-decoupled-code" id="toc-write-decoupled-code" class="nav-link" data-scroll-target="#write-decoupled-code">Write Decoupled Code</a></li>
-  <li><a href="#test-your-code" id="toc-test-your-code" class="nav-link" data-scroll-target="#test-your-code">Test Your Code</a></li>
-  <li><a href="#document-your-code" id="toc-document-your-code" class="nav-link" data-scroll-target="#document-your-code">Document Your Code</a></li>
-  <li><a href="#document-your-project" id="toc-document-your-project" class="nav-link" data-scroll-target="#document-your-project">Document Your Project</a></li>
-  <li><a href="#foster-collaboration" id="toc-foster-collaboration" class="nav-link" data-scroll-target="#foster-collaboration">Foster Collaboration</a></li>
+  <li><a href="#setting-up-your-development-environment" id="toc-setting-up-your-development-environment" class="nav-link active" data-scroll-target="#setting-up-your-development-environment">Setting Up Your Development Environment</a></li>
+  <li><a href="#writing-and-organizing-code" id="toc-writing-and-organizing-code" class="nav-link" data-scroll-target="#writing-and-organizing-code">Writing and Organizing Code</a></li>
+  <li><a href="#managing-data" id="toc-managing-data" class="nav-link" data-scroll-target="#managing-data">Managing Data</a></li>
+  <li><a href="#ensuring-reproducibility" id="toc-ensuring-reproducibility" class="nav-link" data-scroll-target="#ensuring-reproducibility">Ensuring Reproducibility</a></li>
+  <li><a href="#collaborating-with-others" id="toc-collaborating-with-others" class="nav-link" data-scroll-target="#collaborating-with-others">Collaborating with Others</a></li>
+  <li><a href="#maintaining-your-project" id="toc-maintaining-your-project" class="nav-link" data-scroll-target="#maintaining-your-project">Maintaining Your Project</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -212,77 +237,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Writing clean, efficient, and maintainable code is essential for any successful software project. This guide outlines best practices for Python programming, drawing on the principles from the <a href="https://google.github.io/styleguide/pyguide.html" target="_blank_">Google Python Style Guide</a> and other industry standards. Whether you’re working on a solo project or collaborating with a team, adhering to these practices will help you produce high-quality code that is easy to understand, test, and extend.</p>
-<p>In this guide, we will cover:</p>
+<p>Effective code management is vital in research, especially for data analysis and simulations. We follow a simple workflow for developing Python code, using Conda to manage your environment and Ruff for code formatting.</p>
+<section id="setting-up-your-development-environment" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-your-development-environment">Setting Up Your Development Environment</h3>
 <ul>
-<li><strong>Maintaining Code Cleanliness</strong>: Tips for keeping your code tidy and readable.</li>
-<li><strong>Writing Decoupled Code</strong>: Strategies for creating modular and reusable code.</li>
-<li><strong>Testing Your Code</strong>: Best practices for ensuring your code works as expected.</li>
-<li><strong>Documenting Your Code</strong>: Guidelines for writing clear and helpful documentation.</li>
-<li><strong>Documenting Your Project</strong>: Advice on creating comprehensive project-level documentation.</li>
-<li><strong>Fostering Collaboration</strong>: Techniques for encouraging contributions and collaboration in your projects.</li>
-</ul>
-<p>By following these practices, you will be better equipped to handle the complexities of modern software development and contribute to the creation of robust and scalable applications. Let’s dive in!</p>
-<section id="maintain-code-cleanliness" class="level2">
-<h2 class="anchored" data-anchor-id="maintain-code-cleanliness">Maintain Code Cleanliness</h2>
-<p>Keeping your code tidy ensures it is readable and maintainable. Clean code is easier to understand, debug, and enhance. Here are some tips for maintaining code cleanliness:</p>
+<li><strong>Install Conda</strong>:
 <ul>
-<li><strong>Use meaningful variable names</strong>: Choose names that clearly describe the purpose of the variable.</li>
-<li><strong>Follow PEP 8 guidelines</strong>: PEP 8 is the style guide for Python code, recommending best practices for formatting and structuring your code.</li>
-<li><strong>Keep functions short and focused</strong>: A function should do one thing and do it well.</li>
-<li><strong>Remove unnecessary comments and code</strong>: Comments should explain why something is done, not what is done.</li>
+<li><strong>What to Do</strong>: Download and install Miniconda or Anaconda from their websites. Miniconda is a lighter version with fewer pre-installed tools, while Anaconda comes with many tools already setup.</li>
+<li><strong>Why</strong>: Conda helps you create and manage isolated coding environments, ensuring that each project has the specific tools and libraries it needs.</li>
+</ul></li>
+<li><strong>Create and Manage Your Environment</strong>:
+<ul>
+<li><strong>Create a New Environment</strong>: Open Conda and set up a new environment for your project. Choose a name for your environment and select the Python version you want to use.</li>
+<li><strong>Activate the Environment</strong>: Switch to the new environment so you can install and work with the packages specific to your project.</li>
+<li><strong>Install Packages</strong>: Within this environment, install the necessary Python libraries for your project, such as NumPy, Pandas, and Scikit-Learn.</li>
+<li><strong>Install Ruff</strong>: Add Ruff to your environment for code formatting. This tool helps ensure your code follows consistent style rules and is easy to read.</li>
+<li><strong>Save and Recreate Your Environment</strong>: Save the configuration of your environment so it can be recreated later or shared with others. You can use this saved configuration to set up the same environment on another machine.</li>
+</ul></li>
 </ul>
-<p>For more details, refer to the <a href="https://pep8.org/" target="_blank_">PEP 8 style guide</a> and the <a href="https://google.github.io/styleguide/pyguide.html" target="_blank_">Google Python Style Guide</a>.</p>
 </section>
-<section id="write-decoupled-code" class="level2">
-<h2 class="anchored" data-anchor-id="write-decoupled-code">Write Decoupled Code</h2>
-<p>Decoupled code is modular, reusable, and easier to test and maintain. Aim to minimize dependencies between different parts of your code.</p>
+<section id="writing-and-organizing-code" class="level3">
+<h3 class="anchored" data-anchor-id="writing-and-organizing-code">Writing and Organizing Code</h3>
 <ul>
-<li><strong>Use functions and classes to encapsulate functionality</strong>: This promotes reuse and separation of concerns.</li>
-<li><strong>Apply design patterns</strong>: Patterns like MVC (Model-View-Controller) can help keep code organized.</li>
-<li><strong>Leverage dependency injection</strong>: This technique allows you to pass dependencies to a class or function, making it easier to swap out implementations.</li>
+<li><strong>Organize Your Project</strong>:
+<ul>
+<li><strong>Folders</strong>: Create a folder structure for your project. Use <code>data/</code> for storing datasets, <code>notebooks/</code> for Jupyter Notebooks, <code>src/</code> for your main code files, <code>tests/</code> for code tests, and <code>scripts/</code> for commonly used tools or scripts.</li>
+<li><strong>Why</strong>: Organizing your project this way helps keep your work tidy and makes it easier to locate files and understand the project’s structure.</li>
+</ul></li>
+<li><strong>Version Control and Documentation</strong>:
+<ul>
+<li><strong>Version Control</strong>: Use Git to track changes in your code. Set up a repository on GitHub or a similar platform to manage versions of your code and collaborate with others.</li>
+<li><strong>Documentation</strong>: Add comments to your code to explain what it does. Maintain a <code>README.md</code> file to provide an overview of your project, including how to install and use it.</li>
+</ul></li>
+<li><strong>Code Formatting</strong>:
+<ul>
+<li><strong>Use Ruff</strong>: Format your code with Ruff to ensure it adheres to style guidelines. This helps make your code cleaner and more consistent. Run Ruff to check and automatically fix style issues in your code.</li>
+</ul></li>
+<li><strong>Testing Your Code</strong>:
+<ul>
+<li><strong>Write Tests</strong>: Develop tests for your code to verify that it works as expected. Use testing tools to create and run these tests. Store the test files in the <code>tests/</code> folder.</li>
+</ul></li>
 </ul>
-<p>For more information on writing decoupled code, explore <a href="https://www.youtube.com/watch?v=vhdUyGs_f6c&amp;list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N" target="_blank_">here</a>.</p>
 </section>
-<section id="test-your-code" class="level2">
-<h2 class="anchored" data-anchor-id="test-your-code">Test Your Code</h2>
-<p>Testing ensures that your code works as expected and helps catch bugs early. Implement various types of tests, including unit tests, integration tests, and end-to-end tests.</p>
+<section id="managing-data" class="level3">
+<h3 class="anchored" data-anchor-id="managing-data">Managing Data</h3>
 <ul>
-<li><strong>Write unit tests for individual functions and classes</strong>: Use frameworks like <code>unittest</code> or <code>pytest</code>.</li>
-<li><strong>Create integration tests to verify the interaction between components</strong>: Ensure different parts of the system work together correctly.</li>
-<li><strong>Automate tests using continuous integration (CI) tools</strong>: Tools like Travis CI or GitHub Actions can run your tests automatically on every commit.</li>
+<li><strong>Organize and Track Data</strong>:
+<ul>
+<li><strong>Store Data</strong>: Keep raw data in <code>data/raw/</code> and processed data in <code>data/processed/</code>.</li>
+<li><strong>Track Changes</strong>: Use data management tools to keep track of different versions of your data, which helps in maintaining consistency and reproducibility.</li>
+</ul></li>
+<li><strong>Access and Share Data</strong>:
+<ul>
+<li><strong>Control Access</strong>: Set up permissions to control who can view or modify your data.</li>
+<li><strong>Share Data</strong>: Use platforms like Zenodo to share your datasets with others, ensuring they are properly cited.</li>
+</ul></li>
 </ul>
-<p>Learn more about testing <a href="https://www.youtube.com/watch?v=K47pr6lPxsA&amp;list=PLC0nd42SBTaPYSgBqtlltw328zuafaCzA" target="_blank_">here</a>.</p>
 </section>
-<section id="document-your-code" class="level2">
-<h2 class="anchored" data-anchor-id="document-your-code">Document Your Code</h2>
-<p>Good documentation makes your codebase more accessible to others (and to yourself in the future). It helps new contributors understand your code and how to use it.</p>
+<section id="ensuring-reproducibility" class="level3">
+<h3 class="anchored" data-anchor-id="ensuring-reproducibility">Ensuring Reproducibility</h3>
 <ul>
-<li><strong>Write docstrings for all public modules, functions, classes, and methods</strong>: Follow the conventions of PEP 257.</li>
-<li><strong>Use comments to explain the why, not the what</strong>: Comments should provide context and rationale.</li>
+<li><strong>Recreate Your Environment</strong>:
+<ul>
+<li><strong>What to Do</strong>: Use the saved environment configuration to recreate the same coding environment on different machines. This ensures that others can work with the same setup as you.</li>
+</ul></li>
+<li><strong>Reproducible Code</strong>:
+<ul>
+<li><strong>Ensure Execution</strong>: Make sure your code can be run by others without issues. Keep Jupyter Notebooks updated to help others replicate your results easily.</li>
+</ul></li>
 </ul>
-<p>For best practices in documentation, refer to the <a href="https://www.python.org/dev/peps/pep-0257/" target="_blank_">PEP 257 docstring conventions</a> and the <a href="https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings" target="_blank_">Google Python Style Guide on Documentation</a>.</p>
 </section>
-<section id="document-your-project" class="level2">
-<h2 class="anchored" data-anchor-id="document-your-project">Document Your Project</h2>
-<p>Project-level documentation helps users understand the purpose of the project, how to install it, and how to get started.</p>
+<section id="collaborating-with-others" class="level3">
+<h3 class="anchored" data-anchor-id="collaborating-with-others">Collaborating with Others</h3>
 <ul>
-<li><strong>Create a README file</strong>: This should include an overview of the project, installation instructions, usage examples, and links to further documentation.</li>
-<li><strong>Use a consistent structure</strong>: Organize documentation into sections like Introduction, Installation, Usage, Contributing, and License.</li>
-<li><strong>Leverage tools like Sphinx for generating documentation</strong>: Sphinx can convert your docstrings and markdown files into beautiful, searchable HTML documentation.</li>
+<li><strong>Code Reviews and Communication</strong>:
+<ul>
+<li><strong>Review Code</strong>: Regularly review each other’s code and use tools like pull requests to integrate changes. This helps maintain code quality and facilitates knowledge sharing.</li>
+<li><strong>Communicate</strong>: Hold regular meetings to discuss progress, share updates, and document your findings collaboratively.</li>
+</ul></li>
 </ul>
-<p>Check out <a href="https://www.sphinx-doc.org/en/master/" target="_blank_">Sphinx</a> for generating project documentation.</p>
 </section>
-<section id="foster-collaboration" class="level2">
-<h2 class="anchored" data-anchor-id="foster-collaboration">Foster Collaboration</h2>
-<p>Making your project social encourages collaboration and contributions from the community.</p>
+<section id="maintaining-your-project" class="level3">
+<h3 class="anchored" data-anchor-id="maintaining-your-project">Maintaining Your Project</h3>
 <ul>
-<li><strong>Host your code on a platform like GitHub or GitLab</strong>: These platforms provide version control and facilitate collaboration.</li>
-<li><strong>Encourage contributions</strong>: Include a CONTRIBUTING.md file with guidelines for contributing to the project.</li>
-<li><strong>Be responsive to issues and pull requests</strong>: Engage with contributors by providing feedback and merging changes promptly.</li>
+<li><strong>Update and Track Issues</strong>:
+<ul>
+<li><strong>Keep Updated</strong>: Regularly update your tools and libraries to ensure everything is up-to-date.</li>
+<li><strong>Manage Issues</strong>: Use issue tracking tools to handle bugs and feature requests efficiently.</li>
+</ul></li>
 </ul>
-<p>Learn how to foster collaboration on <a href="https://guides.github.com/activities/hello-world/" target="_blank_">GitHub</a> and <a href="https://docs.gitlab.com/ee/gitlab-basics/" target="_blank_">GitLab</a>.</p>
-<p>By following these practices, you can write clean, maintainable, and well-documented Python code that is easy to test and collaborate on.</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>By following these steps, you’ll ensure that your coding practices are well-organized, reproducible, and collaborative. Using Conda for managing your environment and Ruff for formatting will enhance the efficiency and reliability of your work in our lab. More information on each of these practices are discussed in following sections</p>
 
 
 </section>
@@ -682,8 +729,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../coding_practices/project_structure.html" class="pagination-link" aria-label="Project structure">
-        <span class="nav-page-text">Project structure</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../coding_practices/clean_code.html" class="pagination-link" aria-label="Code cleanliness">
+        <span class="nav-page-text">Code cleanliness</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
