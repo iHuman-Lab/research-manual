@@ -1,0 +1,186 @@
+# Code cleanliness {.unnumbered}
+
+Maintaining clean code is an essential skill. Clean code is not just about writing code that works; it's about writing code that is readable, maintainable, and scalable. We'll focus on best practices for keeping your Python code clean and well-organized, ensuring that it remains robust and easy to work with over time. Note that these are not extensive
+
+## Meaningful Naming
+
+### Use Descriptive Names
+
+Names should clearly convey the purpose of the variables, functions, and classes. Avoid generic names like `data` or `temp` unless their context is obvious.
+
+**Example:**
+```{.python}
+# Bad naming
+def func(x):
+    return x * 2
+
+# Good naming
+def double_value(number):
+    return number * 2
+```
+
+###  Use Consistent Naming Conventions
+
+Follow consistent naming conventions to improve readability. In Python, the conventions are:
+
+- **Variables and functions**: Use `snake_case` (e.g., `total_amount`, `calculate_sum`).
+- **Classes**: Use `CamelCase` (e.g., `InvoiceManager`, `DataProcessor`).
+- **Constants**: Use `UPPER_CASE` (e.g., `MAX_RETRIES`, `DEFAULT_TIMEOUT`).
+
+## Small and Focused Functions
+
+### Single Responsibility Principle
+
+Each function should do one thing and do it well. Break down complex functions into smaller, more manageable ones.
+
+**Example:**
+
+```{.python}
+# Bad: Single function with multiple responsibilities
+def process_order(order):
+    validate_order(order)
+    calculate_total(order)
+    save_order_to_database(order)
+
+# Good: Functions with a single responsibility
+def validate_order(order):
+    # validation logic
+    pass
+
+def calculate_total(order):
+    # total calculation logic
+    pass
+
+def save_order_to_database(order):
+    # save logic
+    pass
+
+def process_order(order):
+    validate_order(order)
+    calculate_total(order)
+    save_order_to_database(order)
+```
+
+### Avoid Deep Nesting
+
+Deeply nested code can be hard to follow. Use early returns to reduce nesting levels.
+
+**Example:**
+
+```{.python}
+# Bad: Deep nesting
+def process_data(data):
+    if data is not None:
+        if len(data) > 0:
+            if isinstance(data, list):
+                # process the list
+                pass
+
+# Good: Reduced nesting
+def process_data(data):
+    if data is None or len(data) == 0 or not isinstance(data, list):
+        return
+
+    # process the list
+    pass
+```
+
+## Clear and Consistent Formatting
+
+### Follow PEP 8
+
+Adhere to PEP 8, the Python style guide, to ensure consistent formatting. Key guidelines include:
+
+- **Indentation**: Use 4 spaces per indentation level.
+- **Line Length**: Limit all lines to a maximum of 79 characters.
+- **Blank Lines**: Use blank lines to separate functions, classes, and sections within functions.
+
+To make things easy, we will use [ruff](https://docs.astral.sh/ruff/) as a standard in our lab.
+
+**Example:**
+
+```{.python}
+# PEP 8 compliant code
+def calculate_area(radius):
+    import math
+    return math.pi * (radius ** 2)
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return calculate_area(self.radius)
+```
+
+### Use Docstrings
+
+Use docstrings to document your modules, classes, and functions. Docstrings should describe the purpose, parameters, and return values.
+
+**Example:**
+
+```{.python}
+def calculate_area(radius):
+    """
+    Calculate the area of a circle given its radius.
+
+    Args:
+        radius (float): The radius of the circle.
+
+    Returns:
+        float: The area of the circle.
+    """
+    import math
+    return math.pi * (radius ** 2)
+```
+
+## Error Handling
+
+### Use Exceptions Appropriately
+
+Handle exceptions gracefully and use specific exception types to avoid catching unexpected errors.
+
+**Example:**
+
+```{.python}
+# Bad: Catching all exceptions
+try:
+    result = 10 / 0
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+# Good: Catching specific exceptions
+try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Cannot divide by zero: {e}")
+```
+
+### Avoid Empty `except` Clauses
+
+Empty `except` clauses can hide errors and make debugging difficult. Always handle exceptions with proper logging or user feedback.
+
+**Example:**
+
+```{.python}
+# Bad: Empty except clause
+try:
+    # risky operation
+    pass
+except:
+    pass
+
+# Good: Proper exception handling
+try:
+    # risky operation
+    pass
+except ValueError as e:
+    print(f"ValueError occurred: {e}")
+```
+
+## Refactoring
+Regularly review and refactor code to improve structure and readability. Refactoring can include renaming variables, breaking down functions, or reorganizing code.
+
+Keeping your code tidy ensures it is readable and maintainable. Clean code is easier to understand, debug, and enhance. Here are some tips for maintaining code cleanliness:
+
+For more detailed style guide, we will use [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html){target="_blank_"}.

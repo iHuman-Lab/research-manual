@@ -70,445 +70,14 @@
     ]
   },
   {
-    "objectID": "lab_resources.html",
-    "href": "lab_resources.html",
-    "title": "Lab resources",
-    "section": "",
-    "text": "Computers\nAll lab members need a computer to get their work done. We generally prefer to use Linux machines, as this maximizes compatibility across lab members. Depending on your expected role in the lab and the specifics of your project, the lab may provide a computer to you, or you may be expected to use your personal computer to complete your work. Any equipment purchased by the lab, including personal computers, is the official property of the iHuman Lab and should be treated as such. All equipment must be returned to the lab when your association with the lab is complete. In addition to personal computers, we also maintain a lab account at Oklahoma State University’s Supercomputing Cluster.",
-    "crumbs": [
-      "Lab resources"
-    ]
-  },
-  {
-    "objectID": "lab_resources.html#other-research-equipment",
-    "href": "lab_resources.html#other-research-equipment",
-    "title": "Lab resources",
-    "section": "Other research equipment",
-    "text": "Other research equipment\nMany research projects require specialized research equipment (e.g. for neuroimaging using EEG, ECoG, etc.). Some of the necessary research equipment is owned by the iHuman Lab, and other equipment is shared with other labs affiliated with PBS or DHMC. All equipment should be treated with care and respect. Any malfunctions should be reported immediately.",
-    "crumbs": [
-      "Lab resources"
-    ]
-  },
-  {
-    "objectID": "lab_resources.html#repository-of-shared-lab-papers-and-books",
-    "href": "lab_resources.html#repository-of-shared-lab-papers-and-books",
-    "title": "Lab resources",
-    "section": "Repository of shared lab papers and books",
-    "text": "Repository of shared lab papers and books\nOur lab maintains a Dropbox repository of PDFs for internal use by lab members and affiliates. Contact Jeremy for a link (not to be shared publicly).",
-    "crumbs": [
-      "Lab resources"
-    ]
-  },
-  {
-    "objectID": "lab_members_and_alumni.html",
-    "href": "lab_members_and_alumni.html",
-    "title": "Lab members",
-    "section": "",
-    "text": "PI\nHemanth Manjunatha (2024-Present)",
-    "crumbs": [
-      "Lab members"
-    ]
-  },
-  {
-    "objectID": "lab_members_and_alumni.html#phd-students",
-    "href": "lab_members_and_alumni.html#phd-students",
-    "title": "Lab members",
-    "section": "PhD Students",
-    "text": "PhD Students",
-    "crumbs": [
-      "Lab members"
-    ]
-  },
-  {
-    "objectID": "lab_members_and_alumni.html#master-students",
-    "href": "lab_members_and_alumni.html#master-students",
-    "title": "Lab members",
-    "section": "Master Students",
-    "text": "Master Students",
-    "crumbs": [
-      "Lab members"
-    ]
-  },
-  {
-    "objectID": "lab_members_and_alumni.html#undergraduate-students",
-    "href": "lab_members_and_alumni.html#undergraduate-students",
-    "title": "Lab members",
-    "section": "Undergraduate Students",
-    "text": "Undergraduate Students",
-    "crumbs": [
-      "Lab members"
-    ]
-  },
-  {
-    "objectID": "checklist_and_signature.html",
-    "href": "checklist_and_signature.html",
-    "title": "Checklist and signature page",
-    "section": "",
-    "text": "Congrats on making towards the end of the document. Please sign the below document and send it to ihuman.research.lab@gmail.com\n\nLoading…",
-    "crumbs": [
-      "Checklist and signature page"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html",
-    "href": "coding_practices/virtual_environments.html",
-    "title": "Virtual environment",
-    "section": "",
-    "text": "Prerequisites\nBefore we begin, make sure you have the following:",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html#prerequisites",
-    "href": "coding_practices/virtual_environments.html#prerequisites",
-    "title": "Virtual environment",
-    "section": "",
-    "text": "Conda Installed: If you haven’t installed Conda yet, visit the Conda website and download the installer suitable for your operating system.\nBasic Knowledge of Terminal/Command Line: Familiarity with basic terminal or command line operations will be helpful.",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html#step-1-installing-conda",
-    "href": "coding_practices/virtual_environments.html#step-1-installing-conda",
-    "title": "Virtual environment",
-    "section": "Step 1: Installing Conda",
-    "text": "Step 1: Installing Conda\n\nDownload Anaconda or Miniconda:\n\nAnaconda: Includes Conda, Python, and a large number of packages commonly used in data science and scientific computing.\nMiniconda: A minimal installer that includes only Conda, Python, and essential packages.\n\nInstall Anaconda or Miniconda: Follow the installation instructions provided on the Conda website for your operating system. Once installed, Conda should be available in your terminal or command prompt.",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html#step-2-creating-a-conda-environment",
-    "href": "coding_practices/virtual_environments.html#step-2-creating-a-conda-environment",
-    "title": "Virtual environment",
-    "section": "Step 2: Creating a Conda Environment",
-    "text": "Step 2: Creating a Conda Environment\n\nOpen Terminal or Command Prompt: Open your terminal application (e.g., Terminal on macOS, Command Prompt on Windows).\nCreate a New Conda Environment: To create a new environment named myenv with Python 3.8 (adjust the version as needed), use the following command:\nconda create --name myenv python=3.10\nReplace myenv with your preferred environment name and python=3.10 with your desired Python version.\nActivate the Environment: After creating the environment, activate it using the following command:\nconda activate myenv\nYour terminal prompt should now show the active environment name (myenv).",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html#step-3-installing-python-packages",
-    "href": "coding_practices/virtual_environments.html#step-3-installing-python-packages",
-    "title": "Virtual environment",
-    "section": "Step 3: Installing Python Packages",
-    "text": "Step 3: Installing Python Packages\n\nUsing Conda: Install packages from the Conda repository. For example:\nconda install numpy pandas matplotlib\nReplace numpy, pandas, and matplotlib with any packages you need for your project.\nUsing pip: Install packages from PyPI (Python Package Index). For example:\npip install requests flask\nReplace requests and flask with any packages not available in the Conda repository.",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html#step-4-optional---installing-jupyter-notebook",
-    "href": "coding_practices/virtual_environments.html#step-4-optional---installing-jupyter-notebook",
-    "title": "Virtual environment",
-    "section": "Step 4: Optional - Installing Jupyter Notebook",
-    "text": "Step 4: Optional - Installing Jupyter Notebook\nIf you plan to use Jupyter Notebook for interactive development:\n\nInstall Jupyter Notebook: Use the following command to install Jupyter Notebook within your Conda environment:\nconda install jupyter",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html#step-5-deactivating-and-removing-environments",
-    "href": "coding_practices/virtual_environments.html#step-5-deactivating-and-removing-environments",
-    "title": "Virtual environment",
-    "section": "Step 5: Deactivating and Removing Environments",
-    "text": "Step 5: Deactivating and Removing Environments\n\nDeactivate the Environment: When you’re done working in your environment, deactivate it using:\nconda deactivate\nRemoving the Environment (Optional): If you want to remove a Conda environment entirely:\nconda remove --name myenv --all\nReplace myenv with the name of your environment.",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/virtual_environments.html#conclusion",
-    "href": "coding_practices/virtual_environments.html#conclusion",
-    "title": "Virtual environment",
-    "section": "Conclusion",
-    "text": "Conclusion\nSetting up a Python development environment using Conda provides a robust and flexible approach to managing dependencies and isolating project environments. It ensures that your projects are reproducible across different systems and simplifies package management.",
-    "crumbs": [
-      "Coding practices",
-      "Virtual environment"
-    ]
-  },
-  {
-    "objectID": "coding_practices/project_structure.html",
-    "href": "coding_practices/project_structure.html",
-    "title": "Project structure",
-    "section": "",
-    "text": "At iHuman lab, we follow the project structure (shown below) serves as a flexible guide rather than a strict mandate. It is designed to provide a clear framework for organizing our research endeavors effectively. The structure encompasses essential components such as documentation in the docs/ directory, configuration files in config/, and a dedicated ‘data/’ directory for managing datasets. The notebooks/ directory houses Jupyter notebooks for exploratory analysis, while the src/ directory contains modularized source code for data processing, feature engineering, model development, visualization, and utility functions. Unit tests are stored in tests/ to ensure the reliability of our implementations. While this structure offers a solid foundation, it remains adaptable to meet the specific needs and nuances of each research project we undertake, allowing for customization and refinement as required.\nresearch_project_name/\n│\n├── README.md                       # Project overview and instructions\n├── docs/                           # Documentation\n│\n├── config/                         # Configuration files\n│   ├── config.yaml                 # Configuration file for parameters\n│   └── logging.yaml                # Configuration file for logging\n│\n├── data/                           # Directory for datasets\n│   ├── raw/                        # Raw data files (immutable)\n│   ├── processed/                  # Processed data files (generated)\n│   └── interim/                    # Intermediate data files (temporary)\n│\n├── notebooks/                      # Jupyter notebooks for exploration\n│   └── exploratory_analysis.ipynb\n│\n├── src/                            # Source code for the project\n│   ├── __init__.py\n│   ├── main.py                     # Main script to run the project\n│   ├── data/                       # Module for data processing\n│   │   ├── __init__.py\n│   │   ├── preprocess.py           # Preprocessing functions\n│   │   └── load_data.py            # Data loading functions\n│   ├── dataset/                    # Module for creating datasets\n│   │   ├── __init__.py\n│   │   └── create_dataset.py       # Functions to create datasets\n│   ├── features/                   # Module for creating features\n│   │   ├── __init__.py\n│   │   └── feature_engineering.py  # Feature engineering functions\n│   ├── models/                     # Module for defining models\n│   │   ├── __init__.py\n│   │   └── model.py                # Model architecture and training functions\n│   ├── visualization/              # Visualization module\n│   │   ├── __init__.py\n│   │   └── visualize.py            # Visualization functions\n│   └── utils.py                    # Utility functions used across modules\n│\n├── tests/                          # Unit tests\n│\n└── environment.yml                 # Conda env file specifying dependencies\nTo facilitate the easy creation and adoption of this project structure across our research lab, we have opted to use iHuman Lab’s Cookiecutter template.\nTo use the template\n$ pip install cookiecutter\nor\n$ conda config --add channels conda-forge\n$ conda install cookiecutter\nTo start a new project, run:\n$ cookiecutter https://github.com/iHuman-Lab/ihuman-cookiecutter-data-science.git",
-    "crumbs": [
-      "Coding practices",
-      "Project structure"
-    ]
-  },
-  {
     "objectID": "coding_practices/general_practices.html",
     "href": "coding_practices/general_practices.html",
     "title": "Good coding practices",
     "section": "",
-    "text": "Maintain Code Cleanliness\nKeeping your code tidy ensures it is readable and maintainable. Clean code is easier to understand, debug, and enhance. Here are some tips for maintaining code cleanliness:\nFor more details, refer to the PEP 8 style guide and the Google Python Style Guide.",
+    "text": "Effective code management is vital in research, especially for data analysis and simulations. We follow a simple workflow for developing Python code, using Conda to manage your environment and Ruff for code formatting.\n\nSetting Up Your Development Environment\n\nInstall Conda:\n\nWhat to Do: Download and install Miniconda or Anaconda from their websites. Miniconda is a lighter version with fewer pre-installed tools, while Anaconda comes with many tools already setup.\nWhy: Conda helps you create and manage isolated coding environments, ensuring that each project has the specific tools and libraries it needs.\n\nCreate and Manage Your Environment:\n\nCreate a New Environment: Open Conda and set up a new environment for your project. Choose a name for your environment and select the Python version you want to use.\nActivate the Environment: Switch to the new environment so you can install and work with the packages specific to your project.\nInstall Packages: Within this environment, install the necessary Python libraries for your project, such as NumPy, Pandas, and Scikit-Learn.\nInstall Ruff: Add Ruff to your environment for code formatting. This tool helps ensure your code follows consistent style rules and is easy to read.\nSave and Recreate Your Environment: Save the configuration of your environment so it can be recreated later or shared with others. You can use this saved configuration to set up the same environment on another machine.\n\n\n\n\nWriting and Organizing Code\n\nOrganize Your Project:\n\nFolders: Create a folder structure for your project. Use data/ for storing datasets, notebooks/ for Jupyter Notebooks, src/ for your main code files, tests/ for code tests, and scripts/ for commonly used tools or scripts.\nWhy: Organizing your project this way helps keep your work tidy and makes it easier to locate files and understand the project’s structure.\n\nVersion Control and Documentation:\n\nVersion Control: Use Git to track changes in your code. Set up a repository on GitHub or a similar platform to manage versions of your code and collaborate with others.\nDocumentation: Add comments to your code to explain what it does. Maintain a README.md file to provide an overview of your project, including how to install and use it.\n\nCode Formatting:\n\nUse Ruff: Format your code with Ruff to ensure it adheres to style guidelines. This helps make your code cleaner and more consistent. Run Ruff to check and automatically fix style issues in your code.\n\nTesting Your Code:\n\nWrite Tests: Develop tests for your code to verify that it works as expected. Use testing tools to create and run these tests. Store the test files in the tests/ folder.\n\n\n\n\nManaging Data\n\nOrganize and Track Data:\n\nStore Data: Keep raw data in data/raw/ and processed data in data/processed/.\nTrack Changes: Use data management tools to keep track of different versions of your data, which helps in maintaining consistency and reproducibility.\n\nAccess and Share Data:\n\nControl Access: Set up permissions to control who can view or modify your data.\nShare Data: Use platforms like Zenodo to share your datasets with others, ensuring they are properly cited.\n\n\n\n\nEnsuring Reproducibility\n\nRecreate Your Environment:\n\nWhat to Do: Use the saved environment configuration to recreate the same coding environment on different machines. This ensures that others can work with the same setup as you.\n\nReproducible Code:\n\nEnsure Execution: Make sure your code can be run by others without issues. Keep Jupyter Notebooks updated to help others replicate your results easily.\n\n\n\n\nCollaborating with Others\n\nCode Reviews and Communication:\n\nReview Code: Regularly review each other’s code and use tools like pull requests to integrate changes. This helps maintain code quality and facilitates knowledge sharing.\nCommunicate: Hold regular meetings to discuss progress, share updates, and document your findings collaboratively.\n\n\n\n\nMaintaining Your Project\n\nUpdate and Track Issues:\n\nKeep Updated: Regularly update your tools and libraries to ensure everything is up-to-date.\nManage Issues: Use issue tracking tools to handle bugs and feature requests efficiently.\n\n\n\n\nConclusion\nBy following these steps, you’ll ensure that your coding practices are well-organized, reproducible, and collaborative. Using Conda for managing your environment and Ruff for formatting will enhance the efficiency and reliability of your work in our lab. More information on each of these practices are discussed in following sections",
     "crumbs": [
       "Coding practices",
       "Good coding practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html#prerequisites",
-    "href": "coding_practices/general_practices.html#prerequisites",
-    "title": "General practices",
-    "section": "",
-    "text": "Conda Installed: If you haven’t installed Conda yet, visit the Conda website and download the installer suitable for your operating system.\nBasic Knowledge of Terminal/Command Line: Familiarity with basic terminal or command line operations will be helpful.",
-    "crumbs": [
-      "Coding practices",
-      "General practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html#step-1-installing-conda",
-    "href": "coding_practices/general_practices.html#step-1-installing-conda",
-    "title": "General practices",
-    "section": "Step 1: Installing Conda",
-    "text": "Step 1: Installing Conda\n\nDownload Anaconda or Miniconda:\n\nAnaconda: Includes Conda, Python, and a large number of packages commonly used in data science and scientific computing.\nMiniconda: A minimal installer that includes only Conda, Python, and essential packages.\n\nInstall Anaconda or Miniconda: Follow the installation instructions provided on the Conda website for your operating system. Once installed, Conda should be available in your terminal or command prompt.",
-    "crumbs": [
-      "Coding practices",
-      "General practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html#step-2-creating-a-conda-environment",
-    "href": "coding_practices/general_practices.html#step-2-creating-a-conda-environment",
-    "title": "General practices",
-    "section": "Step 2: Creating a Conda Environment",
-    "text": "Step 2: Creating a Conda Environment\n\nOpen Terminal or Command Prompt: Open your terminal application (e.g., Terminal on macOS, Command Prompt on Windows).\nCreate a New Conda Environment: To create a new environment named myenv with Python 3.8 (adjust the version as needed), use the following command:\nconda create --name myenv python=3.10\nReplace myenv with your preferred environment name and python=3.10 with your desired Python version.\nActivate the Environment: After creating the environment, activate it using the following command:\nconda activate myenv\nYour terminal prompt should now show the active environment name (myenv).",
-    "crumbs": [
-      "Coding practices",
-      "General practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html#step-3-installing-python-packages",
-    "href": "coding_practices/general_practices.html#step-3-installing-python-packages",
-    "title": "General practices",
-    "section": "Step 3: Installing Python Packages",
-    "text": "Step 3: Installing Python Packages\n\nUsing Conda: Install packages from the Conda repository. For example:\nconda install numpy pandas matplotlib\nReplace numpy, pandas, and matplotlib with any packages you need for your project.\nUsing pip: Install packages from PyPI (Python Package Index). For example:\npip install requests flask\nReplace requests and flask with any packages not available in the Conda repository.",
-    "crumbs": [
-      "Coding practices",
-      "General practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html#step-4-optional---installing-jupyter-notebook",
-    "href": "coding_practices/general_practices.html#step-4-optional---installing-jupyter-notebook",
-    "title": "General practices",
-    "section": "Step 4: Optional - Installing Jupyter Notebook",
-    "text": "Step 4: Optional - Installing Jupyter Notebook\nIf you plan to use Jupyter Notebook for interactive development:\n\nInstall Jupyter Notebook: Use the following command to install Jupyter Notebook within your Conda environment:\nconda install jupyter",
-    "crumbs": [
-      "Coding practices",
-      "General practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html#step-5-deactivating-and-removing-environments",
-    "href": "coding_practices/general_practices.html#step-5-deactivating-and-removing-environments",
-    "title": "General practices",
-    "section": "Step 5: Deactivating and Removing Environments",
-    "text": "Step 5: Deactivating and Removing Environments\n\nDeactivate the Environment: When you’re done working in your environment, deactivate it using:\nconda deactivate\nRemoving the Environment (Optional): If you want to remove a Conda environment entirely:\nconda remove --name myenv --all\nReplace myenv with the name of your environment.",
-    "crumbs": [
-      "Coding practices",
-      "General practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html#conclusion",
-    "href": "coding_practices/general_practices.html#conclusion",
-    "title": "General practices",
-    "section": "Conclusion",
-    "text": "Conclusion\nSetting up a Python development environment using Conda provides a robust and flexible approach to managing dependencies and isolating project environments. It ensures that your projects are reproducible across different systems and simplifies package management.",
-    "crumbs": [
-      "Coding practices",
-      "General practices"
-    ]
-  },
-  {
-    "objectID": "coding_practices/python_development.html",
-    "href": "coding_practices/python_development.html",
-    "title": "Get started with Python",
-    "section": "",
-    "text": "Websites",
-    "crumbs": [
-      "Coding practices",
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "coding_practices/python_development.html#websites",
-    "href": "coding_practices/python_development.html#websites",
-    "title": "Get started with Python",
-    "section": "",
-    "text": "Edx If you are new to python programming, definitely take Introduction to Computer Science and Programming Using Python course. It is one of the best courses out there from which you can learn lot of fundamental python programming skills.\nHackerRank HackerRank has lot of resources to learn many programming languages. Regestration is free.\nLeetCode LeetCode is much intensive platform to learn coding. It can be used if you want to prepare for interviews.",
-    "crumbs": [
-      "Coding practices",
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "coding_practices/python_development.html#videos",
-    "href": "coding_practices/python_development.html#videos",
-    "title": "Get started with Python",
-    "section": "Videos",
-    "text": "Videos\nPyCon is one of the best way to get in touch with great Python community. Lot of great talks and tutorials (highly recommended!).\nPycon 2018 \nPycon 2019 \nAnaconda",
-    "crumbs": [
-      "Coding practices",
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "coding_practices/python_development.html#pytorch",
-    "href": "coding_practices/python_development.html#pytorch",
-    "title": "Get started with Python",
-    "section": "Pytorch",
-    "text": "Pytorch\nIn the lab we extensively use Pytroch for implementation of Deep learning algorithms. Below are some resources for Pytorch\nA github repository with lot of resources: The incredible Pytorch\n\nPytorch Related Links\n\nhttps://github.com/pytorch/ignite/\nhttps://github.com/williamFalcon/pytorch-lightning\nhttps://github.com/astooke/rlpyt\nhttps://github.com/szymonmaszke/torchfunc\nhttps://github.com/wkentaro/pytorch-for-numpy-users\nhttps://github.com/awwong1/torchprof\nhttps://github.com/suriyadeepan/torchtest",
-    "crumbs": [
-      "Coding practices",
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "coding_practices/python_development.html#links",
-    "href": "coding_practices/python_development.html#links",
-    "title": "Get started with Python",
-    "section": "Links",
-    "text": "Links\n\nGeneral Programming\n\nhttp://pythontutor.com\nhttps://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/\nhttps://opensource.guide\nhttps://pyvideo.org\nhttps://github.com/satwikkansal/wtfpython\nhttps://swcarpentry.github.io/good-enough-practices-in-scientific-computing/\nhttps://jalammar.github.io/visual-numpy/\n\n\n\nData Science Related\n\nhttps://github.com/rasbt/mlxtend\nhttps://github.com/slundberg/shap\nhttps://github.com/ericmjl/pyjanitor\nhttps://esa.github.io/pagmo2/index.html\nhttps://github.com/modin-project/modin\nhttps://docs.metaflow.org\nhttps://perceptilabs.readme.io/docs/welcome\n\n\n\nMisc\n\nhttps://github.com/ray-project/ray (A very good parallel processing library)",
-    "crumbs": [
-      "Coding practices",
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "python_development.html",
-    "href": "python_development.html",
-    "title": "Get started with Python",
-    "section": "",
-    "text": "Websites",
-    "crumbs": [
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "python_development.html#websites",
-    "href": "python_development.html#websites",
-    "title": "Get started with Python",
-    "section": "",
-    "text": "Edx If you are new to python programming, definitely take Introduction to Computer Science and Programming Using Python course. It is one of the best courses out there from which you can learn lot of fundamental python programming skills.\nHackerRank HackerRank has lot of resources to learn many programming languages. Regestration is free.\nLeetCode LeetCode is much intensive platform to learn coding. It can be used if you want to prepare for interviews.",
-    "crumbs": [
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "python_development.html#videos",
-    "href": "python_development.html#videos",
-    "title": "Get started with Python",
-    "section": "Videos",
-    "text": "Videos\nPyCon is one of the best way to get in touch with great Python community. Lot of great talks and tutorials (highly recommended!).",
-    "crumbs": [
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "python_development.html#pytorch",
-    "href": "python_development.html#pytorch",
-    "title": "Get started with Python",
-    "section": "Pytorch",
-    "text": "Pytorch\nIn the lab we extensively use Pytroch for implementation of Deep learning algorithms. Below are some resources for Pytorch\nA github repository with lot of resources: The incredible Pytorch\n\nPytorch Related Links\n\nhttps://github.com/pytorch/ignite/\nhttps://github.com/williamFalcon/pytorch-lightning\nhttps://github.com/astooke/rlpyt\nhttps://github.com/szymonmaszke/torchfunc\nhttps://github.com/wkentaro/pytorch-for-numpy-users\nhttps://github.com/awwong1/torchprof\nhttps://github.com/suriyadeepan/torchtest",
-    "crumbs": [
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "python_development.html#links",
-    "href": "python_development.html#links",
-    "title": "Get started with Python",
-    "section": "Links",
-    "text": "Links\n\nGeneral Programming\n\nhttp://pythontutor.com\nhttps://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/\nhttps://opensource.guide\nhttps://pyvideo.org\nhttps://github.com/satwikkansal/wtfpython\nhttps://swcarpentry.github.io/good-enough-practices-in-scientific-computing/\nhttps://jalammar.github.io/visual-numpy/\n\n\n\nData Science Related\n\nhttps://github.com/rasbt/mlxtend\nhttps://github.com/slundberg/shap\nhttps://github.com/ericmjl/pyjanitor\nhttps://esa.github.io/pagmo2/index.html\nhttps://github.com/modin-project/modin\nhttps://docs.metaflow.org\nhttps://perceptilabs.readme.io/docs/welcome\n\n\n\nMisc\n\nhttps://github.com/ray-project/ray (A very good parallel processing library)",
-    "crumbs": [
-      "Get started with Python"
-    ]
-  },
-  {
-    "objectID": "eeg_analysis.html",
-    "href": "eeg_analysis.html",
-    "title": "Get started with EEG",
-    "section": "",
-    "text": "EEG Glossary\nA revised glossary of terms most commonly used by clinicalelectroencephalographers and updated proposal for the reportformat of the EEG findings. Revision 2017",
-    "crumbs": [
-      "Get started with EEG"
-    ]
-  },
-  {
-    "objectID": "eeg_analysis.html#setting-up-eeg-recordings",
-    "href": "eeg_analysis.html#setting-up-eeg-recordings",
-    "title": "Get started with EEG",
-    "section": "Setting up EEG recordings",
-    "text": "Setting up EEG recordings\nHere is a small video on how to setup advanced brain monitoring electrodes for EEG recording.\n\n\n\n\n\n\nTip\n\n\n\nPlease feel free to drop by the lab to get more information",
-    "crumbs": [
-      "Get started with EEG"
-    ]
-  },
-  {
-    "objectID": "eeg_analysis.html#eeg-analysis-steps",
-    "href": "eeg_analysis.html#eeg-analysis-steps",
-    "title": "Get started with EEG",
-    "section": "EEG analysis steps",
-    "text": "EEG analysis steps\nFor those who are starting with EEG analysis, it can be overwhelming to go across a lot of steps. Here is almost a standard procedure for a lot of EEG analysis. Each block is a research area by itself. There are a lot of papers on each block. Do not get scared once you start the analysis of some EEG data, these steps will become second to your nature. Do read below given paper about how others are doing these steps. We use mne-python to implement different block functionalities. If you want more information, refer to Mike X Cohen’s lectures\n\n\n\neeg-analysis",
-    "crumbs": [
-      "Get started with EEG"
-    ]
-  },
-  {
-    "objectID": "eeg_analysis.html#mne",
-    "href": "eeg_analysis.html#mne",
-    "title": "Get started with EEG",
-    "section": "MNE",
-    "text": "MNE\nIn the lab, we extensively use mne-python for analysis of a lot of EEG (time series in general) data. It is an amazing package with a lot of development and an amazing community. If you get a chance, do join the mailing list.\nHere are some resources to get you started with mne-python\n\nBasic mne-python\nIntermediate mne-python tutorials",
-    "crumbs": [
-      "Get started with EEG"
-    ]
-  },
-  {
-    "objectID": "eeg_analysis.html#eeg-databases",
-    "href": "eeg_analysis.html#eeg-databases",
-    "title": "Get started with EEG",
-    "section": "EEG databases",
-    "text": "EEG databases\nHere are some databases on which you are apply your mne-python skills.\n\n\n\n\n\n\nTip\n\n\n\nThe best way to learn a (Python) package is to use it on your own data and see what are the capabilities\n\n\nPick up some data from this repository: meagmohit/EEG-Datasets. Use mne-python do some analysis and that is how you get introduced to analysis of EEG.\n\n\n\n\n\n\nTip\n\n\n\nIf you have doubts, do drop by to iHuman lab and ask any questions!",
-    "crumbs": [
-      "Get started with EEG"
-    ]
-  },
-  {
-    "objectID": "eeg_analysis.html#papers",
-    "href": "eeg_analysis.html#papers",
-    "title": "Get started with EEG",
-    "section": "Papers",
-    "text": "Papers\n\nBest Practices in Data Analysis and Sharing in Neuroimaging using MEEG.\nA Reproducible MEG/EEG Group Study With the MNE Software: Recommendations, Quality Assessments, and Good Practices\nEEG artifact removal—state-of-the-art and guidelines",
-    "crumbs": [
-      "Get started with EEG"
-    ]
-  },
-  {
-    "objectID": "eeg_analysis.html#github-links",
-    "href": "eeg_analysis.html#github-links",
-    "title": "Get started with EEG",
-    "section": "GitHub Links",
-    "text": "GitHub Links\n\nAnalysis Related Repositories\n\nhttps://github.com/sappelhoff/pyprep\nhttps://github.com/autoreject/autoreject\nhttps://github.com/mdelpozobanos/eegfaster\nhttps://github.com/neurodsp-tools/neurodsp\nhttps://github.com/PIA-Group/BioSPPy\nhttps://github.com/cancui/EMG-Signal-Processing-Library\nhttps://github.com/unpingco/Python-for-Signal-Processing\n\n\n\nUsefull Libraries and Links\n\nhttp://www.marsja.se/best-python-libraries-psychology/\nhttps://github.com/NeuroDataDesign\nhttps://github.com/NeuroTechX/eeg-notebooks\nhttps://github.com/openlists/OpenTools/blob/master/README.md\nhttps://github.com/mne-tools/mne-study-template\nhttps://swipe4ica.github.io/#/ This is an interesting way to learn how to identify artifacts in EEG\nhttps://labeling.ucsd.edu/label Similar to previous link\n\n\n\nDeepLearning with Physiological Signals\n\nhttps://github.com/vlawhern/arl-eegmodels\nhttps://github.com/EderSantana/DeepEEG\nhttps://robintibor.github.io/braindecode/index.html\nhttps://github.com/mne-tools/mne-torch",
-    "crumbs": [
-      "Get started with EEG"
     ]
   },
   {
@@ -516,7 +85,7 @@
     "href": "coding_practices/general_practices.html#maintain-code-cleanliness",
     "title": "Good coding practices",
     "section": "",
-    "text": "Use meaningful variable names: Choose names that clearly describe the purpose of the variable.\nFollow PEP 8 guidelines: PEP 8 is the style guide for Python code, recommending best practices for formatting and structuring your code.\nKeep functions short and focused: A function should do one thing and do it well.\nRemove unnecessary comments and code: Comments should explain why something is done, not what is done.",
+    "text": "Meaningful Naming\n\nUse Descriptive Names\nNames should clearly convey the purpose of the variables, functions, and classes. Avoid generic names like data or temp unless their context is obvious.\nExample:\n# Bad naming\ndef func(x):\n    return x * 2\n\n# Good naming\ndef double_value(number):\n    return number * 2\n\n\nUse Consistent Naming Conventions\nFollow consistent naming conventions to improve readability. In Python, the conventions are:\n\nVariables and functions: Use snake_case (e.g., total_amount, calculate_sum).\nClasses: Use CamelCase (e.g., InvoiceManager, DataProcessor).\nConstants: Use UPPER_CASE (e.g., MAX_RETRIES, DEFAULT_TIMEOUT).\n\n\n\n\nSmall and Focused Functions\n\nSingle Responsibility Principle\nEach function should do one thing and do it well. Break down complex functions into smaller, more manageable ones.\nExample:\n# Bad: Single function with multiple responsibilities\ndef process_order(order):\n    validate_order(order)\n    calculate_total(order)\n    save_order_to_database(order)\n\n# Good: Functions with a single responsibility\ndef validate_order(order):\n    # validation logic\n    pass\n\ndef calculate_total(order):\n    # total calculation logic\n    pass\n\ndef save_order_to_database(order):\n    # save logic\n    pass\n\ndef process_order(order):\n    validate_order(order)\n    calculate_total(order)\n    save_order_to_database(order)\n\n\nAvoid Deep Nesting\nDeeply nested code can be hard to follow. Use early returns to reduce nesting levels.\nExample:\n# Bad: Deep nesting\ndef process_data(data):\n    if data is not None:\n        if len(data) &gt; 0:\n            if isinstance(data, list):\n                # process the list\n                pass\n\n# Good: Reduced nesting\ndef process_data(data):\n    if data is None or len(data) == 0 or not isinstance(data, list):\n        return\n\n    # process the list\n    pass\n\n\n\nClear and Consistent Formatting\n\nFollow PEP 8\nAdhere to PEP 8, the Python style guide, to ensure consistent formatting. Key guidelines include:\n\nIndentation: Use 4 spaces per indentation level.\nLine Length: Limit all lines to a maximum of 79 characters.\nBlank Lines: Use blank lines to separate functions, classes, and sections within functions.\n\nTo make things easy, we will use ruff as a standard in our lab.\nExample:\n# PEP 8 compliant code\ndef calculate_area(radius):\n    import math\n    return math.pi * (radius ** 2)\n\nclass Circle:\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return calculate_area(self.radius)\n\n\nUse Docstrings\nUse docstrings to document your modules, classes, and functions. Docstrings should describe the purpose, parameters, and return values.\nExample:\ndef calculate_area(radius):\n    \"\"\"\n    Calculate the area of a circle given its radius.\n\n    Args:\n        radius (float): The radius of the circle.\n\n    Returns:\n        float: The area of the circle.\n    \"\"\"\n    import math\n    return math.pi * (radius ** 2)\n\n\n\nError Handling\n\nUse Exceptions Appropriately\nHandle exceptions gracefully and use specific exception types to avoid catching unexpected errors.\nExample:\n# Bad: Catching all exceptions\ntry:\n    result = 10 / 0\nexcept Exception as e:\n    print(f\"An error occurred: {e}\")\n\n# Good: Catching specific exceptions\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    print(f\"Cannot divide by zero: {e}\")\n\n\nAvoid Empty except Clauses\nEmpty except clauses can hide errors and make debugging difficult. Always handle exceptions with proper logging or user feedback.\nExample:\n# Bad: Empty except clause\ntry:\n    # risky operation\n    pass\nexcept:\n    pass\n\n# Good: Proper exception handling\ntry:\n    # risky operation\n    pass\nexcept ValueError as e:\n    print(f\"ValueError occurred: {e}\")\n\n\n\nRefactoring\nRegularly review and refactor code to improve structure and readability. Refactoring can include renaming variables, breaking down functions, or reorganizing code.\nKeeping your code tidy ensures it is readable and maintainable. Clean code is easier to understand, debug, and enhance. Here are some tips for maintaining code cleanliness:\nFor more detailed style guide, we will use Google Python Style Guide.",
     "crumbs": [
       "Coding practices",
       "Good coding practices"
@@ -527,7 +96,7 @@
     "href": "coding_practices/general_practices.html#write-decoupled-code",
     "title": "Good coding practices",
     "section": "Write Decoupled Code",
-    "text": "Write Decoupled Code\nDecoupled code is modular, reusable, and easier to test and maintain. Aim to minimize dependencies between different parts of your code.\n\nUse functions and classes to encapsulate functionality: This promotes reuse and separation of concerns.\nApply design patterns: Patterns like MVC (Model-View-Controller) can help keep code organized.\nLeverage dependency injection: This technique allows you to pass dependencies to a class or function, making it easier to swap out implementations.\n\nFor more information on writing decoupled code, explore here.",
+    "text": "Write Decoupled Code\nIn a research lab, Python code often forms the backbone of data analysis, simulation, and experimentation. However, as research projects grow in complexity and involve multiple researchers, writing well-structured and decoupled code becomes crucial. Decoupled code—code that is modular and has minimal interdependencies—enhances readability, maintainability, and testability, ultimately leading to more robust and scalable research tools. This chapter explores the principles of writing decoupled Python code and offers practical guidance tailored to the needs of a research lab environment.\n\nUnderstanding Decoupling in Code\nDecoupling refers to the practice of reducing dependencies between different parts of a program. When code is decoupled, changes in one part of the code have minimal impact on others. This is particularly important in research labs where:\n\nMultiple Researchers: Different team members might work on different aspects of the codebase.\nEvolving Requirements: Research projects often evolve, requiring frequent changes and updates to the code.\nIntegration of Tools: Code might need to interface with various tools, libraries, and datasets.\n\nThe primary benefits of decoupling are:\n\nModularity: Breaking down the code into distinct modules or components.\nTestability: Isolated components are easier to test independently.\nMaintainability: Changes in one module have less chance of breaking other parts of the code.\nReusability: Modular components can be reused across different projects or experiments.\n\n\n\nPrinciples of Decoupled Python Code\n\nSingle Responsibility Principle (SRP)\nEach module or class should have only one reason to change, meaning it should have one primary responsibility. For instance, a module handling data cleaning should not be involved in data visualization.\nExample: Suppose you have a module named data_processing.py. It should focus solely on data cleaning and preprocessing, while another module, data_visualization.py, should handle plotting and generating graphs.\n# data_processing.py\ndef clean_data(data):\n    # Implementation of data cleaning\n    pass\n\ndef preprocess_data(data):\n    # Implementation of data preprocessing\n    pass\n\n# data_visualization.py\nimport matplotlib.pyplot as plt\n\ndef plot_data(data):\n    plt.plot(data)\n    plt.show()\n\n\nDependency Injection\nAvoid hard-coding dependencies within your functions or classes. Instead, pass dependencies as arguments. This approach makes your code more flexible and easier to test.\nExample: Instead of hardcoding a data source, pass it as a parameter.\n# Instead of this\ndef analyze_data():\n    data = load_data_from_file('data.csv')\n    # Process data\n\n# Use dependency injection\ndef analyze_data(data_loader):\n    data = data_loader()\n    # Process data\n\n# Example data loader function\ndef load_data_from_file():\n    return read_csv('data.csv')\n\n\nUse Interfaces and Abstract Classes\nDefine abstract classes or interfaces to specify the methods that concrete implementations should provide. This approach helps in decoupling the code from specific implementations and allows easier replacement or modification of components.\nExample:\nfrom abc import ABC, abstractmethod\n\nclass DataLoader(ABC):\n    @abstractmethod\n    def load(self):\n        pass\n\nclass CSVDataLoader(DataLoader):\n    def load(self):\n        # Load data from CSV\n        pass\n\nclass JSONDataLoader(DataLoader):\n    def load(self):\n        # Load data from JSON\n        pass\n\n\nSeparation of Concerns\nEnsure that different aspects of your code are managed separately. For example, keep data handling, computation, and presentation concerns distinct from each other.\nExample:\n# data_manager.py\ndef load_data(filename):\n    # Code to load data\n    pass\n\n# analysis_engine.py\ndef perform_analysis(data):\n    # Code to analyze data\n    pass\n\n# report_generator.py\ndef generate_report(results):\n    # Code to generate report\n    pass\n\n\n\nConclusion\nDecoupled Python code is essential for maintaining clarity, flexibility, and reliability in a research lab setting. By adhering to principles such as the Single Responsibility Principle, dependency injection, and separation of concerns, researchers can create codebases that are easier to understand, test, and modify. Implementing these practices ensures that research software remains adaptable and robust, supporting the dynamic needs of scientific inquiry.\nFor more information on writing decoupled code, explore here.",
     "crumbs": [
       "Coding practices",
       "Good coding practices"
@@ -538,7 +107,7 @@
     "href": "coding_practices/general_practices.html#test-your-code",
     "title": "Good coding practices",
     "section": "Test Your Code",
-    "text": "Test Your Code\nTesting ensures that your code works as expected and helps catch bugs early. Implement various types of tests, including unit tests, integration tests, and end-to-end tests.\n\nWrite unit tests for individual functions and classes: Use frameworks like unittest or pytest.\nCreate integration tests to verify the interaction between components: Ensure different parts of the system work together correctly.\nAutomate tests using continuous integration (CI) tools: Tools like Travis CI or GitHub Actions can run your tests automatically on every commit.\n\nLearn more about testing here.",
+    "text": "Test Your Code\nIn the research lab environment, testing Python code is crucial for ensuring accuracy, reliability, and reproducibility of scientific results. pytest is one of the most popular testing frameworks in Python due to its simplicity, flexibility, and powerful features.\n\nBasic Test Structure\npytest automatically discovers and runs tests based on their naming conventions. Tests should be placed in files named test_*.py or *_test.py, and test functions should start with test_.\nExample:\n# test_calculator.py\ndef add(x, y):\n    return x + y\n\ndef test_add():\n    assert add(1, 2) == 3\n    assert add(-1, 1) == 0\nRun tests using the pytest command:\npytest\n\n\nWriting Tests with pytest\n\nBasic Assertions\nUse assert statements to check if the code behaves as expected. pytest will report failed assertions with detailed information.\nExample:\ndef multiply(x, y):\n    return x * y\n\ndef test_multiply():\n    assert multiply(2, 3) == 6\n    assert multiply(0, 5) == 0\n\n\nUsing Fixtures\nFixtures are used to set up and tear down resources needed for tests. They are defined using the @pytest.fixture decorator and can be scoped to functions, classes, modules, or sessions.\nExample:\nimport pytest\n\n@pytest.fixture\ndef sample_data():\n    return [1, 2, 3, 4, 5]\n\ndef test_sum(sample_data):\n    assert sum(sample_data) == 15\n\n\nParameterized Tests\nParameterized tests allow you to run the same test function with multiple sets of inputs using the @pytest.mark.parametrize decorator.\nExample:\nimport pytest\n\n@pytest.mark.parametrize(\"a, b, expected\", [\n    (1, 2, 3),\n    (-1, 1, 0),\n    (2, 2, 4),\n])\ndef test_add(a, b, expected):\n    assert add(a, b) == expected\n\n\nTesting for Exceptions\nYou can check for expected exceptions using the pytest.raises context manager.\nExample:\nimport pytest\n\ndef divide(x, y):\n    if y == 0:\n        raise ValueError(\"Cannot divide by zero\")\n    return x / y\n\ndef test_divide():\n    with pytest.raises(ValueError):\n        divide(1, 0)\n\n\nCustomizing Test Output\npytest provides options for customizing test output, such as verbosity levels and formatting.\nExample:\nRun tests with verbose output:\npytest -v\nGenerate a test report in a JUnit-compatible format:\npytest --junitxml=report.xml\n\n\n\nAdvanced Features of pytest\n\nPlugins\npytest supports a wide range of plugins to enhance its functionality. Some popular plugins include:\n\npytest-cov: Provides code coverage reporting.\npytest-mock: Simplifies mocking of objects and functions.\npytest-xdist: Allows parallel test execution and distributed testing.\n\nInstall and use plugins via pip:\npip install pytest-cov pytest-mock\nExample with pytest-cov:\npytest --cov=my_module\n\n\nFixtures with Scope and Autouse\nControl the scope and automatic application of fixtures using the scope and autouse parameters.\nExample:\nimport pytest\n\n@pytest.fixture(scope=\"module\", autouse=True)\ndef setup_module():\n    print(\"\\nSetting up module...\")\n    yield\n    print(\"\\nTearing down module...\")\n\n\n\nIntegrating pytest into the Research Workflow\n\nContinuous Integration (CI)\nIntegrate pytest with CI/CD pipelines to automatically run tests on code changes. Tools like GitHub Actions, GitLab CI, and Jenkins support pytest integration.\nExample with GitHub Actions:\nCreate a .github/workflows/test.yml file:\nname: Run Tests\n\non: [push, pull_request]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: Set up Python\n        uses: actions/setup-python@v2\n        with:\n          python-version: '3.8'\n      - name: Install dependencies\n        run: |\n          pip install pytest\n      - name: Run tests\n        run: |\n          pytest\n\n\nCode Coverage\nUse pytest-cov to measure test coverage and ensure that critical parts of your code are tested.\nExample:\npytest --cov=my_module --cov-report=html\n\n\nTest Documentation\nDocument your tests to explain their purpose and expected outcomes, which helps new team members understand the testing strategy and rationale.\n\n\n\nConclusion\npytest is a powerful and flexible testing framework that enhances the reliability and maintainability of Python code in a research lab setting. By leveraging pytest’s features such as fixtures, parameterized tests, and plugins, researchers can create comprehensive test suites that ensure code quality and facilitate collaboration. Integrating pytest into your research workflow, including continuous integration and code coverage, will help maintain the integrity of your codebase and support reproducible research.\nBy adopting these practices, you can build a robust testing framework that contributes to more reliable and effective scientific research.\nLearn more about testing here.",
     "crumbs": [
       "Coding practices",
       "Good coding practices"
@@ -548,8 +117,8 @@
     "objectID": "coding_practices/general_practices.html#document-your-code",
     "href": "coding_practices/general_practices.html#document-your-code",
     "title": "Good coding practices",
-    "section": "Document Your Code",
-    "text": "Document Your Code\nGood documentation makes your codebase more accessible to others (and to yourself in the future). It helps new contributors understand your code and how to use it.\n\nWrite docstrings for all public modules, functions, classes, and methods: Follow the conventions of PEP 257.\nUse comments to explain the why, not the what: Comments should provide context and rationale.\n\nFor best practices in documentation, refer to the PEP 257 docstring conventions and the Google Python Style Guide on Documentation.",
+    "section": "",
+    "text": "Write docstrings for all public modules, functions, classes, and methods: Follow the conventions of PEP 257.\nUse comments to explain the why, not the what: Comments should provide context and rationale.",
     "crumbs": [
       "Coding practices",
       "Good coding practices"
@@ -578,53 +147,656 @@
     ]
   },
   {
-    "objectID": "bci.html",
-    "href": "bci.html",
-    "title": "Get started with BCI",
+    "objectID": "coding_practices/project_structure.html",
+    "href": "coding_practices/project_structure.html",
+    "title": "Project structure",
+    "section": "",
+    "text": "At iHuman lab, we follow the project structure (shown below) serves as a flexible guide rather than a strict mandate. It is designed to provide a clear framework for organizing our research endeavors effectively. The structure encompasses essential components such as documentation in the docs/ directory, configuration files in config/, and a dedicated ‘data/’ directory for managing datasets. The notebooks/ directory houses Jupyter notebooks for exploratory analysis, while the src/ directory contains modularized source code for data processing, feature engineering, model development, visualization, and utility functions. Unit tests are stored in tests/ to ensure the reliability of our implementations. While this structure offers a solid foundation, it remains adaptable to meet the specific needs and nuances of each research project we undertake, allowing for customization and refinement as required.\nresearch_project_name/\n│\n├── README.md                       # Project overview and instructions\n├── docs/                           # Documentation\n│\n├── config/                         # Configuration files\n│   ├── config.yaml                 # Configuration file for parameters\n│   └── logging.yaml                # Configuration file for logging\n│\n├── data/                           # Directory for datasets\n│   ├── raw/                        # Raw data files (immutable)\n│   ├── processed/                  # Processed data files (generated)\n│   └── interim/                    # Intermediate data files (temporary)\n│\n├── notebooks/                      # Jupyter notebooks for exploration\n│   └── exploratory_analysis.ipynb\n│\n├── src/                            # Source code for the project\n│   ├── __init__.py\n│   ├── main.py                     # Main script to run the project\n│   ├── data/                       # Module for data processing\n│   │   ├── __init__.py\n│   │   ├── preprocess.py           # Preprocessing functions\n│   │   └── load_data.py            # Data loading functions\n│   ├── dataset/                    # Module for creating datasets\n│   │   ├── __init__.py\n│   │   └── create_dataset.py       # Functions to create datasets\n│   ├── features/                   # Module for creating features\n│   │   ├── __init__.py\n│   │   └── feature_engineering.py  # Feature engineering functions\n│   ├── models/                     # Module for defining models\n│   │   ├── __init__.py\n│   │   └── model.py                # Model architecture and training functions\n│   ├── visualization/              # Visualization module\n│   │   ├── __init__.py\n│   │   └── visualize.py            # Visualization functions\n│   └── utils.py                    # Utility functions used across modules\n│\n├── tests/                          # Unit tests\n│\n└── environment.yml                 # Conda env file specifying dependencies\nTo facilitate the easy creation and adoption of this project structure across our research lab, we have opted to use iHuman Lab’s Cookiecutter template.\nTo use the template\n$ pip install cookiecutter\nor\n$ conda config --add channels conda-forge\n$ conda install cookiecutter\nTo start a new project, run:\n$ cookiecutter https://github.com/iHuman-Lab/ihuman-cookiecutter-data-science.git",
+    "crumbs": [
+      "Coding practices",
+      "Project structure"
+    ]
+  },
+  {
+    "objectID": "python_resources.html",
+    "href": "python_resources.html",
+    "title": "Python resources",
+    "section": "",
+    "text": "Websites",
+    "crumbs": [
+      "Python resources"
+    ]
+  },
+  {
+    "objectID": "python_resources.html#websites",
+    "href": "python_resources.html#websites",
+    "title": "Python resources",
+    "section": "",
+    "text": "Edx If you are new to python programming, definitely take Introduction to Computer Science and Programming Using Python course. It is one of the best courses out there from which you can learn lot of fundamental python programming skills.\nHackerRank HackerRank has lot of resources to learn many programming languages. Regestration is free.\nLeetCode LeetCode is much intensive platform to learn coding. It can be used if you want to prepare for interviews.",
+    "crumbs": [
+      "Python resources"
+    ]
+  },
+  {
+    "objectID": "python_resources.html#videos",
+    "href": "python_resources.html#videos",
+    "title": "Python resources",
+    "section": "Videos",
+    "text": "Videos\nPyCon is one of the best way to get in touch with great Python community. Lot of great talks and tutorials (highly recommended!).",
+    "crumbs": [
+      "Python resources"
+    ]
+  },
+  {
+    "objectID": "python_resources.html#pytorch",
+    "href": "python_resources.html#pytorch",
+    "title": "Python resources",
+    "section": "Pytorch",
+    "text": "Pytorch\nIn the lab we extensively use Pytroch for implementation of Deep learning algorithms. Below are some resources for Pytorch\nA github repository with lot of resources: The incredible Pytorch\n\nPytorch Related Links\n\nhttps://github.com/pytorch/ignite/\nhttps://github.com/williamFalcon/pytorch-lightning\nhttps://github.com/astooke/rlpyt\nhttps://github.com/szymonmaszke/torchfunc\nhttps://github.com/wkentaro/pytorch-for-numpy-users\nhttps://github.com/awwong1/torchprof\nhttps://github.com/suriyadeepan/torchtest",
+    "crumbs": [
+      "Python resources"
+    ]
+  },
+  {
+    "objectID": "python_resources.html#links",
+    "href": "python_resources.html#links",
+    "title": "Python resources",
+    "section": "Links",
+    "text": "Links\n\nGeneral Programming\n\nhttp://pythontutor.com\nhttps://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/\nhttps://opensource.guide\nhttps://pyvideo.org\nhttps://github.com/satwikkansal/wtfpython\nhttps://swcarpentry.github.io/good-enough-practices-in-scientific-computing/\nhttps://jalammar.github.io/visual-numpy/\n\n\n\nData Science Related\n\nhttps://github.com/rasbt/mlxtend\nhttps://github.com/slundberg/shap\nhttps://github.com/ericmjl/pyjanitor\nhttps://esa.github.io/pagmo2/index.html\nhttps://github.com/modin-project/modin\nhttps://docs.metaflow.org\nhttps://perceptilabs.readme.io/docs/welcome\n\n\n\nMisc\n\nhttps://github.com/ray-project/ray (A very good parallel processing library)",
+    "crumbs": [
+      "Python resources"
+    ]
+  },
+  {
+    "objectID": "bci_resources.html",
+    "href": "bci_resources.html",
+    "title": "BCI resources",
     "section": "",
     "text": "Videos",
     "crumbs": [
-      "Get started with BCI"
+      "BCI resources"
     ]
   },
   {
-    "objectID": "bci.html#videos",
-    "href": "bci.html#videos",
-    "title": "Get started with BCI",
+    "objectID": "bci_resources.html#videos",
+    "href": "bci_resources.html#videos",
+    "title": "BCI resources",
     "section": "",
     "text": "Great set of videos which introduce the basics of BCI and EEG (highly recommended!) by Swartz Center for Computational Neuroscience.\n\n\n\n\n\n\n\n\nTip\n\n\n\nFirst few videos are enough to get started (video-1 to video-7). Once you get started with EEG analysis you can watch the rest.\n\n\n\nIf you want to get into general neural time-series analysis here is a great set of videos by Mike X Cohen.\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nEven though the emphasis is on use of Matlab, you can do all the analysis using a python package called mne.\nIt is also a great opportunity to port the Matlab codes used in the lectures to Python through which you can learn Python also!",
     "crumbs": [
-      "Get started with BCI"
+      "BCI resources"
     ]
   },
   {
-    "objectID": "bci.html#online",
-    "href": "bci.html#online",
-    "title": "Get started with BCI",
+    "objectID": "bci_resources.html#online",
+    "href": "bci_resources.html#online",
+    "title": "BCI resources",
     "section": "Online",
     "text": "Online\nThis repository contains some awesome resources on BCI: NeuroTechX/awesome-bci",
     "crumbs": [
-      "Get started with BCI"
+      "BCI resources"
     ]
   },
   {
-    "objectID": "bci.html#books",
-    "href": "bci.html#books",
-    "title": "Get started with BCI",
+    "objectID": "bci_resources.html#books",
+    "href": "bci_resources.html#books",
+    "title": "BCI resources",
     "section": "Books",
     "text": "Books\nAmazing introduction to BCI\n\nBrain-computer interfacing : an introduction / Rajesh P.N. Rao.\n\nTo analyse neural time series data (a great book!)\n\nAnalyzing neural time series data : theory and practice / Mike X. Cohen.",
     "crumbs": [
-      "Get started with BCI"
+      "BCI resources"
     ]
   },
   {
-    "objectID": "bci.html#github-links",
-    "href": "bci.html#github-links",
-    "title": "Get started with BCI",
-    "section": "GitHub Links",
-    "text": "GitHub Links\n\nhttps://github.com/sccn/labstreaminglayer",
+    "objectID": "bci_resources.html#github-links",
+    "href": "bci_resources.html#github-links",
+    "title": "BCI resources",
+    "section": "GitHub links",
+    "text": "GitHub links\nThis repository contains some awesome resources on BCI: NeuroTechX/awesome-bci",
     "crumbs": [
-      "Get started with BCI"
+      "BCI resources"
+    ]
+  },
+  {
+    "objectID": "eeg_resources.html",
+    "href": "eeg_resources.html",
+    "title": "EEG resources",
+    "section": "",
+    "text": "EEG Glossary\nA revised glossary of terms most commonly used by clinicalelectroencephalographers and updated proposal for the reportformat of the EEG findings. Revision 2017",
+    "crumbs": [
+      "EEG resources"
+    ]
+  },
+  {
+    "objectID": "eeg_resources.html#setting-up-eeg-recordings",
+    "href": "eeg_resources.html#setting-up-eeg-recordings",
+    "title": "EEG resources",
+    "section": "Setting up EEG recordings",
+    "text": "Setting up EEG recordings\nHere is a small video on how to setup advanced brain monitoring electrodes for EEG recording.\n\n\n\n\n\n\nTip\n\n\n\nPlease feel free to drop by the lab to get more information",
+    "crumbs": [
+      "EEG resources"
+    ]
+  },
+  {
+    "objectID": "eeg_resources.html#eeg-analysis-steps",
+    "href": "eeg_resources.html#eeg-analysis-steps",
+    "title": "EEG resources",
+    "section": "EEG analysis steps",
+    "text": "EEG analysis steps\nFor those who are starting with EEG analysis, it can be overwhelming to go across a lot of steps. Here is almost a standard procedure for a lot of EEG analysis. Each block is a research area by itself. There are a lot of papers on each block. Do not get scared once you start the analysis of some EEG data, these steps will become second to your nature. Do read below given paper about how others are doing these steps. We use mne-python to implement different block functionalities. If you want more information, refer to Mike X Cohen’s lectures\n\n\n\neeg-analysis",
+    "crumbs": [
+      "EEG resources"
+    ]
+  },
+  {
+    "objectID": "eeg_resources.html#mne",
+    "href": "eeg_resources.html#mne",
+    "title": "EEG resources",
+    "section": "MNE",
+    "text": "MNE\nIn the lab, we extensively use mne-python for analysis of a lot of EEG (time series in general) data. It is an amazing package with a lot of development and an amazing community. If you get a chance, do join the mailing list.\nHere are some resources to get you started with mne-python\n\nBasic mne-python\nIntermediate mne-python tutorials",
+    "crumbs": [
+      "EEG resources"
+    ]
+  },
+  {
+    "objectID": "eeg_resources.html#eeg-databases",
+    "href": "eeg_resources.html#eeg-databases",
+    "title": "EEG resources",
+    "section": "EEG databases",
+    "text": "EEG databases\nHere are some databases on which you are apply your mne-python skills.\n\n\n\n\n\n\nTip\n\n\n\nThe best way to learn a (Python) package is to use it on your own data and see what are the capabilities\n\n\nPick up some data from this repository: meagmohit/EEG-Datasets. Use mne-python do some analysis and that is how you get introduced to analysis of EEG.\n\n\n\n\n\n\nTip\n\n\n\nIf you have doubts, do drop by to iHuman lab and ask any questions!",
+    "crumbs": [
+      "EEG resources"
+    ]
+  },
+  {
+    "objectID": "eeg_resources.html#papers",
+    "href": "eeg_resources.html#papers",
+    "title": "EEG resources",
+    "section": "Papers",
+    "text": "Papers\n\nBest Practices in Data Analysis and Sharing in Neuroimaging using MEEG.\nA Reproducible MEG/EEG Group Study With the MNE Software: Recommendations, Quality Assessments, and Good Practices\nEEG artifact removal—state-of-the-art and guidelines",
+    "crumbs": [
+      "EEG resources"
+    ]
+  },
+  {
+    "objectID": "eeg_resources.html#github-links",
+    "href": "eeg_resources.html#github-links",
+    "title": "EEG resources",
+    "section": "GitHub Links",
+    "text": "GitHub Links\n\nAnalysis Related Repositories\n\nhttps://github.com/sappelhoff/pyprep\nhttps://github.com/autoreject/autoreject\nhttps://github.com/mdelpozobanos/eegfaster\nhttps://github.com/neurodsp-tools/neurodsp\nhttps://github.com/PIA-Group/BioSPPy\nhttps://github.com/cancui/EMG-Signal-Processing-Library\nhttps://github.com/unpingco/Python-for-Signal-Processing\n\n\n\nUsefull Libraries and Links\n\nhttp://www.marsja.se/best-python-libraries-psychology/\nhttps://github.com/NeuroDataDesign\nhttps://github.com/NeuroTechX/eeg-notebooks\nhttps://github.com/openlists/OpenTools/blob/master/README.md\nhttps://github.com/mne-tools/mne-study-template\nhttps://swipe4ica.github.io/#/ This is an interesting way to learn how to identify artifacts in EEG\nhttps://labeling.ucsd.edu/label Similar to previous link\n\n\n\nDeepLearning with Physiological Signals\n\nhttps://github.com/vlawhern/arl-eegmodels\nhttps://github.com/EderSantana/DeepEEG\nhttps://robintibor.github.io/braindecode/index.html\nhttps://github.com/mne-tools/mne-torch",
+    "crumbs": [
+      "EEG resources"
+    ]
+  },
+  {
+    "objectID": "checklist_and_signature.html",
+    "href": "checklist_and_signature.html",
+    "title": "Checklist and signature page",
+    "section": "",
+    "text": "Congrats on making towards the end of the document. Please sign the below document and send it to ihuman.research.lab@gmail.com\n\nLoading…",
+    "crumbs": [
+      "Checklist and signature page"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#small-and-focused-functions",
+    "href": "coding_practices/general_practices.html#small-and-focused-functions",
+    "title": "Good coding practices",
+    "section": "2. Small and Focused Functions",
+    "text": "2. Small and Focused Functions\n\n2.1. Single Responsibility Principle\nEach function should do one thing and do it well. Break down complex functions into smaller, more manageable ones.\nExample:\n# Bad: Single function with multiple responsibilities\ndef process_order(order):\n    validate_order(order)\n    calculate_total(order)\n    save_order_to_database(order)\n\n# Good: Functions with a single responsibility\ndef validate_order(order):\n    # validation logic\n    pass\n\ndef calculate_total(order):\n    # total calculation logic\n    pass\n\ndef save_order_to_database(order):\n    # save logic\n    pass\n\ndef process_order(order):\n    validate_order(order)\n    calculate_total(order)\n    save_order_to_database(order)\n\n\n2.2. Avoid Deep Nesting\nDeeply nested code can be hard to follow. Use early returns to reduce nesting levels.\nExample:\n# Bad: Deep nesting\ndef process_data(data):\n    if data is not None:\n        if len(data) &gt; 0:\n            if isinstance(data, list):\n                # process the list\n                pass\n\n# Good: Reduced nesting\ndef process_data(data):\n    if data is None or len(data) == 0 or not isinstance(data, list):\n        return\n\n    # process the list\n    pass",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#clear-and-consistent-formatting",
+    "href": "coding_practices/general_practices.html#clear-and-consistent-formatting",
+    "title": "Good coding practices",
+    "section": "3. Clear and Consistent Formatting",
+    "text": "3. Clear and Consistent Formatting\n\n3.1. Follow PEP 8\nAdhere to PEP 8, the Python style guide, to ensure consistent formatting. Key guidelines include:\n\nIndentation: Use 4 spaces per indentation level.\nLine Length: Limit all lines to a maximum of 79 characters.\nBlank Lines: Use blank lines to separate functions, classes, and sections within functions.\n\nExample:\n# PEP 8 compliant code\ndef calculate_area(radius):\n    import math\n    return math.pi * (radius ** 2)\n\nclass Circle:\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return calculate_area(self.radius)\n\n\n3.2. Use Docstrings\nUse docstrings to document your modules, classes, and functions. Docstrings should describe the purpose, parameters, and return values.\nExample:\ndef calculate_area(radius):\n    \"\"\"\n    Calculate the area of a circle given its radius.\n\n    Args:\n        radius (float): The radius of the circle.\n\n    Returns:\n        float: The area of the circle.\n    \"\"\"\n    import math\n    return math.pi * (radius ** 2)",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#error-handling",
+    "href": "coding_practices/general_practices.html#error-handling",
+    "title": "Good coding practices",
+    "section": "4. Error Handling",
+    "text": "4. Error Handling\n\n4.1. Use Exceptions Appropriately\nHandle exceptions gracefully and use specific exception types to avoid catching unexpected errors.\nExample:\n# Bad: Catching all exceptions\ntry:\n    result = 10 / 0\nexcept Exception as e:\n    print(f\"An error occurred: {e}\")\n\n# Good: Catching specific exceptions\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    print(f\"Cannot divide by zero: {e}\")\n\n\n4.2. Avoid Empty except Clauses\nEmpty except clauses can hide errors and make debugging difficult. Always handle exceptions with proper logging or user feedback.\nExample:\n# Bad: Empty except clause\ntry:\n    # risky operation\n    pass\nexcept:\n    pass\n\n# Good: Proper exception handling\ntry:\n    # risky operation\n    pass\nexcept ValueError as e:\n    print(f\"ValueError occurred: {e}\")",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#refactoring",
+    "href": "coding_practices/general_practices.html#refactoring",
+    "title": "Good coding practices",
+    "section": "5. Refactoring",
+    "text": "5. Refactoring\n\n5.1. Regular Refactoring\nRegularly review and refactor code to improve structure and readability. Refactoring can include renaming variables, breaking down functions, or reorganizing code.\n\n\n5.2. Use Refactoring Tools\nUtilize tools and IDE features that help identify code smells or areas for improvement, such as flake8 for style violations or black for automatic formatting.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#testing",
+    "href": "coding_practices/general_practices.html#testing",
+    "title": "Good coding practices",
+    "section": "6. Testing",
+    "text": "6. Testing\n\n6.1. Write Unit Tests\nUnit tests ensure that individual components of your code work as expected. Use frameworks like unittest or pytest to write and run tests.\nExample:\nimport unittest\n\ndef add(a, b):\n    return a + b\n\nclass TestMathOperations(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(add(2, 3), 5)\n        self.assertEqual(add(-1, 1), 0)\n\nif __name__ == '__main__':\n    unittest.main()\n\n\n6.2. Test Coverage\nAim for high test coverage to ensure your code is well-tested. Use tools like coverage.py to measure how much of your code is covered by tests.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#use-version-control",
+    "href": "coding_practices/general_practices.html#use-version-control",
+    "title": "Good coding practices",
+    "section": "7. Use Version Control",
+    "text": "7. Use Version Control\n\n7.1. Commit Frequently with Meaningful Messages\nUse version control systems like Git to track changes and collaborate with others. Commit changes frequently and use descriptive commit messages.\nExample:\n# Good commit message\ngit commit -m \"Refactor data processing logic to improve readability\"\n\n# Bad commit message\ngit commit -m \"Update code\"\n\n\n7.2. Branching and Merging\nUse branches to manage different features or fixes and merge them into the main branch when they are ready. This practice helps in keeping the main branch stable and functional.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#conclusion",
+    "href": "coding_practices/general_practices.html#conclusion",
+    "title": "Good coding practices",
+    "section": "Conclusion",
+    "text": "Conclusion\nBy following these best practices, you can ensure that your Python code remains clean, readable, and maintainable. Adopting these practices not only improves the quality of your code but also enhances collaboration and productivity within development teams. Remember that clean code is an ongoing commitment, and regularly reviewing and improving your codebase will contribute to its long-term success and adaptability.\nKeeping your code tidy ensures it is readable and maintainable. Clean code is easier to understand, debug, and enhance. Here are some tips for maintaining code cleanliness:\n\nUse meaningful variable names: Choose names that clearly describe the purpose of the variable.\nFollow PEP 8 guidelines: PEP 8 is the style guide for Python code, recommending best practices for formatting and structuring your code.\nKeep functions short and focused: A function should do one thing and do it well.\nRemove unnecessary comments and code: Comments should explain why something is done, not what is done.\n\nFor more details, refer to the PEP 8 style guide and the Google Python Style Guide.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#chapter-6-writing-tests-for-python-code-in-a-research-lab-with-pytest",
+    "href": "coding_practices/general_practices.html#chapter-6-writing-tests-for-python-code-in-a-research-lab-with-pytest",
+    "title": "Good coding practices",
+    "section": "Chapter 6: Writing Tests for Python Code in a Research Lab with pytest",
+    "text": "Chapter 6: Writing Tests for Python Code in a Research Lab with pytest\n\nIntroduction\nIn the research lab environment, testing Python code is crucial for ensuring accuracy, reliability, and reproducibility of scientific results. pytest is one of the most popular testing frameworks in Python due to its simplicity, flexibility, and powerful features. This chapter provides an in-depth discussion of how to use pytest effectively for testing Python code in a research lab setting.\n\n\n6.1 Why Use pytest?\npytest is widely favored because of its:\n\nUser-Friendly Syntax: Writing tests in pytest is straightforward and requires less boilerplate code compared to other frameworks.\nRich Plugin Ecosystem: pytest has a rich ecosystem of plugins that extend its functionality, such as for test reporting, coverage, and mocking.\nPowerful Fixtures: Fixtures in pytest provide a flexible way to manage setup and teardown code for tests.\nDetailed Reporting: pytest offers detailed test failure reports, making it easier to diagnose issues.\nParameterized Tests: pytest supports parameterized tests, allowing you to run the same test with different inputs efficiently.\n\n\n\n6.2 Setting Up pytest\nTo start using pytest, follow these steps:\n\n6.2.1 Installation\nInstall pytest using pip:\npip install pytest\n\n\n6.2.2 Basic Test Structure\npytest automatically discovers and runs tests based on their naming conventions. Tests should be placed in files named test_*.py or *_test.py, and test functions should start with test_.\nExample:\n# test_calculator.py\ndef add(x, y):\n    return x + y\n\ndef test_add():\n    assert add(1, 2) == 3\n    assert add(-1, 1) == 0\nRun tests using the pytest command:\npytest\n\n\n\n6.3 Writing Tests with pytest\n\n6.3.1 Basic Assertions\nUse assert statements to check if the code behaves as expected. pytest will report failed assertions with detailed information.\nExample:\ndef multiply(x, y):\n    return x * y\n\ndef test_multiply():\n    assert multiply(2, 3) == 6\n    assert multiply(0, 5) == 0\n\n\n6.3.2 Using Fixtures\nFixtures are used to set up and tear down resources needed for tests. They are defined using the @pytest.fixture decorator and can be scoped to functions, classes, modules, or sessions.\nExample:\nimport pytest\n\n@pytest.fixture\ndef sample_data():\n    return [1, 2, 3, 4, 5]\n\ndef test_sum(sample_data):\n    assert sum(sample_data) == 15\n\n\n6.3.3 Parameterized Tests\nParameterized tests allow you to run the same test function with multiple sets of inputs using the @pytest.mark.parametrize decorator.\nExample:\nimport pytest\n\n@pytest.mark.parametrize(\"a, b, expected\", [\n    (1, 2, 3),\n    (-1, 1, 0),\n    (2, 2, 4),\n])\ndef test_add(a, b, expected):\n    assert add(a, b) == expected\n\n\n6.3.4 Testing for Exceptions\nYou can check for expected exceptions using the pytest.raises context manager.\nExample:\nimport pytest\n\ndef divide(x, y):\n    if y == 0:\n        raise ValueError(\"Cannot divide by zero\")\n    return x / y\n\ndef test_divide():\n    with pytest.raises(ValueError):\n        divide(1, 0)\n\n\n6.3.5 Customizing Test Output\npytest provides options for customizing test output, such as verbosity levels and formatting.\nExample:\nRun tests with verbose output:\npytest -v\nGenerate a test report in a JUnit-compatible format:\npytest --junitxml=report.xml\n\n\n\n6.4 Advanced Features of pytest\n\n6.4.1 Plugins\npytest supports a wide range of plugins to enhance its functionality. Some popular plugins include:\n\npytest-cov: Provides code coverage reporting.\npytest-mock: Simplifies mocking of objects and functions.\npytest-xdist: Allows parallel test execution and distributed testing.\n\nInstall and use plugins via pip:\npip install pytest-cov pytest-mock\nExample with pytest-cov:\npytest --cov=my_module\n\n\n6.4.2 Fixtures with Scope and Autouse\nControl the scope and automatic application of fixtures using the scope and autouse parameters.\nExample:\nimport pytest\n\n@pytest.fixture(scope=\"module\", autouse=True)\ndef setup_module():\n    print(\"\\nSetting up module...\")\n    yield\n    print(\"\\nTearing down module...\")\n\n\n\n6.5 Integrating pytest into the Research Workflow\n\n6.5.1 Continuous Integration (CI)\nIntegrate pytest with CI/CD pipelines to automatically run tests on code changes. Tools like GitHub Actions, GitLab CI, and Jenkins support pytest integration.\nExample with GitHub Actions:\nCreate a .github/workflows/test.yml file:\nname: Run Tests\n\non: [push, pull_request]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: Set up Python\n        uses: actions/setup-python@v2\n        with:\n          python-version: '3.8'\n      - name: Install dependencies\n        run: |\n          pip install pytest\n      - name: Run tests\n        run: |\n          pytest\n\n\n6.5.2 Code Coverage\nUse pytest-cov to measure test coverage and ensure that critical parts of your code are tested.\nExample:\npytest --cov=my_module --cov-report=html\n\n\n6.5.3 Test Documentation\nDocument your tests to explain their purpose and expected outcomes, which helps new team members understand the testing strategy and rationale.\n\n\n\nConclusion\npytest is a powerful and flexible testing framework that enhances the reliability and maintainability of Python code in a research lab setting. By leveraging pytest’s features such as fixtures, parameterized tests, and plugins, researchers can create comprehensive test suites that ensure code quality and facilitate collaboration. Integrating pytest into your research workflow, including continuous integration and code coverage, will help maintain the integrity of your codebase and support reproducible research.\nBy adopting these practices, you can build a robust testing framework that contributes to more reliable and effective scientific research.\nLearn more about testing here.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
+    ]
+  },
+  {
+    "objectID": "coding_practices/clean_code.html",
+    "href": "coding_practices/clean_code.html",
+    "title": "Code cleanliness",
+    "section": "",
+    "text": "Meaningful Naming",
+    "crumbs": [
+      "Coding practices",
+      "Code cleanliness"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_decoupling.html",
+    "href": "coding_practices/code_decoupling.html",
+    "title": "Decoupled code",
+    "section": "",
+    "text": "Understanding Decoupling in Code\nDecoupling refers to the practice of reducing dependencies between different parts of a program. When code is decoupled, changes in one part of the code have minimal impact on others. This is particularly important in research labs where:\nThe primary benefits of decoupling are:",
+    "crumbs": [
+      "Coding practices",
+      "Decoupled code"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_testing.html",
+    "href": "coding_practices/code_testing.html",
+    "title": "Code testing",
+    "section": "",
+    "text": "Basic Test Structure\npytest automatically discovers and runs tests based on their naming conventions. Tests should be placed in files named test_*.py or *_test.py, and test functions should start with test_.\nExample:\nRun tests using the pytest command:",
+    "crumbs": [
+      "Coding practices",
+      "Code testing"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html",
+    "href": "coding_practices/code_documentation.html",
+    "title": "Code documentation",
+    "section": "",
+    "text": "Importance of Documentation\nDocumentation serves several crucial purposes:",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#usage",
+    "href": "coding_practices/code_documentation.html#usage",
+    "title": "Code documentation",
+    "section": "Usage",
+    "text": "Usage\nTo analyze data, use the following commands:\nfrom data_analysis_toolkit import DataAnalyzer\n\ndata = [1, 2, 3, 4, 5]\nanalyzer = DataAnalyzer(data)\nmean = analyzer.calculate_mean()\nprint(mean)\n\nTools for Generating Documentation\n\nSphinx\nSphinx is a documentation generator that creates HTML, PDF, and other formats from reStructuredText files. It is often used for creating comprehensive project documentation.\n\nInstallation:\n\npip install sphinx\n\nUsage:\n\nCreate a Sphinx documentation directory:\nsphinx-quickstart\nGenerate documentation:\nsphinx-build -b html source build\n\n\n\nBest Practices for Documentation\n\nWrite Clear and Concise Descriptions\nEnsure that descriptions are clear and avoid jargon. Provide enough detail to understand the purpose and functionality of the code without being overly verbose.\n\n\nUpdate Documentation Regularly\nKeep documentation up-to-date with code changes. Outdated documentation can lead to confusion and errors.\n\n\nUse Consistent Style\nFollow consistent formatting and style guidelines throughout the documentation. This includes using the same terminology, formatting conventions, and level of detail.\n\n\nInclude Examples\nProvide examples to demonstrate how to use functions, classes, or modules. Examples help users understand practical applications of the code.\n\n\nDocument Edge Cases and Limitations\nHighlight any edge cases, limitations, or known issues in the documentation. This prepares users for potential problems and guides them in handling exceptions.\n\n\n\nConclusion\nDocumenting Python code in a research lab is crucial for maintaining clarity, facilitating collaboration, and ensuring reproducibility. By utilizing code comments, docstrings, README files, and inline documentation, researchers can create comprehensive and useful documentation. Tools like Sphinx, MkDocs, and pdoc can automate and enhance the documentation process.\nAdhering to best practices for writing clear and concise documentation will support effective communication and collaboration within the research team and help ensure that your code is usable and maintainable over time. By integrating these practices, you contribute to a well-organized and reliable research environment, fostering better understanding and reproducibility of scientific work.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#contributing",
+    "href": "coding_practices/code_documentation.html#contributing",
+    "title": "Code documentation",
+    "section": "Contributing",
+    "text": "Contributing\nContributions are welcome! Please submit a pull request or issue for any improvements.\n\n#### 7.2.4 Inline Documentation\n\nFor larger projects, inline documentation can include design decisions, algorithms, and overall architecture. This helps others understand complex parts of the codebase.\n\n**Example**:\n\n```python\ndef sort_data(data):\n    \"\"\"\n    Sort a list of data using the merge sort algorithm.\n\n    Merge sort is a divide-and-conquer algorithm that divides the data into smaller chunks,\n    recursively sorts them, and then merges the sorted chunks.\n\n    Args:\n        data (list): The data to be sorted.\n\n    Returns:\n        list: The sorted data.\n    \"\"\"\n    if len(data) &lt;= 1:\n        return data\n    middle = len(data) // 2\n    left_half = sort_data(data[:middle])\n    right_half = sort_data(data[middle:])\n    return merge(left_half, right_half)\n\ndef merge(left, right):\n    \"\"\"\n    Merge two sorted lists into a single sorted list.\n\n    Args:\n        left (list): The first sorted list.\n        right (list): The second sorted list.\n\n    Returns:\n        list: The merged sorted list.\n    \"\"\"\n    merged = []\n    left_index, right_index = 0, 0\n    while left_index &lt; len(left) and right_index &lt; len(right):\n        if left[left_index] &lt; right[right_index]:\n            merged.append(left[left_index])\n            left_index += 1\n        else:\n            merged.append(right[right_index])\n            right_index += 1\n    merged.extend(left[left_index:])\n    merged.extend(right[right_index:])\n    return merged\n\n7.3 Tools for Generating Documentation\n\n7.3.1 Sphinx\nSphinx is a documentation generator that creates HTML, PDF, and other formats from reStructuredText files. It is often used for creating comprehensive project documentation.\n\nInstallation:\n\npip install sphinx\n\nUsage:\n\nCreate a Sphinx documentation directory:\nsphinx-quickstart\nGenerate documentation:\nsphinx-build -b html source build\n\n\n7.3.2 MkDocs\nMkDocs is a static site generator designed for project documentation. It uses Markdown for writing documentation and provides a range of themes and plugins.\n\nInstallation:\n\npip install mkdocs\n\nUsage:\n\nCreate a new MkDocs project:\nmkdocs new my-project\ncd my-project\nmkdocs serve\nGenerate documentation:\nmkdocs build\n\n\n7.3.3 pdoc\npdoc is a simple documentation generator for Python projects that creates HTML documentation from docstrings.\n\nInstallation:\n\npip install pdoc\n\nUsage:\n\nGenerate documentation:\npdoc --html my_module\n\n\n\n7.4 Best Practices for Documentation\n\n7.4.1 Write Clear and Concise Descriptions\nEnsure that descriptions are clear and avoid jargon. Provide enough detail to understand the purpose and functionality of the code without being overly verbose.\n\n\n7.4.2 Update Documentation Regularly\nKeep documentation up-to-date with code changes. Outdated documentation can lead to confusion and errors.\n\n\n7.4.3 Use Consistent Style\nFollow consistent formatting and style guidelines throughout the documentation. This includes using the same terminology, formatting conventions, and level of detail.\n\n\n7.4.4 Include Examples\nProvide examples to demonstrate how to use functions, classes, or modules. Examples help users understand practical applications of the code.\n\n\n7.4.5 Document Edge Cases and Limitations\nHighlight any edge cases, limitations, or known issues in the documentation. This prepares users for potential problems and guides them in handling exceptions.\n\n\n\nConclusion\nDocumenting Python code in a research lab is crucial for maintaining clarity, facilitating collaboration, and ensuring reproducibility. By utilizing code comments, docstrings, README files, and inline documentation, researchers can create comprehensive and useful documentation. Tools like Sphinx, MkDocs, and pdoc can automate and enhance the documentation process.\nAdhering to best practices for writing clear and concise documentation will support effective communication and collaboration within the research team and help ensure that your code is usable and maintainable over time. By integrating these practices, you contribute to a well-organized and reliable research environment, fostering better understanding and reproducibility of scientific work.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#importance-of-documentation",
+    "href": "coding_practices/code_documentation.html#importance-of-documentation",
+    "title": "Code documentation",
+    "section": "",
+    "text": "Clarity: Helps researchers understand the code’s purpose and functionality.\nMaintenance: Facilitates easier updates and debugging by providing insights into the code’s structure and logic.\nCollaboration: Ensures that team members can work effectively on shared codebases.\nReproducibility: Documents the steps and methods used in analysis, enabling others to replicate experiments.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#types-of-documentation",
+    "href": "coding_practices/code_documentation.html#types-of-documentation",
+    "title": "Code documentation",
+    "section": "Types of Documentation",
+    "text": "Types of Documentation\nEffective documentation covers various aspects of a codebase:\n\nCode Comments\nComments within the code explain specific lines or sections of code, making it easier to understand the logic and intentions of the code.\n\nInline Comments: Provide explanations for individual lines of code.\nBlock Comments: Explain larger sections or functions.\n\nExample:\ndef calculate_statistics(data):\n    \"\"\"\n    Calculate and return basic statistics for the given data.\n\n    Args:\n        data (list): A list of numerical values.\n\n    Returns:\n        tuple: A tuple containing the mean and standard deviation of the data.\n    \"\"\"\n    mean = sum(data) / len(data)  # Calculate mean\n    variance = sum((x - mean) ** 2 for x in data) / len(data)  # Calculate variance\n    std_dev = variance ** 0.5  # Calculate standard deviation\n    return mean, std_dev\n\n\nDocstrings\nDocstrings are used to describe the purpose, parameters, and return values of functions, classes, and modules. They are essential for generating documentation automatically and integrating with IDEs and documentation tools.\n\nFunction Docstrings: Explain the purpose, arguments, and return values of a function.\nClass Docstrings: Describe the class’s purpose, attributes, and methods.\nModule Docstrings: Provide an overview of the module and its contents.\n\nExample:\nclass DataAnalyzer:\n    \"\"\"\n    A class for analyzing and processing data.\n\n    Attributes:\n        data (list): The data to be analyzed.\n\n    Methods:\n        calculate_mean(): Returns the mean of the data.\n        calculate_median(): Returns the median of the data.\n    \"\"\"\n\n    def __init__(self, data):\n        \"\"\"\n        Initialize the DataAnalyzer with data.\n\n        Args:\n            data (list): The data to be analyzed.\n        \"\"\"\n        self.data = data\n\n    def calculate_mean(self):\n        \"\"\"\n        Calculate and return the mean of the data.\n\n        Returns:\n            float: The mean of the data.\n        \"\"\"\n        return sum(self.data) / len(self.data)\n\n\nREADME Files\nREADME files provide an overview of the project, including its purpose, installation instructions, usage guidelines, and contribution details. They are often the first point of contact for users and contributors.\nExample:\n# Data Analysis Toolkit\n\n# Overview\nThis toolkit provides various utilities for analyzing and processing data.\n\n# Installation\nTo install the toolkit, run:\n```bash\npip install data-analysis-toolkit",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#tools-for-generating-documentation",
+    "href": "coding_practices/code_documentation.html#tools-for-generating-documentation",
+    "title": "Code documentation",
+    "section": "Tools for Generating Documentation",
+    "text": "Tools for Generating Documentation\n\nSphinx\nSphinx is a documentation generator that creates HTML, PDF, and other formats from reStructuredText files. It is often used for creating comprehensive project documentation.\n\nInstallation:\n\npip install sphinx\n\nUsage:\n\nCreate a Sphinx documentation directory:\nsphinx-quickstart\nGenerate documentation:\nsphinx-build -b html source build",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#best-practices-for-documentation",
+    "href": "coding_practices/code_documentation.html#best-practices-for-documentation",
+    "title": "Code documentation",
+    "section": "Best Practices for Documentation",
+    "text": "Best Practices for Documentation\n\nWrite Clear and Concise Descriptions\nEnsure that descriptions are clear and avoid jargon. Provide enough detail to understand the purpose and functionality of the code without being overly verbose.\n\n\nUpdate Documentation Regularly\nKeep documentation up-to-date with code changes. Outdated documentation can lead to confusion and errors.\n\n\nUse Consistent Style\nFollow consistent formatting and style guidelines throughout the documentation. This includes using the same terminology, formatting conventions, and level of detail.\n\n\nInclude Examples\nProvide examples to demonstrate how to use functions, classes, or modules. Examples help users understand practical applications of the code.\n\n\nDocument Edge Cases and Limitations\nHighlight any edge cases, limitations, or known issues in the documentation. This prepares users for potential problems and guides them in handling exceptions.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#conclusion",
+    "href": "coding_practices/code_documentation.html#conclusion",
+    "title": "Code documentation",
+    "section": "Conclusion",
+    "text": "Conclusion\nDocumenting Python code in a research lab is crucial for maintaining clarity, facilitating collaboration, and ensuring reproducibility. By utilizing code comments, docstrings, README files, and inline documentation, researchers can create comprehensive and useful documentation. Tools like Sphinx, MkDocs, and pdoc can automate and enhance the documentation process.\nAdhering to best practices for writing clear and concise documentation will support effective communication and collaboration within the research team and help ensure that your code is usable and maintainable over time. By integrating these practices, you contribute to a well-organized and reliable research environment, fostering better understanding and reproducibility of scientific work.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_testing.html#basic-test-structure",
+    "href": "coding_practices/code_testing.html#basic-test-structure",
+    "title": "Code testing",
+    "section": "",
+    "text": "# test_calculator.py\ndef add(x, y):\n    return x + y\n\ndef test_add():\n    assert add(1, 2) == 3\n    assert add(-1, 1) == 0\n\npytest",
+    "crumbs": [
+      "Coding practices",
+      "Code testing"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_testing.html#writing-tests-with-pytest",
+    "href": "coding_practices/code_testing.html#writing-tests-with-pytest",
+    "title": "Code testing",
+    "section": "Writing Tests with pytest",
+    "text": "Writing Tests with pytest\n\nBasic Assertions\nUse assert statements to check if the code behaves as expected. pytest will report failed assertions with detailed information.\nExample:\ndef multiply(x, y):\n    return x * y\n\ndef test_multiply():\n    assert multiply(2, 3) == 6\n    assert multiply(0, 5) == 0\n\n\nUsing Fixtures\nFixtures are used to set up and tear down resources needed for tests. They are defined using the @pytest.fixture decorator and can be scoped to functions, classes, modules, or sessions.\nExample:\nimport pytest\n\n@pytest.fixture\ndef sample_data():\n    return [1, 2, 3, 4, 5]\n\ndef test_sum(sample_data):\n    assert sum(sample_data) == 15\n\n\nParameterized Tests\nParameterized tests allow you to run the same test function with multiple sets of inputs using the @pytest.mark.parametrize decorator.\nExample:\nimport pytest\n\n@pytest.mark.parametrize(\"a, b, expected\", [\n    (1, 2, 3),\n    (-1, 1, 0),\n    (2, 2, 4),\n])\ndef test_add(a, b, expected):\n    assert add(a, b) == expected\n\n\nTesting for Exceptions\nYou can check for expected exceptions using the pytest.raises context manager.\nExample:\nimport pytest\n\ndef divide(x, y):\n    if y == 0:\n        raise ValueError(\"Cannot divide by zero\")\n    return x / y\n\ndef test_divide():\n    with pytest.raises(ValueError):\n        divide(1, 0)\n\n\nCustomizing Test Output\npytest provides options for customizing test output, such as verbosity levels and formatting.\nExample:\nRun tests with verbose output:\npytest -v\nGenerate a test report in a JUnit-compatible format:\npytest --junitxml=report.xml",
+    "crumbs": [
+      "Coding practices",
+      "Code testing"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_testing.html#advanced-features-of-pytest",
+    "href": "coding_practices/code_testing.html#advanced-features-of-pytest",
+    "title": "Code testing",
+    "section": "Advanced Features of pytest",
+    "text": "Advanced Features of pytest\n\nPlugins\npytest supports a wide range of plugins to enhance its functionality. Some popular plugins include:\n\npytest-cov: Provides code coverage reporting.\npytest-mock: Simplifies mocking of objects and functions.\npytest-xdist: Allows parallel test execution and distributed testing.\n\nInstall and use plugins via pip:\npip install pytest-cov pytest-mock\nExample with pytest-cov:\npytest --cov=my_module\n\n\nFixtures with Scope and Autouse\nControl the scope and automatic application of fixtures using the scope and autouse parameters.\nExample:\nimport pytest\n\n@pytest.fixture(scope=\"module\", autouse=True)\ndef setup_module():\n    print(\"\\nSetting up module...\")\n    yield\n    print(\"\\nTearing down module...\")",
+    "crumbs": [
+      "Coding practices",
+      "Code testing"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_testing.html#integrating-pytest-into-the-research-workflow",
+    "href": "coding_practices/code_testing.html#integrating-pytest-into-the-research-workflow",
+    "title": "Code testing",
+    "section": "Integrating pytest into the Research Workflow",
+    "text": "Integrating pytest into the Research Workflow\n\nContinuous Integration (CI)\nIntegrate pytest with CI/CD pipelines to automatically run tests on code changes. Tools like GitHub Actions, GitLab CI, and Jenkins support pytest integration.\nExample with GitHub Actions:\nCreate a .github/workflows/test.yml file:\nname: Run Tests\n\non: [push, pull_request]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: Set up Python\n        uses: actions/setup-python@v2\n        with:\n          python-version: '3.8'\n      - name: Install dependencies\n        run: |\n          pip install pytest\n      - name: Run tests\n        run: |\n          pytest\n\n\nCode Coverage\nUse pytest-cov to measure test coverage and ensure that critical parts of your code are tested.\nExample:\npytest --cov=my_module --cov-report=html\n\n\nTest Documentation\nDocument your tests to explain their purpose and expected outcomes, which helps new team members understand the testing strategy and rationale.",
+    "crumbs": [
+      "Coding practices",
+      "Code testing"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_testing.html#conclusion",
+    "href": "coding_practices/code_testing.html#conclusion",
+    "title": "Code testing",
+    "section": "Conclusion",
+    "text": "Conclusion\npytest is a powerful and flexible testing framework that enhances the reliability and maintainability of Python code in a research lab setting. By leveraging pytest’s features such as fixtures, parameterized tests, and plugins, researchers can create comprehensive test suites that ensure code quality and facilitate collaboration. Integrating pytest into your research workflow, including continuous integration and code coverage, will help maintain the integrity of your codebase and support reproducible research.\nBy adopting these practices, you can build a robust testing framework that contributes to more reliable and effective scientific research.\nLearn more about testing here.",
+    "crumbs": [
+      "Coding practices",
+      "Code testing"
+    ]
+  },
+  {
+    "objectID": "coding_practices/clean_code.html#meaningful-naming",
+    "href": "coding_practices/clean_code.html#meaningful-naming",
+    "title": "Code cleanliness",
+    "section": "",
+    "text": "Use Descriptive Names\nNames should clearly convey the purpose of the variables, functions, and classes. Avoid generic names like data or temp unless their context is obvious.\nExample:\n# Bad naming\ndef func(x):\n    return x * 2\n\n# Good naming\ndef double_value(number):\n    return number * 2\n\n\nUse Consistent Naming Conventions\nFollow consistent naming conventions to improve readability. In Python, the conventions are:\n\nVariables and functions: Use snake_case (e.g., total_amount, calculate_sum).\nClasses: Use CamelCase (e.g., InvoiceManager, DataProcessor).\nConstants: Use UPPER_CASE (e.g., MAX_RETRIES, DEFAULT_TIMEOUT).",
+    "crumbs": [
+      "Coding practices",
+      "Code cleanliness"
+    ]
+  },
+  {
+    "objectID": "coding_practices/clean_code.html#small-and-focused-functions",
+    "href": "coding_practices/clean_code.html#small-and-focused-functions",
+    "title": "Code cleanliness",
+    "section": "Small and Focused Functions",
+    "text": "Small and Focused Functions\n\nSingle Responsibility Principle\nEach function should do one thing and do it well. Break down complex functions into smaller, more manageable ones.\nExample:\n# Bad: Single function with multiple responsibilities\ndef process_order(order):\n    validate_order(order)\n    calculate_total(order)\n    save_order_to_database(order)\n\n# Good: Functions with a single responsibility\ndef validate_order(order):\n    # validation logic\n    pass\n\ndef calculate_total(order):\n    # total calculation logic\n    pass\n\ndef save_order_to_database(order):\n    # save logic\n    pass\n\ndef process_order(order):\n    validate_order(order)\n    calculate_total(order)\n    save_order_to_database(order)\n\n\nAvoid Deep Nesting\nDeeply nested code can be hard to follow. Use early returns to reduce nesting levels.\nExample:\n# Bad: Deep nesting\ndef process_data(data):\n    if data is not None:\n        if len(data) &gt; 0:\n            if isinstance(data, list):\n                # process the list\n                pass\n\n# Good: Reduced nesting\ndef process_data(data):\n    if data is None or len(data) == 0 or not isinstance(data, list):\n        return\n\n    # process the list\n    pass",
+    "crumbs": [
+      "Coding practices",
+      "Code cleanliness"
+    ]
+  },
+  {
+    "objectID": "coding_practices/clean_code.html#clear-and-consistent-formatting",
+    "href": "coding_practices/clean_code.html#clear-and-consistent-formatting",
+    "title": "Code cleanliness",
+    "section": "Clear and Consistent Formatting",
+    "text": "Clear and Consistent Formatting\n\nFollow PEP 8\nAdhere to PEP 8, the Python style guide, to ensure consistent formatting. Key guidelines include:\n\nIndentation: Use 4 spaces per indentation level.\nLine Length: Limit all lines to a maximum of 79 characters.\nBlank Lines: Use blank lines to separate functions, classes, and sections within functions.\n\nTo make things easy, we will use ruff as a standard in our lab.\nExample:\n# PEP 8 compliant code\ndef calculate_area(radius):\n    import math\n    return math.pi * (radius ** 2)\n\nclass Circle:\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return calculate_area(self.radius)\n\n\nUse Docstrings\nUse docstrings to document your modules, classes, and functions. Docstrings should describe the purpose, parameters, and return values.\nExample:\ndef calculate_area(radius):\n    \"\"\"\n    Calculate the area of a circle given its radius.\n\n    Args:\n        radius (float): The radius of the circle.\n\n    Returns:\n        float: The area of the circle.\n    \"\"\"\n    import math\n    return math.pi * (radius ** 2)",
+    "crumbs": [
+      "Coding practices",
+      "Code cleanliness"
+    ]
+  },
+  {
+    "objectID": "coding_practices/clean_code.html#error-handling",
+    "href": "coding_practices/clean_code.html#error-handling",
+    "title": "Code cleanliness",
+    "section": "Error Handling",
+    "text": "Error Handling\n\nUse Exceptions Appropriately\nHandle exceptions gracefully and use specific exception types to avoid catching unexpected errors.\nExample:\n# Bad: Catching all exceptions\ntry:\n    result = 10 / 0\nexcept Exception as e:\n    print(f\"An error occurred: {e}\")\n\n# Good: Catching specific exceptions\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    print(f\"Cannot divide by zero: {e}\")\n\n\nAvoid Empty except Clauses\nEmpty except clauses can hide errors and make debugging difficult. Always handle exceptions with proper logging or user feedback.\nExample:\n# Bad: Empty except clause\ntry:\n    # risky operation\n    pass\nexcept:\n    pass\n\n# Good: Proper exception handling\ntry:\n    # risky operation\n    pass\nexcept ValueError as e:\n    print(f\"ValueError occurred: {e}\")",
+    "crumbs": [
+      "Coding practices",
+      "Code cleanliness"
+    ]
+  },
+  {
+    "objectID": "coding_practices/clean_code.html#refactoring",
+    "href": "coding_practices/clean_code.html#refactoring",
+    "title": "Code cleanliness",
+    "section": "Refactoring",
+    "text": "Refactoring\nRegularly review and refactor code to improve structure and readability. Refactoring can include renaming variables, breaking down functions, or reorganizing code.\nKeeping your code tidy ensures it is readable and maintainable. Clean code is easier to understand, debug, and enhance. Here are some tips for maintaining code cleanliness:\nFor more detailed style guide, we will use Google Python Style Guide.",
+    "crumbs": [
+      "Coding practices",
+      "Code cleanliness"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_decoupling.html#understanding-decoupling-in-code",
+    "href": "coding_practices/code_decoupling.html#understanding-decoupling-in-code",
+    "title": "Decoupled code",
+    "section": "",
+    "text": "Multiple Researchers: Different team members might work on different aspects of the codebase.\nEvolving Requirements: Research projects often evolve, requiring frequent changes and updates to the code.\nIntegration of Tools: Code might need to interface with various tools, libraries, and datasets.\n\n\n\nModularity: Breaking down the code into distinct modules or components.\nTestability: Isolated components are easier to test independently.\nMaintainability: Changes in one module have less chance of breaking other parts of the code.\nReusability: Modular components can be reused across different projects or experiments.",
+    "crumbs": [
+      "Coding practices",
+      "Decoupled code"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_decoupling.html#principles-of-decoupled-python-code",
+    "href": "coding_practices/code_decoupling.html#principles-of-decoupled-python-code",
+    "title": "Decoupled code",
+    "section": "Principles of Decoupled Python Code",
+    "text": "Principles of Decoupled Python Code\n\nSingle Responsibility Principle (SRP)\nEach module or class should have only one reason to change, meaning it should have one primary responsibility. For instance, a module handling data cleaning should not be involved in data visualization.\nExample: Suppose you have a module named data_processing.py. It should focus solely on data cleaning and preprocessing, while another module, data_visualization.py, should handle plotting and generating graphs.\n# data_processing.py\ndef clean_data(data):\n    # Implementation of data cleaning\n    pass\n\ndef preprocess_data(data):\n    # Implementation of data preprocessing\n    pass\n\n# data_visualization.py\nimport matplotlib.pyplot as plt\n\ndef plot_data(data):\n    plt.plot(data)\n    plt.show()\n\n\nDependency Injection\nAvoid hard-coding dependencies within your functions or classes. Instead, pass dependencies as arguments. This approach makes your code more flexible and easier to test.\nExample: Instead of hardcoding a data source, pass it as a parameter.\n# Instead of this\ndef analyze_data():\n    data = load_data_from_file('data.csv')\n    # Process data\n\n# Use dependency injection\ndef analyze_data(data_loader):\n    data = data_loader()\n    # Process data\n\n# Example data loader function\ndef load_data_from_file():\n    return read_csv('data.csv')\n\n\nUse Interfaces and Abstract Classes\nDefine abstract classes or interfaces to specify the methods that concrete implementations should provide. This approach helps in decoupling the code from specific implementations and allows easier replacement or modification of components.\nExample:\nfrom abc import ABC, abstractmethod\n\nclass DataLoader(ABC):\n    @abstractmethod\n    def load(self):\n        pass\n\nclass CSVDataLoader(DataLoader):\n    def load(self):\n        # Load data from CSV\n        pass\n\nclass JSONDataLoader(DataLoader):\n    def load(self):\n        # Load data from JSON\n        pass\n\n\nSeparation of Concerns\nEnsure that different aspects of your code are managed separately. For example, keep data handling, computation, and presentation concerns distinct from each other.\nExample:\n# data_manager.py\ndef load_data(filename):\n    # Code to load data\n    pass\n\n# analysis_engine.py\ndef perform_analysis(data):\n    # Code to analyze data\n    pass\n\n# report_generator.py\ndef generate_report(results):\n    # Code to generate report\n    pass",
+    "crumbs": [
+      "Coding practices",
+      "Decoupled code"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_decoupling.html#conclusion",
+    "href": "coding_practices/code_decoupling.html#conclusion",
+    "title": "Decoupled code",
+    "section": "Conclusion",
+    "text": "Conclusion\nDecoupled Python code is essential for maintaining clarity, flexibility, and reliability in a research lab setting. By adhering to principles such as the Single Responsibility Principle, dependency injection, and separation of concerns, researchers can create codebases that are easier to understand, test, and modify. Implementing these practices ensures that research software remains adaptable and robust, supporting the dynamic needs of scientific inquiry.\nFor more information on writing decoupled code, explore here.",
+    "crumbs": [
+      "Coding practices",
+      "Decoupled code"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#code-comments",
+    "href": "coding_practices/code_documentation.html#code-comments",
+    "title": "Code documentation",
+    "section": "Code Comments",
+    "text": "Code Comments\nComments within the code explain specific lines or sections of code, making it easier to understand the logic and intentions of the code.\n\nInline Comments: Provide explanations for individual lines of code.\nBlock Comments: Explain larger sections or functions.\n\nExample:\ndef calculate_statistics(data):\n    \"\"\"\n    Calculate and return basic statistics for the given data.\n\n    Args:\n        data (list): A list of numerical values.\n\n    Returns:\n        tuple: A tuple containing the mean and standard deviation of the data.\n    \"\"\"\n    mean = sum(data) / len(data)  # Calculate mean\n    variance = sum((x - mean) ** 2 for x in data) / len(data)  # Calculate variance\n    std_dev = variance ** 0.5  # Calculate standard deviation\n    return mean, std_dev",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#docstrings",
+    "href": "coding_practices/code_documentation.html#docstrings",
+    "title": "Code documentation",
+    "section": "Docstrings",
+    "text": "Docstrings\nDocstrings are used to describe the purpose, parameters, and return values of functions, classes, and modules. They are essential for generating documentation automatically and integrating with IDEs and documentation tools.\n\nFunction Docstrings: Explain the purpose, arguments, and return values of a function.\nClass Docstrings: Describe the class’s purpose, attributes, and methods.\nModule Docstrings: Provide an overview of the module and its contents.\n\nExample:\nclass DataAnalyzer:\n    \"\"\"\n    A class for analyzing and processing data.\n\n    Attributes:\n        data (list): The data to be analyzed.\n\n    Methods:\n        calculate_mean(): Returns the mean of the data.\n        calculate_median(): Returns the median of the data.\n    \"\"\"\n\n    def __init__(self, data):\n        \"\"\"\n        Initialize the DataAnalyzer with data.\n\n        Args:\n            data (list): The data to be analyzed.\n        \"\"\"\n        self.data = data\n\n    def calculate_mean(self):\n        \"\"\"\n        Calculate and return the mean of the data.\n\n        Returns:\n            float: The mean of the data.\n        \"\"\"\n        return sum(self.data) / len(self.data)",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#readme-files",
+    "href": "coding_practices/code_documentation.html#readme-files",
+    "title": "Code documentation",
+    "section": "README Files",
+    "text": "README Files\nREADME files provide an overview of the project, including its purpose, installation instructions, usage guidelines, and contribution details. They are often the first point of contact for users and contributors.\nExample:\n# Data Analysis Toolkit\n\n# Overview\nThis toolkit provides various utilities for analyzing and processing data.\n\n# Installation\nTo install the toolkit, run:\n```bash\npip install data-analysis-toolkit",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#sphinx",
+    "href": "coding_practices/code_documentation.html#sphinx",
+    "title": "Code documentation",
+    "section": "Sphinx",
+    "text": "Sphinx\nSphinx is a documentation generator that creates HTML, PDF, and other formats from reStructuredText files. It is often used for creating comprehensive project documentation.\n\nInstallation:\n\npip install sphinx\n\nUsage:\n\nCreate a Sphinx documentation directory:\nsphinx-quickstart\nGenerate documentation:\nsphinx-build -b html source build",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#write-clear-and-concise-descriptions",
+    "href": "coding_practices/code_documentation.html#write-clear-and-concise-descriptions",
+    "title": "Code documentation",
+    "section": "Write Clear and Concise Descriptions",
+    "text": "Write Clear and Concise Descriptions\nEnsure that descriptions are clear and avoid jargon. Provide enough detail to understand the purpose and functionality of the code without being overly verbose.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#update-documentation-regularly",
+    "href": "coding_practices/code_documentation.html#update-documentation-regularly",
+    "title": "Code documentation",
+    "section": "Update Documentation Regularly",
+    "text": "Update Documentation Regularly\nKeep documentation up-to-date with code changes. Outdated documentation can lead to confusion and errors.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#use-consistent-style",
+    "href": "coding_practices/code_documentation.html#use-consistent-style",
+    "title": "Code documentation",
+    "section": "Use Consistent Style",
+    "text": "Use Consistent Style\nFollow consistent formatting and style guidelines throughout the documentation. This includes using the same terminology, formatting conventions, and level of detail.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#include-examples",
+    "href": "coding_practices/code_documentation.html#include-examples",
+    "title": "Code documentation",
+    "section": "Include Examples",
+    "text": "Include Examples\nProvide examples to demonstrate how to use functions, classes, or modules. Examples help users understand practical applications of the code.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/code_documentation.html#document-edge-cases-and-limitations",
+    "href": "coding_practices/code_documentation.html#document-edge-cases-and-limitations",
+    "title": "Code documentation",
+    "section": "Document Edge Cases and Limitations",
+    "text": "Document Edge Cases and Limitations\nHighlight any edge cases, limitations, or known issues in the documentation. This prepares users for potential problems and guides them in handling exceptions.",
+    "crumbs": [
+      "Coding practices",
+      "Code documentation"
+    ]
+  },
+  {
+    "objectID": "coding_practices/general_practices.html#chapter-code-development-workflow-for-research-labs",
+    "href": "coding_practices/general_practices.html#chapter-code-development-workflow-for-research-labs",
+    "title": "Good coding practices",
+    "section": "",
+    "text": "1. Introduction\nEffective code management is vital in research, especially for data analysis and simulations. This chapter outlines a simple workflow for developing Python code, using Conda to manage your environment and Ruff for code formatting.\n\n\n2. Setting Up Your Development Environment\n\nInstall Conda:\n\nWhat to Do: Download and install Miniconda or Anaconda from their websites. Miniconda is a lighter version with fewer pre-installed tools, while Anaconda comes with many tools already set up.\nWhy: Conda helps you create and manage isolated coding environments, ensuring that each project has the specific tools and libraries it needs.\n\nCreate and Manage Your Environment:\n\nCreate a New Environment: Open Conda and set up a new environment for your project. Choose a name for your environment and select the Python version you want to use.\nActivate the Environment: Switch to the new environment so you can install and work with the packages specific to your project.\nInstall Packages: Within this environment, install the necessary Python libraries for your project, such as NumPy, Pandas, and Scikit-Learn.\nInstall Ruff: Add Ruff to your environment for code formatting. This tool helps ensure your code follows consistent style rules and is easy to read.\nSave and Recreate Your Environment: Save the configuration of your environment so it can be recreated later or shared with others. You can use this saved configuration to set up the same environment on another machine.\n\n\n\n\n3. Writing and Organizing Code\n\nOrganize Your Project:\n\nFolders: Create a folder structure for your project. Use data/ for storing datasets, notebooks/ for Jupyter Notebooks, src/ for your main code files, tests/ for code tests, and scripts/ for commonly used tools or scripts.\nWhy: Organizing your project this way helps keep your work tidy and makes it easier to locate files and understand the project’s structure.\n\nVersion Control and Documentation:\n\nVersion Control: Use Git to track changes in your code. Set up a repository on GitHub or a similar platform to manage versions of your code and collaborate with others.\nDocumentation: Add comments to your code to explain what it does. Maintain a README.md file to provide an overview of your project, including how to install and use it.\n\nCode Formatting:\n\nUse Ruff: Format your code with Ruff to ensure it adheres to style guidelines. This helps make your code cleaner and more consistent. Run Ruff to check and automatically fix style issues in your code.\n\nTesting Your Code:\n\nWrite Tests: Develop tests for your code to verify that it works as expected. Use testing tools to create and run these tests. Store the test files in the tests/ folder.\n\n\n\n\n4. Managing Data\n\nOrganize and Track Data:\n\nStore Data: Keep raw data in data/raw/ and processed data in data/processed/.\nTrack Changes: Use data management tools to keep track of different versions of your data, which helps in maintaining consistency and reproducibility.\n\nAccess and Share Data:\n\nControl Access: Set up permissions to control who can view or modify your data.\nShare Data: Use platforms like Zenodo to share your datasets with others, ensuring they are properly cited.\n\n\n\n\n5. Ensuring Reproducibility\n\nRecreate Your Environment:\n\nWhat to Do: Use the saved environment configuration to recreate the same coding environment on different machines. This ensures that others can work with the same setup as you.\n\nReproducible Code:\n\nEnsure Execution: Make sure your code can be run by others without issues. Keep Jupyter Notebooks updated to help others replicate your results easily.\n\n\n\n\n6. Collaborating with Others\n\nCode Reviews and Communication:\n\nReview Code: Regularly review each other’s code and use tools like pull requests to integrate changes. This helps maintain code quality and facilitates knowledge sharing.\nCommunicate: Hold regular meetings to discuss progress, share updates, and document your findings collaboratively.\n\n\n\n\n7. Maintaining Your Project\n\nUpdate and Track Issues:\n\nKeep Updated: Regularly update your tools and libraries to ensure everything is up-to-date.\nManage Issues: Use issue tracking tools to handle bugs and feature requests efficiently.\n\n\n\n\n8. Conclusion\nBy following these steps, you’ll ensure that your coding practices are well-organized, reproducible, and collaborative. Using Conda for managing your environment and Ruff for formatting will enhance the efficiency and reliability of your work in the research lab.",
+    "crumbs": [
+      "Coding practices",
+      "Good coding practices"
     ]
   }
 ]

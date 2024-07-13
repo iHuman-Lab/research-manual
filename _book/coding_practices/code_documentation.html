@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>iHuman Lab Research Manual - Virtual environment</title>
+<title>iHuman Lab Research Manual - Code documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../lab_resources.html" rel="next">
-<link href="../introduction.html" rel="prev">
+<link href="../coding_practices/project_structure.html" rel="next">
+<link href="../coding_practices/code_testing.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/virtual_environments.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/virtual_environments.html">Virtual environment</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/code_documentation.html">Code documentation</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -163,12 +163,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../coding_practices/virtual_environments.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Virtual environment</span></a>
+  <a href="../coding_practices/general_practices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Good coding practices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/clean_code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code cleanliness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_decoupling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decoupled code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_documentation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Code documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/project_structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project structure</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../bci_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BCI resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../eeg_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EEG resources</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab_resources.html" class="sidebar-item-text sidebar-link">
@@ -191,22 +239,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#step-1-installing-conda" id="toc-step-1-installing-conda" class="nav-link" data-scroll-target="#step-1-installing-conda">Step 1: Installing Conda</a></li>
-  <li><a href="#step-2-creating-a-conda-environment" id="toc-step-2-creating-a-conda-environment" class="nav-link" data-scroll-target="#step-2-creating-a-conda-environment">Step 2: Creating a Conda Environment</a></li>
-  <li><a href="#step-3-installing-python-packages" id="toc-step-3-installing-python-packages" class="nav-link" data-scroll-target="#step-3-installing-python-packages">Step 3: Installing Python Packages</a></li>
-  <li><a href="#step-4-optional---installing-jupyter-notebook" id="toc-step-4-optional---installing-jupyter-notebook" class="nav-link" data-scroll-target="#step-4-optional---installing-jupyter-notebook">Step 4: Optional - Installing Jupyter Notebook</a></li>
-  <li><a href="#step-5-deactivating-and-removing-environments" id="toc-step-5-deactivating-and-removing-environments" class="nav-link" data-scroll-target="#step-5-deactivating-and-removing-environments">Step 5: Deactivating and Removing Environments</a></li>
+  <li><a href="#importance-of-documentation" id="toc-importance-of-documentation" class="nav-link active" data-scroll-target="#importance-of-documentation">Importance of Documentation</a></li>
+  <li><a href="#types-of-documentation" id="toc-types-of-documentation" class="nav-link" data-scroll-target="#types-of-documentation">Types of Documentation</a>
+  <ul class="collapse">
+  <li><a href="#code-comments" id="toc-code-comments" class="nav-link" data-scroll-target="#code-comments">Code Comments</a></li>
+  <li><a href="#docstrings" id="toc-docstrings" class="nav-link" data-scroll-target="#docstrings">Docstrings</a></li>
+  <li><a href="#readme-files" id="toc-readme-files" class="nav-link" data-scroll-target="#readme-files">README Files</a></li>
+  </ul></li>
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a>
+  <ul class="collapse">
+  <li><a href="#tools-for-generating-documentation" id="toc-tools-for-generating-documentation" class="nav-link" data-scroll-target="#tools-for-generating-documentation">Tools for Generating Documentation</a>
+  <ul class="collapse">
+  <li><a href="#sphinx" id="toc-sphinx" class="nav-link" data-scroll-target="#sphinx">Sphinx</a></li>
+  </ul></li>
+  <li><a href="#best-practices-for-documentation" id="toc-best-practices-for-documentation" class="nav-link" data-scroll-target="#best-practices-for-documentation">Best Practices for Documentation</a>
+  <ul class="collapse">
+  <li><a href="#write-clear-and-concise-descriptions" id="toc-write-clear-and-concise-descriptions" class="nav-link" data-scroll-target="#write-clear-and-concise-descriptions">Write Clear and Concise Descriptions</a></li>
+  <li><a href="#update-documentation-regularly" id="toc-update-documentation-regularly" class="nav-link" data-scroll-target="#update-documentation-regularly">Update Documentation Regularly</a></li>
+  <li><a href="#use-consistent-style" id="toc-use-consistent-style" class="nav-link" data-scroll-target="#use-consistent-style">Use Consistent Style</a></li>
+  <li><a href="#include-examples" id="toc-include-examples" class="nav-link" data-scroll-target="#include-examples">Include Examples</a></li>
+  <li><a href="#document-edge-cases-and-limitations" id="toc-document-edge-cases-and-limitations" class="nav-link" data-scroll-target="#document-edge-cases-and-limitations">Document Edge Cases and Limitations</a></li>
+  </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/virtual_environments.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/virtual_environments.html">Virtual environment</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/code_documentation.html">Code documentation</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Virtual environment</h1>
+<h1 class="title">Code documentation</h1>
 </div>
 
 
@@ -223,72 +287,154 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In this chapter, we will explore how to set up a Python development environment using Conda, a powerful package and environment management system. Conda allows us to create isolated environments for different projects, manage dependencies seamlessly, and ensure reproducibility across different computing environments.</p>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<p>Before we begin, make sure you have the following:</p>
+<p>Effective documentation is essential in a research lab environment, where Python code plays a critical role in data analysis, simulations, and various computational tasks. Well-documented code not only aids in understanding and maintaining the codebase but also facilitates collaboration among researchers and ensures the reproducibility of results. This chapter provides a comprehensive guide on documenting Python code, focusing on practices and tools that enhance clarity and usability in a research context.</p>
+<section id="importance-of-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="importance-of-documentation">Importance of Documentation</h2>
+<p>Documentation serves several crucial purposes:</p>
+<ol type="1">
+<li><strong>Clarity</strong>: Helps researchers understand the code’s purpose and functionality.</li>
+<li><strong>Maintenance</strong>: Facilitates easier updates and debugging by providing insights into the code’s structure and logic.</li>
+<li><strong>Collaboration</strong>: Ensures that team members can work effectively on shared codebases.</li>
+<li><strong>Reproducibility</strong>: Documents the steps and methods used in analysis, enabling others to replicate experiments.</li>
+</ol>
+</section>
+<section id="types-of-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-documentation">Types of Documentation</h2>
+<p>Effective documentation covers various aspects of a codebase:</p>
+<section id="code-comments" class="level3">
+<h3 class="anchored" data-anchor-id="code-comments">Code Comments</h3>
+<p>Comments within the code explain specific lines or sections of code, making it easier to understand the logic and intentions of the code.</p>
 <ul>
-<li><strong>Conda Installed:</strong> If you haven’t installed Conda yet, visit the <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">Conda website</a> and download the installer suitable for your operating system.</li>
-<li><strong>Basic Knowledge of Terminal/Command Line:</strong> Familiarity with basic terminal or command line operations will be helpful.</li>
+<li><strong>Inline Comments</strong>: Provide explanations for individual lines of code.</li>
+<li><strong>Block Comments</strong>: Explain larger sections or functions.</li>
 </ul>
+<p><strong>Example</strong>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_statistics(data):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Calculate and return basic statistics for the given data.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">        data (list): A list of numerical values.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">        tuple: A tuple containing the mean and standard deviation of the data.</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    mean <span class="op">=</span> <span class="bu">sum</span>(data) <span class="op">/</span> <span class="bu">len</span>(data)  <span class="co"># Calculate mean</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    variance <span class="op">=</span> <span class="bu">sum</span>((x <span class="op">-</span> mean) <span class="op">**</span> <span class="dv">2</span> <span class="cf">for</span> x <span class="kw">in</span> data) <span class="op">/</span> <span class="bu">len</span>(data)  <span class="co"># Calculate variance</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    std_dev <span class="op">=</span> variance <span class="op">**</span> <span class="fl">0.5</span>  <span class="co"># Calculate standard deviation</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> mean, std_dev</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="step-1-installing-conda" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-installing-conda">Step 1: Installing Conda</h2>
-<ol type="1">
-<li><strong>Download Anaconda or Miniconda:</strong>
+<section id="docstrings" class="level3">
+<h3 class="anchored" data-anchor-id="docstrings">Docstrings</h3>
+<p>Docstrings are used to describe the purpose, parameters, and return values of functions, classes, and modules. They are essential for generating documentation automatically and integrating with IDEs and documentation tools.</p>
 <ul>
-<li><strong>Anaconda:</strong> Includes Conda, Python, and a large number of packages commonly used in data science and scientific computing.</li>
-<li><strong>Miniconda:</strong> A minimal installer that includes only Conda, Python, and essential packages.</li>
-</ul></li>
-<li><strong>Install Anaconda or Miniconda:</strong> Follow the installation instructions provided on the Conda website for your operating system. Once installed, Conda should be available in your terminal or command prompt.</li>
-</ol>
+<li><strong>Function Docstrings</strong>: Explain the purpose, arguments, and return values of a function.</li>
+<li><strong>Class Docstrings</strong>: Describe the class’s purpose, attributes, and methods.</li>
+<li><strong>Module Docstrings</strong>: Provide an overview of the module and its contents.</li>
+</ul>
+<p><strong>Example</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DataAnalyzer:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">    A class for analyzing and processing data.</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Attributes:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">        data (list): The data to be analyzed.</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">    Methods:</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">        calculate_mean(): Returns the mean of the data.</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">        calculate_median(): Returns the median of the data.</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, data):</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">        Initialize the DataAnalyzer with data.</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">        Args:</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">            data (list): The data to be analyzed.</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.data <span class="op">=</span> data</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> calculate_mean(<span class="va">self</span>):</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">        Calculate and return the mean of the data.</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co">        Returns:</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co">            float: The mean of the data.</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">sum</span>(<span class="va">self</span>.data) <span class="op">/</span> <span class="bu">len</span>(<span class="va">self</span>.data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="step-2-creating-a-conda-environment" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-creating-a-conda-environment">Step 2: Creating a Conda Environment</h2>
-<ol type="1">
-<li><p><strong>Open Terminal or Command Prompt:</strong> Open your terminal application (e.g., Terminal on macOS, Command Prompt on Windows).</p></li>
-<li><p><strong>Create a New Conda Environment:</strong> To create a new environment named <code>myenv</code> with Python 3.8 (adjust the version as needed), use the following command:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> myenv python=3.10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Replace <code>myenv</code> with your preferred environment name and <code>python=3.10</code> with your desired Python version.</p></li>
-<li><p><strong>Activate the Environment:</strong> After creating the environment, activate it using the following command:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate myenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Your terminal prompt should now show the active environment name (<code>myenv</code>).</p></li>
-</ol>
+<section id="readme-files" class="level3">
+<h3 class="anchored" data-anchor-id="readme-files">README Files</h3>
+<p>README files provide an overview of the project, including its purpose, installation instructions, usage guidelines, and contribution details. They are often the first point of contact for users and contributors.</p>
+<p><strong>Example</strong>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Data Analysis Toolkit</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu"># Overview</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>This toolkit provides various utilities for analyzing and processing data.</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu"># Installation</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>To install the toolkit, run:</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install data-analysis-toolkit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="step-3-installing-python-packages" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-installing-python-packages">Step 3: Installing Python Packages</h2>
-<ol type="1">
-<li><p><strong>Using Conda:</strong> Install packages from the Conda repository. For example:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install numpy pandas matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Replace <code>numpy</code>, <code>pandas</code>, and <code>matplotlib</code> with any packages you need for your project.</p></li>
-<li><p><strong>Using pip:</strong> Install packages from PyPI (Python Package Index). For example:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install requests flask</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Replace <code>requests</code> and <code>flask</code> with any packages not available in the Conda repository.</p></li>
-</ol>
 </section>
-<section id="step-4-optional---installing-jupyter-notebook" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-optional---installing-jupyter-notebook">Step 4: Optional - Installing Jupyter Notebook</h2>
-<p>If you plan to use Jupyter Notebook for interactive development:</p>
-<ol type="1">
-<li><p><strong>Install Jupyter Notebook:</strong> Use the following command to install Jupyter Notebook within your Conda environment:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install jupyter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ol>
+<section id="usage" class="level1">
+<h1>Usage</h1>
+<p>To analyze data, use the following commands:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> data_analysis_toolkit <span class="im">import</span> DataAnalyzer</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>analyzer <span class="op">=</span> DataAnalyzer(data)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>mean <span class="op">=</span> analyzer.calculate_mean()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="tools-for-generating-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="tools-for-generating-documentation">Tools for Generating Documentation</h2>
+<section id="sphinx" class="level3">
+<h3 class="anchored" data-anchor-id="sphinx">Sphinx</h3>
+<p>Sphinx is a documentation generator that creates HTML, PDF, and other formats from reStructuredText files. It is often used for creating comprehensive project documentation.</p>
+<ul>
+<li><strong>Installation</strong>:</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install sphinx</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>Usage</strong>:</li>
+</ul>
+<p>Create a Sphinx documentation directory:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sphinx-quickstart</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Generate documentation:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sphinx-build</span> <span class="at">-b</span> html source build</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="step-5-deactivating-and-removing-environments" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-deactivating-and-removing-environments">Step 5: Deactivating and Removing Environments</h2>
-<ol type="1">
-<li><p><strong>Deactivate the Environment:</strong> When you’re done working in your environment, deactivate it using:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p><strong>Removing the Environment (Optional):</strong> If you want to remove a Conda environment entirely:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">--name</span> myenv <span class="at">--all</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Replace <code>myenv</code> with the name of your environment.</p></li>
-</ol>
+</section>
+<section id="best-practices-for-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices-for-documentation">Best Practices for Documentation</h2>
+<section id="write-clear-and-concise-descriptions" class="level3">
+<h3 class="anchored" data-anchor-id="write-clear-and-concise-descriptions">Write Clear and Concise Descriptions</h3>
+<p>Ensure that descriptions are clear and avoid jargon. Provide enough detail to understand the purpose and functionality of the code without being overly verbose.</p>
+</section>
+<section id="update-documentation-regularly" class="level3">
+<h3 class="anchored" data-anchor-id="update-documentation-regularly">Update Documentation Regularly</h3>
+<p>Keep documentation up-to-date with code changes. Outdated documentation can lead to confusion and errors.</p>
+</section>
+<section id="use-consistent-style" class="level3">
+<h3 class="anchored" data-anchor-id="use-consistent-style">Use Consistent Style</h3>
+<p>Follow consistent formatting and style guidelines throughout the documentation. This includes using the same terminology, formatting conventions, and level of detail.</p>
+</section>
+<section id="include-examples" class="level3">
+<h3 class="anchored" data-anchor-id="include-examples">Include Examples</h3>
+<p>Provide examples to demonstrate how to use functions, classes, or modules. Examples help users understand practical applications of the code.</p>
+</section>
+<section id="document-edge-cases-and-limitations" class="level3">
+<h3 class="anchored" data-anchor-id="document-edge-cases-and-limitations">Document Edge Cases and Limitations</h3>
+<p>Highlight any edge cases, limitations, or known issues in the documentation. This prepares users for potential problems and guides them in handling exceptions.</p>
+</section>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Setting up a Python development environment using Conda provides a robust and flexible approach to managing dependencies and isolating project environments. It ensures that your projects are reproducible across different systems and simplifies package management.</p>
+<p>Documenting Python code in a research lab is crucial for maintaining clarity, facilitating collaboration, and ensuring reproducibility. By utilizing code comments, docstrings, README files, and inline documentation, researchers can create comprehensive and useful documentation. Tools like Sphinx, MkDocs, and pdoc can automate and enhance the documentation process.</p>
+<p>Adhering to best practices for writing clear and concise documentation will support effective communication and collaboration within the research team and help ensure that your code is usable and maintainable over time. By integrating these practices, you contribute to a well-organized and reliable research environment, fostering better understanding and reproducibility of scientific work.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -681,13 +827,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../introduction.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="../coding_practices/code_testing.html" class="pagination-link" aria-label="Code testing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Code testing</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../lab_resources.html" class="pagination-link" aria-label="Lab resources">
-        <span class="nav-page-text">Lab resources</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../coding_practices/project_structure.html" class="pagination-link" aria-label="Project structure">
+        <span class="nav-page-text">Project structure</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

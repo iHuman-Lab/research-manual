@@ -1,4 +1,4 @@
-# Get started with Python {.unnumbered}
+# Python resources {.unnumbered}
 
 These are some of the resource to introduce you to basics Python. The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.
 

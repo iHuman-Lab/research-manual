@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>iHuman Lab Research Manual - Get started with BCI</title>
+<title>iHuman Lab Research Manual - Decoupled code</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./eeg_analysis.html" rel="next">
-<link href="./python_development.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../coding_practices/code_testing.html" rel="next">
+<link href="../coding_practices/clean_code.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bci.html">Get started with BCI</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/code_decoupling.html">Decoupled code</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -96,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">iHuman Lab Research Manual</a> 
+      <a href="../">iHuman Lab Research Manual</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -108,13 +142,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+  <a href="../introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -129,13 +163,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./coding_practices/general_practices.html" class="sidebar-item-text sidebar-link">
+  <a href="../coding_practices/general_practices.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Good coding practices</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./coding_practices/project_structure.html" class="sidebar-item-text sidebar-link">
+  <a href="../coding_practices/clean_code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code cleanliness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_decoupling.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Decoupled code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/code_documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_practices/project_structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project structure</span></a>
   </div>
 </li>
@@ -143,31 +201,31 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./python_development.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get started with Python</span></a>
+  <a href="../python_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bci.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Get started with BCI</span></a>
+  <a href="../bci_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BCI resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./eeg_analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get started with EEG</span></a>
+  <a href="../eeg_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EEG resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lab_resources.html" class="sidebar-item-text sidebar-link">
+  <a href="../lab_resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./checklist_and_signature.html" class="sidebar-item-text sidebar-link">
+  <a href="../checklist_and_signature.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Checklist and signature page</span></a>
   </div>
 </li>
@@ -181,19 +239,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#videos" id="toc-videos" class="nav-link active" data-scroll-target="#videos">Videos</a></li>
-  <li><a href="#online" id="toc-online" class="nav-link" data-scroll-target="#online">Online</a></li>
-  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
-  <li><a href="#github-links" id="toc-github-links" class="nav-link" data-scroll-target="#github-links">GitHub Links</a></li>
+  <li><a href="#understanding-decoupling-in-code" id="toc-understanding-decoupling-in-code" class="nav-link active" data-scroll-target="#understanding-decoupling-in-code">Understanding Decoupling in Code</a></li>
+  <li><a href="#principles-of-decoupled-python-code" id="toc-principles-of-decoupled-python-code" class="nav-link" data-scroll-target="#principles-of-decoupled-python-code">Principles of Decoupled Python Code</a>
+  <ul class="collapse">
+  <li><a href="#single-responsibility-principle-srp" id="toc-single-responsibility-principle-srp" class="nav-link" data-scroll-target="#single-responsibility-principle-srp">Single Responsibility Principle (SRP)</a></li>
+  <li><a href="#dependency-injection" id="toc-dependency-injection" class="nav-link" data-scroll-target="#dependency-injection">Dependency Injection</a></li>
+  <li><a href="#use-interfaces-and-abstract-classes" id="toc-use-interfaces-and-abstract-classes" class="nav-link" data-scroll-target="#use-interfaces-and-abstract-classes">Use Interfaces and Abstract Classes</a></li>
+  <li><a href="#separation-of-concerns" id="toc-separation-of-concerns" class="nav-link" data-scroll-target="#separation-of-concerns">Separation of Concerns</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/code_decoupling.html">Decoupled code</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Get started with BCI</h1>
+<h1 class="title">Decoupled code</h1>
 </div>
 
 
@@ -210,69 +273,108 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These are some of the resource to introduce you to basics of brain computer interfaces (BCI) and electroencephalogram (EEG). The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.</p>
-<section id="videos" class="level2">
-<h2 class="anchored" data-anchor-id="videos">Videos</h2>
+<p>In a research lab, Python code often forms the backbone of data analysis, simulation, and experimentation. However, as research projects grow in complexity and involve multiple researchers, writing well-structured and decoupled code becomes crucial. Decoupled code—code that is modular and has minimal interdependencies—enhances readability, maintainability, and testability, ultimately leading to more robust and scalable research tools. This chapter explores the principles of writing decoupled Python code and offers practical guidance tailored to the needs of a research lab environment.</p>
+<section id="understanding-decoupling-in-code" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-decoupling-in-code">Understanding Decoupling in Code</h2>
+<p>Decoupling refers to the practice of reducing dependencies between different parts of a program. When code is decoupled, changes in one part of the code have minimal impact on others. This is particularly important in research labs where:</p>
 <ul>
-<li>Great set of videos which introduce the basics of BCI and EEG (highly recommended!) by Swartz Center for Computational Neuroscience.</li>
+<li><strong>Multiple Researchers</strong>: Different team members might work on different aspects of the codebase.</li>
+<li><strong>Evolving Requirements</strong>: Research projects often evolve, requiring frequent changes and updates to the code.</li>
+<li><strong>Integration of Tools</strong>: Code might need to interface with various tools, libraries, and datasets.</li>
 </ul>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Wlwvgm3AHvc?si=06MCqmIkKrRV0123" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>First few videos are enough to get started (video-1 to video-7). Once you get started with EEG analysis you can watch the rest.</p>
-</div>
-</div>
-<ul>
-<li>If you want to get into general neural time-series analysis here is a great set of videos by Mike X Cohen.</li>
-</ul>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VnHeDXaCngg?si=s82BkD-t7enJlRLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Even though the emphasis is on use of Matlab, you can do all the analysis using a python package called <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html">mne</a>.</li>
-<li>It is also a great opportunity to port the Matlab codes used in the lectures to Python through which you can learn Python also!</li>
-</ul>
-</div>
-</div>
+<p>The primary benefits of decoupling are:</p>
+<ol type="1">
+<li><strong>Modularity</strong>: Breaking down the code into distinct modules or components.</li>
+<li><strong>Testability</strong>: Isolated components are easier to test independently.</li>
+<li><strong>Maintainability</strong>: Changes in one module have less chance of breaking other parts of the code.</li>
+<li><strong>Reusability</strong>: Modular components can be reused across different projects or experiments.</li>
+</ol>
 </section>
-<section id="online" class="level2">
-<h2 class="anchored" data-anchor-id="online">Online</h2>
-<p>This repository contains some awesome resources on BCI: <a href="https://github.com/NeuroTechX/awesome-bci">NeuroTechX/awesome-bci</a></p>
+<section id="principles-of-decoupled-python-code" class="level2">
+<h2 class="anchored" data-anchor-id="principles-of-decoupled-python-code">Principles of Decoupled Python Code</h2>
+<section id="single-responsibility-principle-srp" class="level3">
+<h3 class="anchored" data-anchor-id="single-responsibility-principle-srp">Single Responsibility Principle (SRP)</h3>
+<p>Each module or class should have only one reason to change, meaning it should have one primary responsibility. For instance, a module handling data cleaning should not be involved in data visualization.</p>
+<p><strong>Example</strong>: Suppose you have a module named <code>data_processing.py</code>. It should focus solely on data cleaning and preprocessing, while another module, <code>data_visualization.py</code>, should handle plotting and generating graphs.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># data_processing.py</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> clean_data(data):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Implementation of data cleaning</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> preprocess_data(data):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Implementation of data preprocessing</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># data_visualization.py</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_data(data):</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    plt.plot(data)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="books" class="level2">
-<h2 class="anchored" data-anchor-id="books">Books</h2>
-<p>Amazing introduction to BCI</p>
-<ul>
-<li><a href="https://search.lib.buffalo.edu/discovery/fulldisplay?docid=alma990038424030204803&amp;context=L&amp;vid=01SUNY_BUF:everything&amp;search_scope=UBSUNY&amp;tab=EverythingUBSUNY&amp;lang=en">Brain-computer interfacing : an introduction / Rajesh P.N. Rao.</a></li>
-</ul>
-<p>To analyse neural time series data (a great book!)</p>
-<ul>
-<li><a href="https://direct.mit.edu/books/monograph/4013/Analyzing-Neural-Time-Series-DataTheory-and">Analyzing neural time series data : theory and practice / Mike X. Cohen.</a></li>
-</ul>
+<section id="dependency-injection" class="level3">
+<h3 class="anchored" data-anchor-id="dependency-injection">Dependency Injection</h3>
+<p>Avoid hard-coding dependencies within your functions or classes. Instead, pass dependencies as arguments. This approach makes your code more flexible and easier to test.</p>
+<p><strong>Example</strong>: Instead of hardcoding a data source, pass it as a parameter.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instead of this</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analyze_data():</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> load_data_from_file(<span class="st">'data.csv'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process data</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Use dependency injection</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analyze_data(data_loader):</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> data_loader()</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process data</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Example data loader function</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_data_from_file():</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> read_csv(<span class="st">'data.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="github-links" class="level2">
-<h2 class="anchored" data-anchor-id="github-links">GitHub Links</h2>
-<ul>
-<li><a href="https://github.com/sccn/labstreaminglayer" class="uri">https://github.com/sccn/labstreaminglayer</a></li>
-</ul>
+<section id="use-interfaces-and-abstract-classes" class="level3">
+<h3 class="anchored" data-anchor-id="use-interfaces-and-abstract-classes">Use Interfaces and Abstract Classes</h3>
+<p>Define abstract classes or interfaces to specify the methods that concrete implementations should provide. This approach helps in decoupling the code from specific implementations and allows easier replacement or modification of components.</p>
+<p><strong>Example</strong>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> abc <span class="im">import</span> ABC, abstractmethod</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DataLoader(ABC):</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">@abstractmethod</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> load(<span class="va">self</span>):</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> CSVDataLoader(DataLoader):</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> load(<span class="va">self</span>):</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Load data from CSV</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> JSONDataLoader(DataLoader):</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> load(<span class="va">self</span>):</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Load data from JSON</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="separation-of-concerns" class="level3">
+<h3 class="anchored" data-anchor-id="separation-of-concerns">Separation of Concerns</h3>
+<p>Ensure that different aspects of your code are managed separately. For example, keep data handling, computation, and presentation concerns distinct from each other.</p>
+<p><strong>Example</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># data_manager.py</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_data(filename):</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code to load data</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># analysis_engine.py</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> perform_analysis(data):</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code to analyze data</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># report_generator.py</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_report(results):</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code to generate report</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Decoupled Python code is essential for maintaining clarity, flexibility, and reliability in a research lab setting. By adhering to principles such as the Single Responsibility Principle, dependency injection, and separation of concerns, researchers can create codebases that are easier to understand, test, and modify. Implementing these practices ensures that research software remains adaptable and robust, supporting the dynamic needs of scientific inquiry.</p>
+<p>For more information on writing decoupled code, explore <a href="https://www.youtube.com/watch?v=vhdUyGs_f6c&amp;list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N" target="_blank_">here</a>.</p>
 
 
 </section>
@@ -667,13 +769,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./python_development.html" class="pagination-link" aria-label="Get started with Python">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Get started with Python</span>
+      <a href="../coding_practices/clean_code.html" class="pagination-link" aria-label="Code cleanliness">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Code cleanliness</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./eeg_analysis.html" class="pagination-link" aria-label="Get started with EEG">
-        <span class="nav-page-text">Get started with EEG</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../coding_practices/code_testing.html" class="pagination-link" aria-label="Code testing">
+        <span class="nav-page-text">Code testing</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

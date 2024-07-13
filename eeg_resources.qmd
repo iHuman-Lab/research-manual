@@ -1,4 +1,4 @@
-# Get started with EEG {.unnumbered}
+# EEG resources {.unnumbered}
 
 One of the main modalities we use in our lab to study Human-robot interaction is EEG (others include EMG, haptics). Here are some resources which introduce you to the analysis of EEG and physiological signal processing in general.
 

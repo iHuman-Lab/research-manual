@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>iHuman Lab Research Manual - Get started with Python</title>
+<title>iHuman Lab Research Manual - EEG resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./bci.html" rel="next">
-<link href="./coding_practices/project_structure.html" rel="prev">
+<link href="./lab_resources.html" rel="next">
+<link href="./bci_resources.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./python_development.html">Get started with Python</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./eeg_resources.html">EEG resources</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -143,20 +143,20 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./python_development.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Get started with Python</span></a>
+  <a href="./python_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bci.html" class="sidebar-item-text sidebar-link">
+  <a href="./bci_resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Get started with BCI</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./eeg_analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get started with EEG</span></a>
+  <a href="./eeg_resources.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">EEG resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -181,17 +181,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#websites" id="toc-websites" class="nav-link active" data-scroll-target="#websites">Websites</a></li>
-  <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos">Videos</a></li>
-  <li><a href="#pytorch" id="toc-pytorch" class="nav-link" data-scroll-target="#pytorch">Pytorch</a>
+  <li><a href="#eeg-glossary" id="toc-eeg-glossary" class="nav-link active" data-scroll-target="#eeg-glossary">EEG Glossary</a></li>
+  <li><a href="#setting-up-eeg-recordings" id="toc-setting-up-eeg-recordings" class="nav-link" data-scroll-target="#setting-up-eeg-recordings">Setting up EEG recordings</a></li>
+  <li><a href="#eeg-analysis-steps" id="toc-eeg-analysis-steps" class="nav-link" data-scroll-target="#eeg-analysis-steps">EEG analysis steps</a></li>
+  <li><a href="#mne" id="toc-mne" class="nav-link" data-scroll-target="#mne">MNE</a></li>
+  <li><a href="#eeg-databases" id="toc-eeg-databases" class="nav-link" data-scroll-target="#eeg-databases">EEG databases</a></li>
+  <li><a href="#papers" id="toc-papers" class="nav-link" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#github-links" id="toc-github-links" class="nav-link" data-scroll-target="#github-links">GitHub Links</a>
   <ul class="collapse">
-  <li><a href="#pytorch-related-links" id="toc-pytorch-related-links" class="nav-link" data-scroll-target="#pytorch-related-links">Pytorch Related Links</a></li>
-  </ul></li>
-  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a>
-  <ul class="collapse">
-  <li><a href="#general-programming" id="toc-general-programming" class="nav-link" data-scroll-target="#general-programming">General Programming</a></li>
-  <li><a href="#data-science-related" id="toc-data-science-related" class="nav-link" data-scroll-target="#data-science-related">Data Science Related</a></li>
-  <li><a href="#misc" id="toc-misc" class="nav-link" data-scroll-target="#misc">Misc</a></li>
+  <li><a href="#analysis-related-repositories" id="toc-analysis-related-repositories" class="nav-link" data-scroll-target="#analysis-related-repositories">Analysis Related Repositories</a></li>
+  <li><a href="#usefull-libraries-and-links" id="toc-usefull-libraries-and-links" class="nav-link" data-scroll-target="#usefull-libraries-and-links">Usefull Libraries and Links</a></li>
+  <li><a href="#deeplearning-with-physiological-signals" id="toc-deeplearning-with-physiological-signals" class="nav-link" data-scroll-target="#deeplearning-with-physiological-signals">DeepLearning with Physiological Signals</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Get started with Python</h1>
+<h1 class="title">EEG resources</h1>
 </div>
 
 
@@ -218,70 +218,122 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These are some of the resource to introduce you to basics Python. The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.</p>
-<section id="websites" class="level2">
-<h2 class="anchored" data-anchor-id="websites">Websites</h2>
-<ul>
-<li><p><a href="https://www.edx.org">Edx</a> If you are new to python programming, definitely take <a href="https://www.edx.org/course/6-00-1x-introduction-to-computer-science-and-programming-using-python-3">Introduction to Computer Science and Programming Using Python</a> course. It is one of the best courses out there from which you can learn lot of fundamental python programming skills.</p></li>
-<li><p><a href="https://www.hackerrank.com/dashboard">HackerRank</a> HackerRank has lot of resources to learn many programming languages. Regestration is free.</p></li>
-<li><p><a href="https://leetcode.com">LeetCode</a> LeetCode is much intensive platform to learn coding. It can be used if you want to prepare for interviews.</p></li>
-</ul>
+<p>One of the main modalities we use in our lab to study Human-robot interaction is EEG (others include EMG, haptics). Here are some resources which introduce you to the analysis of EEG and physiological signal processing in general.</p>
+<section id="eeg-glossary" class="level2">
+<h2 class="anchored" data-anchor-id="eeg-glossary">EEG Glossary</h2>
+<p><a href="https://www.researchgate.net/publication/318904019_A_revised_glossary_of_terms_most_commonly_used_by_clinical_electroencephalographers_and_updated_proposal_for_the_report_format_of_the_EEG_findings" target="_blank_">A revised glossary of terms most commonly used by clinicalelectroencephalographers and updated proposal for the reportformat of the EEG findings. Revision 2017</a></p>
 </section>
-<section id="videos" class="level2">
-<h2 class="anchored" data-anchor-id="videos">Videos</h2>
-<p>PyCon is one of the best way to get in touch with great Python community. Lot of great talks and tutorials (highly recommended!).</p>
+<section id="setting-up-eeg-recordings" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-eeg-recordings">Setting up EEG recordings</h2>
+<p>Here is a small video on how to setup advanced brain monitoring electrodes for EEG recording.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please feel free to drop by the lab to get more information</p>
+</div>
+</div>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OH3C5a2uAWA?si=x91CSAR0r88VNNBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/23aQdrS58e0?si=fQLtUfLWeCCI7byc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RpPO9q6F48E?si=IEXQQWODqtwrfiWB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
 </section>
-<section id="pytorch" class="level2">
-<h2 class="anchored" data-anchor-id="pytorch">Pytorch</h2>
-<p>In the lab we extensively use <a href="https://pytorch.org">Pytroch</a> for implementation of Deep learning algorithms. Below are some resources for Pytorch</p>
-<p>A github repository with lot of resources: <a href="https://github.com/ritchieng/the-incredible-pytorch">The incredible Pytorch</a></p>
-<section id="pytorch-related-links" class="level3">
-<h3 class="anchored" data-anchor-id="pytorch-related-links">Pytorch Related Links</h3>
+<section id="eeg-analysis-steps" class="level2">
+<h2 class="anchored" data-anchor-id="eeg-analysis-steps">EEG analysis steps</h2>
+<p>For those who are starting with EEG analysis, it can be overwhelming to go across a lot of steps. Here is almost a standard procedure for a lot of EEG analysis. Each block is a research area by itself. There are a lot of papers on each block. Do not get scared once you start the analysis of some EEG data, these steps will become second to your nature. Do read below given paper about how others are doing these steps. We use <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html" target="_blank_">mne-python</a> to implement different block functionalities. If you want more information, refer to <a href="https://www.youtube.com/@mikexcohen1" target="_blank_">Mike X Cohen’s lectures</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/eeg_analysis.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>eeg-analysis</figcaption>
+</figure>
+</div>
+</section>
+<section id="mne" class="level2">
+<h2 class="anchored" data-anchor-id="mne">MNE</h2>
+<p>In the lab, we extensively use <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html" target="_blank_">mne-python</a> for analysis of a lot of EEG (time series in general) data. It is an amazing package with a lot of development and an amazing community. If you get a chance, do join the <a href="https://mail.nmr.mgh.harvard.edu/mailman/listinfo/mne_analysis" target="_blank_">mailing list.</a></p>
+<p>Here are some resources to get you started with mne-python</p>
 <ul>
-<li><a href="https://github.com/pytorch/ignite/" target="_blank_">https://github.com/pytorch/ignite/</a></li>
-<li><a href="https://github.com/williamFalcon/pytorch-lightning" target="_blank_">https://github.com/williamFalcon/pytorch-lightning</a></li>
-<li><a href="https://github.com/astooke/rlpyt" target="_blank_">https://github.com/astooke/rlpyt</a></li>
-<li><a href="https://github.com/szymonmaszke/torchfunc" target="_blank_">https://github.com/szymonmaszke/torchfunc</a></li>
-<li><a href="https://github.com/wkentaro/pytorch-for-numpy-users" target="_blank_">https://github.com/wkentaro/pytorch-for-numpy-users</a></li>
-<li><a href="https://github.com/awwong1/torchprof" target="_blank_">https://github.com/awwong1/torchprof</a></li>
-<li><a href="https://github.com/suriyadeepan/torchtest" target="_blank_">https://github.com/suriyadeepan/torchtest</a></li>
+<li><p><a href="https://mybinder.org/v2/gh/wmvanvliet/SNL_workshop_2019/master?filepath=SNL_workshop_2019.ipynb" target="_blank_">Basic mne-python</a></p></li>
+<li><p><a href="https://mne.tools/0.14/tutorials.html" target="_blank_">Intermediate mne-python tutorials</a></p></li>
 </ul>
 </section>
+<section id="eeg-databases" class="level2">
+<h2 class="anchored" data-anchor-id="eeg-databases">EEG databases</h2>
+<p>Here are some databases on which you are apply your mne-python skills.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The best way to learn a (Python) package is to use it on your own data and see what are the capabilities</p>
+</div>
+</div>
+<p>Pick up some data from this repository: <a href="https://github.com/meagmohit/EEG-Datasets" target="_blank_">meagmohit/EEG-Datasets</a>. Use mne-python do some analysis and that is how you get introduced to analysis of EEG.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you have doubts, do drop by to iHuman lab and ask any questions!</p>
+</div>
+</div>
 </section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<section id="general-programming" class="level3">
-<h3 class="anchored" data-anchor-id="general-programming">General Programming</h3>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
 <ul>
-<li><a href="http://pythontutor.com" target="_blank_">http://pythontutor.com</a></li>
-<li><a href="https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/" target="_blank_">https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/</a></li>
-<li><a href="https://opensource.guide" target="_blank_">https://opensource.guide</a></li>
-<li><a href="https://pyvideo.org" target="_blank_">https://pyvideo.org</a></li>
-<li><a href="https://github.com/satwikkansal/wtfpython" target="_blank_">https://github.com/satwikkansal/wtfpython</a></li>
-<li><a href="https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/" target="_blank_">https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/</a></li>
-<li><a href="https://jalammar.github.io/visual-numpy/" target="_blank_">https://jalammar.github.io/visual-numpy/</a></li>
+<li><p><a href="https://osf.io/a8dhx/" target="_blank_">Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG.</a></p></li>
+<li><p><a href="https://www.frontiersin.org/articles/10.3389/fnins.2018.00530/full" target="_blank_">A Reproducible MEG/EEG Group Study With the MNE Software: Recommendations, Quality Assessments, and Good Practices</a></p></li>
+<li><p><a href="https://search.lib.buffalo.edu/discovery/fulldisplay?docid=iop10.1088/1741-2560/12/3/031001&amp;context=PC&amp;vid=01SUNY_BUF:everything&amp;search_scope=UBSUNY&amp;tab=EverythingUBSUNY&amp;lang=en" target="_blank_">EEG artifact removal—state-of-the-art and guidelines</a></p></li>
 </ul>
 </section>
-<section id="data-science-related" class="level3">
-<h3 class="anchored" data-anchor-id="data-science-related">Data Science Related</h3>
+<section id="github-links" class="level2">
+<h2 class="anchored" data-anchor-id="github-links">GitHub Links</h2>
+<section id="analysis-related-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-related-repositories">Analysis Related Repositories</h3>
 <ul>
-<li><a href="https://github.com/rasbt/mlxtend" target="_blank_">https://github.com/rasbt/mlxtend</a></li>
-<li><a href="https://github.com/slundberg/shap" target="_blank_">https://github.com/slundberg/shap</a></li>
-<li><a href="https://github.com/ericmjl/pyjanitor" target="_blank_">https://github.com/ericmjl/pyjanitor</a></li>
-<li><a href="https://esa.github.io/pagmo2/index.html" target="_blank_">https://esa.github.io/pagmo2/index.html</a></li>
-<li><a href="https://github.com/modin-project/modin" target="_blank_">https://github.com/modin-project/modin</a></li>
-<li><a href="https://docs.metaflow.org" target="_blank_">https://docs.metaflow.org</a></li>
-<li><a href="https://perceptilabs.readme.io/docs/welcome" target="_blank_">https://perceptilabs.readme.io/docs/welcome</a></li>
+<li><a href="https://github.com/sappelhoff/pyprep" target="_blank_">https://github.com/sappelhoff/pyprep</a></li>
+<li><a href="https://github.com/autoreject/autoreject" target="_blank_">https://github.com/autoreject/autoreject</a></li>
+<li><a href="https://github.com/mdelpozobanos/eegfaster" target="_blank_">https://github.com/mdelpozobanos/eegfaster</a></li>
+<li><a href="https://github.com/neurodsp-tools/neurodsp" target="_blank_">https://github.com/neurodsp-tools/neurodsp</a></li>
+<li><a href="https://github.com/PIA-Group/BioSPPy" target="_blank_">https://github.com/PIA-Group/BioSPPy</a></li>
+<li><a href="https://github.com/cancui/EMG-Signal-Processing-Library" target="_blank_">https://github.com/cancui/EMG-Signal-Processing-Library</a></li>
+<li><a href="https://github.com/unpingco/Python-for-Signal-Processing" target="_blank_">https://github.com/unpingco/Python-for-Signal-Processing</a></li>
 </ul>
 </section>
-<section id="misc" class="level3">
-<h3 class="anchored" data-anchor-id="misc">Misc</h3>
+<section id="usefull-libraries-and-links" class="level3">
+<h3 class="anchored" data-anchor-id="usefull-libraries-and-links">Usefull Libraries and Links</h3>
 <ul>
-<li><a href="https://github.com/ray-project/ray" target="_blank_">https://github.com/ray-project/ray</a> (A very good parallel processing library)</li>
+<li><a href="http://www.marsja.se/best-python-libraries-psychology/" target="_blank_">http://www.marsja.se/best-python-libraries-psychology/</a></li>
+<li><a href="https://github.com/NeuroDataDesign" target="_blank_">https://github.com/NeuroDataDesign</a></li>
+<li><a href="https://github.com/NeuroTechX/eeg-notebooks" target="_blank_">https://github.com/NeuroTechX/eeg-notebooks</a></li>
+<li><a href="https://github.com/openlists/OpenTools/blob/master/README.md" target="_blank_">https://github.com/openlists/OpenTools/blob/master/README.md</a></li>
+<li><a href="https://github.com/mne-tools/mne-study-template" target="_blank_">https://github.com/mne-tools/mne-study-template</a></li>
+<li><a href="https://swipe4ica.github.io/#/" target="_blank_">https://swipe4ica.github.io/#/</a> This is an interesting way to learn how to identify artifacts in EEG</li>
+<li><a href="https://labeling.ucsd.edu/label" target="_blank_">https://labeling.ucsd.edu/label</a> Similar to previous link</li>
+</ul>
+</section>
+<section id="deeplearning-with-physiological-signals" class="level3">
+<h3 class="anchored" data-anchor-id="deeplearning-with-physiological-signals">DeepLearning with Physiological Signals</h3>
+<ul>
+<li><a href="https://github.com/vlawhern/arl-eegmodels" target="_blank_">https://github.com/vlawhern/arl-eegmodels</a></li>
+<li><a href="https://github.com/EderSantana/DeepEEG" target="_blank_">https://github.com/EderSantana/DeepEEG</a></li>
+<li><a href="https://robintibor.github.io/braindecode/index.html" target="_blank_">https://robintibor.github.io/braindecode/index.html</a></li>
+<li><a href="https://github.com/mne-tools/mne-torch" target="_blank_">https://github.com/mne-tools/mne-torch</a></li>
 </ul>
 
 
@@ -678,13 +730,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./coding_practices/project_structure.html" class="pagination-link" aria-label="Project structure">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Project structure</span>
+      <a href="./bci_resources.html" class="pagination-link" aria-label="Get started with BCI">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Get started with BCI</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./bci.html" class="pagination-link" aria-label="Get started with BCI">
-        <span class="nav-page-text">Get started with BCI</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./lab_resources.html" class="pagination-link" aria-label="Lab resources">
+        <span class="nav-page-text">Lab resources</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1,6 +1,6 @@
-# Get started with BCI {.unnumbered}
+# BCI resources {.unnumbered}
 
-These are some of the resource to introduce you to basics of brain computer interfaces (BCI) and electroencephalogram (EEG). The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.
+These are some of the resource to introduce you to basics of brain computer interfaces (BCI). The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.
 
 ## Videos
 
@@ -8,7 +8,7 @@ These are some of the resource to introduce you to basics of brain computer inte
 
 ```{=html}
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Wlwvgm3AHvc?si=06MCqmIkKrRV0123" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wlwvgm3AHvc?si=RZ_QcPf8SG1lAm2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 ```
 
 :::{.callout-tip}
@@ -27,7 +27,7 @@ First few videos are enough to get started (video-1 to video-7). Once you get st
 * It is also a great opportunity to port the Matlab codes used in the lectures to Python through which you can learn Python also!
 :::
 
-## Online
+## GitHub links
 
 This repository contains some awesome resources on BCI: [NeuroTechX/awesome-bci](https://github.com/NeuroTechX/awesome-bci)
 
@@ -41,6 +41,12 @@ To analyse neural time series data (a great book!)
 
 * [Analyzing neural time series data : theory and practice / Mike X. Cohen.](https://direct.mit.edu/books/monograph/4013/Analyzing-Neural-Time-Series-DataTheory-and)
 
-## GitHub Links
+# Lab streaming layer
+
+Lab streaming layer (LSL) is an open-source networked middleware ecosystem to stream, receive, synchronize, and record neural, physiological, and behavioral data streams acquired from diverse sensor hardware.
+
+It reduces complexity and barriers to entry for researchers, sensor manufacturers, and users through a simple, interoperable, standardized API to connect data consumers to data producers while abstracting obstacles such as platform differences, stream discovery, synchronization and fault-tolerance.
+
+We use LSL as a standard platform to interface multiple sensor and simulation softwares in our lab.
 
 * <https://github.com/sccn/labstreaminglayer>

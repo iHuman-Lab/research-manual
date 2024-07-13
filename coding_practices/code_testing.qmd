@@ -1,0 +1,207 @@
+
+# Code testing {.unnumbered}
+
+In the research lab environment, testing Python code is crucial for ensuring accuracy, reliability, and reproducibility of scientific results. `pytest` is one of the most popular testing frameworks in Python due to its simplicity, flexibility, and powerful features.
+
+## Basic Test Structure
+
+`pytest` automatically discovers and runs tests based on their naming conventions. Tests should be placed in files named `test_*.py` or `*_test.py`, and test functions should start with `test_`.
+
+**Example**:
+
+```python
+# test_calculator.py
+def add(x, y):
+    return x + y
+
+def test_add():
+    assert add(1, 2) == 3
+    assert add(-1, 1) == 0
+```
+
+Run tests using the `pytest` command:
+
+```bash
+pytest
+```
+
+## Writing Tests with `pytest`
+
+### Basic Assertions
+
+Use `assert` statements to check if the code behaves as expected. `pytest` will report failed assertions with detailed information.
+
+**Example**:
+
+```python
+def multiply(x, y):
+    return x * y
+
+def test_multiply():
+    assert multiply(2, 3) == 6
+    assert multiply(0, 5) == 0
+```
+
+### Using Fixtures
+
+Fixtures are used to set up and tear down resources needed for tests. They are defined using the `@pytest.fixture` decorator and can be scoped to functions, classes, modules, or sessions.
+
+**Example**:
+
+```python
+import pytest
+
+@pytest.fixture
+def sample_data():
+    return [1, 2, 3, 4, 5]
+
+def test_sum(sample_data):
+    assert sum(sample_data) == 15
+```
+
+### Parameterized Tests
+
+Parameterized tests allow you to run the same test function with multiple sets of inputs using the `@pytest.mark.parametrize` decorator.
+
+**Example**:
+
+```python
+import pytest
+
+@pytest.mark.parametrize("a, b, expected", [
+    (1, 2, 3),
+    (-1, 1, 0),
+    (2, 2, 4),
+])
+def test_add(a, b, expected):
+    assert add(a, b) == expected
+```
+
+### Testing for Exceptions
+
+You can check for expected exceptions using the `pytest.raises` context manager.
+
+**Example**:
+
+```python
+import pytest
+
+def divide(x, y):
+    if y == 0:
+        raise ValueError("Cannot divide by zero")
+    return x / y
+
+def test_divide():
+    with pytest.raises(ValueError):
+        divide(1, 0)
+```
+
+### Customizing Test Output
+
+`pytest` provides options for customizing test output, such as verbosity levels and formatting.
+
+**Example**:
+
+Run tests with verbose output:
+
+```bash
+pytest -v
+```
+
+Generate a test report in a JUnit-compatible format:
+
+```bash
+pytest --junitxml=report.xml
+```
+
+## Advanced Features of `pytest`
+
+### Plugins
+
+`pytest` supports a wide range of plugins to enhance its functionality. Some popular plugins include:
+
+- **`pytest-cov`**: Provides code coverage reporting.
+- **`pytest-mock`**: Simplifies mocking of objects and functions.
+- **`pytest-xdist`**: Allows parallel test execution and distributed testing.
+
+Install and use plugins via pip:
+
+```bash
+pip install pytest-cov pytest-mock
+```
+
+**Example with `pytest-cov`**:
+
+```bash
+pytest --cov=my_module
+```
+
+### Fixtures with Scope and Autouse
+
+Control the scope and automatic application of fixtures using the `scope` and `autouse` parameters.
+
+**Example**:
+
+```python
+import pytest
+
+@pytest.fixture(scope="module", autouse=True)
+def setup_module():
+    print("\nSetting up module...")
+    yield
+    print("\nTearing down module...")
+```
+
+## Integrating `pytest` into the Research Workflow
+
+### Continuous Integration (CI)
+
+Integrate `pytest` with CI/CD pipelines to automatically run tests on code changes. Tools like GitHub Actions, GitLab CI, and Jenkins support `pytest` integration.
+
+**Example with GitHub Actions**:
+
+Create a `.github/workflows/test.yml` file:
+
+```yaml
+name: Run Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: |
+          pip install pytest
+      - name: Run tests
+        run: |
+          pytest
+```
+
+### Code Coverage
+
+Use `pytest-cov` to measure test coverage and ensure that critical parts of your code are tested.
+
+**Example**:
+
+```bash
+pytest --cov=my_module --cov-report=html
+```
+
+### Test Documentation
+
+Document your tests to explain their purpose and expected outcomes, which helps new team members understand the testing strategy and rationale.
+
+## Conclusion
+
+`pytest` is a powerful and flexible testing framework that enhances the reliability and maintainability of Python code in a research lab setting. By leveraging `pytest`'s features such as fixtures, parameterized tests, and plugins, researchers can create comprehensive test suites that ensure code quality and facilitate collaboration. Integrating `pytest` into your research workflow, including continuous integration and code coverage, will help maintain the integrity of your codebase and support reproducible research.
+
+By adopting these practices, you can build a robust testing framework that contributes to more reliable and effective scientific research.
+
+Learn more about testing [here](https://www.youtube.com/watch?v=K47pr6lPxsA&list=PLC0nd42SBTaPYSgBqtlltw328zuafaCzA){target="_blank_"}.

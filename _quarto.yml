@@ -12,11 +12,14 @@ book:
     - part: 'Coding practices'
       chapters:
         - coding_practices/general_practices.qmd
+        - coding_practices/clean_code.qmd
+        - coding_practices/code_decoupling.qmd
+        - coding_practices/code_testing.qmd
+        - coding_practices/code_documentation.qmd
         - coding_practices/project_structure.qmd
-    - python_development.qmd
-    - bci.qmd
-    - eeg_analysis.qmd
-
+    - python_resources.qmd
+    - bci_resources.qmd
+    - eeg_resources.qmd
     - lab_resources.qmd
     - checklist_and_signature.qmd
 
@@ -25,5 +28,6 @@ bibliography: references.bib
 format:
   html:
     theme: [cosmo, custom.scss]
+    highlight-style: dracula
   pdf:
     documentclass: scrreprt
