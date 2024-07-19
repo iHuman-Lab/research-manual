@@ -135,6 +135,30 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./coding_practices/clean_code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code cleanliness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coding_practices/code_decoupling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decoupled code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coding_practices/code_testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coding_practices/code_documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./coding_practices/project_structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project structure</span></a>
   </div>
@@ -150,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bci_resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get started with BCI</span></a>
+ <span class="menu-text">BCI resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -182,16 +206,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#eeg-glossary" id="toc-eeg-glossary" class="nav-link active" data-scroll-target="#eeg-glossary">EEG Glossary</a></li>
-  <li><a href="#setting-up-eeg-recordings" id="toc-setting-up-eeg-recordings" class="nav-link" data-scroll-target="#setting-up-eeg-recordings">Setting up EEG recordings</a></li>
-  <li><a href="#eeg-analysis-steps" id="toc-eeg-analysis-steps" class="nav-link" data-scroll-target="#eeg-analysis-steps">EEG analysis steps</a></li>
-  <li><a href="#mne" id="toc-mne" class="nav-link" data-scroll-target="#mne">MNE</a></li>
-  <li><a href="#eeg-databases" id="toc-eeg-databases" class="nav-link" data-scroll-target="#eeg-databases">EEG databases</a></li>
-  <li><a href="#papers" id="toc-papers" class="nav-link" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#setting-up-eeg-recordings" id="toc-setting-up-eeg-recordings" class="nav-link" data-scroll-target="#setting-up-eeg-recordings">Setting up EEG Recordings</a></li>
+  <li><a href="#eeg-analysis-steps" id="toc-eeg-analysis-steps" class="nav-link" data-scroll-target="#eeg-analysis-steps">EEG Analysis Steps</a></li>
+  <li><a href="#mne-mne-python" id="toc-mne-mne-python" class="nav-link" data-scroll-target="#mne-mne-python">MNE (MNE-Python)</a></li>
+  <li><a href="#eeg-databases" id="toc-eeg-databases" class="nav-link" data-scroll-target="#eeg-databases">EEG Databases</a></li>
+  <li><a href="#key-papers" id="toc-key-papers" class="nav-link" data-scroll-target="#key-papers">Key Papers</a></li>
   <li><a href="#github-links" id="toc-github-links" class="nav-link" data-scroll-target="#github-links">GitHub Links</a>
   <ul class="collapse">
   <li><a href="#analysis-related-repositories" id="toc-analysis-related-repositories" class="nav-link" data-scroll-target="#analysis-related-repositories">Analysis Related Repositories</a></li>
-  <li><a href="#usefull-libraries-and-links" id="toc-usefull-libraries-and-links" class="nav-link" data-scroll-target="#usefull-libraries-and-links">Usefull Libraries and Links</a></li>
-  <li><a href="#deeplearning-with-physiological-signals" id="toc-deeplearning-with-physiological-signals" class="nav-link" data-scroll-target="#deeplearning-with-physiological-signals">DeepLearning with Physiological Signals</a></li>
+  <li><a href="#useful-libraries-and-links" id="toc-useful-libraries-and-links" class="nav-link" data-scroll-target="#useful-libraries-and-links">Useful Libraries and Links</a></li>
+  <li><a href="#deep-learning-with-physiological-signals" id="toc-deep-learning-with-physiological-signals" class="nav-link" data-scroll-target="#deep-learning-with-physiological-signals">Deep Learning with Physiological Signals</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -221,30 +245,21 @@ ul.task-list li input[type="checkbox"] {
 <p>One of the main modalities we use in our lab to study Human-robot interaction is EEG (others include EMG, haptics). Here are some resources which introduce you to the analysis of EEG and physiological signal processing in general.</p>
 <section id="eeg-glossary" class="level2">
 <h2 class="anchored" data-anchor-id="eeg-glossary">EEG Glossary</h2>
-<p><a href="https://www.researchgate.net/publication/318904019_A_revised_glossary_of_terms_most_commonly_used_by_clinical_electroencephalographers_and_updated_proposal_for_the_report_format_of_the_EEG_findings" target="_blank_">A revised glossary of terms most commonly used by clinicalelectroencephalographers and updated proposal for the reportformat of the EEG findings. Revision 2017</a></p>
+<p>To understand EEG terminology and report formats, refer to the comprehensive glossary by clinical electroencephalographers: <a href="https://www.sciencedirect.com/science/article/pii/S2467981X17300215?via%3Dihub" target="_blank_">EEG Glossary</a>.</p>
 </section>
 <section id="setting-up-eeg-recordings" class="level2">
-<h2 class="anchored" data-anchor-id="setting-up-eeg-recordings">Setting up EEG recordings</h2>
-<p>Here is a small video on how to setup advanced brain monitoring electrodes for EEG recording.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Please feel free to drop by the lab to get more information</p>
-</div>
+<h2 class="anchored" data-anchor-id="setting-up-eeg-recordings">Setting up EEG Recordings</h2>
+<p>Watch this video tutorial on setting up advanced brain monitoring electrodes for EEG recording:</p>
+<div class="tip">
+<p>Feel free to drop by the lab for more information.</p>
 </div>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RpPO9q6F48E?si=IEXQQWODqtwrfiWB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RpPO9q6F48E?si=IEXQQWODqtwrfiWB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
 </p>
 </section>
 <section id="eeg-analysis-steps" class="level2">
-<h2 class="anchored" data-anchor-id="eeg-analysis-steps">EEG analysis steps</h2>
+<h2 class="anchored" data-anchor-id="eeg-analysis-steps">EEG Analysis Steps</h2>
 <p>For those who are starting with EEG analysis, it can be overwhelming to go across a lot of steps. Here is almost a standard procedure for a lot of EEG analysis. Each block is a research area by itself. There are a lot of papers on each block. Do not get scared once you start the analysis of some EEG data, these steps will become second to your nature. Do read below given paper about how others are doing these steps. We use <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html" target="_blank_">mne-python</a> to implement different block functionalities. If you want more information, refer to <a href="https://www.youtube.com/@mikexcohen1" target="_blank_">Mike X Cohen’s lectures</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -253,17 +268,17 @@ Tip
 </figure>
 </div>
 </section>
-<section id="mne" class="level2">
-<h2 class="anchored" data-anchor-id="mne">MNE</h2>
-<p>In the lab, we extensively use <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html" target="_blank_">mne-python</a> for analysis of a lot of EEG (time series in general) data. It is an amazing package with a lot of development and an amazing community. If you get a chance, do join the <a href="https://mail.nmr.mgh.harvard.edu/mailman/listinfo/mne_analysis" target="_blank_">mailing list.</a></p>
-<p>Here are some resources to get you started with mne-python</p>
+<section id="mne-mne-python" class="level2">
+<h2 class="anchored" data-anchor-id="mne-mne-python">MNE (MNE-Python)</h2>
+<p>We extensively use <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html" target="_blank_">mne-python</a> for EEG data analysis. Resources to get you started:</p>
 <ul>
-<li><p><a href="https://mybinder.org/v2/gh/wmvanvliet/SNL_workshop_2019/master?filepath=SNL_workshop_2019.ipynb" target="_blank_">Basic mne-python</a></p></li>
-<li><p><a href="https://mne.tools/0.14/tutorials.html" target="_blank_">Intermediate mne-python tutorials</a></p></li>
+<li><a href="https://mybinder.org/v2/gh/wmvanvliet/SNL_workshop_2019/master?filepath=SNL_workshop_2019.ipynb" target="_blank_">Basic mne-python tutorial</a></li>
+<li><a href="https://mne.tools/0.14/tutorials.html" target="_blank_">Intermediate tutorials</a></li>
+<li>Join the <a href="https://mail.nmr.mgh.harvard.edu/mailman/listinfo/mne_analysis" target="_blank_">mailing list</a> for updates and community support.</li>
 </ul>
 </section>
 <section id="eeg-databases" class="level2">
-<h2 class="anchored" data-anchor-id="eeg-databases">EEG databases</h2>
+<h2 class="anchored" data-anchor-id="eeg-databases">EEG Databases</h2>
 <p>Here are some databases on which you are apply your mne-python skills.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -293,48 +308,51 @@ Tip
 </div>
 </div>
 </section>
-<section id="papers" class="level2">
-<h2 class="anchored" data-anchor-id="papers">Papers</h2>
+<section id="key-papers" class="level2">
+<h2 class="anchored" data-anchor-id="key-papers">Key Papers</h2>
+<p>Explore these essential papers on EEG data analysis:</p>
 <ul>
-<li><p><a href="https://osf.io/a8dhx/" target="_blank_">Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG.</a></p></li>
-<li><p><a href="https://www.frontiersin.org/articles/10.3389/fnins.2018.00530/full" target="_blank_">A Reproducible MEG/EEG Group Study With the MNE Software: Recommendations, Quality Assessments, and Good Practices</a></p></li>
-<li><p><a href="https://search.lib.buffalo.edu/discovery/fulldisplay?docid=iop10.1088/1741-2560/12/3/031001&amp;context=PC&amp;vid=01SUNY_BUF:everything&amp;search_scope=UBSUNY&amp;tab=EverythingUBSUNY&amp;lang=en" target="_blank_">EEG artifact removal—state-of-the-art and guidelines</a></p></li>
+<li><a href="https://osf.io/a8dhx/" target="_blank_">Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG</a></li>
+<li><a href="https://www.frontiersin.org/articles/10.3389/fnins.2018.00530/full" target="_blank_">Reproducible MEG/EEG Group Study With the MNE Software</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/25834104/" target="_blank_">EEG artifact removal—state-of-the-art and guidelines</a></li>
 </ul>
 </section>
 <section id="github-links" class="level2">
 <h2 class="anchored" data-anchor-id="github-links">GitHub Links</h2>
+<p>Explore these repositories and resources for EEG and signal processing:</p>
 <section id="analysis-related-repositories" class="level3">
 <h3 class="anchored" data-anchor-id="analysis-related-repositories">Analysis Related Repositories</h3>
 <ul>
-<li><a href="https://github.com/sappelhoff/pyprep" target="_blank_">https://github.com/sappelhoff/pyprep</a></li>
-<li><a href="https://github.com/autoreject/autoreject" target="_blank_">https://github.com/autoreject/autoreject</a></li>
-<li><a href="https://github.com/mdelpozobanos/eegfaster" target="_blank_">https://github.com/mdelpozobanos/eegfaster</a></li>
-<li><a href="https://github.com/neurodsp-tools/neurodsp" target="_blank_">https://github.com/neurodsp-tools/neurodsp</a></li>
-<li><a href="https://github.com/PIA-Group/BioSPPy" target="_blank_">https://github.com/PIA-Group/BioSPPy</a></li>
-<li><a href="https://github.com/cancui/EMG-Signal-Processing-Library" target="_blank_">https://github.com/cancui/EMG-Signal-Processing-Library</a></li>
-<li><a href="https://github.com/unpingco/Python-for-Signal-Processing" target="_blank_">https://github.com/unpingco/Python-for-Signal-Processing</a></li>
+<li><a href="https://github.com/sappelhoff/pyprep" target="_blank_">pyprep</a></li>
+<li><a href="https://github.com/autoreject/autoreject" target="_blank_">autoreject</a></li>
+<li><a href="https://github.com/mdelpozobanos/eegfaster" target="_blank_">eegfaster</a></li>
+<li><a href="https://github.com/neurodsp-tools/neurodsp" target="_blank_">neurodsp</a></li>
+<li><a href="https://github.com/PIA-Group/BioSPPy" target="_blank_">BioSPPy</a></li>
+<li><a href="https://github.com/cancui/EMG-Signal-Processing-Library" target="_blank_">EMG-Signal-Processing-Library</a></li>
+<li><a href="https://github.com/unpingco/Python-for-Signal-Processing" target="_blank_">Python-for-Signal-Processing</a></li>
 </ul>
 </section>
-<section id="usefull-libraries-and-links" class="level3">
-<h3 class="anchored" data-anchor-id="usefull-libraries-and-links">Usefull Libraries and Links</h3>
+<section id="useful-libraries-and-links" class="level3">
+<h3 class="anchored" data-anchor-id="useful-libraries-and-links">Useful Libraries and Links</h3>
 <ul>
-<li><a href="http://www.marsja.se/best-python-libraries-psychology/" target="_blank_">http://www.marsja.se/best-python-libraries-psychology/</a></li>
-<li><a href="https://github.com/NeuroDataDesign" target="_blank_">https://github.com/NeuroDataDesign</a></li>
-<li><a href="https://github.com/NeuroTechX/eeg-notebooks" target="_blank_">https://github.com/NeuroTechX/eeg-notebooks</a></li>
-<li><a href="https://github.com/openlists/OpenTools/blob/master/README.md" target="_blank_">https://github.com/openlists/OpenTools/blob/master/README.md</a></li>
-<li><a href="https://github.com/mne-tools/mne-study-template" target="_blank_">https://github.com/mne-tools/mne-study-template</a></li>
-<li><a href="https://swipe4ica.github.io/#/" target="_blank_">https://swipe4ica.github.io/#/</a> This is an interesting way to learn how to identify artifacts in EEG</li>
-<li><a href="https://labeling.ucsd.edu/label" target="_blank_">https://labeling.ucsd.edu/label</a> Similar to previous link</li>
+<li><a href="http://www.marsja.se/best-python-libraries-psychology/" target="_blank_">Best Python Libraries for Psychology</a></li>
+<li><a href="https://github.com/NeuroDataDesign" target="_blank_">NeuroDataDesign</a></li>
+<li><a href="https://github.com/NeuroTechX/eeg-notebooks" target="_blank_">EEG Notebooks</a></li>
+<li><a href="https://github.com/openlists/OpenTools/blob/master/README.md" target="_blank_">OpenTools</a></li>
+<li><a href="https://swipe4ica.github.io/#/" target="_blank_">SWIPE4ICA</a> for EEG artifact identification</li>
+<li><a href="https://labeling.ucsd.edu/label" target="_blank_">Labeling Tool</a></li>
 </ul>
 </section>
-<section id="deeplearning-with-physiological-signals" class="level3">
-<h3 class="anchored" data-anchor-id="deeplearning-with-physiological-signals">DeepLearning with Physiological Signals</h3>
+<section id="deep-learning-with-physiological-signals" class="level3">
+<h3 class="anchored" data-anchor-id="deep-learning-with-physiological-signals">Deep Learning with Physiological Signals</h3>
 <ul>
-<li><a href="https://github.com/vlawhern/arl-eegmodels" target="_blank_">https://github.com/vlawhern/arl-eegmodels</a></li>
-<li><a href="https://github.com/EderSantana/DeepEEG" target="_blank_">https://github.com/EderSantana/DeepEEG</a></li>
-<li><a href="https://robintibor.github.io/braindecode/index.html" target="_blank_">https://robintibor.github.io/braindecode/index.html</a></li>
-<li><a href="https://github.com/mne-tools/mne-torch" target="_blank_">https://github.com/mne-tools/mne-torch</a></li>
+<li><a href="https://github.com/vlawhern/arl-eegmodels" target="_blank_">ARL EEG Models</a></li>
+<li><a href="https://github.com/EderSantana/DeepEEG" target="_blank_">DeepEEG</a></li>
+<li><a href="https://robintibor.github.io/braindecode/index.html" target="_blank_">Braindecode</a></li>
+<li><a href="https://github.com/mne-tools/mne-torch" target="_blank_">MNE-Torch</a></li>
 </ul>
+<hr>
+<p>This guide aims to provide you with foundational resources and tools to excel in EEG research. Don’t hesitate to visit the iHuman lab for further assistance and hands-on training. Happy researching!</p>
 
 
 </section>
@@ -730,8 +748,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./bci_resources.html" class="pagination-link" aria-label="Get started with BCI">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Get started with BCI</span>
+      <a href="./bci_resources.html" class="pagination-link" aria-label="BCI resources">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">BCI resources</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

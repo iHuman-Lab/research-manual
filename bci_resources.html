@@ -206,9 +206,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#videos" id="toc-videos" class="nav-link active" data-scroll-target="#videos">Videos</a></li>
-  <li><a href="#github-links" id="toc-github-links" class="nav-link" data-scroll-target="#github-links">GitHub links</a></li>
+  <li><a href="#github-links" id="toc-github-links" class="nav-link" data-scroll-target="#github-links">GitHub Links</a></li>
   <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
-  <li><a href="#lab-streaming-layer" id="toc-lab-streaming-layer" class="nav-link" data-scroll-target="#lab-streaming-layer">Lab streaming layer</a></li>
+  <li><a href="#mne-python" id="toc-mne-python" class="nav-link" data-scroll-target="#mne-python">MNE Python</a></li>
+  <li><a href="#lab-streaming-layer-lsl" id="toc-lab-streaming-layer-lsl" class="nav-link" data-scroll-target="#lab-streaming-layer-lsl">Lab Streaming Layer (LSL)</a></li>
   </ul>
 </nav>
     </div>
@@ -235,10 +236,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>These are some of the resource to introduce you to basics of brain computer interfaces (BCI). The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.</p>
-<section id="videos" class="level2">
-<h2 class="anchored" data-anchor-id="videos">Videos</h2>
+<section id="videos" class="level3">
+<h3 class="anchored" data-anchor-id="videos">Videos</h3>
+<section id="swartz-center-for-computational-neuroscience" class="level4">
+<h4 class="anchored" data-anchor-id="swartz-center-for-computational-neuroscience">Swartz Center for Computational Neuroscience</h4>
 <ul>
-<li>Great set of videos which introduce the basics of BCI and EEG (highly recommended!) by Swartz Center for Computational Neuroscience.</li>
+<li><strong>Introduction to BCI and EEG</strong>
+<ul>
+<li>Start with the initial videos (video-1 to video-7) to grasp the fundamentals of BCI and EEG.</li>
+<li>These videos provide a solid foundation for understanding how brain activity can be used to control external devices.</li>
+<li><a href="https://www.youtube.com/embed/Wlwvgm3AHvc?si=RZ_QcPf8SG1lAm2O" target="_blank_">Watch the videos here</a></li>
+</ul></li>
 </ul>
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wlwvgm3AHvc?si=RZ_QcPf8SG1lAm2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>
@@ -252,11 +260,19 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>First few videos are enough to get started (video-1 to video-7). Once you get started with EEG analysis you can watch the rest.</p>
+<p>These introductory videos are highly recommended as they cover the basics you need to get started.</p>
 </div>
 </div>
+</section>
+<section id="mike-x-cohen" class="level4">
+<h4 class="anchored" data-anchor-id="mike-x-cohen">Mike X Cohen</h4>
 <ul>
-<li>If you want to get into general neural time-series analysis here is a great set of videos by Mike X Cohen.</li>
+<li><strong>General Neural Time-Series Analysis</strong>
+<ul>
+<li>Explore advanced concepts in neural time-series analysis, focusing on methods to analyze and interpret brain signals over time.</li>
+<li>The videos primarily use Matlab, but you can replicate the analysis in Python using the <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html" target="_blank_">mne</a> package.</li>
+<li><a href="https://www.youtube.com/embed/VnHeDXaCngg?si=s82BkD-t7enJlRLj" target="_blank_">Watch the videos here</a></li>
+</ul></li>
 </ul>
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VnHeDXaCngg?si=s82BkD-t7enJlRLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>
@@ -270,35 +286,85 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Even though the emphasis is on use of Matlab, you can do all the analysis using a python package called <a href="https://www.nmr.mgh.harvard.edu/mne/stable/index.html">mne</a>.</li>
-<li>It is also a great opportunity to port the Matlab codes used in the lectures to Python through which you can learn Python also!</li>
-</ul>
+<p>Adapting Matlab scripts to Python will not only deepen your understanding of neural data analysis but also enhance your proficiency in Python programming.</p>
 </div>
 </div>
 </section>
-<section id="github-links" class="level2">
-<h2 class="anchored" data-anchor-id="github-links">GitHub links</h2>
-<p>This repository contains some awesome resources on BCI: <a href="https://github.com/NeuroTechX/awesome-bci">NeuroTechX/awesome-bci</a></p>
 </section>
-<section id="books" class="level2">
-<h2 class="anchored" data-anchor-id="books">Books</h2>
-<p>Amazing introduction to BCI</p>
+<section id="github-links" class="level3">
+<h3 class="anchored" data-anchor-id="github-links">GitHub Links</h3>
 <ul>
-<li><a href="https://search.lib.buffalo.edu/discovery/fulldisplay?docid=alma990038424030204803&amp;context=L&amp;vid=01SUNY_BUF:everything&amp;search_scope=UBSUNY&amp;tab=EverythingUBSUNY&amp;lang=en">Brain-computer interfacing : an introduction / Rajesh P.N. Rao.</a></li>
-</ul>
-<p>To analyse neural time series data (a great book!)</p>
+<li><strong>NeuroTechX/awesome-bci</strong>
 <ul>
-<li><a href="https://direct.mit.edu/books/monograph/4013/Analyzing-Neural-Time-Series-DataTheory-and">Analyzing neural time series data : theory and practice / Mike X. Cohen.</a></li>
+<li>This repository is a curated collection of resources, tools, and projects related to BCI research.</li>
+<li>Explore various software tools, datasets, and community-driven projects that can aid your research.</li>
+<li><a href="https://github.com/NeuroTechX/awesome-bci" target="_blank_">Visit the repository</a></li>
+</ul></li>
 </ul>
 </section>
-<section id="lab-streaming-layer" class="level1">
-<h1>Lab streaming layer</h1>
+<section id="books" class="level3">
+<h3 class="anchored" data-anchor-id="books">Books</h3>
+<ul>
+<li><strong>Brain-Computer Interfacing: An Introduction</strong> by Rajesh P.N. Rao
+<ul>
+<li>This book provides a comprehensive introduction to BCI technology, covering its principles, applications, and future trends.</li>
+<li><a href="https://search.lib.buffalo.edu/discovery/fulldisplay?docid=alma990038424030204803&amp;context=L&amp;vid=01SUNY_BUF:everything&amp;search_scope=UBSUNY&amp;tab=EverythingUBSUNY&amp;lang=en" target="_blank_">Access the book</a></li>
+</ul></li>
+<li><strong>Analyzing Neural Time Series Data: Theory and Practice</strong> by Mike X. Cohen
+<ul>
+<li>Learn detailed methodologies and practical techniques for analyzing neural time-series data.</li>
+<li>Gain insights into advanced signal processing techniques applicable to BCI research.</li>
+<li><a href="https://direct.mit.edu/books/monograph/4013/Analyzing-Neural-Time-Series-DataTheory-and" target="_blank_">Explore the book</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="mne-python" class="level3">
+<h3 class="anchored" data-anchor-id="mne-python">MNE Python</h3>
+<p>Another important package, we use extensively in our lab processing the physiological data is <a href="https://mne.tools/stable/" target="_blank_">MNE-Python</a>. MNE-Python is a Python package specifically designed for the analysis of brain signals, collected using techniques like magnetoencephalography (MEG) and electroencephalography (EEG). It provides a robust set of tools for processing, analyzing, and visualizing neural data, making it a preferred choice for researchers and clinicians in the field of neuroscience.</p>
+<p>Key features of MNE-Python include:</p>
+<ul>
+<li><strong>Data Handling:</strong> Import and manipulate data from various formats such as .fif, .edf, and .bdf.</li>
+<li><strong>Preprocessing:</strong> Remove noise, filter data, and interpolate bad channels.</li>
+<li><strong>Analysis:</strong> Perform time-domain and frequency-domain analyses, including time-frequency decomposition.</li>
+<li><strong>Visualization:</strong> Plot data in 2D and 3D to visualize sensor and source-space information.</li>
+<li><strong>Source Localization:</strong> Estimate the location of neural sources responsible for recorded signals.</li>
+<li><strong>Statistics:</strong> Conduct statistical tests to analyze differences in brain activity.</li>
+</ul>
+<p>MNE-Python supports a wide range of functionalities tailored to both novice users and advanced researchers, facilitating comprehensive exploration and interpretation of neuroimaging data.</p>
+<p>For more information and detailed documentation, visit <a href="https://mne.tools/stable/index.html" target="_blank_">MNE-Python website</a>.</p>
+<section id="other-links" class="level4">
+<h4 class="anchored" data-anchor-id="other-links">Other links</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=IYuAPisoUeI&amp;list=PLXtvZiGkmNVvPS0N9UNBVkIFe0_0t_Nqthttps://www.youtube.com/watch?v=IYuAPisoUeI&amp;list=PLXtvZiGkmNVvPS0N9UNBVkIFe0_0t_Nqt" target="_blank_">Tutorial on MNE python</a></li>
+<li><a href="https://mne.tools/stable/auto_tutorials/index.html" target="_blank_">Official MNE tutorials</a></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Go through the tutorials and implement standard functions using the EEG data. Reach out to Hemanth to get the EEG data.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="lab-streaming-layer-lsl" class="level3">
+<h3 class="anchored" data-anchor-id="lab-streaming-layer-lsl">Lab Streaming Layer (LSL)</h3>
 <p>Lab streaming layer (LSL) is an open-source networked middleware ecosystem to stream, receive, synchronize, and record neural, physiological, and behavioral data streams acquired from diverse sensor hardware.</p>
 <p>It reduces complexity and barriers to entry for researchers, sensor manufacturers, and users through a simple, interoperable, standardized API to connect data consumers to data producers while abstracting obstacles such as platform differences, stream discovery, synchronization and fault-tolerance.</p>
 <p>We use LSL as a standard platform to interface multiple sensor and simulation softwares in our lab.</p>
 <ul>
-<li><a href="https://github.com/sccn/labstreaminglayer" class="uri">https://github.com/sccn/labstreaminglayer</a></li>
+<li><strong>Overview and Importance</strong>
+<ul>
+<li>LSL is a crucial middleware platform used in our lab to synchronize and record data from various sensors.</li>
+<li>It simplifies data integration across different hardware and software platforms, ensuring seamless connectivity and interoperability.</li>
+<li><a href="https://github.com/sccn/labstreaminglayer" target="_blank_">Learn more about LSL</a></li>
+</ul></li>
 </ul>
 
 
