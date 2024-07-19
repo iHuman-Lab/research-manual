@@ -2,46 +2,86 @@
 
 These are some of the resource to introduce you to basics of brain computer interfaces (BCI). The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.
 
-## Videos
+### Videos
 
-* Great set of videos which introduce the basics of BCI and EEG (highly recommended!) by Swartz Center for Computational Neuroscience.
+#### Swartz Center for Computational Neuroscience
+
+- **Introduction to BCI and EEG**
+  - Start with the initial videos (video-1 to video-7) to grasp the fundamentals of BCI and EEG.
+  - These videos provide a solid foundation for understanding how brain activity can be used to control external devices.
+  - [Watch the videos here](https://www.youtube.com/embed/Wlwvgm3AHvc?si=RZ_QcPf8SG1lAm2O){target='_blank_'}
 
 ```{=html}
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wlwvgm3AHvc?si=RZ_QcPf8SG1lAm2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 ```
 
-:::{.callout-tip}
-First few videos are enough to get started (video-1 to video-7). Once you get started with EEG analysis you can watch the rest.
+::: {.callout-tip}
+These introductory videos are highly recommended as they cover the basics you need to get started.
 :::
 
-* If you want to get into general neural time-series analysis here is a great set of videos by Mike X Cohen.
+#### Mike X Cohen
+
+- **General Neural Time-Series Analysis**
+  - Explore advanced concepts in neural time-series analysis, focusing on methods to analyze and interpret brain signals over time.
+  - The videos primarily use Matlab, but you can replicate the analysis in Python using the [mne](https://www.nmr.mgh.harvard.edu/mne/stable/index.html){target='_blank_'} package.
+  - [Watch the videos here](https://www.youtube.com/embed/VnHeDXaCngg?si=s82BkD-t7enJlRLj){target='_blank_'}
+
 
 ```{=html}
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VnHeDXaCngg?si=s82BkD-t7enJlRLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 ```
 
-:::{.callout-tip}
-* Even though the emphasis is on use of Matlab, you can do all the analysis using a python package called [mne](https://www.nmr.mgh.harvard.edu/mne/stable/index.html).
-* It is also a great opportunity to port the Matlab codes used in the lectures to Python through which you can learn Python also!
+::: {.callout-tip}
+Adapting Matlab scripts to Python will not only deepen your understanding of neural data analysis but also enhance your proficiency in Python programming.
 :::
 
-## GitHub links
+### GitHub Links
 
-This repository contains some awesome resources on BCI: [NeuroTechX/awesome-bci](https://github.com/NeuroTechX/awesome-bci)
+- **NeuroTechX/awesome-bci**
+  - This repository is a curated collection of resources, tools, and projects related to BCI research.
+  - Explore various software tools, datasets, and community-driven projects that can aid your research.
+  - [Visit the repository](https://github.com/NeuroTechX/awesome-bci){target='_blank_'}
 
-## Books
+### Books
 
-Amazing introduction to BCI
+- **Brain-Computer Interfacing: An Introduction** by Rajesh P.N. Rao
+  - This book provides a comprehensive introduction to BCI technology, covering its principles, applications, and future trends.
+  - [Access the book](https://search.lib.buffalo.edu/discovery/fulldisplay?docid=alma990038424030204803&context=L&vid=01SUNY_BUF:everything&search_scope=UBSUNY&tab=EverythingUBSUNY&lang=en){target='_blank_'}
 
-* [Brain-computer interfacing : an introduction / Rajesh P.N. Rao.](https://search.lib.buffalo.edu/discovery/fulldisplay?docid=alma990038424030204803&context=L&vid=01SUNY_BUF:everything&search_scope=UBSUNY&tab=EverythingUBSUNY&lang=en)
+- **Analyzing Neural Time Series Data: Theory and Practice** by Mike X. Cohen
+  - Learn detailed methodologies and practical techniques for analyzing neural time-series data.
+  - Gain insights into advanced signal processing techniques applicable to BCI research.
+  - [Explore the book](https://direct.mit.edu/books/monograph/4013/Analyzing-Neural-Time-Series-DataTheory-and){target='_blank_'}
 
-To analyse neural time series data (a great book!)
+### MNE Python
 
-* [Analyzing neural time series data : theory and practice / Mike X. Cohen.](https://direct.mit.edu/books/monograph/4013/Analyzing-Neural-Time-Series-DataTheory-and)
+Another important package, we use extensively in our lab processing the physiological data is [MNE-Python](https://mne.tools/stable/){target='_blank_'}. MNE-Python is a Python package specifically designed for the analysis of brain signals, collected using techniques like magnetoencephalography (MEG) and electroencephalography (EEG). It provides a robust set of tools for processing, analyzing, and visualizing neural data, making it a preferred choice for researchers and clinicians in the field of neuroscience.
 
-# Lab streaming layer
+Key features of MNE-Python include:
+
+- **Data Handling:** Import and manipulate data from various formats such as .fif, .edf, and .bdf.
+- **Preprocessing:** Remove noise, filter data, and interpolate bad channels.
+- **Analysis:** Perform time-domain and frequency-domain analyses, including time-frequency decomposition.
+- **Visualization:** Plot data in 2D and 3D to visualize sensor and source-space information.
+- **Source Localization:** Estimate the location of neural sources responsible for recorded signals.
+- **Statistics:** Conduct statistical tests to analyze differences in brain activity.
+
+MNE-Python supports a wide range of functionalities tailored to both novice users and advanced researchers, facilitating comprehensive exploration and interpretation of neuroimaging data.
+
+For more information and detailed documentation, visit [MNE-Python website](https://mne.tools/stable/index.html){target='_blank_'}.
+
+#### Other links
+
+- [Tutorial on MNE python](https://www.youtube.com/watch?v=IYuAPisoUeI&list=PLXtvZiGkmNVvPS0N9UNBVkIFe0_0t_Nqthttps://www.youtube.com/watch?v=IYuAPisoUeI&list=PLXtvZiGkmNVvPS0N9UNBVkIFe0_0t_Nqt){target='_blank_'}
+- [Official MNE tutorials](https://mne.tools/stable/auto_tutorials/index.html){target='_blank_'}
+
+:::{.callout-note title=Task}
+Go through the tutorials and implement standard functions using the EEG data. Reach out to Hemanth to get the EEG data.
+:::
+
+### Lab Streaming Layer (LSL)
 
 Lab streaming layer (LSL) is an open-source networked middleware ecosystem to stream, receive, synchronize, and record neural, physiological, and behavioral data streams acquired from diverse sensor hardware.
 
@@ -49,4 +89,7 @@ It reduces complexity and barriers to entry for researchers, sensor manufacturer
 
 We use LSL as a standard platform to interface multiple sensor and simulation softwares in our lab.
 
-* <https://github.com/sccn/labstreaminglayer>
+- **Overview and Importance**
+  - LSL is a crucial middleware platform used in our lab to synchronize and record data from various sensors.
+  - It simplifies data integration across different hardware and software platforms, ensuring seamless connectivity and interoperability.
+  - [Learn more about LSL](https://github.com/sccn/labstreaminglayer){target='_blank_'}

@@ -1,1 +1,17 @@
 # Lab resources {.unnumbered}
+
+| Item               | Units | Description                                                  | Documentation                                      |
+|--------------------|-------|--------------------------------------------------------------|----------------------------------------------------|
+| Panda Robot        | 1     | Advanced robotic platform for research and interaction.       | [Panda Robot Docs](https://example.com/panda_robot_docs) |
+| Lamda GPU Computers| 2     | High-performance computers equipped with GPUs.                | [Lamda GPU Computers Docs](https://example.com/lamda_gpu_computers_docs) |
+| EEG Headset        | 1     | Device for capturing brain activity through EEG signals.      | [EEG Headset Docs](https://example.com/eeg_headset_docs) |
+| EEG Software       | 1     | Software for processing and analyzing EEG data.               | [EEG Software Docs](https://example.com/eeg_software_docs) |
+| Eye Tracking       | 2     | Equipment for tracking eye movements and gaze patterns.       | [Eye Tracking Docs](https://example.com/eye_tracking_docs) |
+| EMG Device         | 2     | Device for measuring electrical activity in muscles.          | [EMG Device Docs](https://example.com/emg_device_docs) |
+| AR/VR Headset      | 1     | Head-mounted display for augmented and virtual reality.       | [AR/VR Headset Docs](https://example.com/ar_vr_headset_docs) |
+| Small Drones       | 50    | Lightweight unmanned aerial vehicles for various experiments. | [Small Drones Docs](https://example.com/small_drones_docs) |
+| Depth Sensors      | 2     | Sensors for measuring depth and distance in environments.     | [Depth Sensors Docs](https://example.com/depth_sensors_docs) |
+| Lab Computers      | 5     | Standard desktop computers for general lab use.              | [Lab Computers Docs](https://example.com/lab_computers_docs) |
+| Lab Equipment      | 5     | Various equipment used in the laboratory for experiments.     | [Lab Equipment Docs](https://example.com/lab_equipment_docs) |
+| On-board Computers | 3     | Micro controllers for on-board processing in experiments.     | [On-board Computers Docs](https://example.com/on_board_computers_docs) |
+| Laptops            | 3     | Portable laptops for mobile computing needs.                 | [Laptops Docs](https://example.com/laptops_docs) |
