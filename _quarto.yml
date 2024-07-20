@@ -9,14 +9,14 @@ book:
   chapters:
     - index.qmd
     - introduction.qmd
-    - part: Writing practices
+    - part: writing_practices/general_principles.qmd
       chapters:
-        - writing_practices/general_practices.qmd
+        - writing_practices/writing_articles.qmd
         - writing_practices/making_diagrams.qmd
         - writing_practices/making_presentations.qmd
-    - part: Coding practices
+        - writing_practices/making_posters.qmd
+    - part: coding_practices/general_practices.qmd
       chapters:
-        - coding_practices/general_practices.qmd
         - coding_practices/clean_code.qmd
         - coding_practices/code_decoupling.qmd
         - coding_practices/code_testing.qmd

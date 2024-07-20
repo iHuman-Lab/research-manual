@@ -1,4 +1,4 @@
-# General principles {.unnumbered}
+# Writing principles {.unnumbered}
 
 Research is not merely about numbers and experiments; it's about the transformative power of sharing discoveries with the world. Beyond coding, mastering the art of writing is essential for every researcher. Yet, for many, especially non-native English speakers like myself, writing can seem like scaling a daunting mountain. Here’s a principles drawn from my own journey—from uncertainty to embracing writing as a vital research skill:
 

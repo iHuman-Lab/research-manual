@@ -1,0 +1,26 @@
+# Writing articles {.unnumbered}
+
+If you're diving into research or getting started with writing scientific articles, LaTeX is your friend. LaTeX (pronounced "LAY-tech") is not just any tool—it's a powerful typesetting system that helps you create beautifully formatted documents, perfect for academic and scientific writing. In our lab, we almost exclusively use LaTeX for most of the documents.
+
+### Why Choose LaTeX?
+- **Polished Documents**: It makes your research papers and lab manuals look super professional with neat equations, figures, and references.
+
+- **Focus on Content**: You get to focus on what really matters—your research—without getting bogged down by formatting headaches.
+
+- **Collaboration Made Easy**: LaTeX plays well with others. It's perfect for working on documents with classmates or colleagues, thanks to its compatibility with tools like Overleaf.
+
+:::{.callout-note title=Task}
+1. Head over to [Overleaf](https://www.overleaf.com){target='_blank_'} and sign up—it's free!
+2. Click on "New Project" and choose "Blank Project". This sets you up with a clean slate to start writing your document.
+3. Overleaf shows your document in two parts: on the left, you write your LaTeX code (don't worry, it's easier than it sounds!), and on the right, you instantly see how it looks as a document.
+:::
+
+To get started with LaTeX in Overleaf, follow the tutorials below
+
+```{=html}
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=6RhS1R8yV0CExKXC&amp;list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+```
+
+For more detailed tutorials, please see the [Overleaf Documentation](https://www.overleaf.com/learn){target='_blank_'}

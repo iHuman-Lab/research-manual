@@ -1,4 +1,4 @@
-# General practices {.unnumbered}
+# Coding practices {.unnumbered}
 
 Effective code management is vital in research, especially for data analysis and simulations. We try to follow a standard workflow for developing Python code detailed below:
 

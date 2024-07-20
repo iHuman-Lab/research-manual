@@ -1,0 +1,67 @@
+# Making posters {.unnumbered}
+
+
+In poster sessions, students and researchers try to convey their research to an audience walking through a busy hall. To reach and engage that audience, posters should be eye-catching, to the point, and easy to understand. This section is from [here](https://guillermo-hidalgo-gadea.github.io/Seminar-ComputationalEthology/ScientificPoster.html){target='_blank_'}
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1RwJbhkCA58" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+
+## How to prepare a 'classic' Scientific Poster
+
+While the status quo of scientific posters is far from perfect (see video above), academic supervisors, organizations and conference may require scientific posters in a pre-defined format. Below you will find a few tips to prepare a scientific poster that meets those expectations.
+
+### How to evaluate a Scientific Poster
+
+#### Basics
+
+* Title and other required sections are present
+* Complete author affiliation & contact information is included
+* The poster conforms to the requirements of the conference or program where it will be presented
+* Font is consistent throughout
+* Spelling is correct throughout
+* Grammar is correct throughout
+* Acronyms are defined on first use
+* Content is appropriate & relevant for audience
+
+#### Design
+
+* All text can be easily read from 4 feet away
+* Flow of the poster is easy to follow
+* White space used well
+* Section titles are used consistently
+* Images/graphics are used in place of text whenever possible
+* Bullet points/lists are used in place of text whenever possible
+* All images are relevant and necessary to the poster
+* Charts are correct – i.e. appropriate type for data, data is correct & correctly represented
+* Text color and background color are significant in contrast for easy reading
+* Background color doesn’t obscure or dim text
+* Images are clear, not pixilated or blurry
+
+#### Content
+
+* The “story” of the poster is clear
+* The content is focused on 2-3 key points
+* Title is clear & informative of the project
+* Problem, or clinical question, is identified and explained
+* Current evidence related to project is listed
+* Objectives are stated
+* Methods are described
+* Results are presented
+* Conclusions are stated
+* Implications to practice and to other professions are presented
+* References are listed
+* All content is relevant and on the key points
+* Content is not duplicated in text and graphics
+
+#### Oral Presentation
+
+* Presenter greets people
+* Presenter is able to give a concise synopsis of poster
+* Presenter is able to explain all diagrams and sections
+* Presenter speaks fluently – i.e. doesn’t stumble, leave sentences/thoughts hanging
+* Presenter has questions to ask viewers
+
+More tips:
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=6UMmrd-5qAHfxcNq&amp;list=PL4ISqQj0XycwriBWddw4axfCLlT0gx8Q1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>
