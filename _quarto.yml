@@ -9,7 +9,12 @@ book:
   chapters:
     - index.qmd
     - introduction.qmd
-    - part: 'Coding practices'
+    - part: Writing practices
+      chapters:
+        - writing_practices/general_practices.qmd
+        - writing_practices/making_diagrams.qmd
+        - writing_practices/making_presentations.qmd
+    - part: Coding practices
       chapters:
         - coding_practices/general_practices.qmd
         - coding_practices/clean_code.qmd

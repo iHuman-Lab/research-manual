@@ -13,7 +13,7 @@ These are some of the resource to introduce you to basics of brain computer inte
 
 ```{=html}
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Wlwvgm3AHvc?si=RZ_QcPf8SG1lAm2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=HkC4WH7ccN4SG96f&amp;list=PLbbCsk7MUIGcO_lZMbyymWU2UezVHNaMq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 ```
 
 ::: {.callout-tip}
@@ -30,7 +30,7 @@ These introductory videos are highly recommended as they cover the basics you ne
 
 ```{=html}
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VnHeDXaCngg?si=s82BkD-t7enJlRLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=4_utwpQ0UcDT6mwc&amp;list=PLn0OLiymPak1b2aYULx6hDVU7wSGEUJqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 ```
 
 ::: {.callout-tip}

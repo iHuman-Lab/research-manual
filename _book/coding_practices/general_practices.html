@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>iHuman Lab Research Manual - Good coding practices</title>
+<title>iHuman Lab Research Manual - General practices</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../coding_practices/clean_code.html" rel="next">
-<link href="../introduction.html" rel="prev">
+<link href="../writing_practices/making_presentations.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Good coding practices</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">General practices</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Coding practices</span></a>
+ <span class="menu-text">Writing practices</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -129,8 +129,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../writing_practices/general_practices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General principles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../writing_practices/making_diagrams.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Making diagrams</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../writing_practices/making_presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Making presentations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Coding practices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../coding_practices/general_practices.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Good coding practices</span></a>
+ <span class="menu-text">General practices</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -201,26 +230,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#setting-up-your-development-environment" id="toc-setting-up-your-development-environment" class="nav-link active" data-scroll-target="#setting-up-your-development-environment">Setting Up Your Development Environment</a></li>
-  <li><a href="#writing-and-organizing-code" id="toc-writing-and-organizing-code" class="nav-link" data-scroll-target="#writing-and-organizing-code">Writing and Organizing Code</a></li>
-  <li><a href="#managing-data" id="toc-managing-data" class="nav-link" data-scroll-target="#managing-data">Managing Data</a></li>
-  <li><a href="#ensuring-reproducibility" id="toc-ensuring-reproducibility" class="nav-link" data-scroll-target="#ensuring-reproducibility">Ensuring Reproducibility</a></li>
-  <li><a href="#collaborating-with-others" id="toc-collaborating-with-others" class="nav-link" data-scroll-target="#collaborating-with-others">Collaborating with Others</a></li>
-  <li><a href="#maintaining-your-project" id="toc-maintaining-your-project" class="nav-link" data-scroll-target="#maintaining-your-project">Maintaining Your Project</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Good coding practices</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">General practices</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Good coding practices</h1>
+<h1 class="title">General practices</h1>
 </div>
 
 
@@ -237,102 +254,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Effective code management is vital in research, especially for data analysis and simulations. We follow a simple workflow for developing Python code, using Conda to manage your environment and Ruff for code formatting.</p>
-<section id="setting-up-your-development-environment" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-your-development-environment">Setting Up Your Development Environment</h3>
+<p>Effective code management is vital in research, especially for data analysis and simulations. We try to follow a standard workflow for developing Python code detailed below:</p>
+<ol type="1">
+<li><strong>Establishing a Structured Development Environment</strong>
 <ul>
-<li><strong>Install Conda</strong>:
-<ul>
-<li><strong>What to Do</strong>: Download and install Miniconda or Anaconda from their websites. Miniconda is a lighter version with fewer pre-installed tools, while Anaconda comes with many tools already setup.</li>
-<li><strong>Why</strong>: Conda helps you create and manage isolated coding environments, ensuring that each project has the specific tools and libraries it needs.</li>
+<li><strong>Utilize Conda</strong>: Begin by configuring Miniconda or Anaconda to effectively manage isolated development environments.</li>
+<li><strong>Environment Configuration</strong>: Tailor environments for each project with Conda, ensuring precise control over dependencies.</li>
+<li><strong>Enforce Consistency</strong>: Adopt tools like Ruff to maintain code formatting standards, promoting clarity and maintainability.</li>
 </ul></li>
-<li><strong>Create and Manage Your Environment</strong>:
+<li><strong>Organizing and Structuring Your Codebase</strong>
 <ul>
-<li><strong>Create a New Environment</strong>: Open Conda and set up a new environment for your project. Choose a name for your environment and select the Python version you want to use.</li>
-<li><strong>Activate the Environment</strong>: Switch to the new environment so you can install and work with the packages specific to your project.</li>
-<li><strong>Install Packages</strong>: Within this environment, install the necessary Python libraries for your project, such as NumPy, Pandas, and Scikit-Learn.</li>
-<li><strong>Install Ruff</strong>: Add Ruff to your environment for code formatting. This tool helps ensure your code follows consistent style rules and is easy to read.</li>
-<li><strong>Save and Recreate Your Environment</strong>: Save the configuration of your environment so it can be recreated later or shared with others. You can use this saved configuration to set up the same environment on another machine.</li>
+<li><strong>Project Organization</strong>: Implement a systematic folder structure (<code>data/</code>, <code>notebooks/</code>, <code>src/</code>, <code>tests/</code>, <code>scripts/</code>) to streamline project navigation and maintain order.</li>
+<li><strong>Version Control</strong>: Leverage Git for comprehensive version tracking and GitHub for collaborative development management.</li>
+<li><strong>Documentation</strong>: Enhance transparency and usability with thorough code comments and a detailed <code>README.md</code> to articulate project objectives and usage guidelines.</li>
 </ul></li>
-</ul>
-</section>
-<section id="writing-and-organizing-code" class="level3">
-<h3 class="anchored" data-anchor-id="writing-and-organizing-code">Writing and Organizing Code</h3>
+<li><strong>Effective Data Management Practices</strong>
 <ul>
-<li><strong>Organize Your Project</strong>:
-<ul>
-<li><strong>Folders</strong>: Create a folder structure for your project. Use <code>data/</code> for storing datasets, <code>notebooks/</code> for Jupyter Notebooks, <code>src/</code> for your main code files, <code>tests/</code> for code tests, and <code>scripts/</code> for commonly used tools or scripts.</li>
-<li><strong>Why</strong>: Organizing your project this way helps keep your work tidy and makes it easier to locate files and understand the project’s structure.</li>
+<li><strong>Data Organization</strong>: Store raw data in <code>data/raw/</code> and processed data in <code>data/processed/</code> to uphold data integrity and accessibility.</li>
+<li><strong>Versioning</strong>: Employ robust data management tools to manage versions, ensuring reproducibility and traceability.</li>
 </ul></li>
-<li><strong>Version Control and Documentation</strong>:
+<li><strong>Ensuring Reproducibility and Continuity</strong>
 <ul>
-<li><strong>Version Control</strong>: Use Git to track changes in your code. Set up a repository on GitHub or a similar platform to manage versions of your code and collaborate with others.</li>
-<li><strong>Documentation</strong>: Add comments to your code to explain what it does. Maintain a <code>README.md</code> file to provide an overview of your project, including how to install and use it.</li>
+<li><strong>Environment Replication</strong>: Share standardized environment configurations to facilitate seamless project setup across different systems.</li>
+<li><strong>Documentation Updates</strong>: Maintain updated documentation and Jupyter Notebooks to ensure reproducibility and facilitate knowledge transfer.</li>
 </ul></li>
-<li><strong>Code Formatting</strong>:
+<li><strong>Facilitating Collaborative Excellence</strong>
 <ul>
-<li><strong>Use Ruff</strong>: Format your code with Ruff to ensure it adheres to style guidelines. This helps make your code cleaner and more consistent. Run Ruff to check and automatically fix style issues in your code.</li>
+<li><strong>Code Review</strong>: Foster a culture of quality assurance through regular code reviews, utilizing pull requests to incorporate feedback and improvements.</li>
+<li><strong>Communication</strong>: Promote effective communication channels to enhance collaboration, share insights, and address challenges collectively.</li>
 </ul></li>
-<li><strong>Testing Your Code</strong>:
+<li><strong>Sustaining Long-term Project Integrity</strong>
 <ul>
-<li><strong>Write Tests</strong>: Develop tests for your code to verify that it works as expected. Use testing tools to create and run these tests. Store the test files in the <code>tests/</code> folder.</li>
+<li><strong>Continuous Improvement</strong>: Stay current with tool updates and library advancements to optimize project performance and reliability.</li>
+<li><strong>Issue Management</strong>: Utilize issue tracking tools to promptly address bugs and enhancements, ensuring project stability and growth.</li>
 </ul></li>
-</ul>
-</section>
-<section id="managing-data" class="level3">
-<h3 class="anchored" data-anchor-id="managing-data">Managing Data</h3>
-<ul>
-<li><strong>Organize and Track Data</strong>:
-<ul>
-<li><strong>Store Data</strong>: Keep raw data in <code>data/raw/</code> and processed data in <code>data/processed/</code>.</li>
-<li><strong>Track Changes</strong>: Use data management tools to keep track of different versions of your data, which helps in maintaining consistency and reproducibility.</li>
-</ul></li>
-<li><strong>Access and Share Data</strong>:
-<ul>
-<li><strong>Control Access</strong>: Set up permissions to control who can view or modify your data.</li>
-<li><strong>Share Data</strong>: Use platforms like Zenodo to share your datasets with others, ensuring they are properly cited.</li>
-</ul></li>
-</ul>
-</section>
-<section id="ensuring-reproducibility" class="level3">
-<h3 class="anchored" data-anchor-id="ensuring-reproducibility">Ensuring Reproducibility</h3>
-<ul>
-<li><strong>Recreate Your Environment</strong>:
-<ul>
-<li><strong>What to Do</strong>: Use the saved environment configuration to recreate the same coding environment on different machines. This ensures that others can work with the same setup as you.</li>
-</ul></li>
-<li><strong>Reproducible Code</strong>:
-<ul>
-<li><strong>Ensure Execution</strong>: Make sure your code can be run by others without issues. Keep Jupyter Notebooks updated to help others replicate your results easily.</li>
-</ul></li>
-</ul>
-</section>
-<section id="collaborating-with-others" class="level3">
-<h3 class="anchored" data-anchor-id="collaborating-with-others">Collaborating with Others</h3>
-<ul>
-<li><strong>Code Reviews and Communication</strong>:
-<ul>
-<li><strong>Review Code</strong>: Regularly review each other’s code and use tools like pull requests to integrate changes. This helps maintain code quality and facilitates knowledge sharing.</li>
-<li><strong>Communicate</strong>: Hold regular meetings to discuss progress, share updates, and document your findings collaboratively.</li>
-</ul></li>
-</ul>
-</section>
-<section id="maintaining-your-project" class="level3">
-<h3 class="anchored" data-anchor-id="maintaining-your-project">Maintaining Your Project</h3>
-<ul>
-<li><strong>Update and Track Issues</strong>:
-<ul>
-<li><strong>Keep Updated</strong>: Regularly update your tools and libraries to ensure everything is up-to-date.</li>
-<li><strong>Manage Issues</strong>: Use issue tracking tools to handle bugs and feature requests efficiently.</li>
-</ul></li>
-</ul>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
-<p>By following these steps, you’ll ensure that your coding practices are well-organized, reproducible, and collaborative. Using Conda for managing your environment and Ruff for formatting will enhance the efficiency and reliability of your work in our lab. More information on each of these practices are discussed in following sections.</p>
+</ol>
+<p>By adhering to these principles, you establish a framework that not only enhances the efficiency and reliability of your coding practices but also fosters a professional environment conducive to innovation and collaborative success. Whether leveraging Conda for environment management, adhering to coding standards with Ruff, or maintaining meticulous documentation, each step contributes to a disciplined and effective approach to coding excellence in research.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -724,8 +683,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../introduction.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="../writing_practices/making_presentations.html" class="pagination-link" aria-label="Making presentations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Making presentations</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

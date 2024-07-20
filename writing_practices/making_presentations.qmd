@@ -1,0 +1,59 @@
+# Making presentations {.unnumbered}
+
+Creating an effective presentation involves careful planning and thoughtful execution to ensure your audience remains engaged and gains a clear understanding of your message.
+
+Over the years, I have come to appreciate these principles while making presentations
+
+:::{.callout-note}
+- A scientific presentation is about making your audience smarter, not making yourself seem smart.
+- A blind high schooler and a deaf high schooler should both get the same message out of your presentation.
+:::
+
+Here’s a brief guide based on best practices for delivering impactful presentations:
+
+## General guidlines
+- Face the audience, speak to them!
+- Don’t read the slides
+- Don’t put to much writing
+- Don’t use color maps that are not blind-color friendly
+- Don’t write long equations, no one can follow those
+- Please respect your time, it’s the audience time and other speakers time too.
+- Keep the number of slides under the number of total minutes
+- Keep the number of messages per slide to one, or at most…one
+- Don’t be surprised by the next slide (like, “crap now I have to explain this slide”)
+- Don’t put on a full manuscript table and then say “I know you won’t be able to read this”
+- Also, don’t skip slides in front of your audience like no one is noticing. "Sorry, just want skip these here for the sake of time… Ok… Oh, one more. Yes. As I was saying…"
+- If you show an equation, give an intuition for what it’s telling you. The title of a data slide should (almost always) be a SINGLE SENTENCE that tells the audience what you concluded from the data
+
+## Preparing the slides
+- If you don’t explain it, don’t put it on the slide.
+- Give slides titles that state the conclusion of the data
+- Add animations!
+- Convince the audience what you plan to tell them is worth the effort of listening VERY early in the talk. And one “idea” per slide (this doesn’t mean Fig1A-H copy pasted from your manuscript).
+- Make sure figures (and their axes labels) are big enough (don’t make me squint)
+- Physically point to the diagram during explanations
+- More visuals than text!
+- Statements to avoid:
+  - "I know there’s a lot of data here, but I’m only going to talk about some of it" - don’t put data there if you don’t talk about it
+  - "Um" - try to speak clearly
+  - "You may not be able to see this, but…" - make the figure bigger
+- And if it’s for you to show things, don’t put any words. People CANNOT READ AND LISTEN at the same time. So many people can’t understand this simple fact.
+- Have a conclusion slide that summarizes the key takeaways from the presentation. During Q&A, stay on this conclusion slide (allowing it to sink in to the audience) instead of a slide that simply says "Thank you", or "Questions?" or something like that.
+- Don’t overestimate the background knowledge of your audience. Spend a few extra minutes explaining the background of your research, why it’s interesting, and defining any special terms you use. As long as you’re not patronizing, everyone will appreciate it.
+- Don’t say “bear with me” or “this looks complicated but…” or anything that implies that your audience is not good, smart, quick enough to get you…
+- Have backup slides. You can anticipate or will experience common questions or follow-on detail/data that audiences will ask.
+- Describe both axes of a graph on every single slide. You know the data. Your audience doesn’t. Orient them.
+- I TRY to maintain one idea per slide. New idea or piece of data? New slide.
+- Bullet points are for suckers. Use an image, and talk over it. This is my "spray and pray marketing" slide.
+
+## Links
+
+:::{.callout-note title=Task}
+Complete the free Coursera course on making presentations: [Presentation skills: Designing Presentation Slides](https://coursera.org/share/0edb1cdeaab6cf5e28cc4c2f866127e8)
+:::
+
+<p align="center">
+![](../images/presentation.jpg){width=30%}
+<p>
+
+

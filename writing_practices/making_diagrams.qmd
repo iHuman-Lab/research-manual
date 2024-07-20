@@ -1,0 +1,48 @@
+# Making diagrams {.unnumbered}
+
+Welcome to the world of scientific diagramming, where creativity meets clarity and innovation thrives through visualization. As researchers, we understand the pivotal role that diagrams play in transforming complex data into compelling narratives that resonate with audiences. Whether you're sketching out a hypothesis, illustrating experimental results, or mapping intricate processes, the tools at your disposal can make all the difference in how effectively your research is communicated.
+
+In this section, we'll explore a variety of open-source tools designed to empower you in your quest for impactful visual storytelling. Each tool offers unique capabilities—from precise vector graphics to dynamic data plotting—and is tailored to meet the diverse needs of scientific communication. It's important to note that while we will cover several powerful tools, this list is not exhaustive. The field of open-source software continues to evolve, offering new and innovative solutions for researchers every day.
+
+1. **[Draw.io](https://www.draw.io/){target='_blank_'}**
+   - Draw.io is a versatile web-based diagramming tool that offers a user-friendly interface and a comprehensive library of templates and shapes. It is designed to facilitate the creation of various types of diagrams, from flowcharts and organizational charts to network diagrams and technical drawings.
+   - Ideal for researchers who need to quickly sketch out ideas, brainstorm concepts, or map out processes. Its collaborative features make it suitable for teams working together on visual representations of complex data and workflows.
+
+2. **[Inkscape](https://inkscape.org/){target='_blank_'}**
+   - Inkscape is a powerful open-source vector graphics editor that allows for precise and scalable artwork creation. It supports advanced features such as object manipulation, fill and stroke properties, and extensive text editing capabilities.
+   - Researchers can utilize Inkscape to produce publication-quality figures, technical illustrations, and graphical abstracts. Its ability to handle intricate details and export to various formats makes it indispensable for creating visually appealing diagrams that meet academic standards.
+
+3. **[TikZ](https://tikz.net){target='_blank_'}**
+   - TikZ is LaTeX packages renowned for their versatility in generating high-quality graphics directly within LaTeX documents. TikZ provides a flexible and programmable framework for creating detailed graphics.
+   - Researchers proficient in LaTeX can leverage TikZ to integrate complex mathematical plots, chemical structures, and data visualizations seamlessly into their academic papers and presentations. This tools excel in producing precise and publication-ready diagrams with LaTeX's typesetting capabilities.
+
+4. **PowerPoint**
+   - Microsoft PowerPoint is a widely-used presentation software that also offers basic diagramming capabilities. While not open-source, it is included here for its accessibility and familiarity among researchers.
+   - Researchers who prefer a straightforward approach to creating diagrams within a presentation environment. PowerPoint is suitable for creating simple flowcharts, timelines, and conceptual diagrams directly integrated into slide presentations.
+
+::: {.callout-note}
+Eventhough we use Drawio as our main tool, select the tool that best suits your specific needs based on the type of diagram you need to create and your comfort level with the software. Experiment with different tools to find one that enhances your ability to communicate your research effectively and professionally.
+:::
+
+## Links
+The true essence of tools emerges only when they are wielded by an artist—the researcher. A diagramming tool, on its own, is a set of digital functionalities and features. It is through the skilled hands of the scientist that these tools transcend mere utility to become vehicles of clarity and innovation.
+
+Here are some links/tutorials which help you hone your diagram making skills. Please note that these resources are not exhaustive.
+
+- General design tips
+```{=html}
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=UQtzMGOL813lH4OG&amp;list=PL4ISqQj0XycwabJjgJFZFUbnMHacw5Eoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>
+```
+
+- Poster design tips
+```{=html}
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=6UMmrd-5qAHfxcNq&amp;list=PL4ISqQj0XycwriBWddw4axfCLlT0gx8Q1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>
+```
+- Inkscape tutorials
+```{=html}
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=E7sSFdtxhDzR9G-9&amp;list=PLxtauMB7RON_2tg-mRQTuieFUr29IOKzW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+```
