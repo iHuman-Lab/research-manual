@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "iHuman Lab Research Manual",
     "section": "",
-    "text": "Welcome\nWe are glad that you have decided to join Intelligent Human-Machine Nexus Lab (iHuman Lab)! We are really excited to have you as a part of our team and we will do what we can to make sure that you have a great time in our lab. We hope you will learn a lot about human and machines, and neuroscience, develop new and useful skills (coding, data analysis, writing papers, giving talks), make new friends, and have a great deal of fun throughout the whole process!!\nWe are in this together and we are here to support you! Starting to work in a research lab can be overwhelming sometimes (we are all humans!). This manual is to help you make the transition into iHuman lab more enjoyable.\nThis lab manual is crafted as your essential companion, designed to acquaint you with our lab’s operations, policies, and your rights and responsibilities as a valued member of the lab. Within these pages, you will find detailed explanations of the bill of rights and responsibilities, outlining both what you can expect from the lab environment and what is expected of you in terms of conduct, safety, and ethical standards. Clear and concise lab practices and policies are also delineated to ensure smooth integration into our research workflows.",
+    "text": "Welcome\nWe are glad that you have decided to join Intelligent Human-Machine Nexus Lab (iHuman Lab)! We are really excited to have you as a part of our team and we will do what we can to make sure that you have a great time in our lab. We hope you will learn a lot about human and machines, and neuroscience, develop new and useful skills (coding, data analysis, writing papers, giving talks), make new friends, and have a great deal of fun throughout the whole process!!\nThis lab manual is crafted as your essential companion, designed to acquaint you with our lab’s standard workflow. Within these pages, you will find detailed explanations writing and coding practices, learning resources for Python, BCI, and physiological data processing. These workflows ensure smooth integration into our research.",
     "crumbs": [
       "Welcome"
     ]
@@ -24,7 +24,7 @@
     "href": "introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "Who is this lab manual for?\nEvery new lab member should read the latest version of this lab manual in detail and reference it later as needed. Periodically throughout the document, you will see callouts with listed Task items.\nCompleting your read-through entails:\nThis lab manual is meant to be a living document. All lab members are welcome (and encouraged!) to submit edits that improve the content, clarity, and overall helpfulness of this document at any point throughout their tenure in the lab. What should you do if you don’t understand something? If you don’t understand something you read in this manual, it is important that you ask another lab member for help. Every member of the lab brings their own unique knowledge base, training, life experiences, and perspectives. Respecting and celebrating those differences drives the science we do. If you’re new to the lab or new to a particular technique, you might feel like a newbie today—but chances are good that if you stick around for a bit, someone else will be seeking your expert opinion before you know it. In addition to learning, there’s another good reason for asking for help: if you don’t understand something, there’s a reasonable chance that you’ve discovered a mistake or a logical inconsistency!",
+    "text": "Who is this lab manual for?\nEvery new lab member should read the latest version of this lab manual in detail and reference it later as needed. Periodically throughout the document, you will see callouts with listed Task items.\nCompleting your read-through entails:\nThis lab manual is meant to be a living document. All lab members are welcome (and encouraged!) to submit edits that improve the content, clarity, and overall helpfulness of this document at any point throughout their tenure in the lab. Knowledge is ever changing, you might come across new tools, methods, and resources which might help you and future lab members. You can share that knowledge through this manual",
     "crumbs": [
       "Introduction"
     ]
@@ -44,7 +44,7 @@
     "href": "introduction.html#why-is-it-worth-my-time-to-read-through-the-manual",
     "title": "Introduction",
     "section": "Why is it worth my time to read through the manual?",
-    "text": "Why is it worth my time to read through the manual?\nAside from pursuing your own curiosity, a major reason that you’ve decided to join an academic research lab is probably because you want to gain training or career-advancing experiences. This manual briefly summarizes the collective wisdom of past and present lab members in a way that we think will best allow you to achieve your objectives. Learn from it, challenge it, and add to it.",
+    "text": "Why is it worth my time to read through the manual?\nAside from pursuing your own curiosity, automating aspects of your research can significantly reduce the mundane tasks that consume valuable time and effort. By implementing automated processes, you free up mental energy and resources that can then be redirected towards exploring more complex and thought-provoking questions within your field.\nThis manual serves as a foundational guide to help you establish an efficient workflow for automating your research tasks. By following these steps, you will streamline data collection, analysis, and synthesis processes, allowing you to focus more on formulating innovative hypotheses, designing insightful experiments, and interpreting results in novel ways.",
     "crumbs": [
       "Introduction"
     ]
@@ -54,7 +54,7 @@
     "href": "introduction.html#what-isnt-this-lab-manual",
     "title": "Introduction",
     "section": "What isn’t this lab manual?",
-    "text": "What isn’t this lab manual?\nThis lab manual is not intended to provide a comprehensive overview of everything you need to know to do your research projects. As described next, you may not even know what you need to know to do your projects! Nevertheless, you need somewhere to start, and this is that place.\nWe also maintain a repository of lab tutorials that provide guidance on specific tasks. If you are looking for help on a particular task (or understanding a particular concept) that isn’t covered by the existing set of tutorials, please consider contributing a tutorial of your own once you’ve figured things out!",
+    "text": "What isn’t this lab manual?\nThis lab manual should not be regarded as a rigid set of rules to be strictly adhered to. Rather, it serves as a collection of established workflows that have been utilized by others and found beneficial. It acknowledges that individual preferences and circumstances vary, and therefore, not every aspect of these workflows may align perfectly with your own methods or preferences.\nThe workflows outlined here are meant to be flexible tools that can be adjusted and refined according to the unique requirements of your research projects.",
     "crumbs": [
       "Introduction"
     ]
@@ -72,12 +72,11 @@
   {
     "objectID": "coding_practices/general_practices.html",
     "href": "coding_practices/general_practices.html",
-    "title": "General practices",
+    "title": "Coding practices",
     "section": "",
     "text": "Effective code management is vital in research, especially for data analysis and simulations. We try to follow a standard workflow for developing Python code detailed below:\n\nEstablishing a Structured Development Environment\n\nUtilize Conda: Begin by configuring Miniconda or Anaconda to effectively manage isolated development environments.\nEnvironment Configuration: Tailor environments for each project with Conda, ensuring precise control over dependencies.\nEnforce Consistency: Adopt tools like Ruff to maintain code formatting standards, promoting clarity and maintainability.\n\nOrganizing and Structuring Your Codebase\n\nProject Organization: Implement a systematic folder structure (data/, notebooks/, src/, tests/, scripts/) to streamline project navigation and maintain order.\nVersion Control: Leverage Git for comprehensive version tracking and GitHub for collaborative development management.\nDocumentation: Enhance transparency and usability with thorough code comments and a detailed README.md to articulate project objectives and usage guidelines.\n\nEffective Data Management Practices\n\nData Organization: Store raw data in data/raw/ and processed data in data/processed/ to uphold data integrity and accessibility.\nVersioning: Employ robust data management tools to manage versions, ensuring reproducibility and traceability.\n\nEnsuring Reproducibility and Continuity\n\nEnvironment Replication: Share standardized environment configurations to facilitate seamless project setup across different systems.\nDocumentation Updates: Maintain updated documentation and Jupyter Notebooks to ensure reproducibility and facilitate knowledge transfer.\n\nFacilitating Collaborative Excellence\n\nCode Review: Foster a culture of quality assurance through regular code reviews, utilizing pull requests to incorporate feedback and improvements.\nCommunication: Promote effective communication channels to enhance collaboration, share insights, and address challenges collectively.\n\nSustaining Long-term Project Integrity\n\nContinuous Improvement: Stay current with tool updates and library advancements to optimize project performance and reliability.\nIssue Management: Utilize issue tracking tools to promptly address bugs and enhancements, ensuring project stability and growth.\n\n\nBy adhering to these principles, you establish a framework that not only enhances the efficiency and reliability of your coding practices but also fosters a professional environment conducive to innovation and collaborative success. Whether leveraging Conda for environment management, adhering to coding standards with Ruff, or maintaining meticulous documentation, each step contributes to a disciplined and effective approach to coding excellence in research.",
     "crumbs": [
-      "Coding practices",
-      "General practices"
+      "Coding practices"
     ]
   },
   {
@@ -972,12 +971,11 @@
   {
     "objectID": "writing_practices/general_practices.html",
     "href": "writing_practices/general_practices.html",
-    "title": "General principles",
+    "title": "Writing principles",
     "section": "",
     "text": "Using GPT\nUsing GPT as a writing tool can be immensely beneficial, but it’s important to approach it with care and use it as a supportive resource rather than a crutch. Here’s how to leverage ChatGPT effectively while maintaining control over your writing process:",
     "crumbs": [
-      "Writing practices",
-      "General principles"
+      "Writing principles"
     ]
   },
   {
@@ -994,12 +992,11 @@
   {
     "objectID": "writing_practices/general_practices.html#using-gpt",
     "href": "writing_practices/general_practices.html#using-gpt",
-    "title": "General principles",
+    "title": "Writing principles",
     "section": "",
     "text": "Generate Ideas and Inspiration ChatGPT can help spark ideas and provide inspiration for your writing projects. Use it to brainstorm topics, explore different angles, or overcome writer’s block by generating prompts or outlines.\nImprove Clarity and Structure Ask ChatGPT for suggestions on structuring your writing. It can provide guidance on organizing your thoughts logically, creating smooth transitions between paragraphs, or refining the overall flow of your piece.\nEnhance Language and Style Use ChatGPT to improve the clarity and coherence of your sentences. It can offer alternative word choices, help with phrasing, and suggest improvements in grammar and syntax.\nEditing and Proofreading Use ChatGPT to review your draft for spelling errors, grammatical mistakes, and punctuation issues. It can serve as a preliminary editor, but final proofreading should always be done by you.\nFeedback and Revision Suggestions Seek feedback from ChatGPT on the overall effectiveness of your writing. It can provide insights into areas that may need further development or clarification.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nMaintaining ownership of your ideas and writing style while using GPT is crucial to preserving the authenticity and integrity of your work. As a tool, ChatGPT offers valuable assistance in refining and enhancing your writing, but it should not overshadow your unique voice as a writer. Your critical thinking skills play a pivotal role here; they allow you to evaluate the suggestions provided by ChatGPT thoughtfully and decide how best to integrate them into your writing.\nWhile it can generate text based on input and provide suggestions, not all responses may be equally relevant or of high quality. It’s essential to scrutinize the responses, considering factors such as accuracy, coherence, and appropriateness for your intended audience. Evaluate each suggestion critically to ensure it aligns with the tone, style, and purpose of your writing.\nBy leveraging GPT mindfully as a writing tool, you can indeed enhance your writing skills and streamline your workflow. It can help you achieve clearer and more polished pieces by offering insights into structure, language refinement, and even creative ideation. However, it’s paramount to maintain a balanced approach. Avoid relying solely on GPT for the creative and intellectual aspects of your writing process. Remember, your originality and ability to engage with your subject matter in a meaningful way are what ultimately define your work as uniquely yours.",
     "crumbs": [
-      "Writing practices",
-      "General principles"
+      "Writing principles"
     ]
   },
   {
@@ -1009,7 +1006,7 @@
     "section": "",
     "text": "Links\nThe true essence of tools emerges only when they are wielded by an artist—the researcher. A diagramming tool, on its own, is a set of digital functionalities and features. It is through the skilled hands of the scientist that these tools transcend mere utility to become vehicles of clarity and innovation.\nHere are some links/tutorials which help you hone your diagram making skills. Please note that these resources are not exhaustive.",
     "crumbs": [
-      "Writing practices",
+      "Writing principles",
       "Making diagrams"
     ]
   },
@@ -1018,9 +1015,9 @@
     "href": "writing_practices/making_diagrams.html#links",
     "title": "Making diagrams",
     "section": "",
-    "text": "General design tips\n\n\nPoster design tips\n\n\nInkscape tutorials",
+    "text": "General design tips\n\n\nInkscape tutorials",
     "crumbs": [
-      "Writing practices",
+      "Writing principles",
       "Making diagrams"
     ]
   },
@@ -1031,7 +1028,7 @@
     "section": "",
     "text": "General guidlines",
     "crumbs": [
-      "Writing practices",
+      "Writing principles",
       "Making presentations"
     ]
   },
@@ -1042,7 +1039,7 @@
     "section": "",
     "text": "Face the audience, speak to them!\nDon’t read the slides\nDon’t put to much writing\nDon’t use color maps that are not blind-color friendly\nDon’t write long equations, no one can follow those\nPlease respect your time, it’s the audience time and other speakers time too.\nKeep the number of slides under the number of total minutes\nKeep the number of messages per slide to one, or at most…one\nDon’t be surprised by the next slide (like, “crap now I have to explain this slide”)\nDon’t put on a full manuscript table and then say “I know you won’t be able to read this”\nAlso, don’t skip slides in front of your audience like no one is noticing. “Sorry, just want skip these here for the sake of time… Ok… Oh, one more. Yes. As I was saying…”\nIf you show an equation, give an intuition for what it’s telling you. The title of a data slide should (almost always) be a SINGLE SENTENCE that tells the audience what you concluded from the data",
     "crumbs": [
-      "Writing practices",
+      "Writing principles",
       "Making presentations"
     ]
   },
@@ -1053,7 +1050,7 @@
     "section": "Preparing the slides",
     "text": "Preparing the slides\n\nIf you don’t explain it, don’t put it on the slide.\nGive slides titles that state the conclusion of the data\nAdd animations!\nConvince the audience what you plan to tell them is worth the effort of listening VERY early in the talk. And one “idea” per slide (this doesn’t mean Fig1A-H copy pasted from your manuscript).\nMake sure figures (and their axes labels) are big enough (don’t make me squint)\nPhysically point to the diagram during explanations\nMore visuals than text!\nStatements to avoid:\n\n“I know there’s a lot of data here, but I’m only going to talk about some of it” - don’t put data there if you don’t talk about it\n“Um” - try to speak clearly\n“You may not be able to see this, but…” - make the figure bigger\n\nAnd if it’s for you to show things, don’t put any words. People CANNOT READ AND LISTEN at the same time. So many people can’t understand this simple fact.\nHave a conclusion slide that summarizes the key takeaways from the presentation. During Q&A, stay on this conclusion slide (allowing it to sink in to the audience) instead of a slide that simply says “Thank you”, or “Questions?” or something like that.\nDon’t overestimate the background knowledge of your audience. Spend a few extra minutes explaining the background of your research, why it’s interesting, and defining any special terms you use. As long as you’re not patronizing, everyone will appreciate it.\nDon’t say “bear with me” or “this looks complicated but…” or anything that implies that your audience is not good, smart, quick enough to get you…\nHave backup slides. You can anticipate or will experience common questions or follow-on detail/data that audiences will ask.\nDescribe both axes of a graph on every single slide. You know the data. Your audience doesn’t. Orient them.\nI TRY to maintain one idea per slide. New idea or piece of data? New slide.\nBullet points are for suckers. Use an image, and talk over it. This is my “spray and pray marketing” slide.",
     "crumbs": [
-      "Writing practices",
+      "Writing principles",
       "Making presentations"
     ]
   },
@@ -1064,8 +1061,61 @@
     "section": "Links",
     "text": "Links\n\n\n\n\n\n\nTask\n\n\n\nComplete the free Coursera course on making presentations: Presentation skills: Designing Presentation Slides",
     "crumbs": [
-      "Writing practices",
+      "Writing principles",
       "Making presentations"
+    ]
+  },
+  {
+    "objectID": "writing_practices/making_posters.html",
+    "href": "writing_practices/making_posters.html",
+    "title": "Making posters",
+    "section": "",
+    "text": "How to prepare a ‘classic’ Scientific Poster\nWhile the status quo of scientific posters is far from perfect (see video above), academic supervisors, organizations and conference may require scientific posters in a pre-defined format. Below you will find a few tips to prepare a scientific poster that meets those expectations.",
+    "crumbs": [
+      "Writing principles",
+      "Making posters"
+    ]
+  },
+  {
+    "objectID": "writing_practices/general_principles.html",
+    "href": "writing_practices/general_principles.html",
+    "title": "Writing principles",
+    "section": "",
+    "text": "Using GPT\nUsing GPT as a writing tool can be immensely beneficial, but it’s important to approach it with care and use it as a supportive resource rather than a crutch. Here’s how to leverage ChatGPT effectively while maintaining control over your writing process:",
+    "crumbs": [
+      "Writing principles"
+    ]
+  },
+  {
+    "objectID": "writing_practices/general_principles.html#using-gpt",
+    "href": "writing_practices/general_principles.html#using-gpt",
+    "title": "Writing principles",
+    "section": "",
+    "text": "Generate Ideas and Inspiration ChatGPT can help spark ideas and provide inspiration for your writing projects. Use it to brainstorm topics, explore different angles, or overcome writer’s block by generating prompts or outlines.\nImprove Clarity and Structure Ask ChatGPT for suggestions on structuring your writing. It can provide guidance on organizing your thoughts logically, creating smooth transitions between paragraphs, or refining the overall flow of your piece.\nEnhance Language and Style Use ChatGPT to improve the clarity and coherence of your sentences. It can offer alternative word choices, help with phrasing, and suggest improvements in grammar and syntax.\nEditing and Proofreading Use ChatGPT to review your draft for spelling errors, grammatical mistakes, and punctuation issues. It can serve as a preliminary editor, but final proofreading should always be done by you.\nFeedback and Revision Suggestions Seek feedback from ChatGPT on the overall effectiveness of your writing. It can provide insights into areas that may need further development or clarification.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nMaintaining ownership of your ideas and writing style while using GPT is crucial to preserving the authenticity and integrity of your work. As a tool, ChatGPT offers valuable assistance in refining and enhancing your writing, but it should not overshadow your unique voice as a writer. Your critical thinking skills play a pivotal role here; they allow you to evaluate the suggestions provided by ChatGPT thoughtfully and decide how best to integrate them into your writing.\nWhile it can generate text based on input and provide suggestions, not all responses may be equally relevant or of high quality. It’s essential to scrutinize the responses, considering factors such as accuracy, coherence, and appropriateness for your intended audience. Evaluate each suggestion critically to ensure it aligns with the tone, style, and purpose of your writing.\nBy leveraging GPT mindfully as a writing tool, you can indeed enhance your writing skills and streamline your workflow. It can help you achieve clearer and more polished pieces by offering insights into structure, language refinement, and even creative ideation. However, it’s paramount to maintain a balanced approach. Avoid relying solely on GPT for the creative and intellectual aspects of your writing process. Remember, your originality and ability to engage with your subject matter in a meaningful way are what ultimately define your work as uniquely yours.",
+    "crumbs": [
+      "Writing principles"
+    ]
+  },
+  {
+    "objectID": "writing_practices/writing_articles.html",
+    "href": "writing_practices/writing_articles.html",
+    "title": "Writing articles",
+    "section": "",
+    "text": "If you’re diving into research or getting started with writing scientific articles, LaTeX is your friend. LaTeX (pronounced “LAY-tech”) is not just any tool—it’s a powerful typesetting system that helps you create beautifully formatted documents, perfect for academic and scientific writing. In our lab, we almost exclusively use LaTeX for most of the documents.\n\nWhy Choose LaTeX?\n\nPolished Documents: It makes your research papers and lab manuals look super professional with neat equations, figures, and references.\nFocus on Content: You get to focus on what really matters—your research—without getting bogged down by formatting headaches.\nCollaboration Made Easy: LaTeX plays well with others. It’s perfect for working on documents with classmates or colleagues, thanks to its compatibility with tools like Overleaf.\n\n\n\n\n\n\n\nTask\n\n\n\n\nHead over to Overleaf and sign up—it’s free!\nClick on “New Project” and choose “Blank Project”. This sets you up with a clean slate to start writing your document.\nOverleaf shows your document in two parts: on the left, you write your LaTeX code (don’t worry, it’s easier than it sounds!), and on the right, you instantly see how it looks as a document.\n\n\n\nTo get started with LaTeX in Overleaf, follow the tutorials below\n\n\n\nFor more detailed tutorials, please see the Overleaf Documentation",
+    "crumbs": [
+      "Writing principles",
+      "Writing articles"
+    ]
+  },
+  {
+    "objectID": "writing_practices/making_posters.html#how-to-prepare-a-classic-scientific-poster",
+    "href": "writing_practices/making_posters.html#how-to-prepare-a-classic-scientific-poster",
+    "title": "Making posters",
+    "section": "",
+    "text": "How to evaluate a Scientific Poster\n\nBasics\n\nTitle and other required sections are present\nComplete author affiliation & contact information is included\nThe poster conforms to the requirements of the conference or program where it will be presented\nFont is consistent throughout\nSpelling is correct throughout\nGrammar is correct throughout\nAcronyms are defined on first use\nContent is appropriate & relevant for audience\n\n\n\nDesign\n\nAll text can be easily read from 4 feet away\nFlow of the poster is easy to follow\nWhite space used well\nSection titles are used consistently\nImages/graphics are used in place of text whenever possible\nBullet points/lists are used in place of text whenever possible\nAll images are relevant and necessary to the poster\nCharts are correct – i.e. appropriate type for data, data is correct & correctly represented\nText color and background color are significant in contrast for easy reading\nBackground color doesn’t obscure or dim text\nImages are clear, not pixilated or blurry\n\n\n\nContent\n\nThe “story” of the poster is clear\nThe content is focused on 2-3 key points\nTitle is clear & informative of the project\nProblem, or clinical question, is identified and explained\nCurrent evidence related to project is listed\nObjectives are stated\nMethods are described\nResults are presented\nConclusions are stated\nImplications to practice and to other professions are presented\nReferences are listed\nAll content is relevant and on the key points\nContent is not duplicated in text and graphics\n\n\n\nOral Presentation\n\nPresenter greets people\nPresenter is able to give a concise synopsis of poster\nPresenter is able to explain all diagrams and sections\nPresenter speaks fluently – i.e. doesn’t stumble, leave sentences/thoughts hanging\nPresenter has questions to ask viewers\n\nMore tips:",
+    "crumbs": [
+      "Writing principles",
+      "Making posters"
     ]
   }
 ]
