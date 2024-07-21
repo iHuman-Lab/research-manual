@@ -25,6 +25,7 @@ book:
     - python_resources.qmd
     - bci_resources.qmd
     - eeg_resources.qmd
+    - ros_resources.qmd
     - lab_resources.qmd
     - checklist_and_signature.qmd
 

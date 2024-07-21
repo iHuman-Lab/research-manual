@@ -1,0 +1,11 @@
+# ROS resources {.unnumbered}
+
+Another major framework, we use in the lab is ROS. ROS, short for Robot Operating System, is an open-source framework designed to simplify the development of robotic systems. Despite its name, ROS is not an operating system itself; rather, it provides a collection of tools and libraries that help manage hardware abstraction, low-level device control, and message-passing between processes.
+
+:::{.callout-note title=Task}
+Complete the free ourse on ROS: [Hello (Real) World with ROS – Robot Operating System](https://ocw.tudelft.nl/courses/hello-real-world-ros-robot-operating-system/){target='_blank_'}
+:::
+
+<p align="center">
+![](./images/ros.png){width=80%}
+<p>
