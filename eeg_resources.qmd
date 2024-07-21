@@ -19,27 +19,27 @@ Feel free to drop by the lab for more information.
 </p>
 
 ## EEG Analysis Steps
-For those who are starting with EEG analysis, it can be overwhelming to go across a lot of steps. Here is almost a standard procedure for a lot of EEG analysis. Each block is a research area by itself. There are a lot of papers on each block. Do not get scared once you start the analysis of some EEG data, these steps will become second to your nature. Do read below given paper about how others are doing these steps. We use [mne-python](https://www.nmr.mgh.harvard.edu/mne/stable/index.html){target='_blank_'} to implement different block functionalities. If you want more information, refer to [Mike X Cohen's lectures](https://www.youtube.com/@mikexcohen1){target='_blank_'}
+For those who are starting with EEG analysis, it can be overwhelming to go across a lot of steps. Here is almost a standard procedure for a lot of EEG analysis. Each block is a research area by itself. There are a lot of papers on each block. Do not get scared once you start the analysis of some EEG data, these steps will become second to your nature. Do read below given paper about how others are doing these steps. We use [MNE-Python](https://www.nmr.mgh.harvard.edu/mne/stable/index.html){target='_blank_'} to implement different block functionalities. If you want more information, refer to [Mike X Cohen's lectures](https://www.youtube.com/@mikexcohen1){target='_blank_'}
 
 ![eeg-analysis](images/eeg_analysis.png){width=60%}
 
 ## MNE (MNE-Python)
 
-We extensively use [mne-python](https://www.nmr.mgh.harvard.edu/mne/stable/index.html){target='_blank_'} for EEG data analysis. Resources to get you started:
+We extensively use [MNE-Python](https://www.nmr.mgh.harvard.edu/mne/stable/index.html){target='_blank_'} for EEG data analysis. Resources to get you started:
 
-- [Basic mne-python tutorial](https://mybinder.org/v2/gh/wmvanvliet/SNL_workshop_2019/master?filepath=SNL_workshop_2019.ipynb){target='_blank_'}
+- [Basic MNE-Python tutorial](https://mybinder.org/v2/gh/wmvanvliet/SNL_workshop_2019/master?filepath=SNL_workshop_2019.ipynb){target='_blank_'}
 - [Intermediate tutorials](https://mne.tools/0.14/tutorials.html){target='_blank_'}
 - Join the [mailing list](https://mail.nmr.mgh.harvard.edu/mailman/listinfo/mne_analysis){target='_blank_'} for updates and community support.
 
 ## EEG Databases
 
-Here are some databases on which you are apply your mne-python skills.
+Here are some databases on which you are apply your MNE-Python skills.
 
 :::{.callout-tip}
 The best way to learn a (Python) package is to use it on your own data and see what are the capabilities
 :::
 
-Pick up some data from this repository: [meagmohit/EEG-Datasets](https://github.com/meagmohit/EEG-Datasets){target='_blank_'}. Use mne-python do some analysis and that is how you get introduced to analysis of EEG.
+Pick up some data from this repository: [meagmohit/EEG-Datasets](https://github.com/meagmohit/EEG-Datasets){target='_blank_'}. Use MNE-Python do some analysis and that is how you get introduced to analysis of EEG.
 
 :::{.callout-tip}
 If you have doubts, do drop by to iHuman lab and ask any questions!

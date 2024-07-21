@@ -9,7 +9,7 @@ These are some of the resource to introduce you to basics of brain computer inte
 - **Introduction to BCI and EEG**
   - Start with the initial videos (video-1 to video-7) to grasp the fundamentals of BCI and EEG.
   - These videos provide a solid foundation for understanding how brain activity can be used to control external devices.
-  - [Watch the videos here](https://www.youtube.com/embed/Wlwvgm3AHvc?si=RZ_QcPf8SG1lAm2O){target='_blank_'}
+  - [Watch the videos here](https://www.youtube.com/playlist?list=PLbbCsk7MUIGcO_lZMbyymWU2UezVHNaMq){target='_blank_'}
 
 ```{=html}
 <p align="center">
@@ -25,7 +25,7 @@ These introductory videos are highly recommended as they cover the basics you ne
 - **General Neural Time-Series Analysis**
   - Explore advanced concepts in neural time-series analysis, focusing on methods to analyze and interpret brain signals over time.
   - The videos primarily use Matlab, but you can replicate the analysis in Python using the [mne](https://www.nmr.mgh.harvard.edu/mne/stable/index.html){target='_blank_'} package.
-  - [Watch the videos here](https://www.youtube.com/embed/VnHeDXaCngg?si=s82BkD-t7enJlRLj){target='_blank_'}
+  - [Watch the videos here](https://youtube.com/playlist?list=PLn0OLiymPak1b2aYULx6hDVU7wSGEUJqw&si=6cfahgmQUQSKUi9O){target='_blank_'}
 
 
 ```{=html}
@@ -74,7 +74,7 @@ For more information and detailed documentation, visit [MNE-Python website](http
 
 #### Other links
 
-- [Tutorial on MNE python](https://www.youtube.com/watch?v=IYuAPisoUeI&list=PLXtvZiGkmNVvPS0N9UNBVkIFe0_0t_Nqthttps://www.youtube.com/watch?v=IYuAPisoUeI&list=PLXtvZiGkmNVvPS0N9UNBVkIFe0_0t_Nqt){target='_blank_'}
+- [Video tutorials on MNE python](https://youtube.com/playlist?list=PLXtvZiGkmNVvPS0N9UNBVkIFe0_0t_Nqt&si=tsDV8bZOc7UNEPAg){target='_blank_'}
 - [Official MNE tutorials](https://mne.tools/stable/auto_tutorials/index.html){target='_blank_'}
 
 :::{.callout-note title=Task}
@@ -93,3 +93,4 @@ We use LSL as a standard platform to interface multiple sensor and simulation so
   - LSL is a crucial middleware platform used in our lab to synchronize and record data from various sensors.
   - It simplifies data integration across different hardware and software platforms, ensuring seamless connectivity and interoperability.
   - [Learn more about LSL](https://github.com/sccn/labstreaminglayer){target='_blank_'}
+  - [Learn about pylsl](https://github.com/labstreaminglayer/pylsl){target='_blank_'}
