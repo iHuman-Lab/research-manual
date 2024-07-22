@@ -5,6 +5,9 @@ book:
   title: 'iHuman Lab Research Manual'
   author: 'Hemanth Manjunatha'
   date: today
+  sidebar:
+    logo: images/logo.png
+    search: true
   page-navigation: true
   chapters:
     - index.qmd
