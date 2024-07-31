@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.557">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -94,7 +94,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">iHuman Lab Research Manual</a> 
     </div>
@@ -164,6 +167,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../coding_practices/development_setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Development setup</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../coding_practices/clean_code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code cleanliness</span></a>
   </div>
@@ -214,6 +223,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../ros_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ROS resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../lab_resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab resources</span></a>
   </div>
@@ -234,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#how-to-prepare-a-classic-scientific-poster" id="toc-how-to-prepare-a-classic-scientific-poster" class="nav-link active" data-scroll-target="#how-to-prepare-a-classic-scientific-poster">How to prepare a ‘classic’ Scientific Poster</a>
+  <li><a href="#how-to-prepare-a-classic-scientific-poster" id="toc-how-to-prepare-a-classic-scientific-poster" class="nav-link active" data-scroll-target="#how-to-prepare-a-classic-scientific-poster">How to prepare a <code>classic</code> scientific poster</a>
   <ul class="collapse">
   <li><a href="#guidelines" id="toc-guidelines" class="nav-link" data-scroll-target="#guidelines">Guidelines</a></li>
   </ul></li>
@@ -269,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
 </iframe>
 </p><p>
 </p><section id="how-to-prepare-a-classic-scientific-poster" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-prepare-a-classic-scientific-poster">How to prepare a ‘classic’ Scientific Poster</h2>
+<h2 class="anchored" data-anchor-id="how-to-prepare-a-classic-scientific-poster">How to prepare a <code>classic</code> scientific poster</h2>
 <p>While the status quo of scientific posters is far from perfect (see video above), academic supervisors, organizations and conference may require scientific posters in a pre-defined format. Below you will find a few tips to prepare a scientific poster that meets those expectations.</p>
 <section id="guidelines" class="level3">
 <h3 class="anchored" data-anchor-id="guidelines">Guidelines</h3>
@@ -321,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="oral-presentation" class="level4">
-<h4 class="anchored" data-anchor-id="oral-presentation">Oral Presentation</h4>
+<h4 class="anchored" data-anchor-id="oral-presentation">Oral presentation</h4>
 <ul>
 <li>Presenter greets people</li>
 <li>Presenter is able to give a concise synopsis of poster</li>
@@ -420,6 +435,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -454,7 +487,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

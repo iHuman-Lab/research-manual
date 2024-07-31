@@ -6,9 +6,9 @@ In a research lab, Python code often forms the backbone of data analysis, simula
 
 Decoupling refers to the practice of reducing dependencies between different parts of a program. When code is decoupled, changes in one part of the code have minimal impact on others. This is particularly important in research labs where:
 
-- **Multiple Researchers**: Different team members might work on different aspects of the codebase.
-- **Evolving Requirements**: Research projects often evolve, requiring frequent changes and updates to the code.
-- **Integration of Tools**: Code might need to interface with various tools, libraries, and datasets.
+- Different team members might work on different aspects of the codebase.
+- Research projects often evolve, requiring frequent changes and updates to the code.
+- Code might need to interface with various tools, libraries, and datasets.
 
 The primary benefits of decoupling are:
 

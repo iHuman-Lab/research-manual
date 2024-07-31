@@ -1,0 +1,83 @@
+# Development setup {.unnumbered}
+
+In the world of professional Python development, setting up a robust and efficient development environment is crucial for productivity and code quality. This tutorial provides a comprehensive guide to setting up a Python project using industry-standard tools and practices. We'll walk you through the process of installing Conda for environment management, configuring Visual Studio Code (VSCode) for a seamless development experience, and organizing your project structure effectively. Additionally, we'll cover how to manage dependencies with Conda and pip, ensure code quality with Ruff for linting and formatting, and automate workflows using pre-commit hooks. By following these steps, you'll establish a solid foundation for developing, testing, and maintaining your Python projects. For each step, we've linked to practical YouTube videos to enhance your understanding and provide visual guidance.
+
+All these topics are covered here:
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fj2tuTIcUys?si=WHXzb3oYxTsayazJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+For more detailed tutorial see each sub-section.
+
+## Visual Studio Code (VSCode)
+
+Visual Studio Code (VSCode) is a versatile, open-source code editor developed by Microsoft. It provides essential features for Python development, including debugging, linting, and integrated terminal support.
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WPqXP_kLzpo?si=-DzadlqbXyymKftK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+## Conda Environment Management
+
+Conda is a powerful package and environment management system that helps manage dependencies and isolate project environments. It supports both Python and non-Python packages, making it a flexible choice for managing project requirements.
+
+Using Conda allows you to create isolated environments for different projects, preventing version conflicts between dependencies and ensuring reproducibility. This is crucial for maintaining a stable development environment across different projects and teams.
+
+Link to YouTube tutorial:
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sDCtY9Z1bqE?si=WFEu8e8lwyw6CgtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+## Ruff for code linting
+
+Ruff is a fast Python linter designed to catch potential issues and enforce coding standards. It helps maintain code quality by identifying problems early in the development process.
+
+Linting with Ruff helps enforce coding standards, catch syntax errors, and improve code readability. It reduces the likelihood of bugs and ensures that the code adheres to best practices.
+
+Link to YouTube tutorial:
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bcAqceZkZRQ?si=aKjOULUYuu5MFfwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+## Project structure
+
+A well-defined project structure organizes your code and resources effectively. A common structure includes directories for source code, tests, and configuration files. At iHuman Lab, we follow a standard strucuture to  ease the organization of project files. Please see the [project structure](project_sturture.qmd) section
+
+## Pytest for testing
+
+Pytest is a popular testing framework for Python that provides simple and scalable test writing. It supports fixtures, parameterized testing, and various plugins for extending its functionality.
+
+Testing is crucial for ensuring code reliability and catching bugs early. Pytest’s flexible and powerful features help you write and manage tests efficiently, contributing to a stable and maintainable codebase.
+
+Link to YouTube tutorial:
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cHYq1MRoyI0?si=WKZlFYnGe-AylL9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+## Pre-commit hooks
+
+Pre-commit hooks are scripts that run automatically before a commit is finalized. They can perform tasks like code formatting, linting, and validation, ensuring code quality before changes are committed to the repository.
+
+Pre-commit hooks automate code quality checks, reducing the risk of introducing errors into the codebase. They help maintain consistency and enforce standards across the development team.
+
+Link to YouTube tutorial:
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ObksvAZyWdo?si=Pe3UOslW_syEIuhq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+## GitHub for version control
+
+GitHub is a widely used platform for hosting and managing code repositories. It provides version control, collaboration tools, and integration with various CI/CD services.
+
+Version control with GitHub allows for tracking changes, collaboration with other developers, and managing different versions of the project. It enhances team collaboration and code management.
+
+Link to YouTube tutorial:
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RGOj5yH7evk?si=FdRahpfg6LqGYxr6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>

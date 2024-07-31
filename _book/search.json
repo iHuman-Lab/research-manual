@@ -74,7 +74,7 @@
     "href": "coding_practices/general_practices.html",
     "title": "Coding practices",
     "section": "",
-    "text": "Effective code management is vital in research, especially for data analysis and simulations. We try to follow a standard workflow for developing Python code detailed below:\n\nEstablishing a Structured Development Environment\n\nUtilize Conda: Begin by configuring Miniconda or Anaconda to effectively manage isolated development environments.\nEnvironment Configuration: Tailor environments for each project with Conda, ensuring precise control over dependencies.\nEnforce Consistency: Adopt tools like Ruff to maintain code formatting standards, promoting clarity and maintainability.\n\nOrganizing and Structuring Your Codebase\n\nProject Organization: Implement a systematic folder structure (data/, notebooks/, src/, tests/, scripts/) to streamline project navigation and maintain order.\nVersion Control: Leverage Git for comprehensive version tracking and GitHub for collaborative development management.\nDocumentation: Enhance transparency and usability with thorough code comments and a detailed README.md to articulate project objectives and usage guidelines.\n\nEffective Data Management Practices\n\nData Organization: Store raw data in data/raw/ and processed data in data/processed/ to uphold data integrity and accessibility.\nVersioning: Employ robust data management tools to manage versions, ensuring reproducibility and traceability.\n\nEnsuring Reproducibility and Continuity\n\nEnvironment Replication: Share standardized environment configurations to facilitate seamless project setup across different systems.\nDocumentation Updates: Maintain updated documentation and Jupyter Notebooks to ensure reproducibility and facilitate knowledge transfer.\n\nFacilitating Collaborative Excellence\n\nCode Review: Foster a culture of quality assurance through regular code reviews, utilizing pull requests to incorporate feedback and improvements.\nCommunication: Promote effective communication channels to enhance collaboration, share insights, and address challenges collectively.\n\nSustaining Long-term Project Integrity\n\nContinuous Improvement: Stay current with tool updates and library advancements to optimize project performance and reliability.\nIssue Management: Utilize issue tracking tools to promptly address bugs and enhancements, ensuring project stability and growth.\n\n\nBy adhering to these principles, you establish a framework that not only enhances the efficiency and reliability of your coding practices but also fosters a professional environment conducive to innovation and collaborative success. Whether leveraging Conda for environment management, adhering to coding standards with Ruff, or maintaining meticulous documentation, each step contributes to a disciplined and effective approach to coding excellence in research.",
+    "text": "Effective code management is a game-changer in research, especially for data analysis and simulations. Follow this general guide to help you organize your projects and boost your productivity:\n\nEstablishing a structured development environment\n\nStart by setting up Miniconda or Anaconda to manage your development environments effectively. By doing this, you can create isolated environments for each of your projects, ensuring that dependencies are kept separate and conflicts are avoided.\nCustomize and tailor separate environments for each of your projects using conda. This approach ensures that each project has its own specific set of dependencies, which helps in maintaining a clean and well-organized workflow.\nUse tools like ruff to enforce consistent code formatting across your projects. Consistent formatting not only makes your code look more professional but also enhances its readability and maintainability, making your coding practices more efficient.\n\nOrganizing and structuring your codebase\n\nDesign a clear and logical folder structure for your project, such as including data/, notebooks/, src/, tests/, and scripts/ directories. This organization will make it easy for you to navigate your project, locate files quickly, and keep everything neatly arranged.\nLeverage git for version control and use github for managing collaborative development. This setup allows you to track changes, collaborate seamlessly with others, and revert to previous versions if needed, ensuring that your project evolves smoothly.\nInclude thorough comments in your code and create a detailed README.md file. This documentation will help explain your project’s objectives and usage, making it easier for others to understand and contribute to your work. Clear documentation acts as a friendly guide for anyone interacting with your project.\n\nEffective data management practices\n\nStore your raw data in a data/raw/ folder and place your processed data in a data/processed/ folder. This method helps keep your data organized and clearly distinguishes between original and modified datasets, which maintains data integrity throughout your project.\nUse robust data management tools to track different versions of your data. By managing versions effectively, you ensure that your results are reproducible and that you can trace back any changes, supporting scientific rigor and maintaining a clear record of your data’s evolution.\n\nEnsuring reproducibility and continuity\n\nShare your environment configurations with others to facilitate a smooth setup of your project on their systems. This practice helps ensure that your project is reproducible and that others can replicate your work without any difficulties.\nRegularly update your documentation and Jupyter Notebooks to reflect the latest changes and insights. Keeping these resources current makes it easier for others to follow your work and for you to share your findings, aiding in knowledge transfer and enhancing the accessibility of your project.\n\nFacilitating collaborative excellence\n\nFoster a culture of quality assurance by encouraging regular code reviews within your team. This practice helps catch potential issues early, incorporate feedback, and continuously improve the quality of your code, leading to better results and stronger collaboration.\nSet up effective communication channels to discuss ideas, share insights, and solve problems together. Strong communication is essential for successful collaboration and helps build a supportive and innovative team environment.\n\nSustaining long-term project integrity\n\nStay updated with the latest tool and library advancements to keep your project performing at its best. Embracing new updates and improvements ensures that your project remains current, reliable, and optimized for performance.\nUtilize issue tracking tools to address bugs and enhancements promptly. Proactively managing issues helps maintain the stability and growth of your project, ensuring it remains robust and continues to meet its goals.",
     "crumbs": [
       "Coding practices"
     ]
@@ -660,7 +660,7 @@
     "href": "coding_practices/code_decoupling.html#understanding-decoupling-in-code",
     "title": "Decoupled code",
     "section": "",
-    "text": "Multiple Researchers: Different team members might work on different aspects of the codebase.\nEvolving Requirements: Research projects often evolve, requiring frequent changes and updates to the code.\nIntegration of Tools: Code might need to interface with various tools, libraries, and datasets.\n\n\n\nModularity: Breaking down the code into distinct modules or components.\nTestability: Isolated components are easier to test independently.\nMaintainability: Changes in one module have less chance of breaking other parts of the code.\nReusability: Modular components can be reused across different projects or experiments.",
+    "text": "Different team members might work on different aspects of the codebase.\nResearch projects often evolve, requiring frequent changes and updates to the code.\nCode might need to interface with various tools, libraries, and datasets.\n\n\n\nModularity: Breaking down the code into distinct modules or components.\nTestability: Isolated components are easier to test independently.\nMaintainability: Changes in one module have less chance of breaking other parts of the code.\nReusability: Modular components can be reused across different projects or experiments.",
     "crumbs": [
       "Coding practices",
       "Decoupled code"
@@ -1070,7 +1070,7 @@
     "href": "writing_practices/making_posters.html",
     "title": "Making posters",
     "section": "",
-    "text": "How to prepare a ‘classic’ Scientific Poster\nWhile the status quo of scientific posters is far from perfect (see video above), academic supervisors, organizations and conference may require scientific posters in a pre-defined format. Below you will find a few tips to prepare a scientific poster that meets those expectations.",
+    "text": "How to prepare a classic scientific poster\nWhile the status quo of scientific posters is far from perfect (see video above), academic supervisors, organizations and conference may require scientific posters in a pre-defined format. Below you will find a few tips to prepare a scientific poster that meets those expectations.",
     "crumbs": [
       "Writing principles",
       "Making posters"
@@ -1091,7 +1091,7 @@
     "href": "writing_practices/general_principles.html#using-gpt",
     "title": "Writing principles",
     "section": "",
-    "text": "Generate Ideas and Inspiration ChatGPT can help spark ideas and provide inspiration for your writing projects. Use it to brainstorm topics, explore different angles, or overcome writer’s block by generating prompts or outlines.\nImprove Clarity and Structure Ask ChatGPT for suggestions on structuring your writing. It can provide guidance on organizing your thoughts logically, creating smooth transitions between paragraphs, or refining the overall flow of your piece.\nEnhance Language and Style Use ChatGPT to improve the clarity and coherence of your sentences. It can offer alternative word choices, help with phrasing, and suggest improvements in grammar and syntax.\nEditing and Proofreading Use ChatGPT to review your draft for spelling errors, grammatical mistakes, and punctuation issues. It can serve as a preliminary editor, but final proofreading should always be done by you.\nFeedback and Revision Suggestions Seek feedback from ChatGPT on the overall effectiveness of your writing. It can provide insights into areas that may need further development or clarification.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nMaintaining ownership of your ideas and writing style while using GPT is crucial to preserving the authenticity and integrity of your work. As a tool, ChatGPT offers valuable assistance in refining and enhancing your writing, but it should not overshadow your unique voice as a writer. Your critical thinking skills play a pivotal role here; they allow you to evaluate the suggestions provided by ChatGPT thoughtfully and decide how best to integrate them into your writing.\nWhile it can generate text based on input and provide suggestions, not all responses may be equally relevant or of high quality. It’s essential to scrutinize the responses, considering factors such as accuracy, coherence, and appropriateness for your intended audience. Evaluate each suggestion critically to ensure it aligns with the tone, style, and purpose of your writing.\nBy leveraging GPT mindfully as a writing tool, you can indeed enhance your writing skills and streamline your workflow. It can help you achieve clearer and more polished pieces by offering insights into structure, language refinement, and even creative ideation. However, it’s paramount to maintain a balanced approach. Avoid relying solely on GPT for the creative and intellectual aspects of your writing process. Remember, your originality and ability to engage with your subject matter in a meaningful way are what ultimately define your work as uniquely yours.",
+    "text": "Generate ideas and inspiration ChatGPT can help spark ideas and provide inspiration for your writing projects. Use it to brainstorm topics, explore different angles, or overcome writer’s block by generating prompts or outlines.\nImprove clarity and structure Ask ChatGPT for suggestions on structuring your writing. It can provide guidance on organizing your thoughts logically, creating smooth transitions between paragraphs, or refining the overall flow of your piece.\nEnhance language and style Use ChatGPT to improve the clarity and coherence of your sentences. It can offer alternative word choices, help with phrasing, and suggest improvements in grammar and syntax.\nEditing and proofreading Use ChatGPT to review your draft for spelling errors, grammatical mistakes, and punctuation issues. It can serve as a preliminary editor, but final proofreading should always be done by you.\nFeedback and revision suggestions Seek feedback from ChatGPT on the overall effectiveness of your writing. It can provide insights into areas that may need further development or clarification.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nMaintaining ownership of your ideas and writing style while using GPT is crucial to preserving the authenticity and integrity of your work. As a tool, ChatGPT offers valuable assistance in refining and enhancing your writing, but it should not overshadow your unique voice as a writer. Your critical thinking skills play a pivotal role here; they allow you to evaluate the suggestions provided by ChatGPT thoughtfully and decide how best to integrate them into your writing.\nWhile it can generate text based on input and provide suggestions, not all responses may be equally relevant or of high quality. It’s essential to scrutinize the responses, considering factors such as accuracy, coherence, and appropriateness for your intended audience. Evaluate each suggestion critically to ensure it aligns with the tone, style, and purpose of your writing.\nBy leveraging GPT mindfully as a writing tool, you can indeed enhance your writing skills and streamline your workflow. It can help you achieve clearer and more polished pieces by offering insights into structure, language refinement, and even creative ideation. However, it’s paramount to maintain a balanced approach. Avoid relying solely on GPT for the creative and intellectual aspects of your writing process. Remember, your originality and ability to engage with your subject matter in a meaningful way are what ultimately define your work as uniquely yours.",
     "crumbs": [
       "Writing principles"
     ]
@@ -1101,7 +1101,7 @@
     "href": "writing_practices/writing_articles.html",
     "title": "Writing articles",
     "section": "",
-    "text": "If you’re diving into research or getting started with writing scientific articles, LaTeX is your friend. LaTeX (pronounced “LAY-tech”) is not just any tool—it’s a powerful typesetting system that helps you create beautifully formatted documents, perfect for academic and scientific writing. In our lab, we almost exclusively use LaTeX for most of the documents.\n\nWhy Choose LaTeX?\n\nPolished Documents: It makes your research papers and lab manuals look super professional with neat equations, figures, and references.\nFocus on Content: You get to focus on what really matters—your research—without getting bogged down by formatting headaches.\nCollaboration Made Easy: LaTeX plays well with others. It’s perfect for working on documents with classmates or colleagues, thanks to its compatibility with tools like Overleaf.\n\n\n\n\n\n\n\nTask\n\n\n\n\nHead over to Overleaf and sign up—it’s free!\nClick on “New Project” and choose “Blank Project”. This sets you up with a clean slate to start writing your document.\nOverleaf shows your document in two parts: on the left, you write your LaTeX code (don’t worry, it’s easier than it sounds!), and on the right, you instantly see how it looks as a document.\n\n\n\nTo get started with LaTeX in Overleaf, follow the tutorials below\n\n\n\nFor more detailed tutorials, please see the Overleaf Documentation",
+    "text": "Why Choose LaTeX?\nTo get started with LaTeX in Overleaf, follow the tutorials below\nFor more detailed tutorials, please see the Overleaf Documentation",
     "crumbs": [
       "Writing principles",
       "Writing articles"
@@ -1112,7 +1112,7 @@
     "href": "writing_practices/making_posters.html#how-to-prepare-a-classic-scientific-poster",
     "title": "Making posters",
     "section": "",
-    "text": "Guidelines\n\nBasics\n\nTitle and other required sections are present\nComplete author affiliation & contact information is included\nThe poster conforms to the requirements of the conference or program where it will be presented\nFont is consistent throughout\nSpelling is correct throughout\nGrammar is correct throughout\nAcronyms are defined on first use\nContent is appropriate & relevant for audience\n\n\n\nDesign\n\nAll text can be easily read from 4 feet away\nFlow of the poster is easy to follow\nWhite space used well\nSection titles are used consistently\nImages/graphics are used in place of text whenever possible\nBullet points/lists are used in place of text whenever possible\nAll images are relevant and necessary to the poster\nCharts are correct – i.e. appropriate type for data, data is correct & correctly represented\nText color and background color are significant in contrast for easy reading\nBackground color doesn’t obscure or dim text\nImages are clear, not pixilated or blurry\n\n\n\nContent\n\nThe “story” of the poster is clear\nThe content is focused on 2-3 key points\nTitle is clear & informative of the project\nProblem, or clinical question, is identified and explained\nCurrent evidence related to project is listed\nObjectives are stated\nMethods are described\nResults are presented\nConclusions are stated\nImplications to practice and to other professions are presented\nReferences are listed\nAll content is relevant and on the key points\nContent is not duplicated in text and graphics\n\n\n\nOral Presentation\n\nPresenter greets people\nPresenter is able to give a concise synopsis of poster\nPresenter is able to explain all diagrams and sections\nPresenter speaks fluently – i.e. doesn’t stumble, leave sentences/thoughts hanging\nPresenter has questions to ask viewers\n\nMore tips:",
+    "text": "Guidelines\n\nBasics\n\nTitle and other required sections are present\nComplete author affiliation & contact information is included\nThe poster conforms to the requirements of the conference or program where it will be presented\nFont is consistent throughout\nSpelling is correct throughout\nGrammar is correct throughout\nAcronyms are defined on first use\nContent is appropriate & relevant for audience\n\n\n\nDesign\n\nAll text can be easily read from 4 feet away\nFlow of the poster is easy to follow\nWhite space used well\nSection titles are used consistently\nImages/graphics are used in place of text whenever possible\nBullet points/lists are used in place of text whenever possible\nAll images are relevant and necessary to the poster\nCharts are correct – i.e. appropriate type for data, data is correct & correctly represented\nText color and background color are significant in contrast for easy reading\nBackground color doesn’t obscure or dim text\nImages are clear, not pixilated or blurry\n\n\n\nContent\n\nThe “story” of the poster is clear\nThe content is focused on 2-3 key points\nTitle is clear & informative of the project\nProblem, or clinical question, is identified and explained\nCurrent evidence related to project is listed\nObjectives are stated\nMethods are described\nResults are presented\nConclusions are stated\nImplications to practice and to other professions are presented\nReferences are listed\nAll content is relevant and on the key points\nContent is not duplicated in text and graphics\n\n\n\nOral presentation\n\nPresenter greets people\nPresenter is able to give a concise synopsis of poster\nPresenter is able to explain all diagrams and sections\nPresenter speaks fluently – i.e. doesn’t stumble, leave sentences/thoughts hanging\nPresenter has questions to ask viewers\n\nMore tips:",
     "crumbs": [
       "Writing principles",
       "Making posters"
@@ -1136,6 +1136,246 @@
     "text": "Another major framework, we use in the lab is ROS. ROS, short for Robot Operating System, is an open-source framework designed to simplify the development of robotic systems. Despite its name, ROS is not an operating system itself; rather, it provides a collection of tools and libraries that help manage hardware abstraction, low-level device control, and message-passing between processes.\n\n\n\n\n\n\nTask\n\n\n\nComplete the free ourse on ROS: Hello (Real) World with ROS – Robot Operating System",
     "crumbs": [
       "ROS resources"
+    ]
+  },
+  {
+    "objectID": "writing_practices/writing_articles.html#books",
+    "href": "writing_practices/writing_articles.html#books",
+    "title": "Writing articles",
+    "section": "Books",
+    "text": "Books\nThese are some of the books which have personally helped to write better:\n\nStyle : toward clarity and grace by Williams, Joseph M",
+    "crumbs": [
+      "Writing principles",
+      "Writing articles"
+    ]
+  },
+  {
+    "objectID": "writing_practices/general_principles.html#books",
+    "href": "writing_practices/general_principles.html#books",
+    "title": "Writing principles",
+    "section": "Books",
+    "text": "Books\nThese are some of the books (&video) which have personally helped to write better:\n\nStyle : toward clarity and grace by Williams, Joseph M\nThey Say I Say by Graff and Birkenstein",
+    "crumbs": [
+      "Writing principles"
+    ]
+  },
+  {
+    "objectID": "writing_practices/general_principles.html#books-and-videos",
+    "href": "writing_practices/general_principles.html#books-and-videos",
+    "title": "Writing principles",
+    "section": "Books and videos",
+    "text": "Books and videos\nThese are some of the books (&video) which have personally helped to write better:\n\nStyle : toward clarity and grace by Williams, Joseph M\nThey Say I Say by Graff and Birkenstein",
+    "crumbs": [
+      "Writing principles"
+    ]
+  },
+  {
+    "objectID": "writing_practices/writing_articles.html#books-and-videos",
+    "href": "writing_practices/writing_articles.html#books-and-videos",
+    "title": "Writing articles",
+    "section": "Books and videos",
+    "text": "Books and videos\nThese are some of the books (&video) which have personally helped to write better:\n\nStyle: Toward Clarity and Grace, Joseph M\nThey Say I Say by Graff and Birkenstein\n\nUniversity Chicago Writing Workshop\n\n\n\n\n\n\n\n\n\n\nTask\n\n\n\n\nGo through the book Style: Toward Clarity and Grace, Joseph M.\nWatch the video LEADERSHIP LAB: The Craft of Writing Effectively in the above set of videos.",
+    "crumbs": [
+      "Writing principles",
+      "Writing articles"
+    ]
+  },
+  {
+    "objectID": "writing_practices/writing_articles.html#resources",
+    "href": "writing_practices/writing_articles.html#resources",
+    "title": "Writing articles",
+    "section": "Resources",
+    "text": "Resources\nThese are some of the books (&video) which have personally helped to write better:\n\nStyle: Toward Clarity and Grace, Joseph M\nThey Say I Say by Graff and Birkenstein\nUniversity of Manchester, Academic Phrasebank\n\nUniversity Chicago Writing Workshop\n\n\n\n\n\n\n\n\n\n\nTask\n\n\n\n\nGo through the book Style: Toward Clarity and Grace, Joseph M.\nWatch the video LEADERSHIP LAB: The Craft of Writing Effectively in the above set of videos.",
+    "crumbs": [
+      "Writing principles",
+      "Writing articles"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html",
+    "href": "coding_practices/development_setup.html",
+    "title": "Development setup",
+    "section": "",
+    "text": "Visual Studio Code (VSCode)\nVisual Studio Code (VSCode) is a versatile, open-source code editor developed by Microsoft. It provides essential features for Python development, including debugging, linting, and integrated terminal support.",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#setting-up-your-development-environment",
+    "href": "coding_practices/development_setup.html#setting-up-your-development-environment",
+    "title": "Development setup",
+    "section": "",
+    "text": "Install Conda\nConda is an essential tool for managing your Python environment and dependencies. We’ll use Miniconda for this purpose.\n\nDownload Miniconda:\n\nWindows: Download the installer from Miniconda Downloads and run it.\nmacOS/Linux: Download the installer script and execute it:\nbash Miniconda3-latest-MacOSX-x86_64.sh\nVerify Installation:\nconda --version\n\nYouTube Tutorial: How to Install Miniconda on Windows, macOS, and Linux\n\n\n\nCreate a Conda environment\n\nCreate the environment:\nconda create --name myproject python=3.11\nActivate the environment:\nconda activate myproject\nDeactivate the environment (when needed):\nconda deactivate\nYouTube Tutorial: Creating and Managing Conda Environments",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#setting-up-vscode",
+    "href": "coding_practices/development_setup.html#setting-up-vscode",
+    "title": "Development setup",
+    "section": "Setting up VSCode",
+    "text": "Setting up VSCode\n\nInstall VSCode\nDownload and install Visual Studio Code.\nYouTube Tutorial: How to Install Visual Studio Code\n\n\nInstall the Python extension\n\nOpen VSCode.\nAccess extensions: Click on the Extensions icon or press Ctrl+Shift+X.\nSearch and install: Search for “Python” and install the extension provided by Microsoft.\nYouTube Tutorial: Installing Python Extension in VSCode\n\n\n\nConfigure VSCode to use Conda environment\n\nOpen your project folder: Go to File -&gt; Open Folder... and select your project directory.\nSelect Python interpreter:\n\nPress Ctrl+Shift+P to open the Command Palette.\nType Python: Select Interpreter and choose the interpreter corresponding to your Conda environment (e.g., myproject).\n\nSetup .vscode folder (Optional): Create a .vscode folder in your project root with a settings.json file to configure your workspace settings:\n{\n  \"python.pythonPath\": \"path/to/your/conda/env/bin/python\",\n  \"python.linting.enabled\": true,\n  \"python.formatting.provider\": \"none\",  // Ruff will handle formatting\n  \"editor.formatOnSave\": true\n}\nYouTube Tutorial: Configure VSCode to Use Conda Environment",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#setting-up-project-structure",
+    "href": "coding_practices/development_setup.html#setting-up-project-structure",
+    "title": "Development setup",
+    "section": "Setting up project structure",
+    "text": "Setting up project structure\n\nInitialize a Git repository\n\nInitialize Git:\ngit init\nCreate .gitignore:\n__pycache__/\n*.pyc\n*.pyo\n*.pyd\n*.db\n*.sqlite3\n*.env\nYouTube Tutorial: Git Basics: Initialization and .gitignore\n\n\n\nCreate project directories and files\nwe use a standard project structure in our lab to organize our research endeavors effectively. Please see the section on on project structure",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#contributing",
+    "href": "coding_practices/development_setup.html#contributing",
+    "title": "Development setup",
+    "section": "Contributing",
+    "text": "Contributing\nInstructions on how others can contribute to your project.",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#license",
+    "href": "coding_practices/development_setup.html#license",
+    "title": "Development setup",
+    "section": "License",
+    "text": "License\nSpecify the license under which your project is distributed.\n\n   **YouTube Tutorial**: [Creating a README.md File for Your Python Project](https://www.youtube.com/watch?v=E4QPLFhT9lw){target='_blank_'}\n\n## Managing dependencies\n\n### Use `environment.yml`\n\nDefine your Conda environment in `environment.yml`:\n\n```yaml\nname: myproject\nchannels:\n  - defaults\ndependencies:\n  - python=3.11\n  - pip\n  - pip:\n    - -r requirements.txt\n\nExport the environment:\nconda env export &gt; environment.yml\nCreate the environment:\nconda env create -f environment.yml\nYouTube Tutorial: Managing Conda Environments with environment.yml\n\n\nCreate requirements.txt\nList additional dependencies that are installed using pip:\npip freeze &gt; requirements.txt\nYouTube Tutorial: Creating and Managing requirements.txt",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#code-quality-and-linting",
+    "href": "coding_practices/development_setup.html#code-quality-and-linting",
+    "title": "Development setup",
+    "section": "Code quality and linting",
+    "text": "Code quality and linting\n\nInstall Ruff\nRuff provides both linting and formatting capabilities.\n\nInstall Ruff:\npip install ruff\nConfigure Ruff: Create a .ruff.toml file in the root of your project:\n[tool.ruff]\nselect = [\"E\", \"F\", \"W\"]\nignore = [\"E501\"]  # Ignore line length errors\nRun Ruff for linting and formatting:\n\nTo lint your code:\nruff check .\nTo automatically format your code:\nruff --fix .\n\nYouTube Tutorial: Using Ruff for Python Code Linting and Formatting",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#automating-with-pre-commit-hooks",
+    "href": "coding_practices/development_setup.html#automating-with-pre-commit-hooks",
+    "title": "Development setup",
+    "section": "Automating with pre-commit hooks",
+    "text": "Automating with pre-commit hooks\n\nInstall pre-commit\nPre-commit manages pre-commit hooks to enforce code quality and formatting:\n\nInstall pre-commit:\npip install pre-commit\n\n\n\nConfigure pre-commit\nCreate a .pre-commit-config.yaml file:\nrepos:\n  - repo: https://github.com/pre-commit/pre-commit-hooks\n    rev: v3.4.0\n    hooks:\n      - id: trailing-whitespace\n      - id: end-of-file-fixer\n      - id: mixed-line-ending\n  - repo: https://github.com/charliermarsh/ruff-pre-commit\n    rev: v0.0.266\n    hooks:\n      - id: ruff\n        language_version: python3\n\nInstall hooks:\npre-commit install\nRun hooks manually (Optional):\npre-commit run --all-files\nYouTube Tutorial: Setting Up Pre-commit Hooks for Python",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#running-the-project",
+    "href": "coding_practices/development_setup.html#running-the-project",
+    "title": "Development setup",
+    "section": "Running the project",
+    "text": "Running the project\n\nActivate the Conda environment\nAlways activate your Conda environment before running or developing your project:\nconda activate myproject\n\n\nRun the application\nExecute your main Python file to run the application:\npython myproject/main.py\n\n\nRun tests\nExecute tests using pytest:\npytest\n\n\nFormat and lint code\nUse Ruff to format and lint code:\nruff --fix .   # Automatically format code\nruff check .   # Check code for linting issues\nYouTube Tutorial: Running and Testing Python Projects with Conda",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#conclusion",
+    "href": "coding_practices/development_setup.html#conclusion",
+    "title": "Development setup",
+    "section": "Conclusion",
+    "text": "Conclusion\nBy using Ruff for both linting and formatting, you’ve streamlined your Python development workflow. This setup ensures consistent code quality and adherence to best practices without the need for multiple",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#visual-studio-code-vscode",
+    "href": "coding_practices/development_setup.html#visual-studio-code-vscode",
+    "title": "Development setup",
+    "section": "1. Visual Studio Code (VSCode)",
+    "text": "1. Visual Studio Code (VSCode)\nVisual Studio Code (VSCode) is a versatile, open-source code editor developed by Microsoft. It provides essential features for Python development, including debugging, linting, and integrated terminal support.\nWhy it is important: VSCode offers a streamlined interface, rich extension ecosystem, and excellent support for Python development. It integrates well with tools and libraries commonly used in Python projects, enhancing productivity and efficiency.\nLink to YouTube tutorial: Getting Started with VSCode for Python",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#conda-environment-management",
+    "href": "coding_practices/development_setup.html#conda-environment-management",
+    "title": "Development setup",
+    "section": "Conda Environment Management",
+    "text": "Conda Environment Management\nConda is a powerful package and environment management system that helps manage dependencies and isolate project environments. It supports both Python and non-Python packages, making it a flexible choice for managing project requirements.\nUsing Conda allows you to create isolated environments for different projects, preventing version conflicts between dependencies and ensuring reproducibility. This is crucial for maintaining a stable development environment across different projects and teams.\nLink to YouTube tutorial:",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#ruff-for-code-linting",
+    "href": "coding_practices/development_setup.html#ruff-for-code-linting",
+    "title": "Development setup",
+    "section": "Ruff for code linting",
+    "text": "Ruff for code linting\nRuff is a fast Python linter designed to catch potential issues and enforce coding standards. It helps maintain code quality by identifying problems early in the development process.\nLinting with Ruff helps enforce coding standards, catch syntax errors, and improve code readability. It reduces the likelihood of bugs and ensures that the code adheres to best practices.\nLink to YouTube tutorial:",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#project-structure",
+    "href": "coding_practices/development_setup.html#project-structure",
+    "title": "Development setup",
+    "section": "Project structure",
+    "text": "Project structure\nA well-defined project structure organizes your code and resources effectively. A common structure includes directories for source code, tests, and configuration files. At iHuman Lab, we follow a standard strucuture to ease the organization of project files. Please see the project structure section",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#pytest-for-testing",
+    "href": "coding_practices/development_setup.html#pytest-for-testing",
+    "title": "Development setup",
+    "section": "Pytest for testing",
+    "text": "Pytest for testing\nPytest is a popular testing framework for Python that provides simple and scalable test writing. It supports fixtures, parameterized testing, and various plugins for extending its functionality.\nTesting is crucial for ensuring code reliability and catching bugs early. Pytest’s flexible and powerful features help you write and manage tests efficiently, contributing to a stable and maintainable codebase.\nLink to YouTube tutorial:",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#pre-commit-hooks",
+    "href": "coding_practices/development_setup.html#pre-commit-hooks",
+    "title": "Development setup",
+    "section": "Pre-commit hooks",
+    "text": "Pre-commit hooks\nPre-commit hooks are scripts that run automatically before a commit is finalized. They can perform tasks like code formatting, linting, and validation, ensuring code quality before changes are committed to the repository.\nPre-commit hooks automate code quality checks, reducing the risk of introducing errors into the codebase. They help maintain consistency and enforce standards across the development team.\nLink to YouTube tutorial:",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
+    ]
+  },
+  {
+    "objectID": "coding_practices/development_setup.html#github-for-version-control",
+    "href": "coding_practices/development_setup.html#github-for-version-control",
+    "title": "Development setup",
+    "section": "GitHub for version control",
+    "text": "GitHub for version control\nGitHub is a widely used platform for hosting and managing code repositories. It provides version control, collaboration tools, and integration with various CI/CD services.\nVersion control with GitHub allows for tracking changes, collaboration with other developers, and managing different versions of the project. It enhances team collaboration and code management.\nLink to YouTube tutorial:",
+    "crumbs": [
+      "Coding practices",
+      "Development setup"
     ]
   }
 ]

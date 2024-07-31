@@ -24,3 +24,23 @@ To get started with LaTeX in Overleaf, follow the tutorials below
 ```
 
 For more detailed tutorials, please see the [Overleaf Documentation](https://www.overleaf.com/learn){target='_blank_'}
+
+
+## Resources
+
+These are some of the books (&video) which have personally helped to write better:
+
+1. [Style: Toward Clarity and Grace, Joseph M](https://archive.org/details/styletowardclari0067will/page/n3/mode/2up){target='_blank_'}
+2. [They Say I Say by Graff and Birkenstein](https://archive.org/details/they-say-i-say-5th-edition){target='_blank_'}
+3. [University of Manchester, Academic Phrasebank](https://www.phrasebank.manchester.ac.uk){target='_blank_'}
+
+University Chicago Writing Workshop
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=IUXN2wJkR2Skyts2&amp;list=PLG5oXmrs-KA3EhXr_82Yy9dPGImBTbmuv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+:::{.callout-note title=Task}
+1. Go through the book `Style: Toward Clarity and Grace, Joseph M`.
+2. Watch the video `LEADERSHIP LAB: The Craft of Writing Effectively` in the above set of videos.
+:::

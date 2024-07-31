@@ -20,6 +20,7 @@ book:
         - writing_practices/making_posters.qmd
     - part: coding_practices/general_practices.qmd
       chapters:
+        - coding_practices/development_setup.qmd
         - coding_practices/clean_code.qmd
         - coding_practices/code_decoupling.qmd
         - coding_practices/code_testing.qmd
