@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.557">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -94,7 +94,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">iHuman Lab Research Manual</a> 
     </div>
@@ -214,6 +217,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../ros_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ROS resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../lab_resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab resources</span></a>
   </div>
@@ -254,42 +263,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Effective code management is vital in research, especially for data analysis and simulations. We try to follow a standard workflow for developing Python code detailed below:</p>
+<p>Effective code management is a game-changer in research, especially for data analysis and simulations. Follow this general guide to help you organize your projects and boost your productivity:</p>
 <ol type="1">
-<li><strong>Establishing a Structured Development Environment</strong>
+<li><strong>Establishing a structured development environment</strong>
 <ul>
-<li><strong>Utilize Conda</strong>: Begin by configuring Miniconda or Anaconda to effectively manage isolated development environments.</li>
-<li><strong>Environment Configuration</strong>: Tailor environments for each project with Conda, ensuring precise control over dependencies.</li>
-<li><strong>Enforce Consistency</strong>: Adopt tools like Ruff to maintain code formatting standards, promoting clarity and maintainability.</li>
+<li>Start by setting up Miniconda or Anaconda to manage your development environments effectively. By doing this, you can create isolated environments for each of your projects, ensuring that dependencies are kept separate and conflicts are avoided.</li>
+<li>Customize and tailor separate environments for each of your projects using conda. This approach ensures that each project has its own specific set of dependencies, which helps in maintaining a clean and well-organized workflow.</li>
+<li>Use tools like ruff to enforce consistent code formatting across your projects. Consistent formatting not only makes your code look more professional but also enhances its readability and maintainability, making your coding practices more efficient.</li>
 </ul></li>
-<li><strong>Organizing and Structuring Your Codebase</strong>
+<li><strong>Organizing and structuring your codebase</strong>
 <ul>
-<li><strong>Project Organization</strong>: Implement a systematic folder structure (<code>data/</code>, <code>notebooks/</code>, <code>src/</code>, <code>tests/</code>, <code>scripts/</code>) to streamline project navigation and maintain order.</li>
-<li><strong>Version Control</strong>: Leverage Git for comprehensive version tracking and GitHub for collaborative development management.</li>
-<li><strong>Documentation</strong>: Enhance transparency and usability with thorough code comments and a detailed <code>README.md</code> to articulate project objectives and usage guidelines.</li>
+<li>Design a clear and logical folder structure for your project, such as including <code>data/</code>, <code>notebooks/</code>, <code>src/</code>, <code>tests/</code>, and <code>scripts/</code> directories. This organization will make it easy for you to navigate your project, locate files quickly, and keep everything neatly arranged.</li>
+<li>Leverage git for version control and use github for managing collaborative development. This setup allows you to track changes, collaborate seamlessly with others, and revert to previous versions if needed, ensuring that your project evolves smoothly.</li>
+<li>Include thorough comments in your code and create a detailed <code>README.md</code> file. This documentation will help explain your project’s objectives and usage, making it easier for others to understand and contribute to your work. Clear documentation acts as a friendly guide for anyone interacting with your project.</li>
 </ul></li>
-<li><strong>Effective Data Management Practices</strong>
+<li><strong>Effective data management practices</strong>
 <ul>
-<li><strong>Data Organization</strong>: Store raw data in <code>data/raw/</code> and processed data in <code>data/processed/</code> to uphold data integrity and accessibility.</li>
-<li><strong>Versioning</strong>: Employ robust data management tools to manage versions, ensuring reproducibility and traceability.</li>
+<li>Store your raw data in a <code>data/raw/</code> folder and place your processed data in a <code>data/processed/</code> folder. This method helps keep your data organized and clearly distinguishes between original and modified datasets, which maintains data integrity throughout your project.</li>
+<li>Use robust data management tools to track different versions of your data. By managing versions effectively, you ensure that your results are reproducible and that you can trace back any changes, supporting scientific rigor and maintaining a clear record of your data’s evolution.</li>
 </ul></li>
-<li><strong>Ensuring Reproducibility and Continuity</strong>
+<li><strong>Ensuring reproducibility and continuity</strong>
 <ul>
-<li><strong>Environment Replication</strong>: Share standardized environment configurations to facilitate seamless project setup across different systems.</li>
-<li><strong>Documentation Updates</strong>: Maintain updated documentation and Jupyter Notebooks to ensure reproducibility and facilitate knowledge transfer.</li>
+<li>Share your environment configurations with others to facilitate a smooth setup of your project on their systems. This practice helps ensure that your project is reproducible and that others can replicate your work without any difficulties.</li>
+<li>Regularly update your documentation and Jupyter Notebooks to reflect the latest changes and insights. Keeping these resources current makes it easier for others to follow your work and for you to share your findings, aiding in knowledge transfer and enhancing the accessibility of your project.</li>
 </ul></li>
-<li><strong>Facilitating Collaborative Excellence</strong>
+<li><strong>Facilitating collaborative excellence</strong>
 <ul>
-<li><strong>Code Review</strong>: Foster a culture of quality assurance through regular code reviews, utilizing pull requests to incorporate feedback and improvements.</li>
-<li><strong>Communication</strong>: Promote effective communication channels to enhance collaboration, share insights, and address challenges collectively.</li>
+<li>Foster a culture of quality assurance by encouraging regular code reviews within your team. This practice helps catch potential issues early, incorporate feedback, and continuously improve the quality of your code, leading to better results and stronger collaboration.</li>
+<li>Set up effective communication channels to discuss ideas, share insights, and solve problems together. Strong communication is essential for successful collaboration and helps build a supportive and innovative team environment.</li>
 </ul></li>
-<li><strong>Sustaining Long-term Project Integrity</strong>
+<li><strong>Sustaining long-term project integrity</strong>
 <ul>
-<li><strong>Continuous Improvement</strong>: Stay current with tool updates and library advancements to optimize project performance and reliability.</li>
-<li><strong>Issue Management</strong>: Utilize issue tracking tools to promptly address bugs and enhancements, ensuring project stability and growth.</li>
+<li>Stay updated with the latest tool and library advancements to keep your project performing at its best. Embracing new updates and improvements ensures that your project remains current, reliable, and optimized for performance.</li>
+<li>Utilize issue tracking tools to address bugs and enhancements promptly. Proactively managing issues helps maintain the stability and growth of your project, ensuring it remains robust and continues to meet its goals.</li>
 </ul></li>
 </ol>
-<p>By adhering to these principles, you establish a framework that not only enhances the efficiency and reliability of your coding practices but also fosters a professional environment conducive to innovation and collaborative success. Whether leveraging Conda for environment management, adhering to coding standards with Ruff, or maintaining meticulous documentation, each step contributes to a disciplined and effective approach to coding excellence in research.</p>
 
 
 
@@ -373,6 +381,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -407,7 +433,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.557">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -94,7 +94,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">iHuman Lab Research Manual</a> 
     </div>
@@ -214,6 +217,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../ros_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ROS resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../lab_resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab resources</span></a>
   </div>
@@ -235,6 +244,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#why-choose-latex" id="toc-why-choose-latex" class="nav-link active" data-scroll-target="#why-choose-latex">Why Choose LaTeX?</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -290,6 +300,36 @@ Task
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=6RhS1R8yV0CExKXC&amp;list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 </p><p>
 </p><p>For more detailed tutorials, please see the <a href="https://www.overleaf.com/learn" target="_blank_">Overleaf Documentation</a></p>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<p>These are some of the books (&amp;video) which have personally helped to write better:</p>
+<ol type="1">
+<li><a href="https://archive.org/details/styletowardclari0067will/page/n3/mode/2up" target="_blank_">Style: Toward Clarity and Grace, Joseph M</a></li>
+<li><a href="https://archive.org/details/they-say-i-say-5th-edition" target="_blank_">They Say I Say by Graff and Birkenstein</a></li>
+<li><a href="https://www.phrasebank.manchester.ac.uk" target="_blank_">University of Manchester, Academic Phrasebank</a></li>
+</ol>
+<p>University Chicago Writing Workshop</p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=IUXN2wJkR2Skyts2&amp;list=PLG5oXmrs-KA3EhXr_82Yy9dPGImBTbmuv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</p><p>
+</p><div class="callout callout-style-default callout-note callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Go through the book <code>Style: Toward Clarity and Grace, Joseph M</code>.</li>
+<li>Watch the video <code>LEADERSHIP LAB: The Craft of Writing Effectively</code> in the above set of videos.</li>
+</ol>
+</div>
+</div>
 
 
 </section>
@@ -374,6 +414,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -408,7 +466,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
