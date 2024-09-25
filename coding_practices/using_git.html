@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>iHuman Lab Research Manual - Development setup</title>
+<title>iHuman Lab Research Manual - Using Git</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../coding_practices/clean_code.html" rel="next">
-<link href="../coding_practices/general_practices.html" rel="prev">
+<link href="../python_resources.html" rel="next">
+<link href="../coding_practices/project_structure.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/development_setup.html">Development setup</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/using_git.html">Using Git</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -167,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../coding_practices/development_setup.html" class="sidebar-item-text sidebar-link active">
+  <a href="../coding_practices/development_setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Development setup</span></a>
   </div>
 </li>
@@ -203,8 +237,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../coding_practices/using_git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Using Git</span></span></a>
+  <a href="../coding_practices/using_git.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Using Git</span></a>
   </div>
 </li>
       </ul>
@@ -255,22 +289,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#visual-studio-code-vscode" id="toc-visual-studio-code-vscode" class="nav-link active" data-scroll-target="#visual-studio-code-vscode">Visual Studio Code (VSCode)</a></li>
-  <li><a href="#conda-environment-management" id="toc-conda-environment-management" class="nav-link" data-scroll-target="#conda-environment-management">Conda Environment Management</a></li>
-  <li><a href="#ruff-for-code-linting" id="toc-ruff-for-code-linting" class="nav-link" data-scroll-target="#ruff-for-code-linting">Ruff for code linting</a></li>
-  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">Project structure</a></li>
-  <li><a href="#pytest-for-testing" id="toc-pytest-for-testing" class="nav-link" data-scroll-target="#pytest-for-testing">Pytest for testing</a></li>
-  <li><a href="#pre-commit-hooks" id="toc-pre-commit-hooks" class="nav-link" data-scroll-target="#pre-commit-hooks">Pre-commit hooks</a></li>
-  <li><a href="#github-for-version-control" id="toc-github-for-version-control" class="nav-link" data-scroll-target="#github-for-version-control">GitHub for version control</a></li>
+  <li><a href="#set-up-git" id="toc-set-up-git" class="nav-link active" data-scroll-target="#set-up-git"><strong>Set up Git</strong></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/development_setup.html">Development setup</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../coding_practices/general_practices.html">Coding practices</a></li><li class="breadcrumb-item"><a href="../coding_practices/using_git.html">Using Git</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Development setup</h1>
+<h1 class="title">Using Git</h1>
 </div>
 
 
@@ -287,75 +315,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In the world of professional Python development, setting up a robust and efficient development environment is crucial for productivity and code quality. This tutorial provides a comprehensive guide to setting up a Python project using industry-standard tools and practices. We’ll walk you through the process of installing Conda for environment management, configuring Visual Studio Code (VSCode) for a seamless development experience, and organizing your project structure effectively. Additionally, we’ll cover how to manage dependencies with Conda and pip, ensure code quality with Ruff for linting and formatting, and automate workflows using pre-commit hooks. By following these steps, you’ll establish a solid foundation for developing, testing, and maintaining your Python projects. For each step, we’ve linked to practical YouTube videos to enhance your understanding and provide visual guidance.</p>
-<p>All these topics are covered here:</p>
+<p>GitHub is a powerful platform for version control and collaboration, allowing developers to work together on projects from anywhere in the world. It utilizes Git, a widely used version control system, to track changes in code and manage projects effectively. This tutorial will guide you through the basics of using GitHub, from setting up your account and installing Git to creating repositories and collaborating with others. Whether you’re a beginner or looking to refresh your skills, this guide will help you get started on both Windows and Linux.</p>
+<p>Here is a very good detailed tutorial if you want to skip reading the rest of the tutorial.</p>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fj2tuTIcUys?si=WHXzb3oYxTsayazJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tRZGeaHPoaw?si=_BBijj9vzvaHZdFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
 </iframe>
 </p><p>
-</p><p>For more detailed tutorial see each sub-section.</p>
-<section id="visual-studio-code-vscode" class="level2">
-<h2 class="anchored" data-anchor-id="visual-studio-code-vscode">Visual Studio Code (VSCode)</h2>
-<p>Visual Studio Code (VSCode) is a versatile, open-source code editor developed by Microsoft. It provides essential features for Python development, including debugging, linting, and integrated terminal support.</p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WPqXP_kLzpo?si=-DzadlqbXyymKftK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</p><p>
-</p></section>
-<section id="conda-environment-management" class="level2">
-<h2 class="anchored" data-anchor-id="conda-environment-management">Conda Environment Management</h2>
-<p>Conda is a powerful package and environment management system that helps manage dependencies and isolate project environments. It supports both Python and non-Python packages, making it a flexible choice for managing project requirements.</p>
-<p>Using Conda allows you to create isolated environments for different projects, preventing version conflicts between dependencies and ensuring reproducibility. This is crucial for maintaining a stable development environment across different projects and teams.</p>
-<p>Link to YouTube tutorial:</p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sDCtY9Z1bqE?si=WFEu8e8lwyw6CgtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</p><p>
-</p></section>
-<section id="ruff-for-code-linting" class="level2">
-<h2 class="anchored" data-anchor-id="ruff-for-code-linting">Ruff for code linting</h2>
-<p>Ruff is a fast Python linter designed to catch potential issues and enforce coding standards. It helps maintain code quality by identifying problems early in the development process.</p>
-<p>Linting with Ruff helps enforce coding standards, catch syntax errors, and improve code readability. It reduces the likelihood of bugs and ensures that the code adheres to best practices.</p>
-<p>Link to YouTube tutorial:</p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bcAqceZkZRQ?si=aKjOULUYuu5MFfwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</p><p>
-</p></section>
-<section id="project-structure" class="level2">
-<h2 class="anchored" data-anchor-id="project-structure">Project structure</h2>
-<p>A well-defined project structure organizes your code and resources effectively. A common structure includes directories for source code, tests, and configuration files. At iHuman Lab, we follow a standard strucuture to ease the organization of project files. Please see the <a href="project_sturture.qmd">project structure</a> section</p>
-</section>
-<section id="pytest-for-testing" class="level2">
-<h2 class="anchored" data-anchor-id="pytest-for-testing">Pytest for testing</h2>
-<p>Pytest is a popular testing framework for Python that provides simple and scalable test writing. It supports fixtures, parameterized testing, and various plugins for extending its functionality.</p>
-<p>Testing is crucial for ensuring code reliability and catching bugs early. Pytest’s flexible and powerful features help you write and manage tests efficiently, contributing to a stable and maintainable codebase.</p>
-<p>Link to YouTube tutorial:</p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cHYq1MRoyI0?si=WKZlFYnGe-AylL9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</p><p>
-</p></section>
-<section id="pre-commit-hooks" class="level2">
-<h2 class="anchored" data-anchor-id="pre-commit-hooks">Pre-commit hooks</h2>
-<p>Pre-commit hooks are scripts that run automatically before a commit is finalized. They can perform tasks like code formatting, linting, and validation, ensuring code quality before changes are committed to the repository.</p>
-<p>Pre-commit hooks automate code quality checks, reducing the risk of introducing errors into the codebase. They help maintain consistency and enforce standards across the development team.</p>
-<p>Link to YouTube tutorial:</p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ObksvAZyWdo?si=Pe3UOslW_syEIuhq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</p><p>
-</p></section>
-<section id="github-for-version-control" class="level2">
-<h2 class="anchored" data-anchor-id="github-for-version-control">GitHub for version control</h2>
-<p>GitHub is a widely used platform for hosting and managing code repositories. It provides version control, collaboration tools, and integration with various CI/CD services.</p>
-<p>Version control with GitHub allows for tracking changes, collaboration with other developers, and managing different versions of the project. It enhances team collaboration and code management.</p>
-<p>Link to YouTube tutorial:</p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RGOj5yH7evk?si=FdRahpfg6LqGYxr6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</p><p>
-</p>
+</p><p><strong>Create a GitHub Account</strong></p>
+<ul>
+<li>Go to <a href="https://github.com/" target="_blank_">GitHub</a>.</li>
+<li>Click on “Sign up” in the top right corner.</li>
+<li>Fill in the required information (username, email, password) and follow the prompts to create your account.</li>
+<li>Check your email inbox for a verification email from GitHub and follow the instructions to verify your account.</li>
+</ul>
+<section id="set-up-git" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-git"><strong>Set up Git</strong></h2>
+<p><strong>For Windows Users:</strong></p>
+<ul>
+<li>Download the Git installer for Windows from <a href="https://git-scm.com/" target="_blank_">git-scm.com</a>.</li>
+<li>Run the installer and follow the setup instructions, accepting the default options unless you have specific preferences.</li>
+</ul>
+<p><strong>For Linux Users:</strong></p>
+<ul>
+<li><p>Open a terminal.</p></li>
+<li><p>Install Git using your package manager. For example, on Ubuntu, you can run:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<p><strong>Configure Git</strong></p>
+<ul>
+<li><p>Linux users use Terminal and Windows users use Powershell.</p></li>
+<li><p>Set your username and email:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your_email@example.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<p><strong>Create a New Repository</strong></p>
+<ul>
+<li>Log into GitHub and click on the “+” icon in the top right corner.</li>
+<li>Select “New repository.”</li>
+<li>Fill in the repository name, description (optional), and choose to make it public or private.</li>
+<li>Click “Create repository.”</li>
+</ul>
+<p><strong>Set Up a Local Repository</strong></p>
+<ul>
+<li><p>Open a terminal/powershell and navigate to the directory where you want to create your project:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /path/to/your/directory</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Create a new directory for your project:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> my-project</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> my-project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Initialize a Git repository:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<p><strong>Add Files and Make Your First Commit</strong></p>
+<ul>
+<li><p>Create a new file (e.g., <code>README.md</code>) using a text editor or the terminal:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"# My Project"</span> <span class="op">&gt;&gt;</span> README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Add the file to the staging area:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Commit the changes with a message:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<p><strong>Connect Local Repository to GitHub</strong></p>
+<ul>
+<li><p>Link your local repository to the GitHub repository:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your_username/my-project.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Push your commits to GitHub:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<p><strong>Making Changes and Collaborating</strong></p>
+<ul>
+<li><p>Edit files using a text editor of your choice (Notepad, Visual Studio Code, Vim, Nano, etc.).</p></li>
+<li><p>Stage and commit your changes:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Updated the README"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Push your changes to GitHub:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>To collaborate with others, you can fork repositories, create branches, and submit pull requests:</p>
+<ul>
+<li><p><strong>Fork a Repository</strong>: Click the “Fork” button on a repository to create your own copy.</p></li>
+<li><p><strong>Create a Branch</strong>:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-feature</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Submit a Pull Request</strong>: After pushing your branch, go to the original repository on GitHub and create a pull request.</p></li>
+</ul></li>
+</ul>
+<p><strong>Managing Your Repository</strong></p>
+<ul>
+<li>Go to your repository on GitHub to see your files, commits, branches, and issues.</li>
+<li>Create issues to track tasks or bugs.</li>
+<li>Use the Projects feature to organize and prioritize your work.</li>
+<li>Automate workflows using GitHub Actions to build, test, and deploy your projects.</li>
+</ul>
+
 
 </section>
 
@@ -771,13 +821,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../coding_practices/general_practices.html" class="pagination-link" aria-label="Coding practices">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Coding practices</span>
+      <a href="../coding_practices/project_structure.html" class="pagination-link" aria-label="Project structure">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Project structure</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../coding_practices/clean_code.html" class="pagination-link" aria-label="Code cleanliness">
-        <span class="nav-page-text">Code cleanliness</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../python_resources.html" class="pagination-link" aria-label="Python resources">
+        <span class="nav-page-text">Python resources</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

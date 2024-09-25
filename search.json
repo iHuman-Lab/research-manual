@@ -1377,5 +1377,27 @@
       "Coding practices",
       "Development setup"
     ]
+  },
+  {
+    "objectID": "coding_practices/using_git.html",
+    "href": "coding_practices/using_git.html",
+    "title": "Using Git",
+    "section": "",
+    "text": "Set up Git\nFor Windows Users:\nFor Linux Users:\nConfigure Git\nCreate a New Repository\nSet Up a Local Repository\nAdd Files and Make Your First Commit\nConnect Local Repository to GitHub\nMaking Changes and Collaborating\nManaging Your Repository",
+    "crumbs": [
+      "Coding practices",
+      "Using Git"
+    ]
+  },
+  {
+    "objectID": "coding_practices/using_git.html#set-up-git",
+    "href": "coding_practices/using_git.html#set-up-git",
+    "title": "Using Git",
+    "section": "",
+    "text": "Download the Git installer for Windows from git-scm.com.\nRun the installer and follow the setup instructions, accepting the default options unless you have specific preferences.\n\n\n\nOpen a terminal.\nInstall Git using your package manager. For example, on Ubuntu, you can run:\nsudo apt update\nsudo apt install git\n\n\n\nLinux users use Terminal and Windows users use Powershell.\nSet your username and email:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your_email@example.com\"\n\n\n\nLog into GitHub and click on the “+” icon in the top right corner.\nSelect “New repository.”\nFill in the repository name, description (optional), and choose to make it public or private.\nClick “Create repository.”\n\n\n\nOpen a terminal/powershell and navigate to the directory where you want to create your project:\ncd /path/to/your/directory\nCreate a new directory for your project:\nmkdir my-project\ncd my-project\nInitialize a Git repository:\ngit init\n\n\n\nCreate a new file (e.g., README.md) using a text editor or the terminal:\necho \"# My Project\" &gt;&gt; README.md\nAdd the file to the staging area:\ngit add README.md\nCommit the changes with a message:\ngit commit -m \"Initial commit\"\n\n\n\nLink your local repository to the GitHub repository:\ngit remote add origin https://github.com/your_username/my-project.git\nPush your commits to GitHub:\ngit push -u origin master\n\n\n\nEdit files using a text editor of your choice (Notepad, Visual Studio Code, Vim, Nano, etc.).\nStage and commit your changes:\ngit add .\ngit commit -m \"Updated the README\"\nPush your changes to GitHub:\ngit push\nTo collaborate with others, you can fork repositories, create branches, and submit pull requests:\n\nFork a Repository: Click the “Fork” button on a repository to create your own copy.\nCreate a Branch:\ngit checkout -b new-feature\nSubmit a Pull Request: After pushing your branch, go to the original repository on GitHub and create a pull request.\n\n\n\n\nGo to your repository on GitHub to see your files, commits, branches, and issues.\nCreate issues to track tasks or bugs.\nUse the Projects feature to organize and prioritize your work.\nAutomate workflows using GitHub Actions to build, test, and deploy your projects.",
+    "crumbs": [
+      "Coding practices",
+      "Using Git"
+    ]
   }
 ]
