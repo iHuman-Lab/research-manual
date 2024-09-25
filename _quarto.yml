@@ -26,6 +26,7 @@ book:
         - coding_practices/code_testing.qmd
         - coding_practices/code_documentation.qmd
         - coding_practices/project_structure.qmd
+        - coding_practices/using_git.qmd
     - python_resources.qmd
     - bci_resources.qmd
     - eeg_resources.qmd

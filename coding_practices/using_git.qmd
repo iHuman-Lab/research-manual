@@ -1,0 +1,129 @@
+# Using Git {.unnumbered}
+
+GitHub is a powerful platform for version control and collaboration, allowing developers to work together on projects from anywhere in the world. It utilizes Git, a widely used version control system, to track changes in code and manage projects effectively. This tutorial will guide you through the basics of using GitHub, from setting up your account and installing Git to creating repositories and collaborating with others. Whether you're a beginner or looking to refresh your skills, this guide will help you get started on both Windows and Linux.
+
+
+Here is a very good detailed tutorial if you want to skip reading the rest of the tutorial.
+
+<p align=center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tRZGeaHPoaw?si=_BBijj9vzvaHZdFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+
+**Create a GitHub Account**
+
+- Go to [GitHub](https://github.com/){target='_blank_'}.
+- Click on "Sign up" in the top right corner.
+- Fill in the required information (username, email, password) and follow the prompts to create your account.
+- Check your email inbox for a verification email from GitHub and follow the instructions to verify your account.
+
+## **Set up Git**
+
+**For Windows Users:**
+
+  - Download the Git installer for Windows from [git-scm.com](https://git-scm.com/){target='_blank_'}.
+  - Run the installer and follow the setup instructions, accepting the default options unless you have specific preferences.
+
+**For Linux Users:**
+
+  - Open a terminal.
+  - Install Git using your package manager. For example, on Ubuntu, you can run:
+
+    ```bash
+    sudo apt update
+    sudo apt install git
+    ```
+
+**Configure Git**
+
+  - Linux users use Terminal and Windows users use Powershell.
+  - Set your username and email:
+
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "your_email@example.com"
+    ```
+
+**Create a New Repository**
+
+- Log into GitHub and click on the "+" icon in the top right corner.
+- Select "New repository."
+- Fill in the repository name, description (optional), and choose to make it public or private.
+- Click "Create repository."
+
+**Set Up a Local Repository**
+
+  - Open a terminal/powershell and navigate to the directory where you want to create your project:
+
+    ```bash
+    cd /path/to/your/directory
+    ```
+  - Create a new directory for your project:
+
+    ```bash
+    mkdir my-project
+    cd my-project
+    ```
+
+- Initialize a Git repository:
+  ```bash
+  git init
+  ```
+
+**Add Files and Make Your First Commit**
+
+- Create a new file (e.g., `README.md`) using a text editor or the terminal:
+  ```bash
+  echo "# My Project" >> README.md
+  ```
+
+- Add the file to the staging area:
+  ```bash
+  git add README.md
+  ```
+
+- Commit the changes with a message:
+  ```bash
+  git commit -m "Initial commit"
+  ```
+
+**Connect Local Repository to GitHub**
+
+- Link your local repository to the GitHub repository:
+  ```bash
+  git remote add origin https://github.com/your_username/my-project.git
+  ```
+
+- Push your commits to GitHub:
+  ```bash
+  git push -u origin master
+  ```
+
+**Making Changes and Collaborating**
+
+- Edit files using a text editor of your choice (Notepad, Visual Studio Code, Vim, Nano, etc.).
+- Stage and commit your changes:
+  ```bash
+  git add .
+  git commit -m "Updated the README"
+  ```
+
+- Push your changes to GitHub:
+  ```bash
+  git push
+  ```
+
+- To collaborate with others, you can fork repositories, create branches, and submit pull requests:
+  - **Fork a Repository**: Click the "Fork" button on a repository to create your own copy.
+  - **Create a Branch**:
+    ```bash
+    git checkout -b new-feature
+    ```
+  - **Submit a Pull Request**: After pushing your branch, go to the original repository on GitHub and create a pull request.
+
+**Managing Your Repository**
+
+- Go to your repository on GitHub to see your files, commits, branches, and issues.
+- Create issues to track tasks or bugs.
+- Use the Projects feature to organize and prioritize your work.
+- Automate workflows using GitHub Actions to build, test, and deploy your projects.
+
