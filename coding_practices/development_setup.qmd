@@ -42,9 +42,6 @@ Link to YouTube tutorial:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bcAqceZkZRQ?si=aKjOULUYuu5MFfwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p>
 
-## Project structure
-
-A well-defined project structure organizes your code and resources effectively. A common structure includes directories for source code, tests, and configuration files. At iHuman Lab, we follow a standard strucuture to  ease the organization of project files. Please see the [project structure](project_sturture.qmd) section
 
 ## Pytest for testing
 

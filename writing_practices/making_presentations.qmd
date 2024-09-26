@@ -49,7 +49,7 @@ Here’s a brief guide based on best practices for delivering impactful presenta
 ## Links
 
 :::{.callout-note title=Task}
-Complete the free Coursera course on making presentations: [Presentation skills: Designing Presentation Slides](https://coursera.org/share/0edb1cdeaab6cf5e28cc4c2f866127e8)
+Complete the Linkedin course on making presentations: [PowerPoint: Designing Better Slides](https://www.linkedin.com/learning/powerpoint-designing-better-slides-22852103)
 :::
 
 <p align="center">
