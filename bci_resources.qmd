@@ -48,7 +48,7 @@ Adapting Matlab scripts to Python will not only deepen your understanding of neu
 
 - **Brain-Computer Interfacing: An Introduction** by Rajesh P.N. Rao
   - This book provides a comprehensive introduction to BCI technology, covering its principles, applications, and future trends.
-  - [Access the book](https://search.lib.buffalo.edu/discovery/fulldisplay?docid=alma990038424030204803&context=L&vid=01SUNY_BUF:everything&search_scope=UBSUNY&tab=EverythingUBSUNY&lang=en){target='_blank_'}
+  - [Access the book](https://search.ebscohost.com/login.aspx?direct=true&db=cat09682a&AN=osl.oai.edge.okstate.folio.ebsco.com.fs00001145.6d5e45a6.e837.54f2.8a42.fb96031e01fb&site=eds-live&scope=site&custid=s1181350&group=main&profid=eds&authtype=ip,guest){target='_blank_'}
 
 - **Analyzing Neural Time Series Data: Theory and Practice** by Mike X. Cohen
   - Learn detailed methodologies and practical techniques for analyzing neural time-series data.
@@ -78,7 +78,8 @@ For more information and detailed documentation, visit [MNE-Python website](http
 - [Official MNE tutorials](https://mne.tools/stable/auto_tutorials/index.html){target='_blank_'}
 
 :::{.callout-note title=Task}
-Go through the tutorials and implement standard functions using the EEG data. Reach out to Hemanth to get the EEG data.
+1. Explore basic EEG processing tutorials here: [EEG Tutorials](https://alexenge.github.io/intro-to-eeg/ipynb/1-python.html){target='_blank_'}
+2. For more detailed tutorials go through the tutorials and implement standard functions using the EEG data in [MNE website](https://mne.tools/stable/auto_tutorials/index.html){target='_blank_'}. Reach out to Hemanth to get the EEG data.
 :::
 
 ### Lab Streaming Layer (LSL)
