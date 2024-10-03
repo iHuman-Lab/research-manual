@@ -1,0 +1,308 @@
+# Python code structure {.unnumbered}
+
+## Overview
+
+In this tutorial, we will cover the following concepts related to organizing and using Python code:
+
+1. **Modules**
+2. **Packages**
+3. **Subpackages**
+4. **Importing and Using Modules**
+5. **Understanding `__init__.py`**
+6. **Running the Code**
+
+### Project Structure
+
+Before diving into the details, here's the overall structure of the project we will create:
+
+```plaintext
+project/
+    math_operations.py
+    utility.py
+    package/
+        __init__.py
+        module_a.py
+        module_b.py
+        subpkg/
+            __init__.py
+            module_c.py
+    main.py
+```
+
+---
+
+## 1. Modules
+
+A **module** is a single Python file that can contain functions, classes, and variables.
+
+### Creating a Module
+
+Create a file named `math_operations.py`:
+
+```python
+# math_operations.py
+
+def square(number):
+    """Returns the square of a number."""
+    return number ** 2
+
+def add(a, b):
+    """Returns the sum of two numbers."""
+    return a + b
+```
+
+---
+
+## 2. Packages
+
+A **package** is a directory that contains an `__init__.py` file and can include modules or subpackages.
+
+### Creating a Package
+
+1. Create a directory named `package`.
+2. Inside `package`, create:
+   - `__init__.py`
+   - `module_a.py`
+   - `module_b.py`
+
+**Structure:**
+
+```plaintext
+package/
+    __init__.py
+    module_a.py
+    module_b.py
+```
+
+**`module_a.py`:**
+
+```python
+# package/module_a.py
+
+def double(number):
+    """Returns double the input number."""
+    return number * 2
+
+def find_max(numbers):
+    """Returns the maximum number from a list."""
+    return max(numbers) if numbers else None
+```
+
+**`module_b.py`:**
+
+```python
+# package/module_b.py
+
+from .module_a import double  # Relative import
+
+def multiply(a, b):
+    """Returns the product of two numbers."""
+    return a * b
+
+def subtract(a, b):
+    """Returns the difference between two numbers."""
+    return a - b
+
+def double_and_subtract(a, b):
+    """Uses double from module_a and then subtracts."""
+    return subtract(double(a), b)
+```
+
+---
+
+## 3. Subpackages
+
+A **subpackage** is a package inside another package.
+
+### Creating a Subpackage
+
+1. Inside `package`, create a directory named `subpkg`.
+2. Inside `subpkg`, create:
+   - `__init__.py`
+   - `module_c.py`
+
+**Structure:**
+
+```plaintext
+package/
+    subpkg/
+        __init__.py
+        module_c.py
+```
+
+**`module_c.py`:**
+
+```python
+# package/subpkg/module_c.py
+
+from ..module_a import double  # Relative import
+
+def sum_numbers(numbers):
+    """Returns the sum of a list of numbers."""
+    return sum(numbers)
+```
+
+**`__init__.py`:**
+
+To make `sum_numbers` accessible when importing the subpackage:
+
+```python
+# package/subpkg/__init__.py
+
+from .module_c import sum_numbers
+```
+
+---
+
+## 4. Importing and Using Modules
+
+### Example Main Script
+
+Create a file named `main.py` in the root directory of your project:
+
+```python
+# main.py
+
+from math_operations import square, add
+from utility import cube
+from package import double, find_max, multiply, subtract
+from package.subpkg import sum_numbers
+
+if __name__ == "__main__":
+    num = 4
+    print(f"Square of {num}: {square(num)}")
+    print(f"Add 2 and 3: {add(2, 3)}")
+    print(f"Cube of {num}: {cube(num)}")
+    print(f"Double of {num}: {double(num)}")
+    print(f"Multiply: {multiply(5, 3)}")
+    print(f"Subtract: {subtract(5, 3)}")
+
+    numbers = [1, 2, 3, 4]
+    print(f"Sum of numbers: {sum_numbers(numbers)}")
+    print(f"Double and Subtract: {double_and_subtract(5, 3)}")
+```
+
+### Importing Within the Same Directory
+
+You can import functions or classes from another module within the same directory using the `import` statement.
+
+**Creating `utility.py`:**
+
+Add another module named `utility.py` in the root directory:
+
+```python
+# utility.py
+
+def cube(number):
+    """Returns the cube of a number."""
+    return number ** 3
+```
+
+### Relative Imports
+
+Relative imports allow you to import modules or packages relative to the current module's location within the package hierarchy. This is useful for maintaining clear imports and avoiding conflicts.
+
+For example, in `module_b.py`, you can see the line:
+
+```python
+from .module_a import double
+```
+
+This is a relative import, indicating that `module_a` is in the same package as `module_b`.
+
+In `module_c.py`, the line:
+
+```python
+from ..module_a import double  # Importing double from module_a in the parent package
+```
+shows a relative import from the parent package.
+
+
+---
+
+## 5. Understanding `__init__.py`
+
+The `__init__.py` file is essential for defining packages in Python.
+
+### Importance of `__init__.py`
+
+1. **Package Initialization**: Indicates that the directory should be treated as a Python package.
+2. **Namespace Management**: Helps to define the package namespace.
+3. **Control Over Imports**: You can control which modules are accessible when importing the package.
+4. **Initialization Logic**: Allows you to include setup or initialization code.
+
+### Example of `__init__.py`
+
+Here’s a simple example illustrating how `__init__.py` works:
+
+**Directory Structure**:
+
+```plaintext
+package/
+    __init__.py
+    module_a.py
+    module_b.py
+```
+
+**Content of `module_a.py`:**
+
+```python
+# module_a.py
+
+def get_number():
+    """Returns a fixed number."""
+    return 42
+```
+
+**Content of `module_b.py`:**
+
+```python
+# module_b.py
+
+def get_text():
+    """Returns a greeting."""
+    return "Hello, World!"
+```
+
+**Content of `__init__.py`:**
+
+```python
+# __init__.py
+
+from .module_a import get_number
+from .module_b import get_text
+```
+
+### Using the Package
+
+```python
+from package import get_number, get_text
+
+print(get_number())  # Outputs: 42
+print(get_text())    # Outputs: Hello, World!
+```
+
+---
+
+## 6. Running the Code
+
+To run your project, navigate to the directory containing `main.py` and execute:
+
+```bash
+python main.py
+```
+
+### Expected Output
+
+When you run the code, you should see the following output:
+
+```plaintext
+Square of 4: 16
+Add 2 and 3: 5
+Cube of 4: 64
+Double of 4: 8
+Multiply: 15
+Subtract: 2
+Sum of numbers: 10
+Double and Subtract: 4
+```
