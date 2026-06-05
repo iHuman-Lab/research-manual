@@ -60,26 +60,6 @@
     ]
   },
   {
-    "objectID": "writing_practices/general_principles.html",
-    "href": "writing_practices/general_principles.html",
-    "title": "Writing principles",
-    "section": "",
-    "text": "Using GPT\nUsing GPT as a writing tool can be immensely beneficial, but it’s important to approach it with care and use it as a supportive resource rather than a crutch. Here’s how to leverage ChatGPT effectively while maintaining control over your writing process:",
-    "crumbs": [
-      "Writing principles"
-    ]
-  },
-  {
-    "objectID": "writing_practices/general_principles.html#using-gpt",
-    "href": "writing_practices/general_principles.html#using-gpt",
-    "title": "Writing principles",
-    "section": "",
-    "text": "Generate ideas and inspiration ChatGPT can help spark ideas and provide inspiration for your writing projects. Use it to brainstorm topics, explore different angles, or overcome writer’s block by generating prompts or outlines.\nImprove clarity and structure Ask ChatGPT for suggestions on structuring your writing. It can provide guidance on organizing your thoughts logically, creating smooth transitions between paragraphs, or refining the overall flow of your piece.\nEnhance language and style Use ChatGPT to improve the clarity and coherence of your sentences. It can offer alternative word choices, help with phrasing, and suggest improvements in grammar and syntax.\nEditing and proofreading Use ChatGPT to review your draft for spelling errors, grammatical mistakes, and punctuation issues. It can serve as a preliminary editor, but final proofreading should always be done by you.\nFeedback and revision suggestions Seek feedback from ChatGPT on the overall effectiveness of your writing. It can provide insights into areas that may need further development or clarification.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nMaintaining ownership of your ideas and writing style while using GPT is crucial to preserving the authenticity and integrity of your work. As a tool, ChatGPT offers valuable assistance in refining and enhancing your writing, but it should not overshadow your unique voice as a writer. Your critical thinking skills play a pivotal role here; they allow you to evaluate the suggestions provided by ChatGPT thoughtfully and decide how best to integrate them into your writing.\nWhile it can generate text based on input and provide suggestions, not all responses may be equally relevant or of high quality. It’s essential to scrutinize the responses, considering factors such as accuracy, coherence, and appropriateness for your intended audience. Evaluate each suggestion critically to ensure it aligns with the tone, style, and purpose of your writing.\nBy leveraging GPT mindfully as a writing tool, you can indeed enhance your writing skills and streamline your workflow. It can help you achieve clearer and more polished pieces by offering insights into structure, language refinement, and even creative ideation. However, it’s paramount to maintain a balanced approach. Avoid relying solely on GPT for the creative and intellectual aspects of your writing process. Remember, your originality and ability to engage with your subject matter in a meaningful way are what ultimately define your work as uniquely yours.",
-    "crumbs": [
-      "Writing principles"
-    ]
-  },
-  {
     "objectID": "writing_practices/writing_articles.html",
     "href": "writing_practices/writing_articles.html",
     "title": "Writing articles",
@@ -187,16 +167,6 @@
     "crumbs": [
       "Writing principles",
       "Making posters"
-    ]
-  },
-  {
-    "objectID": "coding_practices/general_practices.html",
-    "href": "coding_practices/general_practices.html",
-    "title": "Coding practices",
-    "section": "",
-    "text": "Effective code management is a game-changer in research, especially for data analysis and simulations. Follow this general guide to help you organize your projects and boost your productivity:\n\nEstablishing a structured development environment\n\nStart by setting up Miniconda or Anaconda to manage your development environments effectively. By doing this, you can create isolated environments for each of your projects, ensuring that dependencies are kept separate and conflicts are avoided.\nCustomize and tailor separate environments for each of your projects using conda. This approach ensures that each project has its own specific set of dependencies, which helps in maintaining a clean and well-organized workflow.\nUse tools like ruff to enforce consistent code formatting across your projects. Consistent formatting not only makes your code look more professional but also enhances its readability and maintainability, making your coding practices more efficient.\n\nOrganizing and structuring your codebase\n\nDesign a clear and logical folder structure for your project, such as including data/, notebooks/, src/, tests/, and scripts/ directories. This organization will make it easy for you to navigate your project, locate files quickly, and keep everything neatly arranged.\nLeverage git for version control and use github for managing collaborative development. This setup allows you to track changes, collaborate seamlessly with others, and revert to previous versions if needed, ensuring that your project evolves smoothly.\nInclude thorough comments in your code and create a detailed README.md file. This documentation will help explain your project’s objectives and usage, making it easier for others to understand and contribute to your work. Clear documentation acts as a friendly guide for anyone interacting with your project.\n\nEffective data management practices\n\nStore your raw data in a data/raw/ folder and place your processed data in a data/processed/ folder. This method helps keep your data organized and clearly distinguishes between original and modified datasets, which maintains data integrity throughout your project.\nUse robust data management tools to track different versions of your data. By managing versions effectively, you ensure that your results are reproducible and that you can trace back any changes, supporting scientific rigor and maintaining a clear record of your data’s evolution.\n\nEnsuring reproducibility and continuity\n\nShare your environment configurations with others to facilitate a smooth setup of your project on their systems. This practice helps ensure that your project is reproducible and that others can replicate your work without any difficulties.\nRegularly update your documentation and Jupyter Notebooks to reflect the latest changes and insights. Keeping these resources current makes it easier for others to follow your work and for you to share your findings, aiding in knowledge transfer and enhancing the accessibility of your project.\n\nFacilitating collaborative excellence\n\nFoster a culture of quality assurance by encouraging regular code reviews within your team. This practice helps catch potential issues early, incorporate feedback, and continuously improve the quality of your code, leading to better results and stronger collaboration.\nSet up effective communication channels to discuss ideas, share insights, and solve problems together. Strong communication is essential for successful collaboration and helps build a supportive and innovative team environment.\n\nSustaining long-term project integrity\n\nStay updated with the latest tool and library advancements to keep your project performing at its best. Embracing new updates and improvements ensures that your project remains current, reliable, and optimized for performance.\nUtilize issue tracking tools to address bugs and enhancements promptly. Proactively managing issues helps maintain the stability and growth of your project, ensuring it remains robust and continues to meet its goals.",
-    "crumbs": [
-      "Coding practices"
     ]
   },
   {
@@ -541,6 +511,94 @@
     ]
   },
   {
+    "objectID": "tutorials/python_tutorials/code_structure.html",
+    "href": "tutorials/python_tutorials/code_structure.html",
+    "title": "Python code structure",
+    "section": "",
+    "text": "Overview\nIn this tutorial, we will cover the following concepts related to organizing and using Python code:",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
+    "objectID": "tutorials/python_tutorials/code_structure.html#overview",
+    "href": "tutorials/python_tutorials/code_structure.html#overview",
+    "title": "Python code structure",
+    "section": "",
+    "text": "Modules\nPackages\nSubpackages\nImporting and Using Modules\nUnderstanding __init__.py\nRunning the Code\n\n\nProject Structure\nBefore diving into the details, here’s the overall structure of the project we will create:\nproject/\n    math_operations.py\n    utility.py\n    package/\n        __init__.py\n        module_a.py\n        module_b.py\n        subpkg/\n            __init__.py\n            module_c.py\n    main.py",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
+    "objectID": "tutorials/python_tutorials/code_structure.html#modules",
+    "href": "tutorials/python_tutorials/code_structure.html#modules",
+    "title": "Python code structure",
+    "section": "1. Modules",
+    "text": "1. Modules\nA module is a single Python file that can contain functions, classes, and variables.\n\nCreating a Module\nCreate a file named math_operations.py:\n# math_operations.py\n\ndef square(number):\n    \"\"\"Returns the square of a number.\"\"\"\n    return number ** 2\n\ndef add(a, b):\n    \"\"\"Returns the sum of two numbers.\"\"\"\n    return a + b",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
+    "objectID": "tutorials/python_tutorials/code_structure.html#packages",
+    "href": "tutorials/python_tutorials/code_structure.html#packages",
+    "title": "Python code structure",
+    "section": "2. Packages",
+    "text": "2. Packages\nA package is a directory that contains an __init__.py file and can include modules or subpackages.\n\nCreating a Package\n\nCreate a directory named package.\nInside package, create:\n\n__init__.py\nmodule_a.py\nmodule_b.py\n\n\nStructure:\npackage/\n    __init__.py\n    module_a.py\n    module_b.py\nmodule_a.py:\n# package/module_a.py\n\ndef double(number):\n    \"\"\"Returns double the input number.\"\"\"\n    return number * 2\n\ndef find_max(numbers):\n    \"\"\"Returns the maximum number from a list.\"\"\"\n    return max(numbers) if numbers else None\nmodule_b.py:\n# package/module_b.py\n\nfrom .module_a import double  # Relative import\n\ndef multiply(a, b):\n    \"\"\"Returns the product of two numbers.\"\"\"\n    return a * b\n\ndef subtract(a, b):\n    \"\"\"Returns the difference between two numbers.\"\"\"\n    return a - b\n\ndef double_and_subtract(a, b):\n    \"\"\"Uses double from module_a and then subtracts.\"\"\"\n    return subtract(double(a), b)",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
+    "objectID": "tutorials/python_tutorials/code_structure.html#subpackages",
+    "href": "tutorials/python_tutorials/code_structure.html#subpackages",
+    "title": "Python code structure",
+    "section": "3. Subpackages",
+    "text": "3. Subpackages\nA subpackage is a package inside another package.\n\nCreating a Subpackage\n\nInside package, create a directory named subpkg.\nInside subpkg, create:\n\n__init__.py\nmodule_c.py\n\n\nStructure:\npackage/\n    subpkg/\n        __init__.py\n        module_c.py\nmodule_c.py:\n# package/subpkg/module_c.py\n\nfrom ..module_a import double  # Relative import\n\ndef sum_numbers(numbers):\n    \"\"\"Returns the sum of a list of numbers.\"\"\"\n    return sum(numbers)\n__init__.py:\nTo make sum_numbers accessible when importing the subpackage:\n# package/subpkg/__init__.py\n\nfrom .module_c import sum_numbers",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
+    "objectID": "tutorials/python_tutorials/code_structure.html#importing-and-using-modules",
+    "href": "tutorials/python_tutorials/code_structure.html#importing-and-using-modules",
+    "title": "Python code structure",
+    "section": "4. Importing and Using Modules",
+    "text": "4. Importing and Using Modules\n\nExample Main Script\nCreate a file named main.py in the root directory of your project:\n# main.py\n\nfrom math_operations import square, add\nfrom utility import cube\nfrom package import double, find_max, multiply, subtract\nfrom package.subpkg import sum_numbers\n\nif __name__ == \"__main__\":\n    num = 4\n    print(f\"Square of {num}: {square(num)}\")\n    print(f\"Add 2 and 3: {add(2, 3)}\")\n    print(f\"Cube of {num}: {cube(num)}\")\n    print(f\"Double of {num}: {double(num)}\")\n    print(f\"Multiply: {multiply(5, 3)}\")\n    print(f\"Subtract: {subtract(5, 3)}\")\n\n    numbers = [1, 2, 3, 4]\n    print(f\"Sum of numbers: {sum_numbers(numbers)}\")\n    print(f\"Double and Subtract: {double_and_subtract(5, 3)}\")\n\n\nImporting Within the Same Directory\nYou can import functions or classes from another module within the same directory using the import statement.\nCreating utility.py:\nAdd another module named utility.py in the root directory:\n# utility.py\n\ndef cube(number):\n    \"\"\"Returns the cube of a number.\"\"\"\n    return number ** 3\n\n\nRelative Imports\nRelative imports allow you to import modules or packages relative to the current module’s location within the package hierarchy. This is useful for maintaining clear imports and avoiding conflicts.\nFor example, in module_b.py, you can see the line:\nfrom .module_a import double\nThis is a relative import, indicating that module_a is in the same package as module_b.\nIn module_c.py, the line:\nfrom ..module_a import double  # Importing double from module_a in the parent package\nshows a relative import from the parent package.",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
+    "objectID": "tutorials/python_tutorials/code_structure.html#understanding-__init__.py",
+    "href": "tutorials/python_tutorials/code_structure.html#understanding-__init__.py",
+    "title": "Python code structure",
+    "section": "5. Understanding __init__.py",
+    "text": "5. Understanding __init__.py\nThe __init__.py file is essential for defining packages in Python.\n\nImportance of __init__.py\n\nPackage Initialization: Indicates that the directory should be treated as a Python package.\nNamespace Management: Helps to define the package namespace.\nControl Over Imports: You can control which modules are accessible when importing the package.\nInitialization Logic: Allows you to include setup or initialization code.\n\n\n\nExample of __init__.py\nHere’s a simple example illustrating how __init__.py works:\nDirectory Structure:\npackage/\n    __init__.py\n    module_a.py\n    module_b.py\nContent of module_a.py:\n# module_a.py\n\ndef get_number():\n    \"\"\"Returns a fixed number.\"\"\"\n    return 42\nContent of module_b.py:\n# module_b.py\n\ndef get_text():\n    \"\"\"Returns a greeting.\"\"\"\n    return \"Hello, World!\"\nContent of __init__.py:\n# __init__.py\n\nfrom .module_a import get_number\nfrom .module_b import get_text\n\n\nUsing the Package\nfrom package import get_number, get_text\n\nprint(get_number())  # Outputs: 42\nprint(get_text())    # Outputs: Hello, World!",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
+    "objectID": "tutorials/python_tutorials/code_structure.html#running-the-code",
+    "href": "tutorials/python_tutorials/code_structure.html#running-the-code",
+    "title": "Python code structure",
+    "section": "6. Running the Code",
+    "text": "6. Running the Code\nTo run your project, navigate to the directory containing main.py and execute:\npython main.py\n\nExpected Output\nWhen you run the code, you should see the following output:\nSquare of 4: 16\nAdd 2 and 3: 5\nCube of 4: 64\nDouble of 4: 8\nMultiply: 15\nSubtract: 2\nSum of numbers: 10\nDouble and Subtract: 4",
+    "crumbs": [
+      "Tutorials",
+      "Python code structure"
+    ]
+  },
+  {
     "objectID": "python_resources.html",
     "href": "python_resources.html",
     "title": "Python resources",
@@ -605,7 +663,7 @@
     "href": "bci_resources.html",
     "title": "BCI resources",
     "section": "",
-    "text": "These are some of the resource to introduce you to basics of brain computer interfaces (BCI). The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.\n\nVideos\n\nSwartz Center for Computational Neuroscience\n\nIntroduction to BCI and EEG\n\nStart with the initial videos (video-1 to video-7) to grasp the fundamentals of BCI and EEG.\nThese videos provide a solid foundation for understanding how brain activity can be used to control external devices.\nWatch the videos here\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThese introductory videos are highly recommended as they cover the basics you need to get started.\n\n\n\n\nMike X Cohen\n\nGeneral Neural Time-Series Analysis\n\nExplore advanced concepts in neural time-series analysis, focusing on methods to analyze and interpret brain signals over time.\nThe videos primarily use Matlab, but you can replicate the analysis in Python using the mne package.\nWatch the videos here\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nAdapting Matlab scripts to Python will not only deepen your understanding of neural data analysis but also enhance your proficiency in Python programming.\n\n\n\n\n\nGitHub Links\n\nNeuroTechX/awesome-bci\n\nThis repository is a curated collection of resources, tools, and projects related to BCI research.\nExplore various software tools, datasets, and community-driven projects that can aid your research.\nVisit the repository\n\n\n\n\nBooks\n\nBrain-Computer Interfacing: An Introduction by Rajesh P.N. Rao\n\nThis book provides a comprehensive introduction to BCI technology, covering its principles, applications, and future trends.\nAccess the book\n\nAnalyzing Neural Time Series Data: Theory and Practice by Mike X. Cohen\n\nLearn detailed methodologies and practical techniques for analyzing neural time-series data.\nGain insights into advanced signal processing techniques applicable to BCI research.\nExplore the book\n\n\n\n\nMNE Python\nAnother important package, we use extensively in our lab processing the physiological data is MNE-Python. MNE-Python is a Python package specifically designed for the analysis of brain signals, collected using techniques like magnetoencephalography (MEG) and electroencephalography (EEG). It provides a robust set of tools for processing, analyzing, and visualizing neural data, making it a preferred choice for researchers and clinicians in the field of neuroscience.\nKey features of MNE-Python include:\n\nData Handling: Import and manipulate data from various formats such as .fif, .edf, and .bdf.\nPreprocessing: Remove noise, filter data, and interpolate bad channels.\nAnalysis: Perform time-domain and frequency-domain analyses, including time-frequency decomposition.\nVisualization: Plot data in 2D and 3D to visualize sensor and source-space information.\nSource Localization: Estimate the location of neural sources responsible for recorded signals.\nStatistics: Conduct statistical tests to analyze differences in brain activity.\n\nMNE-Python supports a wide range of functionalities tailored to both novice users and advanced researchers, facilitating comprehensive exploration and interpretation of neuroimaging data.\nFor more information and detailed documentation, visit MNE-Python website.\n\nOther links\n\nVideo tutorials on MNE python\nOfficial MNE tutorials\n\n\n\n\n\n\n\nTask\n\n\n\nGo through the tutorials and implement standard functions using the EEG data. Reach out to Hemanth to get the EEG data.\n\n\n\n\n\nLab Streaming Layer (LSL)\nLab streaming layer (LSL) is an open-source networked middleware ecosystem to stream, receive, synchronize, and record neural, physiological, and behavioral data streams acquired from diverse sensor hardware.\nIt reduces complexity and barriers to entry for researchers, sensor manufacturers, and users through a simple, interoperable, standardized API to connect data consumers to data producers while abstracting obstacles such as platform differences, stream discovery, synchronization and fault-tolerance.\nWe use LSL as a standard platform to interface multiple sensor and simulation softwares in our lab.\n\nOverview and Importance\n\nLSL is a crucial middleware platform used in our lab to synchronize and record data from various sensors.\nIt simplifies data integration across different hardware and software platforms, ensuring seamless connectivity and interoperability.\nLearn more about LSL\nLearn about pylsl",
+    "text": "These are some of the resource to introduce you to basics of brain computer interfaces (BCI). The resources contain videos, articles, books. Please feel free to come to iHuman lab and ask anyone at lab to get more information.\n\nVideos\n\nSwartz Center for Computational Neuroscience\n\nIntroduction to BCI and EEG\n\nStart with the initial videos (video-1 to video-7) to grasp the fundamentals of BCI and EEG.\nThese videos provide a solid foundation for understanding how brain activity can be used to control external devices.\nWatch the videos here\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThese introductory videos are highly recommended as they cover the basics you need to get started.\n\n\n\n\nMike X Cohen\n\nGeneral Neural Time-Series Analysis\n\nExplore advanced concepts in neural time-series analysis, focusing on methods to analyze and interpret brain signals over time.\nThe videos primarily use Matlab, but you can replicate the analysis in Python using the mne package.\nWatch the videos here\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nAdapting Matlab scripts to Python will not only deepen your understanding of neural data analysis but also enhance your proficiency in Python programming.\n\n\n\n\n\nGitHub Links\n\nNeuroTechX/awesome-bci\n\nThis repository is a curated collection of resources, tools, and projects related to BCI research.\nExplore various software tools, datasets, and community-driven projects that can aid your research.\nVisit the repository\n\n\n\n\nBooks\n\nBrain-Computer Interfacing: An Introduction by Rajesh P.N. Rao\n\nThis book provides a comprehensive introduction to BCI technology, covering its principles, applications, and future trends.\nAccess the book\n\nAnalyzing Neural Time Series Data: Theory and Practice by Mike X. Cohen\n\nLearn detailed methodologies and practical techniques for analyzing neural time-series data.\nGain insights into advanced signal processing techniques applicable to BCI research.\nExplore the book\n\n\n\n\nMNE Python\nAnother important package, we use extensively in our lab processing the physiological data is MNE-Python. MNE-Python is a Python package specifically designed for the analysis of brain signals, collected using techniques like magnetoencephalography (MEG) and electroencephalography (EEG). It provides a robust set of tools for processing, analyzing, and visualizing neural data, making it a preferred choice for researchers and clinicians in the field of neuroscience.\nKey features of MNE-Python include:\n\nData Handling: Import and manipulate data from various formats such as .fif, .edf, and .bdf.\nPreprocessing: Remove noise, filter data, and interpolate bad channels.\nAnalysis: Perform time-domain and frequency-domain analyses, including time-frequency decomposition.\nVisualization: Plot data in 2D and 3D to visualize sensor and source-space information.\nSource Localization: Estimate the location of neural sources responsible for recorded signals.\nStatistics: Conduct statistical tests to analyze differences in brain activity.\n\nMNE-Python supports a wide range of functionalities tailored to both novice users and advanced researchers, facilitating comprehensive exploration and interpretation of neuroimaging data.\nFor more information and detailed documentation, visit MNE-Python website.\n\nOther links\n\nVideo tutorials on MNE python\nOfficial MNE tutorials\n\n\n\n\n\n\n\nTask\n\n\n\n\nExplore basic EEG processing tutorials here: EEG Tutorials\nFor more detailed tutorials go through the tutorials and implement standard functions using the EEG data in MNE website. Reach out to Hemanth to get the EEG data.\n\n\n\n\n\n\nLab Streaming Layer (LSL)\nLab streaming layer (LSL) is an open-source networked middleware ecosystem to stream, receive, synchronize, and record neural, physiological, and behavioral data streams acquired from diverse sensor hardware.\nIt reduces complexity and barriers to entry for researchers, sensor manufacturers, and users through a simple, interoperable, standardized API to connect data consumers to data producers while abstracting obstacles such as platform differences, stream discovery, synchronization and fault-tolerance.\nWe use LSL as a standard platform to interface multiple sensor and simulation softwares in our lab.\n\nOverview and Importance\n\nLSL is a crucial middleware platform used in our lab to synchronize and record data from various sensors.\nIt simplifies data integration across different hardware and software platforms, ensuring seamless connectivity and interoperability.\nLearn more about LSL\nLearn about pylsl",
     "crumbs": [
       "BCI resources"
     ]
@@ -711,135 +769,33 @@
     ]
   },
   {
-    "objectID": "coding_practices/development_setup.html#project-structure",
-    "href": "coding_practices/development_setup.html#project-structure",
-    "title": "Development setup",
-    "section": "Project structure",
-    "text": "Project structure\nA well-defined project structure organizes your code and resources effectively. A common structure includes directories for source code, tests, and configuration files. At iHuman Lab, we follow a standard strucuture to ease the organization of project files. Please see the project structure section",
-    "crumbs": [
-      "Coding practices",
-      "Development setup"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html",
-    "href": "tutorials/python_tutorials/code_structure.html",
-    "title": "Python code structure",
+    "objectID": "writing_practices/general_principles.html",
+    "href": "writing_practices/general_principles.html",
+    "title": "Writing principles",
     "section": "",
-    "text": "Overview\nIn this tutorial, we will cover the following concepts related to organizing and using Python code:",
+    "text": "Using GPT\nUsing GPT as a writing tool can be immensely beneficial, but it’s important to approach it with care and use it as a supportive resource rather than a crutch. Here’s how to leverage ChatGPT effectively while maintaining control over your writing process:",
     "crumbs": [
-      "Tutorials",
-      "Python code structure"
+      "Writing principles"
     ]
   },
   {
-    "objectID": "tutorials/python_tutorials/code_structure.html#overview",
-    "href": "tutorials/python_tutorials/code_structure.html#overview",
-    "title": "Python code structure",
+    "objectID": "writing_practices/general_principles.html#using-gpt",
+    "href": "writing_practices/general_principles.html#using-gpt",
+    "title": "Writing principles",
     "section": "",
-    "text": "Modules\nPackages\nSubpackages\nImporting and Using Modules\nUnderstanding __init__.py\nRunning the Code\n\n\nProject Structure\nBefore diving into the details, here’s the overall structure of the project we will create:\nproject/\n    math_operations.py\n    utility.py\n    package/\n        __init__.py\n        module_a.py\n        module_b.py\n        subpkg/\n            __init__.py\n            module_c.py\n    main.py",
+    "text": "Generate ideas and inspiration ChatGPT can help spark ideas and provide inspiration for your writing projects. Use it to brainstorm topics, explore different angles, or overcome writer’s block by generating prompts or outlines.\nImprove clarity and structure Ask ChatGPT for suggestions on structuring your writing. It can provide guidance on organizing your thoughts logically, creating smooth transitions between paragraphs, or refining the overall flow of your piece.\nEnhance language and style Use ChatGPT to improve the clarity and coherence of your sentences. It can offer alternative word choices, help with phrasing, and suggest improvements in grammar and syntax.\nEditing and proofreading Use ChatGPT to review your draft for spelling errors, grammatical mistakes, and punctuation issues. It can serve as a preliminary editor, but final proofreading should always be done by you.\nFeedback and revision suggestions Seek feedback from ChatGPT on the overall effectiveness of your writing. It can provide insights into areas that may need further development or clarification.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nMaintaining ownership of your ideas and writing style while using GPT is crucial to preserving the authenticity and integrity of your work. As a tool, ChatGPT offers valuable assistance in refining and enhancing your writing, but it should not overshadow your unique voice as a writer. Your critical thinking skills play a pivotal role here; they allow you to evaluate the suggestions provided by ChatGPT thoughtfully and decide how best to integrate them into your writing.\nWhile it can generate text based on input and provide suggestions, not all responses may be equally relevant or of high quality. It’s essential to scrutinize the responses, considering factors such as accuracy, coherence, and appropriateness for your intended audience. Evaluate each suggestion critically to ensure it aligns with the tone, style, and purpose of your writing.\nBy leveraging GPT mindfully as a writing tool, you can indeed enhance your writing skills and streamline your workflow. It can help you achieve clearer and more polished pieces by offering insights into structure, language refinement, and even creative ideation. However, it’s paramount to maintain a balanced approach. Avoid relying solely on GPT for the creative and intellectual aspects of your writing process. Remember, your originality and ability to engage with your subject matter in a meaningful way are what ultimately define your work as uniquely yours.",
     "crumbs": [
-      "Tutorials",
-      "Python code structure"
+      "Writing principles"
     ]
   },
   {
-    "objectID": "tutorials/python_tutorials/code_structure.html#modules",
-    "href": "tutorials/python_tutorials/code_structure.html#modules",
-    "title": "Python code structure",
-    "section": "1. Modules",
-    "text": "1. Modules\nA module is a single Python file that can contain functions, classes, and variables.\n\nCreating a Module\nCreate a file named math_operations.py:\n# math_operations.py\n\ndef square(number):\n    \"\"\"Returns the square of a number.\"\"\"\n    return number ** 2\n\ndef add(a, b):\n    \"\"\"Returns the sum of two numbers.\"\"\"\n    return a + b",
+    "objectID": "coding_practices/general_practices.html",
+    "href": "coding_practices/general_practices.html",
+    "title": "Coding practices",
+    "section": "",
+    "text": "Effective code management is a game-changer in research, especially for data analysis and simulations. Follow this general guide to help you organize your projects and boost your productivity:\n\nEstablishing a structured development environment\n\nStart by setting up Miniconda or Anaconda to manage your development environments effectively. By doing this, you can create isolated environments for each of your projects, ensuring that dependencies are kept separate and conflicts are avoided.\nCustomize and tailor separate environments for each of your projects using conda. This approach ensures that each project has its own specific set of dependencies, which helps in maintaining a clean and well-organized workflow.\nUse tools like ruff to enforce consistent code formatting across your projects. Consistent formatting not only makes your code look more professional but also enhances its readability and maintainability, making your coding practices more efficient.\n\nOrganizing and structuring your codebase\n\nDesign a clear and logical folder structure for your project, such as including data/, notebooks/, src/, tests/, and scripts/ directories. This organization will make it easy for you to navigate your project, locate files quickly, and keep everything neatly arranged.\nLeverage git for version control and use github for managing collaborative development. This setup allows you to track changes, collaborate seamlessly with others, and revert to previous versions if needed, ensuring that your project evolves smoothly.\nInclude thorough comments in your code and create a detailed README.md file. This documentation will help explain your project’s objectives and usage, making it easier for others to understand and contribute to your work. Clear documentation acts as a friendly guide for anyone interacting with your project.\n\nEffective data management practices\n\nStore your raw data in a data/raw/ folder and place your processed data in a data/processed/ folder. This method helps keep your data organized and clearly distinguishes between original and modified datasets, which maintains data integrity throughout your project.\nUse robust data management tools to track different versions of your data. By managing versions effectively, you ensure that your results are reproducible and that you can trace back any changes, supporting scientific rigor and maintaining a clear record of your data’s evolution.\n\nEnsuring reproducibility and continuity\n\nShare your environment configurations with others to facilitate a smooth setup of your project on their systems. This practice helps ensure that your project is reproducible and that others can replicate your work without any difficulties.\nRegularly update your documentation and Jupyter Notebooks to reflect the latest changes and insights. Keeping these resources current makes it easier for others to follow your work and for you to share your findings, aiding in knowledge transfer and enhancing the accessibility of your project.\n\nFacilitating collaborative excellence\n\nFoster a culture of quality assurance by encouraging regular code reviews within your team. This practice helps catch potential issues early, incorporate feedback, and continuously improve the quality of your code, leading to better results and stronger collaboration.\nSet up effective communication channels to discuss ideas, share insights, and solve problems together. Strong communication is essential for successful collaboration and helps build a supportive and innovative team environment.\n\nSustaining long-term project integrity\n\nStay updated with the latest tool and library advancements to keep your project performing at its best. Embracing new updates and improvements ensures that your project remains current, reliable, and optimized for performance.\nUtilize issue tracking tools to address bugs and enhancements promptly. Proactively managing issues helps maintain the stability and growth of your project, ensuring it remains robust and continues to meet its goals.",
     "crumbs": [
-      "Tutorials",
-      "Python code structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#submodules",
-    "href": "tutorials/python_tutorials/code_structure.html#submodules",
-    "title": "Python Code Structure",
-    "section": "2. Submodules",
-    "text": "2. Submodules\nA submodule is a module contained within a package. It’s typically another .py file in a directory that contains an __init__.py file.\n\nCreating Submodules\n\nCreate a directory named package.\nInside package, create:\n\n__init__.py\nsubmodule_a.py\nsubmodule_b.py\n\n\nStructure:\npackage/\n    __init__.py\n    submodule_a.py\n    submodule_b.py\nsubmodule_a.py:\n# package/submodule_a.py\n\ndef double(number):\n    \"\"\"Returns double the input number.\"\"\"\n    return number * 2\n\ndef find_max(numbers):\n    \"\"\"Returns the maximum number from a list.\"\"\"\n    return max(numbers) if numbers else None\nsubmodule_b.py:\n# package/submodule_b.py\n\nfrom .submodule_a import double  # Relative import\n\ndef multiply(a, b):\n    \"\"\"Returns the product of two numbers.\"\"\"\n    return a * b\n\ndef subtract(a, b):\n    \"\"\"Returns the difference between two numbers.\"\"\"\n    return a - b\n\ndef double_and_subtract(a, b):\n    \"\"\"Uses double from submodule_a and then subtracts.\"\"\"\n    return subtract(double(a), b)",
-    "crumbs": [
-      "Tutorials",
-      "Python Code Structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#packages",
-    "href": "tutorials/python_tutorials/code_structure.html#packages",
-    "title": "Python code structure",
-    "section": "2. Packages",
-    "text": "2. Packages\nA package is a directory that contains an __init__.py file and can include modules or subpackages.\n\nCreating a Package\n\nCreate a directory named package.\nInside package, create:\n\n__init__.py\nmodule_a.py\nmodule_b.py\n\n\nStructure:\npackage/\n    __init__.py\n    module_a.py\n    module_b.py\nmodule_a.py:\n# package/module_a.py\n\ndef double(number):\n    \"\"\"Returns double the input number.\"\"\"\n    return number * 2\n\ndef find_max(numbers):\n    \"\"\"Returns the maximum number from a list.\"\"\"\n    return max(numbers) if numbers else None\nmodule_b.py:\n# package/module_b.py\n\nfrom .module_a import double  # Relative import\n\ndef multiply(a, b):\n    \"\"\"Returns the product of two numbers.\"\"\"\n    return a * b\n\ndef subtract(a, b):\n    \"\"\"Returns the difference between two numbers.\"\"\"\n    return a - b\n\ndef double_and_subtract(a, b):\n    \"\"\"Uses double from module_a and then subtracts.\"\"\"\n    return subtract(double(a), b)",
-    "crumbs": [
-      "Tutorials",
-      "Python code structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#subpackages",
-    "href": "tutorials/python_tutorials/code_structure.html#subpackages",
-    "title": "Python code structure",
-    "section": "3. Subpackages",
-    "text": "3. Subpackages\nA subpackage is a package inside another package.\n\nCreating a Subpackage\n\nInside package, create a directory named subpkg.\nInside subpkg, create:\n\n__init__.py\nmodule_c.py\n\n\nStructure:\npackage/\n    subpkg/\n        __init__.py\n        module_c.py\nmodule_c.py:\n# package/subpkg/module_c.py\n\nfrom ..module_a import double  # Relative import\n\ndef sum_numbers(numbers):\n    \"\"\"Returns the sum of a list of numbers.\"\"\"\n    return sum(numbers)\n__init__.py:\nTo make sum_numbers accessible when importing the subpackage:\n# package/subpkg/__init__.py\n\nfrom .module_c import sum_numbers",
-    "crumbs": [
-      "Tutorials",
-      "Python code structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#importing-and-using-modules",
-    "href": "tutorials/python_tutorials/code_structure.html#importing-and-using-modules",
-    "title": "Python code structure",
-    "section": "4. Importing and Using Modules",
-    "text": "4. Importing and Using Modules\n\nExample Main Script\nCreate a file named main.py in the root directory of your project:\n# main.py\n\nfrom math_operations import square, add\nfrom utility import cube\nfrom package import double, find_max, multiply, subtract\nfrom package.subpkg import sum_numbers\n\nif __name__ == \"__main__\":\n    num = 4\n    print(f\"Square of {num}: {square(num)}\")\n    print(f\"Add 2 and 3: {add(2, 3)}\")\n    print(f\"Cube of {num}: {cube(num)}\")\n    print(f\"Double of {num}: {double(num)}\")\n    print(f\"Multiply: {multiply(5, 3)}\")\n    print(f\"Subtract: {subtract(5, 3)}\")\n\n    numbers = [1, 2, 3, 4]\n    print(f\"Sum of numbers: {sum_numbers(numbers)}\")\n    print(f\"Double and Subtract: {double_and_subtract(5, 3)}\")\n\n\nImporting Within the Same Directory\nYou can import functions or classes from another module within the same directory using the import statement.\nCreating utility.py:\nAdd another module named utility.py in the root directory:\n# utility.py\n\ndef cube(number):\n    \"\"\"Returns the cube of a number.\"\"\"\n    return number ** 3\n\n\nRelative Imports\nRelative imports allow you to import modules or packages relative to the current module’s location within the package hierarchy. This is useful for maintaining clear imports and avoiding conflicts.\nFor example, in module_b.py, you can see the line:\nfrom .module_a import double\nThis is a relative import, indicating that module_a is in the same package as module_b.\nIn module_c.py, the line:\nfrom ..module_a import double  # Importing double from module_a in the parent package\nshows a relative import from the parent package.",
-    "crumbs": [
-      "Tutorials",
-      "Python code structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#importing-within-the-same-directory",
-    "href": "tutorials/python_tutorials/code_structure.html#importing-within-the-same-directory",
-    "title": "Python Code Structure",
-    "section": "5. Importing Within the Same Directory",
-    "text": "5. Importing Within the Same Directory\nIf you want to import functions or classes from another module within the same directory, you can do so using the import statement.\n\nExample of Importing Within the Same Directory\nSuppose we add another module named utility.py in the root directory:\nCreating utility.py:\n# utility.py\n\ndef cube(number):\n    \"\"\"Returns the cube of a number.\"\"\"\n    return number ** 3\nThe overall structure of the project looks like this:\nproject/\n    math_operations.py\n    utility.py\n    package/\n        __init__.py\n        module_a.py\n        module_b.py\n        subpkg/\n            __init__.py\n            module_c.py\n    main.py\n\n\nRelative Imports\nRelative imports allow you to import modules or packages relative to the current module’s location within the package hierarchy. This is useful for maintaining clear imports and avoiding conflicts.\nIn module_b.py, the line:\nfrom .module_a import double\nis a relative import, indicating that module_a is in the same package as module_b.\nIn module_c.py, you can also use relative imports:\nfrom ..module_a import double  # Importing double from module_a in the parent package\nThis keeps imports clear and manageable within your package.",
-    "crumbs": [
-      "Tutorials",
-      "Python Code Structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#understanding-__init__.py",
-    "href": "tutorials/python_tutorials/code_structure.html#understanding-__init__.py",
-    "title": "Python code structure",
-    "section": "5. Understanding __init__.py",
-    "text": "5. Understanding __init__.py\nThe __init__.py file is essential for defining packages in Python.\n\nImportance of __init__.py\n\nPackage Initialization: Indicates that the directory should be treated as a Python package.\nNamespace Management: Helps to define the package namespace.\nControl Over Imports: You can control which modules are accessible when importing the package.\nInitialization Logic: Allows you to include setup or initialization code.\n\n\n\nExample of __init__.py\nHere’s a simple example illustrating how __init__.py works:\nDirectory Structure:\npackage/\n    __init__.py\n    module_a.py\n    module_b.py\nContent of module_a.py:\n# module_a.py\n\ndef get_number():\n    \"\"\"Returns a fixed number.\"\"\"\n    return 42\nContent of module_b.py:\n# module_b.py\n\ndef get_text():\n    \"\"\"Returns a greeting.\"\"\"\n    return \"Hello, World!\"\nContent of __init__.py:\n# __init__.py\n\nfrom .module_a import get_number\nfrom .module_b import get_text\n\n\nUsing the Package\nfrom package import get_number, get_text\n\nprint(get_number())  # Outputs: 42\nprint(get_text())    # Outputs: Hello, World!",
-    "crumbs": [
-      "Tutorials",
-      "Python code structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#running-the-code",
-    "href": "tutorials/python_tutorials/code_structure.html#running-the-code",
-    "title": "Python code structure",
-    "section": "6. Running the Code",
-    "text": "6. Running the Code\nTo run your project, navigate to the directory containing main.py and execute:\npython main.py\n\nExpected Output\nWhen you run the code, you should see the following output:\nSquare of 4: 16\nAdd 2 and 3: 5\nCube of 4: 64\nDouble of 4: 8\nMultiply: 15\nSubtract: 2\nSum of numbers: 10\nDouble and Subtract: 4",
-    "crumbs": [
-      "Tutorials",
-      "Python code structure"
-    ]
-  },
-  {
-    "objectID": "tutorials/python_tutorials/code_structure.html#relative-imports",
-    "href": "tutorials/python_tutorials/code_structure.html#relative-imports",
-    "title": "Python Code Structure",
-    "section": "7. Relative Imports",
-    "text": "7. Relative Imports\nRelative imports allow you to import modules or packages relative to the current module’s location within the package hierarchy. This is useful for maintaining clear imports and avoiding conflicts.\nIn module_b.py, for example, the line:\nfrom .module_a import double\nis a relative import. The . indicates that module_a is in the same package as module_b.\nHere’s how to use relative imports:\n\nSingle Dot (.): Refers to the current package.\nDouble Dot (..): Refers to the parent package.\n\nFor instance, if you had a file structure like this:\nproject/\n    package/\n        __init__.py\n        module_a.py\n        module_b.py\n        subpkg/\n            __init__.py\n            module_c.py\n    main.py\nIn module_c.py, you could import double from module_a like this:\n# package/subpkg/module_c.py\n\nfrom ..module_a import double\nThis keeps imports clear and manageable within your package.",
-    "crumbs": [
-      "Tutorials",
-      "Python Code Structure"
+      "Coding practices"
     ]
   }
 ]
